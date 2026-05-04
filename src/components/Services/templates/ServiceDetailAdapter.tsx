@@ -157,7 +157,7 @@ export default function ServiceDetailAdapter(props: ServiceDetailAdapterProps) {
     desc: s.description,
   }));
 
-  const mappedWhy: ServiceWhyUs[] | undefined = whyItems?.map((w) => {
+  const mappedWhy: ServiceWhyUs[] | undefined = whyItems?.slice(0, 4).map((w) => {
     const Icon = w.icon;
     return {
       title: w.title,

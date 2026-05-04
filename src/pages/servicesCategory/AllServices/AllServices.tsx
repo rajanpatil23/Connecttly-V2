@@ -12,7 +12,49 @@ import illuGoogleAds from "@/assets/_zip/services/illu-google-ads.png";
 import illuMetaAds from "@/assets/_zip/services/illu-meta-ads.png";
 import illuYoutubeAds from "@/assets/_zip/services/illu-youtube-ads.png";
 import illuCro from "@/assets/_zip/services/illu-cro.png";
-import illuLinkedinAds from "@/assets/_zip/services/illu-linkedin-ads.png";
+import illuShortVideo from "@/assets/_zip/services/illu-linkedin-ads.png";
+import illuPerformanceBundle from "@/assets/_zip/services/illu-performance-bundle.png";
+import illuLinkedinAds from "@/assets/_zip/services/illu-linkedin-ads-2.png";
+import illuLeadGen from "@/assets/_zip/services/illu-lead-generation.png";
+import illuPageMgmt from "@/assets/_zip/services/illu-page-management.png";
+import illuExecutive from "@/assets/_zip/services/illu-executive-leadership.png";
+import illuSalesNav from "@/assets/_zip/services/illu-sales-navigator.png";
+import illuLinkedinBundle from "@/assets/_zip/services/illu-linkedin-bundle.png";
+import illuContentStrategy from "@/assets/_zip/services/illu-content-strategy.png";
+import illuSeoContent from "@/assets/_zip/services/illu-seo-content.png";
+import illuCarousels from "@/assets/_zip/services/illu-carousels-visuals.png";
+import illuVideo from "@/assets/_zip/services/illu-video-production.png";
+import illuSalesCollateral from "@/assets/_zip/services/illu-sales-collateral.png";
+import illuFullFunnel from "@/assets/_zip/services/illu-full-funnel.png";
+import illuAbm from "@/assets/_zip/services/illu-abm.png";
+import illuCommunity from "@/assets/_zip/services/illu-community.png";
+import illuInfluencer from "@/assets/_zip/services/illu-influencer-ugc.png";
+import illuPartner from "@/assets/_zip/services/illu-partner-affiliate.png";
+import illuViral from "@/assets/_zip/services/illu-viral-culture.png";
+import illuDemandBundle from "@/assets/_zip/services/illu-demand-gen-bundle.png";
+import illuTaggingGa4 from "@/assets/_zip/services/illu-tagging-ga4.png";
+import illuAnalytics from "@/assets/_zip/services/illu-analytics-dashboards.png";
+import illuAttribution from "@/assets/_zip/services/illu-attribution.png";
+import illuCrmAutomation from "@/assets/_zip/services/illu-crm-automation.png";
+import illuAiCampaigns from "@/assets/_zip/services/illu-ai-campaigns.png";
+import illuMeasurementBundle from "@/assets/_zip/services/illu-measurement-bundle.png";
+import illuBrandStrategy from "@/assets/_zip/services/illu-brand-strategy.png";
+import illuPrOrm from "@/assets/_zip/services/illu-pr-orm.png";
+import illuWebsiteUx from "@/assets/_zip/services/illu-website-ux.png";
+import illuEmployer from "@/assets/_zip/services/illu-employer-branding.png";
+import illuLifestyle from "@/assets/_zip/services/illu-lifestyle-vibe.png";
+import illuBrandMomentum from "@/assets/_zip/services/illu-brand-momentum-bundle.png";
+
+type ServiceItem = CategoryServiceCard & { category: string };
+
+const services: ServiceItem[] = [
+  // Performance Marketing
+  { category: "Performance Marketing", title: "Google Ads", desc: "Drive targeted traffic with powerful Google Ads campaigns.", link: "/services/performance-marketing/google-ads", image: illuGoogleAds, cta: "Learn more" },
+  { category: "Performance Marketing", title: "Meta Ads", desc: "Reach your audience on Facebook and Instagram.", link: "/services/performance-marketing/meta-ads", image: illuMetaAds, cta: "Learn more" },
+  { category: "Performance Marketing", title: "YouTube Ads", desc: "Engage viewers with compelling video advertisements.", link: "/services/performance-marketing/youtube-ads", image: illuYoutubeAds, cta: "Learn more" },
+  { category: "Performance Marketing", title: "CRO and Funnel", desc: "Optimize conversion rates with data-driven insights.", link: "/services/performance-marketing/cro-funnel", image: illuCro, cta: "Learn more" },
+  { category: "Performance Marketing", title: "Short Video Ads", desc: "Capture attention with short-form video advertising.", link: "/services/performance-marketing/short-video-ads", image: illuShortVideo, cta: "Learn more" },
+  { category: "Performance Marketing", title: "Performance Accelerator Bundle", desc: "Complete performance marketing solution for rapid growth.", link: "/services/performance-marketing/performance-accelerator-bundle", image: illuPerformanceBundle, cta: "Explore Bundle", recommended: true },
 
 type ServiceItem = CategoryServiceCard & { category: string };
 

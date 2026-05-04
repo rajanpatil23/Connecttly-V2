@@ -74,7 +74,13 @@ const websiteFAQs: FAQItem[] = [
 const WebsiteUXLandingPage = () => (
   <ServiceDetailAdapter
     heroProps={{
-      // eyebrow="WEBSITE, UX & LANDING PAGES" heading="Beautiful, High-Converting Websites That Drive Results" description="Custom website design and UX optimization that turns visitors into customers with stunning design and seamless user experience." ctaText="Get Started" ctaLink="/resources/support" imageSrc="/images/Services/Brand&Reputation/WebsiteUX&LandingPages.png" imageAlt="Website & UX Design"
+      eyebrow: "WEBSITE, UX & LANDING PAGES",
+      heading: "Beautiful, High-Converting Websites That Drive Results",
+      description: "Custom website design and UX optimization that turns visitors into customers with stunning design and seamless user experience.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Brand&Reputation/WebsiteUX&LandingPages.png",
+      imageAlt: "Website & UX Design",
     }}
     plans={pricingPlans}
     faqs={websiteFAQs}

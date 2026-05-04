@@ -6,6 +6,7 @@ import StatsBar from "@/components/_zip/StatsBar";
 import { sharedStats } from "@/components/_zip/stats-data";
 import ReviewCarousel from "@/components/_zip/Home/ReviewCarousel";
 import ServiceHero from "@/components/Services/ServiceHero";
+import WhereToStart from "@/components/Services/ServiceDetail/WhereToStart";
 
 export interface CategoryServiceCard {
   title: string;

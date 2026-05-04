@@ -37,13 +37,14 @@ const authorAvatar = (p: WpPost) => p?.acf?.author_image || p?._embedded?.author
 const CATEGORY_ID_OVERRIDES: Record<number, string> = {};
 
 export function normalizePost(p: WpPost, cats: WpCategory[]): UiPost | null {
-  const primaryId = p?.acf?.primary_category ?? p?.categories?.[0];
+  const rawPrimary = p?.acf?.primary_category ?? p?.categories?.[0];
+  const primaryId = typeof rawPrimary === 'string' ? Number(rawPrimary) : rawPrimary;
 
-  // Look up WP category by id
-  const wpCat = cats.find(c => c.id === primaryId);
+  // Look up WP category by id (coerce both sides to be safe)
+  const wpCat = cats.find(c => Number(c.id) === Number(primaryId));
 
-  // Prefer override → WP slug → fallback
-  let catSlug = CATEGORY_ID_OVERRIDES[primaryId] || wpCat?.slug;
+  // Prefer override → WP slug
+  let catSlug = (primaryId != null && CATEGORY_ID_OVERRIDES[primaryId as number]) || wpCat?.slug;
 
   // Filter out true uncategorized posts
   if (!catSlug || catSlug === 'uncategorized') {

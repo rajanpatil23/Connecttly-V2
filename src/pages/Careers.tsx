@@ -182,74 +182,15 @@ export default function Careers() {
 
   return (
     <div className="min-h-screen">
-      {/* ========= 1) EVP hero ========= */}
-      <section className="overflow-hidden bg-[#F5F3EE] rounded-b-[40px] relative">
-        {/* Animated Gradient Background */}
-        <div className="absolute inset-0 opacity-30 animate-gradient-shift rounded-b-[40px]">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100"></div>
-        </div>
-        
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 opacity-40 rounded-b-[40px]" style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(100, 116, 139, 0.15) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(100, 116, 139, 0.15) 1px, transparent 1px)
-          `,
-          backgroundSize: '50px 50px'
-        }}></div>
-
-        <div className="container relative z-10 mx-auto max-w-5xl px-6 py-8 sm:py-10">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-sm text-slate-700">
-              <Sparkles className="h-4 w-4 text-[#0074ED]" />
-              We're hiring - join the journey
-            </p>
-            <h1 className="mt-4 text-4xl font-bold leading-tight text-slate-900 md:text-6xl">
-              Build the future of{" "}
-              <span className="bg-gradient-to-r from-[#0074ED] via-[#5B9BF8] to-[#0074ED] bg-clip-text text-transparent">
-                performance-led growth
-              </span>
-            </h1>
-            <p className="mt-4 text-slate-600 text-lg leading-relaxed">
-              At Connecttly, you'll ship work that moves the needle for real
-              brands, alongside people who care deeply about craft, clarity, and
-              outcomes.
-            </p>
-            <div className="mt-7 mb-8 sm:mb-0 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Button asChild className="w-full sm:w-auto rounded-full bg-[#0074ED] text-white hover:bg-[#0065d1]">
-                <Link to="#open-roles">See open roles</Link>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                className="w-full sm:w-auto rounded-full border-slate-300 bg-white text-slate-700 hover:bg-slate-50"
-              >
-                <Link to="/resources/support">Talk to recruiting</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <style>{`
-        @keyframes gradient-shift {
-          0%, 100% {
-            background: linear-gradient(135deg, #dbeafe 0%, #fae8ff 50%, #fce7f3 100%);
-          }
-          25% {
-            background: linear-gradient(135deg, #e0e7ff 0%, #ddd6fe 50%, #fae8ff 100%);
-          }
-          50% {
-            background: linear-gradient(135deg, #fae8ff 0%, #fce7f3 50%, #dbeafe 100%);
-          }
-          75% {
-            background: linear-gradient(135deg, #fce7f3 0%, #dbeafe 50%, #e0e7ff 100%);
-          }
-        }
-        .animate-gradient-shift {
-          animation: gradient-shift 15s ease-in-out infinite;
-        }
-      `}</style>
+      <PageHero
+        eyebrow="We're hiring"
+        title={<>Build the future of <span className="gradient-text">performance-led growth</span></>}
+        description="At Connecttly, you'll ship work that moves the needle for real brands, alongside people who care deeply about craft, clarity, and outcomes."
+        primaryCtaText="See open roles"
+        primaryCtaHref="#open-roles"
+        secondaryCtaText="Talk to recruiting"
+        secondaryCtaHref="/resources/support"
+      />
 
 {/* ========= Career Innovation Section ========= */}
 <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">

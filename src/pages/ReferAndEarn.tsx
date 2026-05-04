@@ -159,122 +159,28 @@ export default function ReferAndEarn() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* =================== HERO SECTION =================== */}
-      <header className="relative w-full overflow-hidden bg-[#F5F3EE] rounded-b-[40px]">
-        {/* Animated Gradient Background */}
-        <div className="absolute inset-0 opacity-30 animate-gradient-shift rounded-b-[40px]">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100"></div>
+      <PageHero
+        eyebrow="Affiliate Program"
+        title={<>Turn referrals into <span className="gradient-text">revenue</span></>}
+        description="Refer customers, we handle tracking, you get paid. Earn up to 20% recurring commission by becoming a Connecttly Affiliate Partner."
+        primaryCtaText="Apply Now"
+        primaryCtaOnClick={() => setIsModalOpen(true)}
+        secondaryCtaText="Program Details"
+        secondaryCtaHref="#details"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+          {[
+            { value: "$1M+", label: "Paid to affiliates" },
+            { value: "20%", label: "Commission rate" },
+            { value: "500+", label: "Active partners" },
+          ].map((s) => (
+            <div key={s.label} className="bg-background rounded-2xl p-5 border border-border shadow-[0_2px_10px_hsl(var(--foreground)/0.04)]">
+              <div className="text-2xl font-heading font-bold gradient-text">{s.value}</div>
+              <div className="text-sm text-muted-foreground mt-1">{s.label}</div>
+            </div>
+          ))}
         </div>
-        
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 opacity-40 rounded-b-[40px]" style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(100, 116, 139, 0.15) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(100, 116, 139, 0.15) 1px, transparent 1px)
-          `,
-          backgroundSize: '50px 50px'
-        }}></div>
-
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 md:pt-32 pb-16 sm:pb-20">
-          <div className="mx-auto max-w-6xl text-center">
-            {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-3 py-1 text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.14em] text-slate-700">
-              <span className="inline-block h-2 w-2 rounded-full bg-blue-500" />
-              Affiliate Program
-            </div>
-
-            {/* Headline */}
-            <h1 className="mt-4 text-[30px] leading-[1.08] font-extrabold tracking-tight text-slate-900 sm:text-[44px] md:text-[60px]">
-              Turn Referrals into{" "}
-              <span className="bg-gradient-to-r from-[#0074ED] to-[#5B9BF8] bg-clip-text text-transparent">
-                Revenue
-              </span>
-            </h1>
-
-            {/* Supporting copy */}
-            <p className="mx-auto mt-4 max-w-[56ch] text-[15px] leading-6 text-slate-600 sm:text-lg sm:leading-7 md:text-xl">
-              Refer customers, we handle tracking, you get paid. Earn up to 20% recurring commission by becoming a Connecttly Affiliate Partner.
-            </p>
-
-            {/* CTA Buttons - matching Careers page style */}
-            <div className="mt-7 mb-8 sm:mb-0 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <button
-                onClick={() => setIsModalOpen(true)}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-[#0074ED] text-white hover:bg-[#0065d1] px-8 py-3 font-medium shadow-lg transition-all hover:shadow-xl"
-              >
-                Apply Now
-              </button>
-              <Link
-                to="#details"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full border-2 border-slate-300 hover:border-slate-400 bg-white hover:bg-slate-50 text-slate-700 px-8 py-3 font-medium transition-all"
-              >
-                Program Details
-              </Link>
-            </div>
-
-            {/* Stats Cards - matching Insights page style */}
-            <div className="relative mt-8">
-              <div className="relative w-full max-w-4xl mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {[
-                    { value: "$1M+", label: "Paid to affiliates", delay: 0 },
-                    { value: "20%", label: "Commission rate", delay: 0.2 },
-                    { value: "500+", label: "Active partners", delay: 0.4 },
-                  ].map((stat, i) => {
-                    // Different icon for each card
-                    const iconPath = i === 0 
-                      ? "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" // Dollar icon
-                      : i === 1 
-                      ? "M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" // Trending up icon
-                      : "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"; // Users icon
-                    
-                    return (
-                      <div
-                        key={i}
-                        className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-shadow"
-                      >
-                        <div className="flex items-center gap-4">
-                          <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-[#0074ED] to-[#5B9BF8] flex items-center justify-center">
-                            <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={iconPath} />
-                            </svg>
-                          </div>
-                          <div>
-                            <div className="text-2xl font-bold bg-gradient-to-r from-[#0074ED] to-[#5B9BF8] bg-clip-text text-transparent">
-                              {stat.value}
-                            </div>
-                            <div className="text-sm text-slate-600">{stat.label}</div>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <style>{`
-        @keyframes gradient-shift {
-          0%, 100% {
-            background: linear-gradient(135deg, #dbeafe 0%, #fae8ff 50%, #fce7f3 100%);
-          }
-          25% {
-            background: linear-gradient(135deg, #e0e7ff 0%, #ddd6fe 50%, #fae8ff 100%);
-          }
-          50% {
-            background: linear-gradient(135deg, #fae8ff 0%, #fce7f3 50%, #dbeafe 100%);
-          }
-          75% {
-            background: linear-gradient(135deg, #fce7f3 0%, #dbeafe 50%, #e0e7ff 100%);
-          }
-        }
-        .animate-gradient-shift {
-          animation: gradient-shift 15s ease-in-out infinite;
-        }
-      `}</style>
+      </PageHero>
 
       {/* =================== BENEFITS SECTION =================== */}
       <section className="px-4 sm:px-6 lg:px-8 pt-16 sm:pt-18 pb-8 sm:pb-10">

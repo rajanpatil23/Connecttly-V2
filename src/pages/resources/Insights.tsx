@@ -500,117 +500,28 @@ const MarketingMetrics: React.FC = () => {
 export default function InsightsDashboard() {
   return (
     <main className="relative bg-background min-h-screen">
-      {/* HERO SECTION */}
-      <header className="relative w-full overflow-hidden bg-[#F5F3EE] rounded-b-[40px]">
-        {/* Animated Gradient Background */}
-        <div className="absolute inset-0 opacity-30 animate-gradient-shift rounded-b-[40px]">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-teal-50 to-lime-100"></div>
-        </div>
-        
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 opacity-40 rounded-b-[40px]" style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(100, 116, 139, 0.15) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(100, 116, 139, 0.15) 1px, transparent 1px)
-          `,
-          backgroundSize: '50px 50px'
-        }}></div>
-
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 md:pt-32 pb-16 sm:pb-20">
-          <div className="mx-auto max-w-6xl text-center">
-            {/* Headline */}
-            <h1 className="text-[30px] leading-[1.08] font-extrabold tracking-tight text-slate-900 sm:text-[44px] md:text-[60px]">
-              Real-Time{" "}
-              <span className="bg-gradient-to-r from-[#0074ED] to-[#5B9BF8] bg-clip-text text-transparent">
-                Business Insights
-              </span>
-            </h1>
-
-            {/* Supporting copy */}
-            <p className="mx-auto mt-4 max-w-[56ch] text-[15px] leading-6 text-slate-600 sm:text-lg sm:leading-7 md:text-xl">
-              Track our growth journey with live metrics and data-driven insights. 
-              Transparency in action-updated automatically every month.
-            </p>
-
-            {/* CTA Buttons - matching Careers/Refer and Earn page style */}
-            <div className="mt-7 mb-8 sm:mb-0 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <a
-                href="#dashboard"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-[#0074ED] text-white hover:bg-[#0065d1] px-8 py-3 font-medium shadow-lg transition-all hover:shadow-xl"
-              >
-                View Dashboard
-              </a>
-              <a
-                href="/resources/support"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full border-2 border-slate-300 hover:border-slate-400 bg-white hover:bg-slate-50 text-slate-700 px-8 py-3 font-medium transition-all"
-              >
-                Contact Us
-              </a>
+      <PageHero
+        eyebrow="Live Metrics"
+        title={<>Real-time <span className="gradient-text">business insights</span></>}
+        description="Track our growth journey with live metrics and data-driven insights. Transparency in action—updated automatically every month."
+        primaryCtaText="View Dashboard"
+        primaryCtaHref="#dashboard"
+        secondaryCtaText="Contact Us"
+        secondaryCtaHref="/resources/support"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+          {[
+            { value: "Live Data", label: "Auto-Updated" },
+            { value: "4 Metrics", label: "Categories" },
+            { value: "100% Real", label: "Transparency" },
+          ].map((s) => (
+            <div key={s.label} className="bg-background rounded-2xl p-5 border border-border shadow-[0_2px_10px_hsl(var(--foreground)/0.04)]">
+              <div className="text-2xl font-heading font-bold gradient-text">{s.value}</div>
+              <div className="text-sm text-muted-foreground mt-1">{s.label}</div>
             </div>
-
-            {/* Stats Cards - matching About page style without background */}
-            <div className="relative mt-8">
-              <div className="relative w-full max-w-4xl mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {[
-                    { value: "Live Data", label: "Auto-Updated", delay: 0 },
-                    { value: "4 Metrics", label: "Categories", delay: 0.2 },
-                    { value: "100% Real", label: "Transparency", delay: 0.4 },
-                  ].map((stat, i) => {
-                    // Different icon for each card
-                    const iconPath = i === 0 
-                      ? "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" // Refresh/Live icon
-                      : i === 1 
-                      ? "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" // Bar chart icon
-                      : "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"; // Shield/Trust icon
-                    
-                    return (
-                      <div
-                        key={i}
-                        className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-shadow"
-                      >
-                        <div className="flex items-center gap-4">
-                          <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-[#0074ED] to-[#5B9BF8] flex items-center justify-center">
-                            <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={iconPath} />
-                            </svg>
-                          </div>
-                          <div>
-                            <div className="text-2xl font-bold bg-gradient-to-r from-[#0074ED] to-[#5B9BF8] bg-clip-text text-transparent">
-                              {stat.value}
-                            </div>
-                            <div className="text-sm text-slate-600">{stat.label}</div>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
-      </header>
-
-      <style>{`
-        @keyframes gradient-shift {
-          0%, 100% {
-            background: linear-gradient(135deg, #dbeafe 0%, #ccfbf1 50%, #ecfccb 100%);
-          }
-          25% {
-            background: linear-gradient(135deg, #e0f2fe 0%, #d1fae5 50%, #dbeafe 100%);
-          }
-          50% {
-            background: linear-gradient(135deg, #ccfbf1 0%, #ecfccb 50%, #dbeafe 100%);
-          }
-          75% {
-            background: linear-gradient(135deg, #ecfccb 0%, #dbeafe 50%, #ccfbf1 100%);
-          }
-        }
-        .animate-gradient-shift {
-          animation: gradient-shift 15s ease-in-out infinite;
-        }
-      `}</style>
+      </PageHero>
 
       {/* DASHBOARD SECTION */}
       <section className="relative py-12 sm:py-16">

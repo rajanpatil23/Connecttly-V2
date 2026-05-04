@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowUpRight, BarChart3, Users, Code, Star, Quote, Play } from "lucide-react";
+import { ArrowRight, ArrowUpRight, BarChart3, Users, Code, Star, Quote, Play, MessageSquare, HelpCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import SectionLabel from "@/components/_zip/SectionLabel";
 import Hero from "@/components/_zip/Home/Hero";

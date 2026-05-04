@@ -1,0 +1,41 @@
+=> {
+                          setVisibleServices(6);
+                          servicesRef.current?.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                          });
+                        }}
+                      >
+                        View less services <ChevronUp className="h-4 w-4" />
+                      </Button>
+                    )}
+                  </div>
+                </TabsContent>
+              ))}
+            </Tabs>
+              </div>
+            </div>
+          </ScrollAnimatedSection>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="mx-auto max-w-6xl">
+          <ScrollAnimatedSection bgColor="bg-[#B8E8DD]">
+            <div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12">
+              <WhyChoose items={whyItems} eyebrow="WHY CHOOSE CONNECTLTY" heading="Why choose us" eyebrowColor="#0A6B5E" noPadding noCard noContainer />
+            </div>
+          </ScrollAnimatedSection>
+        </div>
+      </section>
+
+      {/* Reviews Carousel Section */}
+      <section className="py-16">
+        <ReviewCarousel noPadding />
+      </section>
+    </div>
+  );
+};
+
+export default AllServices;

@@ -156,7 +156,7 @@ const AboutPage = () => {
               ”
             </span>
             <p className="text-center text-base md:text-xl font-heading leading-relaxed">
-              "To make world-class growth marketing accessible to every ambitious brand, regardless of size or budget, by combining strategy, execution, and AI-powered automation."
+              To make world-class growth marketing accessible to every ambitious brand, regardless of size or budget, by combining strategy, execution, and AI-powered automation.
             </p>
           </div>
         </div>

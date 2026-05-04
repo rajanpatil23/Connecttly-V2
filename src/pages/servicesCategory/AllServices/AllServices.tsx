@@ -220,14 +220,22 @@ export default function AllServices() {
               <div className="relative rounded-md overflow-hidden w-full bg-[hsl(48_100%_55%)]" style={{ aspectRatio: "434 / 659" }}>
                 <img src={heroImg} alt="All services" className="absolute inset-0 w-full h-full object-cover" width={434} height={659} />
               </div>
+              {/* Top right: Growth Categories */}
               <div className="absolute top-40 right-4 md:right-8 bg-background rounded-full shadow-[0_8px_24px_hsl(var(--foreground)/0.12)] pl-2.5 pr-4 py-1.5 flex items-center gap-2 animate-float-y z-10">
-                <span className="text-primary font-bold text-sm">36</span>
-                <span className="text-xs font-semibold text-foreground whitespace-nowrap">Specialised Services</span>
+                <span className="text-primary font-bold text-sm">6</span>
+                <span className="text-xs font-semibold text-foreground whitespace-nowrap">Growth Categories</span>
               </div>
+              {/* Upper-left: Specialized Services */}
               <div className="absolute top-[34%] -left-4 md:-left-8 bg-primary text-primary-foreground rounded-xl shadow-[0_8px_24px_hsl(var(--primary)/0.35)] px-4 py-2.5 animate-float-y z-10">
                 <p className="text-2xl font-bold leading-none">36</p>
                 <p className="text-[11px] font-medium opacity-90 mt-1 leading-tight">Specialized<br />Services</p>
               </div>
+              {/* Lower-left: All-In-One Bundles */}
+              <div className="absolute top-[62%] -left-6 md:-left-10 bg-background rounded-full shadow-[0_8px_24px_hsl(var(--foreground)/0.12)] pl-2.5 pr-4 py-1.5 flex items-center gap-2 animate-float-y z-10">
+                <span className="text-primary font-bold text-sm">6</span>
+                <span className="text-xs font-semibold text-foreground whitespace-nowrap">All-In-One Bundles</span>
+              </div>
+              {/* Bottom right: Results-Driven */}
               <div className="absolute bottom-16 right-4 md:right-6 bg-primary text-primary-foreground rounded-xl shadow-[0_8px_24px_hsl(var(--primary)/0.35)] px-4 py-2.5 animate-float-y z-10">
                 <p className="text-2xl font-bold leading-none">100%</p>
                 <p className="text-[11px] font-medium opacity-90 mt-1 leading-tight">Results-Driven</p>

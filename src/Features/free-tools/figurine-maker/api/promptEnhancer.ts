@@ -6,5 +6,5 @@ export async function enhanceFigurinePrompt(userPrompt: string) {
 Return a concise prompt that yields a 3D figurine / toy photography look with consistent style, neutral background, soft studio lighting. 
 Avoid brands/copyrighted characters.`;
   const prompt = `User idea: ${userPrompt}\nReturn ONLY the improved figurine prompt.`;
-  return await textGenerate({ system, prompt, temperature: 0.75, maxTokens: 160 });
+  return await textGenerate(`${system}\n\n${prompt}`);
 }

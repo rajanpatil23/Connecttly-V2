@@ -32,34 +32,23 @@ const mediaUrl = (p: WpPost) => p?._embedded?.['wp:featuredmedia']?.[0]?.source_
 const authorName = (p: WpPost) => p?.acf?.author_name || p?._embedded?.author?.[0]?.name as string | undefined;
 const authorAvatar = (p: WpPost) => p?.acf?.author_image || p?._embedded?.author?.[0]?.avatar_urls?.['96'] as string | undefined;
 
-// WordPress Category ID to Slug mapping
-// Maps WordPress category IDs to our frontend route slugs
-const CATEGORY_ID_MAP: Record<number, string> = {
-  4: 'performance-marketing',
-  5: 'linkedin-growth',
-  6: 'content-creative',
-  7: 'growth-demand-generation',  // WordPress slug is 'growth-demand-generation'
-  1: 'analytics-ai',
-  9: 'brand-reputation',
-};
+// WordPress Category ID to Slug overrides
+// Use ONLY when the WP slug differs from the frontend route slug.
+const CATEGORY_ID_OVERRIDES: Record<number, string> = {};
 
 export function normalizePost(p: WpPost, cats: WpCategory[]): UiPost | null {
-  const primaryId = p?.acf?.primary_category ?? p?.categories?.[0];
-  
-  // First, try to get the WordPress category
-  const wpCat = cats.find(c => c.id === primaryId);
-  
-  // Use our hardcoded mapping first (for consistent routing)
-  let catSlug = CATEGORY_ID_MAP[primaryId];
-  
-  // If no mapping exists, use WordPress slug directly
-  if (!catSlug && wpCat) {
-    catSlug = wpCat.slug;
-  }
-  
-  // Filter out uncategorized posts - return null if no valid category
+  const rawPrimary = p?.acf?.primary_category ?? p?.categories?.[0];
+  const primaryId = typeof rawPrimary === 'string' ? Number(rawPrimary) : rawPrimary;
+
+  // Look up WP category by id (coerce both sides to be safe)
+  const wpCat = cats.find(c => Number(c.id) === Number(primaryId));
+
+  // Prefer override → WP slug
+  let catSlug = (primaryId != null && CATEGORY_ID_OVERRIDES[primaryId as number]) || wpCat?.slug;
+
+  // Filter out true uncategorized posts
   if (!catSlug || catSlug === 'uncategorized') {
-    console.warn(`Post ${p.id} has no valid category. Primary ID: ${primaryId}, WP Cat:`, wpCat);
+    console.warn(`[blog] Post ${p.id} ("${p.slug}") skipped: no valid category. primaryId=${primaryId}`, { wpCat, allCats: cats.map(c => ({ id: c.id, slug: c.slug })) });
     return null;
   }
   

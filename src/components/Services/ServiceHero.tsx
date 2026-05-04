@@ -76,7 +76,7 @@ export default function ServiceHero({
               />
               {badgeTopRight && (
                 <div
-                  className="absolute -right-2 md:right-0 top-1/3 bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-xl text-center animate-float-y"
+                  className="absolute -right-2 md:-right-4 top-6 bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-xl text-center animate-float-y"
                   style={{ animationDelay: "0s" }}
                 >
                   <p className="font-heading font-bold text-xl leading-none">{badgeTopRight.value}</p>

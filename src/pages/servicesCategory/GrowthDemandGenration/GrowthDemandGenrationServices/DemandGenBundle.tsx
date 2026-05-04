@@ -221,14 +221,13 @@ const bundleFAQs: FAQItem[] = [
 const DemandGenBundle = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="DEMAND GENERATION BUNDLE"
-        heading="Complete Growth Engine for B2B Companies"
-        description="Combine ABM, influencer marketing, community building, viral campaigns, and partner programs into one integrated growth machine that delivers predictable, scalable results."
-        ctaText="Accelerate Growth"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/DemandGrowthGeneration/DemandGenBundle.png"
-        imageAlt="Growth Strategy Dashboard"
-      
+      eyebrow: "DEMAND GENERATION BUNDLE",
+      heading: "Complete Growth Engine for B2B Companies",
+      description: "Combine ABM, influencer marketing, community building, viral campaigns, and partner programs into one integrated growth machine that delivers predictable, scalable results.",
+      ctaText: "Accelerate Growth",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/DemandGrowthGeneration/DemandGenBundle.png",
+      imageAlt: "Growth Strategy Dashboard",
     }}
     plans={pricingPlans}
     faqs={bundleFAQs}

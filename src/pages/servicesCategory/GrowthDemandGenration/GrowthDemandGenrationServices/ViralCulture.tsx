@@ -233,14 +233,13 @@ const viralFAQs: FAQItem[] = [
 const ViralCulture = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="VIRAL & CULTURAL MARKETING"
-        heading="Create Content That Spreads Like Wildfire"
-        description="Harness the power of viral marketing and cultural trends to achieve explosive organic reach and turn your brand into a cultural phenomenon."
-        ctaText="Go Viral"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/DemandGrowthGeneration/ViralCulture.png"
-        imageAlt="Viral Content Creation"
-      
+      eyebrow: "VIRAL & CULTURAL MARKETING",
+      heading: "Create Content That Spreads Like Wildfire",
+      description: "Harness the power of viral marketing and cultural trends to achieve explosive organic reach and turn your brand into a cultural phenomenon.",
+      ctaText: "Go Viral",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/DemandGrowthGeneration/ViralCulture.png",
+      imageAlt: "Viral Content Creation",
     }}
     plans={pricingPlans}
     faqs={viralFAQs}

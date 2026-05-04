@@ -233,14 +233,13 @@ const attributionFAQs: FAQItem[] = [
 const AttributionFunnel = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="ATTRIBUTION & FUNNEL ANALYSIS"
-        heading="Understand What Really Drives Conversions"
-        description="Track every touchpoint in the customer journey and attribute revenue to the right channels with advanced multi-touch attribution."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Analytics&AI/AttributionandFunnel.png"
-        imageAlt="Attribution & Funnel Analysis"
-      
+      eyebrow: "ATTRIBUTION & FUNNEL ANALYSIS",
+      heading: "Understand What Really Drives Conversions",
+      description: "Track every touchpoint in the customer journey and attribute revenue to the right channels with advanced multi-touch attribution.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Analytics&AI/AttributionandFunnel.png",
+      imageAlt: "Attribution & Funnel Analysis",
     }}
     plans={pricingPlans}
     faqs={attributionFAQs}

@@ -236,14 +236,13 @@ const measurementBundleFAQs: FAQItem[] = [
 const MeasurementAIBundle = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="MEASUREMENT & AI BUNDLE"
-        heading="Complete Analytics & AI Solution - All Services in One Package"
-        description="Transform your marketing with our comprehensive bundle: AI optimization, dashboards, attribution, automation, and tracking - all working together for maximum impact."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Analytics&AI/Measurement+AIBundle.png"
-        imageAlt="Measurement & AI Bundle"
-      
+      eyebrow: "MEASUREMENT & AI BUNDLE",
+      heading: "Complete Analytics & AI Solution - All Services in One Package",
+      description: "Transform your marketing with our comprehensive bundle: AI optimization, dashboards, attribution, automation, and tracking - all working together for maximum impact.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Analytics&AI/Measurement+AIBundle.png",
+      imageAlt: "Measurement & AI Bundle",
     }}
     plans={pricingPlans}
     faqs={measurementBundleFAQs}

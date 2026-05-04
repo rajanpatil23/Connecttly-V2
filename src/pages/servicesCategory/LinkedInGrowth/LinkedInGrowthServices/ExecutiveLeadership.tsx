@@ -233,14 +233,13 @@ const executiveLeadershipFAQs: FAQItem[] = [
 const ExecutiveLeadership = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="EXECUTIVE BRANDING & THOUGHT LEADERSHIP"
-        heading="Build Your Personal Brand as an Industry Leader"
-        description="Position yourself as a thought leader on LinkedIn. We handle the content creation and strategy so you can focus on running your business."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Linkedin Growth/ExecutiveLeadership.png"
-        imageAlt="Executive Leadership"
-      
+      eyebrow: "EXECUTIVE BRANDING & THOUGHT LEADERSHIP",
+      heading: "Build Your Personal Brand as an Industry Leader",
+      description: "Position yourself as a thought leader on LinkedIn. We handle the content creation and strategy so you can focus on running your business.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Linkedin Growth/ExecutiveLeadership.png",
+      imageAlt: "Executive Leadership",
     }}
     plans={pricingPlans}
     faqs={executiveLeadershipFAQs}

@@ -79,7 +79,7 @@ const brandMomentumFAQs: FAQItem[] = [
 const BrandMomentumBundle = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="BRAND MOMENTUM BUNDLE" heading="Complete Brand Solution - Transform Your Brand Completely" description="Comprehensive brand services that work together seamlessly: strategy, PR, website, employer branding, and lifestyle content - all integrated for maximum impact." ctaText="Get Started" ctaLink="/resources/support" imageSrc="/images/Services/Brand&Reputation/BrandMomentumBundle.png" imageAlt="Brand Momentum Bundle" 
+      // eyebrow="BRAND MOMENTUM BUNDLE" heading="Complete Brand Solution - Transform Your Brand Completely" description="Comprehensive brand services that work together seamlessly: strategy, PR, website, employer branding, and lifestyle content - all integrated for maximum impact." ctaText="Get Started" ctaLink="/resources/support" imageSrc="/images/Services/Brand&Reputation/BrandMomentumBundle.png" imageAlt="Brand Momentum Bundle"
     }}
     plans={pricingPlans}
     faqs={brandMomentumFAQs}

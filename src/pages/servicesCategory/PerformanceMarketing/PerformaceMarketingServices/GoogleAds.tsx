@@ -310,14 +310,13 @@ const whyItems: WhyChooseItem[] = [
 const GoogleAds = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="GOOGLE ADS"
-        heading="Drive Targeted Traffic with Google Ads"
-        description="Reach customers at the exact moment they're searching for your products or services. Our data-driven Google Ads campaigns deliver measurable results and maximize your ROI."
-        ctaText="Get a Free Audit"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Performance Marketing/GoogleAds.png"
-        imageAlt="Google Ads Dashboard Analytics"
-      
+      eyebrow: "GOOGLE ADS",
+      heading: "Drive Targeted Traffic with Google Ads",
+      description: "Reach customers at the exact moment they're searching for your products or services. Our data-driven Google Ads campaigns deliver measurable results and maximize your ROI.",
+      ctaText: "Get a Free Audit",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Performance Marketing/GoogleAds.png",
+      imageAlt: "Google Ads Dashboard Analytics",
     }}
     plans={pricingPlans}
     faqs={googleAdsFAQs}

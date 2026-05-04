@@ -234,14 +234,13 @@ const seoContentFAQs: FAQItem[] = [
 const SEOContentProduction = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="SEO CONTENT PRODUCTION"
-        heading="SEO-Optimized Content That Ranks and Converts"
-        description="High-quality, search-optimized content that drives organic traffic, establishes authority, and generates leads."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Content Creative/SEOContentProduction.png"
-        imageAlt="SEO Content Production"
-      
+      eyebrow: "SEO CONTENT PRODUCTION",
+      heading: "SEO-Optimized Content That Ranks and Converts",
+      description: "High-quality, search-optimized content that drives organic traffic, establishes authority, and generates leads.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Content Creative/SEOContentProduction.png",
+      imageAlt: "SEO Content Production",
     }}
     plans={pricingPlans}
     faqs={seoContentFAQs}

@@ -233,14 +233,13 @@ const salesNavigatorFAQs: FAQItem[] = [
 const SalesNavigator = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="LINKEDIN SALES NAVIGATOR"
-        heading="Unlock LinkedIn's Most Powerful Sales Tool"
-        description="Master Sales Navigator to find, engage, and convert high-quality B2B leads. We handle the strategy and execution so your sales team can focus on closing deals."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Linkedin Growth/SalesNavigatorEnablement.png"
-        imageAlt="Sales Navigator"
-      
+      eyebrow: "LINKEDIN SALES NAVIGATOR",
+      heading: "Unlock LinkedIn's Most Powerful Sales Tool",
+      description: "Master Sales Navigator to find, engage, and convert high-quality B2B leads. We handle the strategy and execution so your sales team can focus on closing deals.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Linkedin Growth/SalesNavigatorEnablement.png",
+      imageAlt: "Sales Navigator",
     }}
     plans={pricingPlans}
     faqs={salesNavigatorFAQs}

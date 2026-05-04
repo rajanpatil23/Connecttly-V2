@@ -332,14 +332,13 @@ const whyItems: WhyChooseItem[] = [
 const PerformanceAcceleratorBundle = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="PERFORMANCE ACCELERATOR BUNDLE"
-        heading="Complete Performance Marketing Solution"
-        description="Dominate every channel with our all-in-one Performance Accelerator Bundle. Get Google Ads, Meta Ads, YouTube, TikTok, CRO, video production, and more - all managed by one expert team for maximum ROI and efficiency."
-        ctaText="Get a Free Strategy Session"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Performance Marketing/PerformanceAcceleratorBundle.png"
-        imageAlt="Performance Marketing Dashboard"
-      
+      eyebrow: "PERFORMANCE ACCELERATOR BUNDLE",
+      heading: "Complete Performance Marketing Solution",
+      description: "Dominate every channel with our all-in-one Performance Accelerator Bundle. Get Google Ads, Meta Ads, YouTube, TikTok, CRO, video production, and more - all managed by one expert team for maximum ROI and efficiency.",
+      ctaText: "Get a Free Strategy Session",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Performance Marketing/PerformanceAcceleratorBundle.png",
+      imageAlt: "Performance Marketing Dashboard",
     }}
     plans={pricingPlans}
     faqs={bundleFAQs}

@@ -233,14 +233,13 @@ const pageManagementFAQs: FAQItem[] = [
 const PageManagement = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="LINKEDIN PAGE MANAGEMENT"
-        heading="Professional LinkedIn Page Management That Drives Results"
-        description="Build your brand, engage your audience, and generate leads with expert LinkedIn page management. We handle everything so you can focus on your business."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Linkedin Growth/PageManagement.png"
-        imageAlt="LinkedIn Page Management"
-      
+      eyebrow: "LINKEDIN PAGE MANAGEMENT",
+      heading: "Professional LinkedIn Page Management That Drives Results",
+      description: "Build your brand, engage your audience, and generate leads with expert LinkedIn page management. We handle everything so you can focus on your business.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Linkedin Growth/PageManagement.png",
+      imageAlt: "LinkedIn Page Management",
     }}
     plans={pricingPlans}
     faqs={pageManagementFAQs}

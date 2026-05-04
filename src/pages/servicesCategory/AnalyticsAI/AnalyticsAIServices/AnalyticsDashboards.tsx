@@ -233,14 +233,13 @@ const dashboardFAQs: FAQItem[] = [
 const AnalyticsDashboards = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="ANALYTICS DASHBOARDS"
-        heading="Transform Data into Actionable Insights with Custom Dashboards"
-        description="Beautiful, intuitive dashboards that give you real-time visibility into your marketing performance and drive better decisions."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Analytics&AI/AnalyticsandDashboards.png"
-        imageAlt="Analytics Dashboards"
-      
+      eyebrow: "ANALYTICS DASHBOARDS",
+      heading: "Transform Data into Actionable Insights with Custom Dashboards",
+      description: "Beautiful, intuitive dashboards that give you real-time visibility into your marketing performance and drive better decisions.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Analytics&AI/AnalyticsandDashboards.png",
+      imageAlt: "Analytics Dashboards",
     }}
     plans={pricingPlans}
     faqs={dashboardFAQs}

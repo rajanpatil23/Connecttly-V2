@@ -234,14 +234,13 @@ const brandStrategyFAQs: FAQItem[] = [
 const BrandStrategy = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="BRAND STRATEGY"
-        heading="Build a Powerful Brand That Drives Business Growth"
-        description="Strategic brand development that differentiates you in the market, resonates with your audience, and drives measurable business results."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Brand&Reputation/BrandStrategy.png"
-        imageAlt="Brand Strategy"
-      
+      eyebrow: "BRAND STRATEGY",
+      heading: "Build a Powerful Brand That Drives Business Growth",
+      description: "Strategic brand development that differentiates you in the market, resonates with your audience, and drives measurable business results.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Brand&Reputation/BrandStrategy.png",
+      imageAlt: "Brand Strategy",
     }}
     plans={pricingPlans}
     faqs={brandStrategyFAQs}

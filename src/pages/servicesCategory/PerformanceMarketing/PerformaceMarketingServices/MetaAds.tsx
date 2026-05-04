@@ -328,14 +328,13 @@ const whyItems: WhyChooseItem[] = [
 const MetaAds = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="META ADS (FACEBOOK & INSTAGRAM)"
-        heading="Dominate Social Media with Meta Ads"
-        description="Reach billions of users on Facebook and Instagram with data-driven Meta advertising campaigns. Our expert team creates scroll-stopping ads that drive engagement, leads, and sales."
-        ctaText="Get a Free Strategy Session"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Performance Marketing/MetaAds.png"
-        imageAlt="Meta Ads Dashboard"
-      
+      eyebrow: "META ADS (FACEBOOK & INSTAGRAM)",
+      heading: "Dominate Social Media with Meta Ads",
+      description: "Reach billions of users on Facebook and Instagram with data-driven Meta advertising campaigns. Our expert team creates scroll-stopping ads that drive engagement, leads, and sales.",
+      ctaText: "Get a Free Strategy Session",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Performance Marketing/MetaAds.png",
+      imageAlt: "Meta Ads Dashboard",
     }}
     plans={pricingPlans}
     faqs={metaAdsFAQs}

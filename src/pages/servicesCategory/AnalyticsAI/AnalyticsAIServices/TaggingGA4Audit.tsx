@@ -233,14 +233,13 @@ const taggingAuditFAQs: FAQItem[] = [
 const TaggingGA4Audit = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="TRACKING AUDIT & GA4 SETUP"
-        heading="Fix Your Tracking and Trust Your Data"
-        description="Comprehensive tracking audits and Google Analytics 4 implementation to ensure accurate, reliable data for better decisions."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Analytics&AI/Tagging&GA4Audit.png"
-        imageAlt="Tracking Audit & GA4"
-      
+      eyebrow: "TRACKING AUDIT & GA4 SETUP",
+      heading: "Fix Your Tracking and Trust Your Data",
+      description: "Comprehensive tracking audits and Google Analytics 4 implementation to ensure accurate, reliable data for better decisions.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Analytics&AI/Tagging&GA4Audit.png",
+      imageAlt: "Tracking Audit & GA4",
     }}
     plans={pricingPlans}
     faqs={taggingAuditFAQs}

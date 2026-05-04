@@ -233,14 +233,13 @@ const abmFAQs: FAQItem[] = [
 const ABMCampaigns = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="ACCOUNT-BASED MARKETING"
-        heading="ABM Campaigns That Drive Enterprise Revenue"
-        description="Target and engage high-value accounts with personalized, multi-channel campaigns that accelerate deal cycles and increase win rates."
-        ctaText="Book a Strategy Call"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/DemandGrowthGeneration/ABMCampaigns.png"
-        imageAlt="ABM Strategy Meeting"
-      
+      eyebrow: "ACCOUNT-BASED MARKETING",
+      heading: "ABM Campaigns That Drive Enterprise Revenue",
+      description: "Target and engage high-value accounts with personalized, multi-channel campaigns that accelerate deal cycles and increase win rates.",
+      ctaText: "Book a Strategy Call",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/DemandGrowthGeneration/ABMCampaigns.png",
+      imageAlt: "ABM Strategy Meeting",
     }}
     plans={pricingPlans}
     faqs={abmFAQs}

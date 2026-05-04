@@ -137,7 +137,7 @@ const prOrmFAQs: FAQItem[] = [
 const PRandORM = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="PR & ONLINE REPUTATION MANAGEMENT" heading="Protect and Enhance Your Brand Reputation" description="Strategic PR and reputation management that builds positive perception, secures media coverage, and protects your brand from threats." ctaText="Get Started" ctaLink="/resources/support" imageSrc="/images/Services/Brand&Reputation/PRandORM.png" imageAlt="PR & ORM" 
+      // eyebrow="PR & ONLINE REPUTATION MANAGEMENT" heading="Protect and Enhance Your Brand Reputation" description="Strategic PR and reputation management that builds positive perception, secures media coverage, and protects your brand from threats." ctaText="Get Started" ctaLink="/resources/support" imageSrc="/images/Services/Brand&Reputation/PRandORM.png" imageAlt="PR & ORM"
     }}
     plans={pricingPlans}
     faqs={prOrmFAQs}

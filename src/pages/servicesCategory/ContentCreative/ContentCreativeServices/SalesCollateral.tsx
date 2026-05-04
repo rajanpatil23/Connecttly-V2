@@ -234,14 +234,13 @@ const salesCollateralFAQs: FAQItem[] = [
 const SalesCollateral = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="SALES COLLATERAL"
-        heading="Sales Collateral That Closes Deals Faster"
-        description="Professional sales materials that empower your team, impress prospects, and accelerate your sales cycle."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Content Creative/SalesCollateral.png"
-        imageAlt="Sales Collateral"
-      
+      eyebrow: "SALES COLLATERAL",
+      heading: "Sales Collateral That Closes Deals Faster",
+      description: "Professional sales materials that empower your team, impress prospects, and accelerate your sales cycle.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Content Creative/SalesCollateral.png",
+      imageAlt: "Sales Collateral",
     }}
     plans={pricingPlans}
     faqs={salesCollateralFAQs}

@@ -237,14 +237,13 @@ const videoProductionFAQs: FAQItem[] = [
 const VideoProduction = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="VIDEO PRODUCTION"
-        heading="Professional Video Production That Captivates and Converts"
-        description="From concept to final cut, we create high-quality videos that tell your story, engage your audience, and drive results."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Content Creative/VideoProduction.png"
-        imageAlt="Video Production"
-      
+      eyebrow: "VIDEO PRODUCTION",
+      heading: "Professional Video Production That Captivates and Converts",
+      description: "From concept to final cut, we create high-quality videos that tell your story, engage your audience, and drive results.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Content Creative/VideoProduction.png",
+      imageAlt: "Video Production",
     }}
     plans={pricingPlans}
     faqs={videoProductionFAQs}

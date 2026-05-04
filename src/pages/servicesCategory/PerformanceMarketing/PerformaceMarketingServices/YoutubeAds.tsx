@@ -328,14 +328,13 @@ const whyItems: WhyChooseItem[] = [
 const YoutubeAds = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="YOUTUBE ADS"
-        heading="Dominate Video Marketing with YouTube Ads"
-        description="Reach billions of viewers on the world's largest video platform. Our expert team creates engaging video ads that drive brand awareness, engagement, and conversions at scale."
-        ctaText="Get a Free Video Strategy"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Performance Marketing/YouTubeAds.png"
-        imageAlt="YouTube Ads Dashboard"
-      
+      eyebrow: "YOUTUBE ADS",
+      heading: "Dominate Video Marketing with YouTube Ads",
+      description: "Reach billions of viewers on the world's largest video platform. Our expert team creates engaging video ads that drive brand awareness, engagement, and conversions at scale.",
+      ctaText: "Get a Free Video Strategy",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Performance Marketing/YouTubeAds.png",
+      imageAlt: "YouTube Ads Dashboard",
     }}
     plans={pricingPlans}
     faqs={youtubeAdsFAQs}

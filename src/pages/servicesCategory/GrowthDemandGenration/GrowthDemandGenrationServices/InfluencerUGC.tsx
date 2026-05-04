@@ -233,14 +233,13 @@ const influencerFAQs: FAQItem[] = [
 const InfluencerUGC = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="INFLUENCER & UGC MARKETING"
-        heading="Authentic Creators That Drive Real Results"
-        description="Partner with influencers and leverage user-generated content to build trust, increase engagement, and drive conversions at scale."
-        ctaText="Launch Campaign"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/DemandGrowthGeneration/InfluencerandUGC.png"
-        imageAlt="Influencer Content Creation"
-      
+      eyebrow: "INFLUENCER & UGC MARKETING",
+      heading: "Authentic Creators That Drive Real Results",
+      description: "Partner with influencers and leverage user-generated content to build trust, increase engagement, and drive conversions at scale.",
+      ctaText: "Launch Campaign",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/DemandGrowthGeneration/InfluencerandUGC.png",
+      imageAlt: "Influencer Content Creation",
     }}
     plans={pricingPlans}
     faqs={influencerFAQs}

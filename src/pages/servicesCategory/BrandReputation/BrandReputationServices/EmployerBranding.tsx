@@ -79,14 +79,13 @@ const employerBrandingFAQs: FAQItem[] = [
 const EmployerBranding = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="EMPLOYER BRANDING" 
-        heading="Attract Top Talent with a Powerful Employer Brand" 
-        description="Strategic employer branding that positions you as an employer of choice, attracts quality candidates, and reduces hiring costs." 
-        ctaText="Get Started" 
-        ctaLink="/resources/support" 
-        imageSrc="/images/Services/Brand&Reputation/EmployerBranding.png" 
-        imageAlt="Employer Branding" 
-      
+      eyebrow: "EMPLOYER BRANDING",
+      heading: "Attract Top Talent with a Powerful Employer Brand",
+      description: "Strategic employer branding that positions you as an employer of choice, attracts quality candidates, and reduces hiring costs.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Brand&Reputation/EmployerBranding.png",
+      imageAlt: "Employer Branding",
     }}
     plans={pricingPlans}
     faqs={employerBrandingFAQs}

@@ -234,14 +234,13 @@ const contentStrategyFAQs: FAQItem[] = [
 const ContentStrategy = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="CONTENT STRATEGY"
-        heading="Strategic Content Planning That Drives Real Business Results"
-        description="Comprehensive content strategies that align with your business goals, resonate with your audience, and deliver measurable ROI."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Content Creative/ContentStratergy.png"
-        imageAlt="Content Strategy"
-      
+      eyebrow: "CONTENT STRATEGY",
+      heading: "Strategic Content Planning That Drives Real Business Results",
+      description: "Comprehensive content strategies that align with your business goals, resonate with your audience, and deliver measurable ROI.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Content Creative/ContentStratergy.png",
+      imageAlt: "Content Strategy",
     }}
     plans={pricingPlans}
     faqs={contentStrategyFAQs}

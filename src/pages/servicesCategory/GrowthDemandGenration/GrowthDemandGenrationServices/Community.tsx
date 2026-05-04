@@ -233,14 +233,13 @@ const communityFAQs: FAQItem[] = [
 const Community = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="COMMUNITY BUILDING"
-        heading="Build Engaged Communities That Drive Growth"
-        description="Create thriving communities where customers become advocates, support each other, and fuel your business growth through authentic connections."
-        ctaText="Start Building"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/DemandGrowthGeneration/Community.png"
-        imageAlt="Community Engagement"
-      
+      eyebrow: "COMMUNITY BUILDING",
+      heading: "Build Engaged Communities That Drive Growth",
+      description: "Create thriving communities where customers become advocates, support each other, and fuel your business growth through authentic connections.",
+      ctaText: "Start Building",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/DemandGrowthGeneration/Community.png",
+      imageAlt: "Community Engagement",
     }}
     plans={pricingPlans}
     faqs={communityFAQs}

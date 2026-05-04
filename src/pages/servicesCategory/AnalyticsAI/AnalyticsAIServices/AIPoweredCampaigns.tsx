@@ -233,14 +233,13 @@ const aiCampaignFAQs: FAQItem[] = [
 const AIPoweredCampaigns = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="AI-POWERED CAMPAIGNS"
-        heading="Supercharge Your Marketing with Artificial Intelligence"
-        description="Leverage advanced AI and machine learning to optimize campaigns, predict performance, and drive better results automatically."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Analytics&AI/AIPoweredCampaigns.png"
-        imageAlt="AI-Powered Campaigns"
-      
+      eyebrow: "AI-POWERED CAMPAIGNS",
+      heading: "Supercharge Your Marketing with Artificial Intelligence",
+      description: "Leverage advanced AI and machine learning to optimize campaigns, predict performance, and drive better results automatically.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Analytics&AI/AIPoweredCampaigns.png",
+      imageAlt: "AI-Powered Campaigns",
     }}
     plans={pricingPlans}
     faqs={aiCampaignFAQs}

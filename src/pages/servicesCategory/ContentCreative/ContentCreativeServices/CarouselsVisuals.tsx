@@ -234,14 +234,13 @@ const carouselsVisualsFAQs: FAQItem[] = [
 const CarouselsVisuals = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="CAROUSELS & VISUALS"
-        heading="Scroll-Stopping Visual Content That Drives Engagement"
-        description="Professional carousels, infographics, and social graphics that capture attention, communicate value, and amplify your brand."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Content Creative/CarouselsandVisuals.png"
-        imageAlt="Carousels & Visuals"
-      
+      eyebrow: "CAROUSELS & VISUALS",
+      heading: "Scroll-Stopping Visual Content That Drives Engagement",
+      description: "Professional carousels, infographics, and social graphics that capture attention, communicate value, and amplify your brand.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Content Creative/CarouselsandVisuals.png",
+      imageAlt: "Carousels & Visuals",
     }}
     plans={pricingPlans}
     faqs={carouselsVisualsFAQs}

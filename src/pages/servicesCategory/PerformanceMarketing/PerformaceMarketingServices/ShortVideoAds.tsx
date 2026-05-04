@@ -328,14 +328,13 @@ const whyItems: WhyChooseItem[] = [
 const ShortVideoAds = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="SHORT-FORM VIDEO ADS"
-        heading="Go Viral with Short-Form Video Ads"
-        description="Dominate TikTok, Instagram Reels, and YouTube Shorts with scroll-stopping video ads. Our expert team creates viral-worthy content that drives massive engagement, brand awareness, and conversions."
-        ctaText="Get a Free Viral Strategy"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Performance Marketing/ShortVideoAds.png"
-        imageAlt="Short Video Ads Creation"
-      
+      eyebrow: "SHORT-FORM VIDEO ADS",
+      heading: "Go Viral with Short-Form Video Ads",
+      description: "Dominate TikTok, Instagram Reels, and YouTube Shorts with scroll-stopping video ads. Our expert team creates viral-worthy content that drives massive engagement, brand awareness, and conversions.",
+      ctaText: "Get a Free Viral Strategy",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Performance Marketing/ShortVideoAds.png",
+      imageAlt: "Short Video Ads Creation",
     }}
     plans={pricingPlans}
     faqs={shortVideoAdsFAQs}

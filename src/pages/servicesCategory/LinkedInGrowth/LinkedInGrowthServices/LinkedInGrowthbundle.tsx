@@ -234,14 +234,13 @@ const linkedInGrowthBundleFAQs: FAQItem[] = [
 const LinkedInGrowthbundle = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="LINKEDIN GROWTH BUNDLE"
-        heading="Complete LinkedIn Growth Solution - All Services in One Package"
-        description="Dominate LinkedIn with our comprehensive bundle: Ads, Lead Generation, Page Management, Executive Branding, and Sales Navigator - all working together for maximum impact."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Linkedin Growth/LinkedInGrowthBundle.png"
-        imageAlt="LinkedIn Growth Bundle"
-      
+      eyebrow: "LINKEDIN GROWTH BUNDLE",
+      heading: "Complete LinkedIn Growth Solution - All Services in One Package",
+      description: "Dominate LinkedIn with our comprehensive bundle: Ads, Lead Generation, Page Management, Executive Branding, and Sales Navigator - all working together for maximum impact.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Linkedin Growth/LinkedInGrowthBundle.png",
+      imageAlt: "LinkedIn Growth Bundle",
     }}
     plans={pricingPlans}
     faqs={linkedInGrowthBundleFAQs}

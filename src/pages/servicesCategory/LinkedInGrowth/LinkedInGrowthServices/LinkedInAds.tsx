@@ -233,14 +233,13 @@ const linkedInAdsFAQs: FAQItem[] = [
 const LinkedInAds = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="LINKEDIN ADVERTISING"
-        heading="LinkedIn Ads That Generate High-Quality B2B Leads"
-        description="Reach decision-makers where they're most engaged. Our LinkedIn advertising experts create campaigns that drive qualified leads and measurable ROI."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Linkedin Growth/LinkedinAds.png"
-        imageAlt="LinkedIn Advertising Dashboard"
-      
+      eyebrow: "LINKEDIN ADVERTISING",
+      heading: "LinkedIn Ads That Generate High-Quality B2B Leads",
+      description: "Reach decision-makers where they're most engaged. Our LinkedIn advertising experts create campaigns that drive qualified leads and measurable ROI.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Linkedin Growth/LinkedinAds.png",
+      imageAlt: "LinkedIn Advertising Dashboard",
     }}
     plans={pricingPlans}
     faqs={linkedInAdsFAQs}

@@ -233,14 +233,13 @@ const partnerFAQs: FAQItem[] = [
 const PartnerAffiliate = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="PARTNER & AFFILIATE PROGRAMS"
-        heading="Build Revenue-Driving Partner Programs"
-        description="Launch and scale affiliate and partner programs that turn advocates into a powerful revenue channel for sustainable growth."
-        ctaText="Launch Program"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/DemandGrowthGeneration/PartnersAffiliate.png"
-        imageAlt="Partnership Collaboration"
-      
+      eyebrow: "PARTNER & AFFILIATE PROGRAMS",
+      heading: "Build Revenue-Driving Partner Programs",
+      description: "Launch and scale affiliate and partner programs that turn advocates into a powerful revenue channel for sustainable growth.",
+      ctaText: "Launch Program",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/DemandGrowthGeneration/PartnersAffiliate.png",
+      imageAlt: "Partnership Collaboration",
     }}
     plans={pricingPlans}
     faqs={partnerFAQs}

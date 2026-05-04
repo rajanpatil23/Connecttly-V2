@@ -233,14 +233,13 @@ const leadGenFAQs: FAQItem[] = [
 const LeadGenration = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="LINKEDIN LEAD GENERATION"
-        heading="Fill Your Pipeline with Qualified LinkedIn Leads"
-        description="Done-for-you LinkedIn outreach that books meetings with your ideal customers. Personalized, scalable, and proven to work."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Linkedin Growth/LeadGenration.png"
-        imageAlt="LinkedIn Lead Generation"
-      
+      eyebrow: "LINKEDIN LEAD GENERATION",
+      heading: "Fill Your Pipeline with Qualified LinkedIn Leads",
+      description: "Done-for-you LinkedIn outreach that books meetings with your ideal customers. Personalized, scalable, and proven to work.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Linkedin Growth/LeadGenration.png",
+      imageAlt: "LinkedIn Lead Generation",
     }}
     plans={pricingPlans}
     faqs={leadGenFAQs}

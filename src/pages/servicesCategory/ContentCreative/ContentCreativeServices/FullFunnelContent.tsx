@@ -239,14 +239,13 @@ const fullFunnelFAQs: FAQItem[] = [
 const FullFunnelContent = () => (
   <ServiceDetailAdapter
     heroProps={{
-eyebrow="FULL-FUNNEL CONTENT"
-        heading="Complete Content Solution for Every Stage of the Buyer Journey"
-        description="Comprehensive content marketing that attracts, nurtures, and converts - all integrated and optimized for maximum impact."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Content Creative/FullFunnelContentBundle.png"
-        imageAlt="Full-Funnel Content"
-      
+      eyebrow: "FULL-FUNNEL CONTENT",
+      heading: "Complete Content Solution for Every Stage of the Buyer Journey",
+      description: "Comprehensive content marketing that attracts, nurtures, and converts - all integrated and optimized for maximum impact.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Content Creative/FullFunnelContentBundle.png",
+      imageAlt: "Full-Funnel Content",
     }}
     plans={pricingPlans}
     faqs={fullFunnelFAQs}

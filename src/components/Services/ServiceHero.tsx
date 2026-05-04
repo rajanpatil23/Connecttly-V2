@@ -38,7 +38,7 @@ export default function ServiceHero({
   return (
     <section className="pt-4 md:pt-6 pb-12 md:pb-14">
       <div className="container-main">
-        {eyebrow && <SectionLabel label={eyebrow} />}
+        
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left: content */}
           <div className="text-left">

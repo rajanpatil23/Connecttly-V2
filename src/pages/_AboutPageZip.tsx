@@ -104,13 +104,13 @@ const AboutPage = () => {
               </div>
 
               {/* Bottom-left: Marketing Systems */}
-              <div className="absolute bottom-16 -left-3 md:-left-6 bg-background rounded-xl px-4 py-2.5 shadow-lg flex items-center gap-3 animate-float-slow2">
+              <div className="absolute bottom-24 -left-3 md:-left-6 bg-background rounded-xl px-4 py-2.5 shadow-lg flex items-center gap-3 animate-float-slow2">
                 <span className="font-heading font-bold text-primary text-xl">20+</span>
                 <span className="text-xs leading-tight">Marketing Systems<br />Automated</span>
               </div>
 
               {/* Bottom-right: CPL Reduction */}
-              <div className="absolute -bottom-4 right-4 md:right-8 bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-lg text-right animate-float-delay">
+              <div className="absolute bottom-4 right-4 md:right-8 bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-lg text-right animate-float-delay">
                 <p className="font-heading font-bold text-2xl leading-none">47%</p>
                 <p className="text-xs mt-1 opacity-90">Avg. CPL Reduction</p>
               </div>

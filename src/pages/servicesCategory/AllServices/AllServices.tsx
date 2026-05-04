@@ -5,7 +5,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import SectionLabel from "@/components/_zip/SectionLabel";
 import StatsBar from "@/components/_zip/StatsBar";
 import { sharedStats } from "@/components/_zip/stats-data";
-import ReviewCarousel from "@/components/_zip/Home/ReviewCarousel";
+import WhereToStart from "@/components/Services/ServiceDetail/WhereToStart";
 import { CategoryServiceCard } from "@/components/Services/templates/ServiceCategoryTemplate";
 import heroImg from "@/assets/_zip/services-hero-person.png";
 

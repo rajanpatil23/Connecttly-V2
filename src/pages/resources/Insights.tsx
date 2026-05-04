@@ -76,7 +76,7 @@ const RANGE_LABELS: { key: RangeKey; months?: number }[] = [
 
 // ---------- Reusable UI ----------
 const Card: React.FC<React.PropsWithChildren<{ className?: string }>> = ({ className, children }) => (
-  <div className={cn("rounded-2xl border border-black/10 bg-white p-4 md:p-6 shadow-sm", className)}>{children}</div>
+  <div className={cn("rounded-2xl border border-border bg-card p-4 md:p-6 shadow-sm", className)}>{children}</div>
 );
 
 // Use UICard from shadcn for hero stats
@@ -91,14 +91,14 @@ const Segmented: React.FC<{
   value: string;
   onChange: (v: string) => void;
 }> = ({ options, value, onChange }) => (
-  <div className="inline-flex rounded-full border border-gray-200 p-1 bg-gray-50">
+  <div className="inline-flex rounded-full border border-border p-1 bg-muted">
     {options.map((o) => (
       <button
         key={o.value}
         onClick={() => onChange(o.value)}
         className={cn(
           "px-3 py-1.5 text-sm rounded-full transition",
-          value === o.value ? "bg-white shadow text-foreground" : "text-muted-foreground hover:text-foreground"
+          value === o.value ? "bg-card shadow text-foreground" : "text-muted-foreground hover:text-foreground"
         )}
       >
         {o.label}
@@ -124,8 +124,8 @@ const Kpi: React.FC<{
     onClick={onClick}
     className={cn(
       "flex-1 min-w-[140px] rounded-xl px-3 py-2 border transition-all",
-      highlight ? (bgColor || "bg-[#B8D4F7]") : "bg-gray-50",
-      highlight ? (borderColor || "border-[#0074ED]/30") : "border-gray-200",
+      highlight ? (bgColor || "bg-[#B8D4F7]") : "bg-muted",
+      highlight ? (borderColor || "border-[#0074ED]/30") : "border-border",
       clickable && "cursor-pointer hover:shadow-md hover:scale-105 active:scale-95"
     )}
   >
@@ -233,7 +233,7 @@ const RevenueMetrics: React.FC = () => {
                 <stop offset="100%" stopColor="#0074ED" stopOpacity={0.05} />
               </linearGradient>
             </defs>
-            <CartesianGrid stroke="#eaeaea" vertical={false} />
+            <CartesianGrid stroke="hsl(var(--border))" vertical={false} />
             <XAxis 
               dataKey="name" 
               tickLine={false} 
@@ -320,7 +320,7 @@ const CustomerMetrics: React.FC = () => {
                 <stop offset="100%" stopColor="#24C5B9" stopOpacity={0.05} />
               </linearGradient>
             </defs>
-            <CartesianGrid stroke="#eaeaea" vertical={false} />
+            <CartesianGrid stroke="hsl(var(--border))" vertical={false} />
             <XAxis 
               dataKey="name" 
               tickLine={false} 
@@ -389,7 +389,7 @@ const AdvocacyMetrics: React.FC = () => {
     <Card>
       <div className="flex items-center justify-between mb-3">
         <SectionTitle title="Customer advocacy metrics" />
-        <span className="text-sm px-3 py-1.5 rounded-full border bg-white">Last quarter</span>
+        <span className="text-sm px-3 py-1.5 rounded-full border bg-card">Last quarter</span>
       </div>
       <div className="grid md:grid-cols-3 gap-3">
         <Chip color="bg-[#B8E8DD] text-[#0A1F3D]">
@@ -455,7 +455,7 @@ const MarketingMetrics: React.FC = () => {
       <div className="h-80 w-full">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={series} margin={{ left: 4, right: 40, top: 12, bottom: 48 }}>
-            <CartesianGrid stroke="#eaeaea" vertical={false} />
+            <CartesianGrid stroke="hsl(var(--border))" vertical={false} />
             <XAxis 
               dataKey="name" 
               tickLine={false} 
@@ -482,7 +482,7 @@ const MarketingMetrics: React.FC = () => {
             onClick={() => setMetric(b.key as any)}
             className={cn(
               "rounded-xl px-3 py-2 border transition-all cursor-pointer hover:shadow-md hover:scale-105 active:scale-95",
-              metric === b.key ? "bg-[#D4F0B3] border-[#A6FF5F]/40" : "bg-gray-50 border-gray-200"
+              metric === b.key ? "bg-[#D4F0B3] border-[#A6FF5F]/40" : "bg-muted border-border"
             )}
           >
             <div className="text-xs text-muted-foreground">{b.label}</div>
@@ -540,7 +540,7 @@ export default function InsightsDashboard() {
       {/* KEY INSIGHTS SECTION - Matching "What We Do" style from About page */}
       <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
         <div className="mx-auto max-w-6xl">
-          <div className="relative rounded-3xl bg-[rgb(241,241,233)]">
+          <div className="relative rounded-3xl bg-muted">
             <div className="px-6 sm:px-10 lg:px-14 py-10 sm:py-12">
               {/* Header */}
               <header className="text-center mb-10 sm:mb-12">
@@ -554,11 +554,11 @@ export default function InsightsDashboard() {
 
               {/* Insight Cards Grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="group relative bg-white rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center">
+                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center">
                   {/* Icon with gradient background */}
-                  <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 group-hover:scale-110 transition-transform duration-300">
-                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#0074ED] to-[#5B9BF8] flex items-center justify-center">
-                      <svg className="h-7 w-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center">
+                      <svg className="h-7 w-7 text-primary-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                       </svg>
                     </div>
@@ -570,11 +570,11 @@ export default function InsightsDashboard() {
                   </p>
                 </div>
 
-                <div className="group relative bg-white rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center">
+                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center">
                   {/* Icon with gradient background */}
-                  <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 group-hover:scale-110 transition-transform duration-300">
-                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#0074ED] to-[#5B9BF8] flex items-center justify-center">
-                      <svg className="h-7 w-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center">
+                      <svg className="h-7 w-7 text-primary-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                       </svg>
                     </div>
@@ -586,11 +586,11 @@ export default function InsightsDashboard() {
                   </p>
                 </div>
 
-                <div className="group relative bg-white rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center">
+                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center">
                   {/* Icon with gradient background */}
-                  <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 group-hover:scale-110 transition-transform duration-300">
-                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#0074ED] to-[#5B9BF8] flex items-center justify-center">
-                      <svg className="h-7 w-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center">
+                      <svg className="h-7 w-7 text-primary-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                       </svg>
                     </div>

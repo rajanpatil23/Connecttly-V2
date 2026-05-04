@@ -40,6 +40,10 @@ export interface ServiceTool {
   name: string;
   logo: string;
 }
+export interface ServiceImpactStat {
+  value: string;
+  label: string;
+}
 
 export interface ServiceDetailTemplateProps {
   heroTitle: ReactNode;
@@ -54,6 +58,9 @@ export interface ServiceDetailTemplateProps {
   painSectionTitle?: ReactNode;
   painPoints?: ServicePainPoint[];
   painCta?: string;
+
+  impactTitle?: ReactNode;
+  impactStats?: ServiceImpactStat[];
 
   whyUsTitle?: ReactNode;
   whyUs?: ServiceWhyUs[];

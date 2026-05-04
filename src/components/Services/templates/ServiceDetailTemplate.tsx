@@ -120,8 +120,6 @@ export default function ServiceDetailTemplate({
         primaryCtaHref={primaryCtaHref}
         secondaryCtaText={secondaryCtaText}
         secondaryCtaHref={secondaryCtaHref}
-        badgeTopRight={{ value: "100%", label: "Results-Driven" }}
-        badgeBottomLeft={{ value: "36", label: <>Specialized<br />Services</> }}
       />
       {showStatsBar && (
         <div className="container-main -mt-14 mb-8">

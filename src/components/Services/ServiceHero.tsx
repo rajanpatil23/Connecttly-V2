@@ -36,19 +36,19 @@ export default function ServiceHero({
   badgeBottomLeft,
 }: ServiceHeroProps) {
   return (
-    <section className="pt-4 md:pt-6 pb-8 md:pb-10">
+    <section className="pt-4 md:pt-6 pb-12 md:pb-14">
       <div className="container-main">
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-10 items-center">
+        {eyebrow && <SectionLabel label={eyebrow} />}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left: content */}
           <div className="text-left">
-            {eyebrow && <SectionLabel label={eyebrow} />}
-            <h1 className={`${eyebrow ? "mt-3" : ""} text-2xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight`}>
+            <h1 className="text-4xl md:text-6xl font-heading font-bold leading-tight">
               {title}
             </h1>
-            <p className="text-muted-foreground mt-3 text-sm md:text-base max-w-xl">
+            <p className="text-muted-foreground mt-6 leading-relaxed max-w-md">
               {description}
             </p>
-            <div className="flex gap-3 mt-5 flex-wrap">
+            <div className="flex gap-3 mt-6 flex-wrap">
               <Button asChild className="rounded-full px-6 font-semibold">
                 <Link to={primaryCtaHref}>{primaryCtaText}</Link>
               </Button>
@@ -66,11 +66,11 @@ export default function ServiceHero({
 
           {/* Right: image */}
           <div className="relative w-full flex items-center justify-center">
-            <div className="relative w-full max-w-[360px] lg:max-w-[400px] mx-auto">
+            <div className="relative w-full max-w-[520px] mx-auto">
               <img
                 src={image}
                 alt={imageAlt}
-                className="w-full h-auto object-contain max-h-[380px]"
+                className="w-full h-[420px] object-contain"
                 width={700}
                 height={560}
               />

@@ -180,7 +180,7 @@ const AboutPage = () => {
                  Col 2: TALL top (offset down), SHORT bottom
                  Col 3: SHORT top (flush), TALL bottom
               Heights: short ≈ 40%, tall ≈ 60% of column. Even gaps. */}
-          <div className="hidden md:grid grid-cols-3 gap-6 mt-12" style={{ minHeight: 680 }}>
+          <div className="hidden md:grid grid-cols-3 gap-6 mt-12" style={{ minHeight: 580 }}>
             {[0, 1, 2].map((col) => {
               const top = principles[col];
               const bottom = principles[col + 3];

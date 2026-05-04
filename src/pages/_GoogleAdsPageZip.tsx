@@ -1,0 +1,401 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import SectionLabel from "@/components/SectionLabel";
+import StatsBar from "@/components/StatsBar";
+import ReviewCarousel from "@/components/Home/ReviewCarousel";
+import { Check, Quote, ChevronDown, ChevronUp, Shield, FileText, Eye, Layers, Search, MonitorSmartphone, FileType2, Target } from "lucide-react";
+import testimonialImg from "@/assets/testimonial-person.jpg";
+import googleAdsHero from "@/assets/google-ads-hero.png";
+import { sharedStats } from "@/components/stats-data";
+import toolGoogleAds from "@/assets/tools/google-ads.png";
+import toolGtm from "@/assets/tools/gtm.png";
+import toolAnalytics from "@/assets/tools/analytics.png";
+import toolLooker from "@/assets/tools/looker.png";
+import toolAsana from "@/assets/tools/asana.png";
+import toolTrello from "@/assets/tools/trello.png";
+import toolHotjar from "@/assets/tools/hotjar.png";
+import toolSemrush from "@/assets/tools/semrush.png";
+import toolHubspot from "@/assets/tools/hubspot.png";
+import toolZapier from "@/assets/tools/zapier.png";
+import toolSlack from "@/assets/tools/slack.png";
+import toolGmb from "@/assets/tools/gmb.png";
+
+const painPoints = [
+  { title: "You're spending $5K+ a month and can't tell what's actually working.", desc: "61% of Google Ads spend goes to clicks that never convert. That's not marketing, that's donation.", icon: <MonitorSmartphone className="w-7 h-7 text-primary" /> },
+  { title: "Your agency sends PDF reports full of numbers you don't understand.", desc: "If you can't explain the ROI in one sentence, your agency has failed you.", icon: <FileType2 className="w-7 h-7 text-primary" /> },
+  { title: "Leads come in, but your sales team says they're garbage.", desc: "Wrong keywords + lazy targeting = paying $50-$80 per lead that was never going to buy.", icon: <Target className="w-7 h-7 text-primary" /> },
+];
+
+const impactStats = [
+  { value: "42%", label: "Avg. CPL Reduction" },
+  { value: "3.8x", label: "Return on Ad Spend" },
+  { value: "90", label: "Days to Meaningful ROI" },
+  { value: "0", label: "Long-Term Lock-ins" },
+];
+
+const whyUs = [
+  { title: "Google Certified. Battle-Tested.", desc: "Active certifications. Six-figure budgets managed monthly. We've seen every mistake, yours won't be one of them.", icon: <Shield className="w-6 h-6 text-primary" /> },
+  { title: "Your CFO Will Love Our Reports", desc: "We optimize for pipeline and closed revenue. Not impressions. Not click-through rates nobody at the board table cares about.", icon: <FileText className="w-6 h-6 text-primary" /> },
+  { title: "Your Account. Your Data. Always.", desc: "Real-time dashboards. Full access. No black boxes. If we part ways tomorrow, you keep everything.", icon: <Eye className="w-6 h-6 text-primary" /> },
+  { title: "One System, Not Siloed Campaigns", desc: "Search, Display, Remarketing, Shopping, YouTube, connected into one full-funnel architecture that compounds.", icon: <Layers className="w-6 h-6 text-primary" /> },
+];
+
+const processSteps = [
+  { num: "01", title: "Audit", desc: "We tear your current account apart. Every wasted dollar, every missed keyword, every competitor gap, found." },
+  { num: "02", title: "Architect", desc: "Custom campaign structure mapped to your funnel. Not a template. Not a guess. Built for your business." },
+  { num: "03", title: "Create", desc: "Ad copy that converts. Landing pages that match. Quality Scores that make Google charge you less." },
+  { num: "04", title: "Launch", desc: "Go live. Monitor daily. Kill underperformers fast. Pour fuel on the winners." },
+  { num: "05", title: "Report & Scale", desc: "Clear monthly insights. Then we do it all again, sharper, faster, more profitable." },
+];
+
+const pricingPlans = [
+  {
+    name: "3-Month Sprint",
+    tagline: "Test the waters. Prove ROI. Build the foundation.",
+    monthlyPrice: "$800",
+    yearlyPrice: "$640",
+    cta: "Start My Sprint",
+    features: ["Up to $10K monthly ad spend management", "Search + Display campaigns", "Keyword research & ad copy creation", "Conversion tracking setup", "Monthly performance report", "Basic bid management & optimization"],
+  },
+  {
+    name: "6-Month Growth",
+    tagline: "You're spending real money. Time to make it compound.",
+    monthlyPrice: "$1,200",
+    yearlyPrice: "$960",
+    cta: "Start Growing",
+    popular: true,
+    features: ["Up to $25K monthly ad spend management", "Full-funnel (Search + Display + Remarketing + Shopping)", "Advanced audience targeting & segmentation", "A/B testing of ads and landing pages", "Bi-weekly strategy calls + live dashboards", "Competitor monitoring & bid intelligence"],
+  },
+  {
+    name: "12-Month Scale",
+    tagline: "Full firepower. Dedicated strategist. Maximum ROI at scale.",
+    monthlyPrice: "$1,800",
+    yearlyPrice: "$1,440",
+    cta: "Talk to Us",
+    features: ["Unlimited ad spend management", "All Google properties (Search, Display, Shopping, YouTube, PMax)", "Custom audience & lookalike strategies", "Advanced attribution modeling & CRO", "Weekly reports + executive dashboards", "Dedicated senior account strategist"],
+  },
+];
+
+const faqs = [
+  { q: "How much should I spend on Google Ads?", a: "We recommend a minimum of $3K-$5K/month to gather enough data for meaningful optimization. Your ideal budget depends on your industry and competition." },
+  { q: "What makes you different from other agencies?", a: "We focus on pipeline and revenue, not vanity metrics. Every strategy is tailored, and you always own your data." },
+  { q: "Do I own my Google Ads account?", a: "Absolutely. Your account, your data, always. We never hold accounts hostage." },
+  { q: "How long before I see results?", a: "Most clients see meaningful ROI within 90 days of launch." },
+  { q: "What if I'm not happy?", a: "No long-term lock-ins. We earn your business every month." },
+  { q: "Do you manage Shopping and YouTube too?", a: "Yes, we manage all Google properties including Search, Display, Shopping, YouTube, and Performance Max." },
+];
+
+const toolStack = [
+  { name: "Google Ads", logo: toolGoogleAds },
+  { name: "Google Tag Manager", logo: toolGtm },
+  { name: "Google Analytics", logo: toolAnalytics },
+  { name: "Looker Studio", logo: toolLooker },
+  { name: "Asana", logo: toolAsana },
+  { name: "Trello", logo: toolTrello },
+  { name: "Hotjar", logo: toolHotjar },
+  { name: "SEMrush", logo: toolSemrush },
+  { name: "HubSpot", logo: toolHubspot },
+  { name: "Zapier", logo: toolZapier },
+  { name: "Slack", logo: toolSlack },
+  { name: "Google My Business", logo: toolGmb },
+];
+
+const GoogleAdsPage = () => {
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("monthly");
+
+  return (
+    <div>
+      {/* Hero */}
+      <section className="section-padding">
+        <div className="container-main">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-3xl md:text-5xl font-heading font-bold leading-tight">
+                Your Competitors Are Bidding on <span className="gradient-text">Your Keywords</span> Right Now.
+              </h1>
+              <p className="text-muted-foreground mt-4">
+                We build Google Ads campaigns engineered for one thing: turning search intent into revenue. Not clicks. Not impressions. Closed deals.
+              </p>
+              <div className="flex gap-3 mt-6">
+                <Button className="rounded-full px-6 font-semibold">Get a Free Google Ads Audit</Button>
+                <Button variant="outline" className="rounded-full px-6 font-semibold">See Pricing</Button>
+              </div>
+            </div>
+            <div className="relative flex justify-center">
+              <img src={googleAdsHero} alt="Google Ads keyword management mockup" className="w-full max-w-md h-auto object-contain" width={700} height={560} />
+              <div className="absolute right-2 top-1/2 -translate-y-2 bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-xl text-center animate-float-y" style={{ animationDelay: "0s" }}>
+                <p className="font-heading font-bold text-xl leading-none">100%</p>
+                <p className="text-[10px] font-medium mt-1 opacity-90">Results-Driven</p>
+              </div>
+              <div className="absolute left-0 bottom-6 bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-xl text-center animate-float-y" style={{ animationDelay: "1.5s" }}>
+                <p className="font-heading font-bold text-xl leading-none">36</p>
+                <p className="text-[10px] font-medium mt-1 opacity-90 leading-tight">Specialized<br/>Services</p>
+              </div>
+            </div>
+          </div>
+          <StatsBar stats={sharedStats} />
+        </div>
+      </section>
+
+      {/* Pain Points */}
+      <section className="section-padding bg-background">
+        <div className="container-main">
+          <h2 className="text-2xl md:text-4xl font-heading font-bold text-center max-w-3xl mx-auto">
+            Tired of wasting your <span className="gradient-text">Google <br /> Ads budget?</span>
+          </h2>
+          <div className="space-y-4 mt-10 max-w-2xl mx-auto">
+            {painPoints.map((p) => (
+              <div key={p.title} className="bg-ct-blue-light/60 rounded-2xl p-5 flex gap-5 items-center border-l-[3px] border-primary">
+                <div className="w-16 h-16 rounded-xl bg-background flex items-center justify-center shrink-0 shadow-sm">
+                  {p.icon}
+                </div>
+                <div>
+                  <h3 className="font-heading font-semibold text-sm md:text-base mb-1.5 text-foreground">{p.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-center mt-12 text-2xl md:text-3xl font-heading font-bold text-foreground max-w-3xl mx-auto leading-snug">
+            You don't have a Google Ads problem. You have a strategy problem. <span className="text-primary">We fix that.</span>
+          </p>
+        </div>
+      </section>
+
+      {/* Measured Impact */}
+      <section className="relative pt-20 md:pt-24 pb-8 md:pb-10 bg-ct-section">
+        <div className="absolute inset-x-0 top-0 h-2/3" style={{ backgroundColor: "#09233C" }} aria-hidden="true" />
+        <div className="container-main relative">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold text-primary-foreground text-center">
+            Measured Impact. <span className="gradient-text">Proven <br /> Outcomes.</span>
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 mt-14 md:mt-16 max-w-5xl mx-auto">
+            {impactStats.map((stat) => (
+              <div key={stat.label} className="bg-background rounded-2xl p-6 text-center shadow-xl flex flex-col items-center justify-center min-h-[150px]">
+                <p className="text-4xl md:text-5xl font-heading font-bold text-primary">{stat.value}</p>
+                <p className="text-xs md:text-sm text-muted-foreground mt-3 leading-snug whitespace-nowrap">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Us */}
+      <section className="pt-4 pb-16 md:pb-20 bg-ct-section">
+        <div className="container-main">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center">
+            Why Connecttly for <span className="gradient-text">Google Ads</span>
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6 mt-12 max-w-[1264px] mx-auto md:items-start">
+            {whyUs.map((w, i) => {
+              // Card 0: 611x480 (top-left), Card 1: 629x386 (top-right)
+              // Card 2: 629x386 (bottom-left), Card 3: 629x480 — matches card 2 width, aligned left under card 1
+              const dims =
+                i === 0
+                  ? "md:max-w-[611px] md:h-[480px]"
+                  : i === 3
+                  ? "md:max-w-[629px] md:h-[480px]"
+                  : "md:max-w-[629px] md:h-[386px]";
+              const justify =
+                i === 1 ? "md:justify-self-end" : i === 3 ? "md:justify-self-end" : "md:justify-self-start";
+              return (
+                <div key={w.title} className={`${dims} ${justify} ${i === 3 ? "md:-mt-24" : ""} w-full bg-background rounded-2xl p-8 shadow-md min-h-[260px] flex flex-col justify-end transition-all duration-300 hover:-translate-y-2 hover:shadow-xl`}>
+                  <h3 className="font-heading font-semibold text-xl mb-3">{w.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{w.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="section-padding">
+        <div className="container-main">
+          <SectionLabel label="Our Process" />
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center">How We Get You Results</h2>
+          <div className="max-w-2xl mx-auto mt-12 space-y-12">
+            {processSteps.map((step) => (
+              <div key={step.num} className="flex flex-col items-center">
+                <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center shadow-lg relative z-10">
+                  <span className="text-lg font-heading font-bold text-primary-foreground">{step.num}</span>
+                </div>
+                <div className="bg-background rounded-2xl shadow-md w-full -mt-8 pt-12 pb-8 px-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                  <h3 className="font-heading font-semibold text-2xl">{step.title}</h3>
+                  <p className="text-sm text-muted-foreground mt-3 max-w-md mx-auto leading-relaxed">{step.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section className="section-padding bg-ct-section">
+        <div className="container-main">
+          <SectionLabel label="Pricing" />
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center">
+            Choose a plan that's right for you
+          </h2>
+          <div className="flex items-center justify-center gap-3 mt-8">
+            <span className={`text-sm font-medium ${billingCycle === "monthly" ? "text-foreground" : "text-muted-foreground"}`}>
+              Pay Monthly
+            </span>
+            <button
+              onClick={() => setBillingCycle(billingCycle === "monthly" ? "yearly" : "monthly")}
+              className="relative w-12 h-6 rounded-full bg-muted-foreground/30 transition-colors"
+              aria-label="Toggle billing cycle"
+            >
+              <span
+                className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-background shadow transition-transform ${billingCycle === "yearly" ? "translate-x-6" : ""}`}
+              />
+            </button>
+            <span className={`text-sm font-medium ${billingCycle === "yearly" ? "text-foreground" : "text-muted-foreground"}`}>
+              Pay Yearly
+            </span>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
+            {pricingPlans.map((plan) => {
+              const isPopular = plan.popular;
+              return (
+                <div
+                  key={plan.name}
+                  className={`rounded-2xl p-7 flex flex-col shadow-lg transition-transform hover:-translate-y-1 ${
+                    isPopular ? "bg-primary text-primary-foreground" : "bg-background"
+                  }`}
+                >
+                  <h3 className={`font-heading font-semibold text-lg ${isPopular ? "" : "text-foreground"}`}>{plan.name}</h3>
+                  <p className={`text-xs mt-2 leading-relaxed ${isPopular ? "text-primary-foreground/80" : "text-muted-foreground"}`}>
+                    {plan.tagline}
+                  </p>
+                  <p className={`text-4xl font-heading font-bold mt-6 ${isPopular ? "" : "text-foreground"}`}>
+                    {billingCycle === "yearly" ? plan.yearlyPrice : plan.monthlyPrice}
+                    <span className={`text-sm font-normal ${isPopular ? "text-primary-foreground/70" : "text-muted-foreground"}`}> / {billingCycle === "yearly" ? "Year" : "Month"}</span>
+                  </p>
+                  <Button
+                    className={`rounded-full font-semibold mt-6 ${
+                      isPopular
+                        ? "bg-background text-foreground hover:bg-background/90"
+                        : "bg-background text-primary border border-primary hover:bg-primary hover:text-primary-foreground"
+                    }`}
+                  >
+                    {plan.cta}
+                  </Button>
+                  <ul className="mt-6 space-y-3 flex-1">
+                    {plan.features.map((f) => (
+                      <li key={f} className={`flex items-start gap-3 text-sm ${isPopular ? "text-primary-foreground/90" : "text-muted-foreground"}`}>
+                        <span className={`w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5 ${isPopular ? "bg-background" : "bg-primary"}`}>
+                          <Check className={`w-3 h-3 ${isPopular ? "text-primary" : "text-primary-foreground"}`} strokeWidth={3} />
+                        </span>
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-16 md:py-20">
+        <div className="container-main">
+          <SectionLabel label="Testimonials" />
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mt-4 mb-10">
+            What Our <span className="gradient-text">Clients Say</span>
+          </h2>
+        </div>
+        <ReviewCarousel noPadding />
+      </section>
+
+      {/* Tool Stack */}
+      <section className="pt-10 pb-16 md:pt-12 md:pb-20 bg-ct-dark">
+        <div className="container-main">
+          <div className="flex justify-center mb-2">
+            <SectionLabel label="Tool Stack" />
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 items-center max-w-5xl mx-auto">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground leading-tight mt-1">
+                The Stack Behind Your Campaigns
+              </h2>
+              <p className="text-primary-foreground/70 mt-4 text-sm leading-relaxed max-w-md">
+                We leverage the best tools and platforms in the industry to deliver exceptional results for your Google Ads campaigns. From analytics to optimization, we use cutting-edge technology.
+              </p>
+            </div>
+            <div className="grid grid-cols-4 gap-3 max-w-sm ml-auto">
+              {toolStack.map((tool, i) => {
+                const col = i % 4;
+                const offset = col === 1 || col === 3 ? "translate-y-5" : "";
+                return (
+                  <div key={tool.name} className={offset}>
+                    <div
+                      className="aspect-square rounded-2xl bg-background flex items-center justify-center shadow-lg p-3 animate-float-y"
+                      style={{ animationDelay: `${i * 0.2}s` }}
+                      title={tool.name}
+                    >
+                      <img
+                        src={tool.logo}
+                        alt={`${tool.name} logo`}
+                        loading="lazy"
+                        width={512}
+                        height={512}
+                        className="w-3/4 h-3/4 object-contain"
+                      />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding">
+        <div className="container-main">
+          <div className="flex justify-center">
+            <SectionLabel label="FAQ" />
+          </div>
+          <h2 className="text-3xl md:text-5xl font-heading font-bold text-center mt-4">
+            Questions <span className="gradient-text">We Get Asked</span>
+          </h2>
+          <div className="max-w-5xl mx-auto mt-12 grid md:grid-cols-2 gap-x-8 gap-y-6 items-start">
+            {faqs.map((faq, i) => {
+              const isOpen = openFaq === i;
+              return (
+                <div
+                  key={i}
+                  className="bg-background border border-border/60 shadow-[0_4px_20px_-4px_hsl(var(--foreground)/0.08)] self-start"
+                >
+                  <button
+                    className="w-full flex items-start gap-5 px-7 py-5 text-left"
+                    onClick={() => setOpenFaq(isOpen ? null : i)}
+                  >
+                    <span className="text-primary text-3xl font-light leading-none w-6 flex-shrink-0 flex items-center justify-center pt-1">
+                      {isOpen ? "×" : "+"}
+                    </span>
+                    <span className="flex-1">
+                      <span className="block font-heading font-semibold text-base text-foreground leading-snug">
+                        {faq.q}
+                      </span>
+                      {isOpen && (
+                        <span className="block text-sm text-muted-foreground mt-3 leading-relaxed">
+                          {faq.a}
+                        </span>
+                      )}
+                    </span>
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default GoogleAdsPage;

@@ -36,7 +36,7 @@ export default function ServiceHero({
   badgeBottomLeft,
 }: ServiceHeroProps) {
   return (
-    <section className="pt-10 md:pt-16 pb-12 md:pb-16">
+    <section className="pt-4 md:pt-6 pb-12 md:pb-14">
       <div className="container-main">
         <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left: content */}

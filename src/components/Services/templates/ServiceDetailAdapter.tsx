@@ -1,10 +1,13 @@
 import { ReactNode } from "react";
+import { MonitorSmartphone, FileType2, Target } from "lucide-react";
 import ServiceDetailTemplate, {
   ServicePricingPlan,
   ServiceFAQItem,
   ServiceTool,
   ServiceProcessStep,
   ServiceWhyUs,
+  ServicePainPoint,
+  ServiceImpactStat,
 } from "./ServiceDetailTemplate";
 
 // Existing shapes used across the 36 service pages

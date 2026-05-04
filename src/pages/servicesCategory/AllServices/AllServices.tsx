@@ -8,16 +8,21 @@ import { sharedStats } from "@/components/_zip/stats-data";
 import WhereToStart from "@/components/Services/ServiceDetail/WhereToStart";
 import { CategoryServiceCard } from "@/components/Services/templates/ServiceCategoryTemplate";
 import heroImg from "@/assets/_zip/services-hero-person.png";
+import illuGoogleAds from "@/assets/_zip/services/illu-google-ads.png";
+import illuMetaAds from "@/assets/_zip/services/illu-meta-ads.png";
+import illuYoutubeAds from "@/assets/_zip/services/illu-youtube-ads.png";
+import illuCro from "@/assets/_zip/services/illu-cro.png";
+import illuLinkedinAds from "@/assets/_zip/services/illu-linkedin-ads.png";
 
 type ServiceItem = CategoryServiceCard & { category: string };
 
 const services: ServiceItem[] = [
   // Performance Marketing
-  { category: "Performance Marketing", title: "Google Ads", desc: "Drive targeted traffic with powerful Google Ads campaigns.", link: "/services/performance-marketing/google-ads", image: "/images/Services/Performance Marketing/GoogleAds.png", cta: "Learn more" },
-  { category: "Performance Marketing", title: "Meta Ads", desc: "Reach your audience on Facebook and Instagram.", link: "/services/performance-marketing/meta-ads", image: "/images/Services/Performance Marketing/MetaAds.png", cta: "Learn more" },
-  { category: "Performance Marketing", title: "YouTube Ads", desc: "Engage viewers with compelling video advertisements.", link: "/services/performance-marketing/youtube-ads", image: "/images/Services/Performance Marketing/YouTubeAds.png", cta: "Learn more" },
-  { category: "Performance Marketing", title: "CRO and Funnel", desc: "Optimize conversion rates with data-driven insights.", link: "/services/performance-marketing/cro-funnel", image: "/images/Services/Performance Marketing/CROandFunnel.png", cta: "Learn more" },
-  { category: "Performance Marketing", title: "Short Video Ads", desc: "Capture attention with short-form video advertising.", link: "/services/performance-marketing/short-video-ads", image: "/images/Services/Performance Marketing/ShortVideoAds.png", cta: "Learn more" },
+  { category: "Performance Marketing", title: "Google Ads", desc: "Drive targeted traffic with powerful Google Ads campaigns.", link: "/services/performance-marketing/google-ads", image: illuGoogleAds, cta: "Learn more" },
+  { category: "Performance Marketing", title: "Meta Ads", desc: "Reach your audience on Facebook and Instagram.", link: "/services/performance-marketing/meta-ads", image: illuMetaAds, cta: "Learn more" },
+  { category: "Performance Marketing", title: "YouTube Ads", desc: "Engage viewers with compelling video advertisements.", link: "/services/performance-marketing/youtube-ads", image: illuYoutubeAds, cta: "Learn more" },
+  { category: "Performance Marketing", title: "CRO and Funnel", desc: "Optimize conversion rates with data-driven insights.", link: "/services/performance-marketing/cro-funnel", image: illuCro, cta: "Learn more" },
+  { category: "Performance Marketing", title: "Short Video Ads", desc: "Capture attention with short-form video advertising.", link: "/services/performance-marketing/short-video-ads", image: illuLinkedinAds, cta: "Learn more" },
   { category: "Performance Marketing", title: "Performance Accelerator Bundle", desc: "Complete performance marketing solution for rapid growth.", link: "/services/performance-marketing/performance-accelerator-bundle", image: "/images/Services/Performance Marketing/PerformanceAcceleratorBundle.png", cta: "Explore Bundle", recommended: true },
 
   // LinkedIn Growth

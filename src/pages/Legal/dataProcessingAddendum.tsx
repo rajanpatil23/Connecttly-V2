@@ -1,3 +1,4 @@
+import PageHero from "@/components/_zip/PageHero";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
@@ -39,104 +40,14 @@ export default function DataProcessingAddendum() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* =================== HERO =================== */}
-      <section className="overflow-hidden bg-[#F5F3EE] rounded-b-[40px] relative">
-        {/* Animated Gradient Background */}
-        <div className="absolute inset-0 opacity-30 animate-gradient-shift rounded-b-[40px]">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100"></div>
-        </div>
-        
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 opacity-40 rounded-b-[40px]" style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(100, 116, 139, 0.15) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(100, 116, 139, 0.15) 1px, transparent 1px)
-          `,
-          backgroundSize: '50px 50px'
-        }}></div>
-        
-        {/* Content */}
-        <div className="relative z-10">
-          <div id="top" className="container px-4 py-12 sm:py-16">
-            <div className="max-w-6xl mx-auto">
-              <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                animate="visible"
-              >
-                {/* Breadcrumb */}
-                <motion.div variants={itemVariants} className="mb-6">
-                  <Breadcrumb>
-                    <BreadcrumbList className="text-slate-600">
-                      <BreadcrumbItem>
-                        <BreadcrumbLink asChild>
-                          <Link to="/" className="text-slate-600 hover:text-slate-900">Home</Link>
-                        </BreadcrumbLink>
-                      </BreadcrumbItem>
-                      <BreadcrumbSeparator className="text-slate-400" />
-                      <BreadcrumbItem>
-                        <BreadcrumbLink asChild>
-                          <Link to="/legal" className="text-slate-600 hover:text-slate-900">Legal</Link>
-                        </BreadcrumbLink>
-                      </BreadcrumbItem>
-                      <BreadcrumbSeparator className="text-slate-400" />
-                      <BreadcrumbItem>
-                        <BreadcrumbPage className="text-slate-900 font-medium">Data Processing Addendum</BreadcrumbPage>
-                      </BreadcrumbItem>
-                    </BreadcrumbList>
-                  </Breadcrumb>
-                </motion.div>
-
-                {/* Center-aligned content */}
-                <div className="text-center">
-                  {/* Heading */}
-                  <motion.h1
-                    variants={itemVariants}
-                    className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight"
-                  >
-                    Data Processing Addendum (DPA)
-                  </motion.h1>
-
-                  {/* Description */}
-                  <motion.p
-                    variants={itemVariants}
-                    className="mt-3 text-lg text-slate-600 max-w-3xl mx-auto"
-                  >
-                    Our data processor commitments for customers who require a DPA.
-                  </motion.p>
-
-                  {/* Last Updated */}
-                  <motion.div
-                    variants={itemVariants}
-                    className="mt-4 text-sm text-slate-500"
-                  >
-                    Last updated: {LAST_UPDATED}
-                  </motion.div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Legal · DPA"
+        title={<>Data Processing <span className="gradient-text">Addendum</span></>}
+        description="Our DPA commitments for enterprise customers and GDPR compliance."
+        meta={`Last updated: ${LAST_UPDATED}`}
+      />
 
       <style>{`
-        @keyframes gradient-shift {
-          0%, 100% {
-            background: linear-gradient(135deg, #dbeafe 0%, #fae8ff 50%, #fce7f3 100%);
-          }
-          25% {
-            background: linear-gradient(135deg, #e0e7ff 0%, #ddd6fe 50%, #fae8ff 100%);
-          }
-          50% {
-            background: linear-gradient(135deg, #fae8ff 0%, #fce7f3 50%, #dbeafe 100%);
-          }
-          75% {
-            background: linear-gradient(135deg, #fce7f3 0%, #dbeafe 50%, #e0e7ff 100%);
-          }
-        }
-        .animate-gradient-shift {
-          animation: gradient-shift 15s ease-in-out infinite;
-        }
         
         /* Anchor offset for smooth scrolling */
         #dpa, #contact,

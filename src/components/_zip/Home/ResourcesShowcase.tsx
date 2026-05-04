@@ -1,13 +1,13 @@
 import { useState, useMemo, useEffect, useRef } from "react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import SectionLabel from "@/components/SectionLabel";
-import blogImg from "@/assets/resources/blog.svg";
-import freeToolImg from "@/assets/resources/free-tool.svg";
-import templateImg from "@/assets/resources/template.svg";
-import communityImg from "@/assets/resources/community.svg";
-import liveMetricsImg from "@/assets/resources/live-metrics.svg";
-import contactImg from "@/assets/resources/contact.svg";
+import SectionLabel from "@/components/_zip/SectionLabel";
+import blogImg from "@/assets/_zip/resources/blog.svg";
+import freeToolImg from "@/assets/_zip/resources/free-tool.svg";
+import templateImg from "@/assets/_zip/resources/template.svg";
+import communityImg from "@/assets/_zip/resources/community.svg";
+import liveMetricsImg from "@/assets/_zip/resources/live-metrics.svg";
+import contactImg from "@/assets/_zip/resources/contact.svg";
 
 type TabKey = "blog" | "tools" | "templates" | "community" | "metrics" | "support";
 

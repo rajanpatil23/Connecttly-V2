@@ -1,14 +1,14 @@
-import SectionLabel from "@/components/SectionLabel";
-import StatsBar from "@/components/StatsBar";
-import { sharedStats } from "@/components/stats-data";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
+import SectionLabel from "@/components/_zip/SectionLabel";
+import StatsBar from "@/components/_zip/StatsBar";
+import { sharedStats } from "@/components/_zip/stats-data";
+import ReviewCarousel from "@/components/_zip/Home/ReviewCarousel";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Quote, Shield, Zap, BarChart3, Handshake, Clock, Users, Building2, GraduationCap, Building, HeartPulse, Cpu, Briefcase, RefreshCw, Code2, MessageSquare, HelpCircle, ArrowUpRight, ArrowRight } from "lucide-react";
-import founderImg from "@/assets/team/neeraj-yadav.svg";
-import teamImg from "@/assets/team-collab.jpg";
-import testimonialImg from "@/assets/testimonial-person.jpg";
-import connecttlyMark from "@/assets/connecttly-mark.svg";
-import IndustriesFlow from "@/components/About/IndustriesFlow";
+import founderImg from "@/assets/_zip/team/neeraj-yadav.svg";
+import teamImg from "@/assets/_zip/team-collab.jpg";
+import testimonialImg from "@/assets/_zip/testimonial-person.jpg";
+import connecttlyMark from "@/assets/_zip/connecttly-mark.svg";
+import IndustriesFlow from "@/components/_zip/About/IndustriesFlow";
 
 const aboutStats = [
   { value: "15,000+", label: "Qualified Leads Generated" },

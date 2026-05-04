@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Monitor } from "lucide-react";
-import connecttlyMark from "@/assets/connecttly-mark.svg";
-import aiIcon from "@/assets/why/ai.svg";
-import performanceIcon from "@/assets/why/performance.svg";
-import founderFriendlyIcon from "@/assets/why/founder-friendly.svg";
+import connecttlyMark from "@/assets/_zip/connecttly-mark.svg";
+import aiIcon from "@/assets/_zip/why/ai.svg";
+import performanceIcon from "@/assets/_zip/why/performance.svg";
+import founderFriendlyIcon from "@/assets/_zip/why/founder-friendly.svg";
 
 type CardKey = "tl" | "tr" | "bl" | "br";
 

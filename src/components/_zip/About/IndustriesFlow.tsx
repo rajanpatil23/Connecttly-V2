@@ -17,7 +17,7 @@ import {
   Building,
   HeartPulse,
 } from "lucide-react";
-import connecttlyMark from "@/assets/connecttly-mark.svg";
+import connecttlyMark from "@/assets/_zip/connecttly-mark.svg";
 
 type IndustryData = { name: string; icon: React.ReactNode; side: "left" | "right" };
 

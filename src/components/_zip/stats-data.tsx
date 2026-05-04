@@ -1,7 +1,7 @@
-import statBrands from "@/assets/stats/brands.png";
-import statSatisfaction from "@/assets/stats/satisfaction.png";
-import statProjects from "@/assets/stats/projects.png";
-import statSupport from "@/assets/stats/support.png";
+import statBrands from "@/assets/_zip/stats/brands.png";
+import statSatisfaction from "@/assets/_zip/stats/satisfaction.png";
+import statProjects from "@/assets/_zip/stats/projects.png";
+import statSupport from "@/assets/_zip/stats/support.png";
 
 export const sharedStats = [
   { icon: <img src={statBrands} alt="" className="w-14 h-14 object-contain" />, value: "70+", label: "SaaS brands served", bareIcon: true },

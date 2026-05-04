@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
-import edtechBrand from "@/assets/case-studies/edtech-brand.svg";
-import b2bSaas from "@/assets/case-studies/b2b-saas-startup.svg";
-import serviceBusiness from "@/assets/case-studies/service-business.svg";
+import edtechBrand from "@/assets/_zip/case-studies/edtech-brand.svg";
+import b2bSaas from "@/assets/_zip/case-studies/b2b-saas-startup.svg";
+import serviceBusiness from "@/assets/_zip/case-studies/service-business.svg";
 
 type CaseStudy = {
   key: string;

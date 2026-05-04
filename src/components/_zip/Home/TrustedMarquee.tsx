@@ -1,10 +1,10 @@
-import brandActionSync from "@/assets/brands/action-sync.png";
-import brandEduEdge from "@/assets/brands/the-edu-edge.png";
-import brandYttGlobal from "@/assets/brands/ytt-global.svg";
-import brandEduOcean from "@/assets/brands/the-edu-ocean.svg";
-import brandInfosec from "@/assets/brands/infosec-minds.svg";
-import brandWfyi from "@/assets/brands/wfyi.svg";
-import brandEvolveU from "@/assets/brands/evolveu.svg";
+import brandActionSync from "@/assets/_zip/brands/action-sync.png";
+import brandEduEdge from "@/assets/_zip/brands/the-edu-edge.png";
+import brandYttGlobal from "@/assets/_zip/brands/ytt-global.svg";
+import brandEduOcean from "@/assets/_zip/brands/the-edu-ocean.svg";
+import brandInfosec from "@/assets/_zip/brands/infosec-minds.svg";
+import brandWfyi from "@/assets/_zip/brands/wfyi.svg";
+import brandEvolveU from "@/assets/_zip/brands/evolveu.svg";
 
 const trustedBrands = [
   { name: "Action Sync", logo: brandActionSync, faded: true },

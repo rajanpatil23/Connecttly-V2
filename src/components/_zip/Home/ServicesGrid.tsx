@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
-import svcPerformance from "@/assets/services/performance-marketing.svg";
-import svcSocial from "@/assets/services/social-media-management.svg";
-import svcLinkedIn from "@/assets/services/linkedin-growth.svg";
-import svcSeo from "@/assets/services/seo.svg";
-import svcContent from "@/assets/services/content-creative.svg";
-import svcWebAi from "@/assets/services/web-ai-automation.svg";
+import svcPerformance from "@/assets/_zip/services/performance-marketing.svg";
+import svcSocial from "@/assets/_zip/services/social-media-management.svg";
+import svcLinkedIn from "@/assets/_zip/services/linkedin-growth.svg";
+import svcSeo from "@/assets/_zip/services/seo.svg";
+import svcContent from "@/assets/_zip/services/content-creative.svg";
+import svcWebAi from "@/assets/_zip/services/web-ai-automation.svg";
 
 type Service = { id: string; num: string; title: string; desc: string; image: string };
 

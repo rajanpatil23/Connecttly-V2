@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowUpRight, BarChart3, Users, Code, Star, Quote, Play } from "lucide-react";
 import { Link } from "react-router-dom";
-import SectionLabel from "@/components/SectionLabel";
-import Hero from "@/components/Home/Hero";
-import ServicesGrid from "@/components/Home/ServicesGrid";
-import WhyChoose from "@/components/Home/WhyChoose";
-import CaseStudies from "@/components/Home/CaseStudies";
-import ResourcesShowcase from "@/components/Home/ResourcesShowcase";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
-import blogIllustration from "@/assets/blog-illustration.jpg";
+import SectionLabel from "@/components/_zip/SectionLabel";
+import Hero from "@/components/_zip/Home/Hero";
+import ServicesGrid from "@/components/_zip/Home/ServicesGrid";
+import WhyChoose from "@/components/_zip/Home/WhyChoose";
+import CaseStudies from "@/components/_zip/Home/CaseStudies";
+import ResourcesShowcase from "@/components/_zip/Home/ResourcesShowcase";
+import ReviewCarousel from "@/components/_zip/Home/ReviewCarousel";
+import blogIllustration from "@/assets/_zip/blog-illustration.jpg";
 
 const steps = [
   { num: "01", title: "Discover", desc: "We learn your business, goals, and audience." },

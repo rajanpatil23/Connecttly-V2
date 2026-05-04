@@ -1,24 +1,24 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import SectionLabel from "@/components/SectionLabel";
-import StatsBar from "@/components/StatsBar";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
+import SectionLabel from "@/components/_zip/SectionLabel";
+import StatsBar from "@/components/_zip/StatsBar";
+import ReviewCarousel from "@/components/_zip/Home/ReviewCarousel";
 import { Check, Quote, ChevronDown, ChevronUp, Shield, FileText, Eye, Layers, Search, MonitorSmartphone, FileType2, Target } from "lucide-react";
-import testimonialImg from "@/assets/testimonial-person.jpg";
-import googleAdsHero from "@/assets/google-ads-hero.png";
-import { sharedStats } from "@/components/stats-data";
-import toolGoogleAds from "@/assets/tools/google-ads.png";
-import toolGtm from "@/assets/tools/gtm.png";
-import toolAnalytics from "@/assets/tools/analytics.png";
-import toolLooker from "@/assets/tools/looker.png";
-import toolAsana from "@/assets/tools/asana.png";
-import toolTrello from "@/assets/tools/trello.png";
-import toolHotjar from "@/assets/tools/hotjar.png";
-import toolSemrush from "@/assets/tools/semrush.png";
-import toolHubspot from "@/assets/tools/hubspot.png";
-import toolZapier from "@/assets/tools/zapier.png";
-import toolSlack from "@/assets/tools/slack.png";
-import toolGmb from "@/assets/tools/gmb.png";
+import testimonialImg from "@/assets/_zip/testimonial-person.jpg";
+import googleAdsHero from "@/assets/_zip/google-ads-hero.png";
+import { sharedStats } from "@/components/_zip/stats-data";
+import toolGoogleAds from "@/assets/_zip/tools/google-ads.png";
+import toolGtm from "@/assets/_zip/tools/gtm.png";
+import toolAnalytics from "@/assets/_zip/tools/analytics.png";
+import toolLooker from "@/assets/_zip/tools/looker.png";
+import toolAsana from "@/assets/_zip/tools/asana.png";
+import toolTrello from "@/assets/_zip/tools/trello.png";
+import toolHotjar from "@/assets/_zip/tools/hotjar.png";
+import toolSemrush from "@/assets/_zip/tools/semrush.png";
+import toolHubspot from "@/assets/_zip/tools/hubspot.png";
+import toolZapier from "@/assets/_zip/tools/zapier.png";
+import toolSlack from "@/assets/_zip/tools/slack.png";
+import toolGmb from "@/assets/_zip/tools/gmb.png";
 
 const painPoints = [
   { title: "You're spending $5K+ a month and can't tell what's actually working.", desc: "61% of Google Ads spend goes to clicks that never convert. That's not marketing, that's donation.", icon: <MonitorSmartphone className="w-7 h-7 text-primary" /> },

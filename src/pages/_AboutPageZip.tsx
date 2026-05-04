@@ -5,6 +5,12 @@ import ReviewCarousel from "@/components/_zip/Home/ReviewCarousel";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Quote, Shield, Zap, BarChart3, Handshake, Clock, Users, Building2, GraduationCap, Building, HeartPulse, Cpu, Briefcase, RefreshCw, Code2, MessageSquare, HelpCircle, ArrowUpRight, ArrowRight } from "lucide-react";
 import founderImg from "@/assets/_zip/team/neeraj-yadav.svg";
+import iconTransparency from "@/assets/principles/transparency.png";
+import iconAi from "@/assets/principles/ai.png";
+import iconGrowth from "@/assets/principles/growth.png";
+import iconTarget from "@/assets/principles/target.png";
+import iconLightning from "@/assets/principles/lightning.png";
+import iconHandshake from "@/assets/principles/handshake.png";
 import teamImg from "@/assets/_zip/team-collab.jpg";
 import testimonialImg from "@/assets/_zip/testimonial-person.jpg";
 import connecttlyMark from "@/assets/_zip/connecttly-mark.svg";
@@ -18,12 +24,12 @@ const aboutStats = [
 ];
 
 const principles = [
-  { title: "Radical Transparency", desc: "No black-box reporting and no hidden fees. You see exactly what we're working on, why we're doing it, and the results it's driving for your brand in real time.", icon: <Shield className="w-6 h-6 text-primary" /> },
-  { title: "AI-First Thinking", desc: "We weave AI and automation into everything, from content to lead scoring to campaign optimisation, delivering big-agency output at startup-friendly costs every day.", icon: <Cpu className="w-6 h-6 text-primary" /> },
-  { title: "Continuous Optimization", desc: "Good enough is never enough. Every campaign, asset, and workflow is measured, tested, and refined relentlessly so performance compounds week after week.", icon: <BarChart3 className="w-6 h-6 text-primary" /> },
-  { title: "Results Over Rhetoric", desc: "We measure success in pipeline, revenue, and real growth, never vanity impressions. Every strategy we build is tied directly to a meaningful business outcome.", icon: <Zap className="w-6 h-6 text-primary" /> },
-  { title: "Speed of Execution", desc: "We move fast. Strategies never sit in decks for weeks. We plan, launch, learn, and optimise in rapid cycles because real growth simply does not wait around.", icon: <Clock className="w-6 h-6 text-primary" /> },
-  { title: "Partnership, Not Vendorship", desc: "We don't operate as an outside vendor. We embed deeply into your team, understand your business inside out, and treat your goals as if they were entirely our own.", icon: <Handshake className="w-6 h-6 text-primary" /> },
+  { title: "Radical Transparency", desc: "No black-box reporting and no hidden fees. You see exactly what we're working on, why we're doing it, and the results it's driving for your brand in real time.", icon: <img src={iconTransparency} alt="" className="w-6 h-6" /> },
+  { title: "AI-First Thinking", desc: "We weave AI and automation into everything, from content to lead scoring to campaign optimisation, delivering big-agency output at startup-friendly costs every day.", icon: <img src={iconAi} alt="" className="w-6 h-6" /> },
+  { title: "Continuous Optimization", desc: "Good enough is never enough. Every campaign, asset, and workflow is measured, tested, and refined relentlessly so performance compounds week after week.", icon: <img src={iconGrowth} alt="" className="w-6 h-6" /> },
+  { title: "Results Over Rhetoric", desc: "We measure success in pipeline, revenue, and real growth, never vanity impressions. Every strategy we build is tied directly to a meaningful business outcome.", icon: <img src={iconTarget} alt="" className="w-6 h-6" /> },
+  { title: "Speed of Execution", desc: "We move fast. Strategies never sit in decks for weeks. We plan, launch, learn, and optimise in rapid cycles because real growth simply does not wait around.", icon: <img src={iconLightning} alt="" className="w-6 h-6" /> },
+  { title: "Partnership, Not Vendorship", desc: "We don't operate as an outside vendor. We embed deeply into your team, understand your business inside out, and treat your goals as if they were entirely our own.", icon: <img src={iconHandshake} alt="" className="w-6 h-6" /> },
 ];
 
 const steps = [

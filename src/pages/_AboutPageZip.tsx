@@ -333,7 +333,7 @@ const AboutPage = () => {
           {/* Desktop: 2-column staggered grid (matches wireframe).
               Col 1: SHORT top, TALL bottom
               Col 2: TALL top, SHORT bottom */}
-          <div className="hidden md:grid grid-cols-2 gap-6 mt-12" style={{ minHeight: 620 }}>
+          <div className="hidden md:grid grid-cols-2 gap-6 mt-12" style={{ minHeight: 520 }}>
             {[0, 1].map((col) => {
               const top = clientTypes[col];
               const bottom = clientTypes[col + 2];

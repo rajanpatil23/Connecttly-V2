@@ -186,7 +186,7 @@ function AllServicesGrid() {
 export default function AllServices() {
   const byCategory = useMemo(() => {
     const map: Record<string, ServiceItem[]> = {};
-    for (const c of CATEGORIES) map[c] = [];
+    for (const c of CATEGORIES) map[c.value] = [];
     for (const s of services) map[s.category]?.push(s);
     return map;
   }, []);

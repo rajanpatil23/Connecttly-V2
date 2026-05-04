@@ -1,4 +1,5 @@
 import ServiceCategoryTemplate from "@/components/Services/templates/ServiceCategoryTemplate";
+import heroImg from "@/assets/_zip/services/linkedin-growth.svg";
 
 const services = [
     { title: "LinkedIn Ads", desc: "High-intent B2B campaigns engineered for pipeline.", link: "/services/linkedin-growth/linkedin-ads", image: "/images/Services/Linkedin Growth/LinkedinAds.png", cta: "Learn more" },
@@ -15,7 +16,7 @@ export default function CategoryPage() {
       eyebrow="LINKEDIN GROWTH"
       heading={<>LinkedIn Growth Engine</>}
       description="Build authority, generate leads, and scale your LinkedIn presence with our specialised services."
-      heroImage="/images/home/services/LinkedIn.svg"
+      heroImage={heroImg}
       services={services}
     />
   );

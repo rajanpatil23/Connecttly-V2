@@ -43,7 +43,7 @@ export default function ServiceCategoryTemplate({
   showStatsBar = true,
 }: ServiceCategoryTemplateProps) {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {/* Hero */}
       <section className="pt-6 md:pt-10 pb-16 md:pb-20">
         <div className="container-main">

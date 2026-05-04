@@ -1,4 +1,5 @@
 import ServiceCategoryTemplate from "@/components/Services/templates/ServiceCategoryTemplate";
+import heroImg from "@/assets/_zip/services/seo.svg";
 
 const services = [
     { title: "Brand Strategy", desc: "Positioning, narrative and identity systems.", link: "/services/brand-reputation/brand-strategy", image: "/images/Services/Brand&Reputation/BrandStrategy.png", cta: "Learn more" },
@@ -15,7 +16,7 @@ export default function CategoryPage() {
       eyebrow="BRAND & REPUTATION"
       heading={<>Brand & Reputation</>}
       description="Strategy, PR, employer brand and the lifestyle content that builds trust at scale."
-      heroImage="/images/home/services/BrandRep.svg"
+      heroImage={heroImg}
       services={services}
     />
   );

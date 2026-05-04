@@ -1,0 +1,3766 @@
+[
+  {
+    "id": "L001",
+    "title": "LinkedIn Thought-Leadership Post Builder",
+    "description": "Create a high-signal LinkedIn post that teaches one specific lesson. Uses a strong hook, context, actionable takeaways, and a clear CTA. Optimized for skimmability and mobile reading.",
+    "content": "Act as a senior B2B content strategist.\nFor: {AUDIENCE} in {INDUSTRY}.\nObjective: teach one useful lesson about {TOPIC} that earns saves and replies.\nInputs you’ll receive: {TOPIC}, {AUDIENCE}, {VOICE}, optional {METRIC}, {CALL_TO_ACTION}.\nDeliverables: 1 post body, 3 alternate hooks, 5 hashtags.\nConstraints: 180–220 words, short paras, bullets, no fluff.\n---\nGoal: teach {AUDIENCE} one valuable insight about {TOPIC}.\nConstraints:\n- Voice: {VOICE}\n- Max length: 180–220 words\n- Format: short paragraphs and bullets\nStructure:\n1) Hook line with tension or contrarian angle\n2) Context: why this matters now for {AUDIENCE}\n3) 3–5 actionable steps or rules\n4) Micro-case or example with {METRIC} if available\n5) CTA: {CALL_TO_ACTION}\nDeliverables:\n- Post body\n- 3 alternate hooks\n- 5 suggested hashtags for {INDUSTRY}",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "ThoughtLeadership", "Hooks", "B2B"],
+    "createdAt": "2025-08-01",
+    "examples": {
+      "AUDIENCE": "B2B SaaS founders",
+      "INDUSTRY": "SaaS",
+      "TOPIC": "improving user activation during onboarding",
+      "VOICE": "direct, analytical",
+      "METRIC": "activation rate from 32% to 48%",
+      "CALL_TO_ACTION": "Comment \"framework\" and I’ll DM the template"
+    }
+  },
+  {
+    "id": "L002",
+    "title": "Carousel: Case Study Storyboard",
+    "description": "Turns a customer win into a 7–10 slide carousel. Clear before/after, measurable outcomes, and a simple visual cue per slide.",
+    "content": "Act as a product marketing manager and carousel copywriter.\nFor: {AUDIENCE} evaluating {PRODUCT}.\nObjective: turn {CUSTOMER} win into a crisp 7–10 slide story.\nInputs: {CUSTOMER}, {PRODUCT}, {AUDIENCE}, {RESULT}, {METRIC}, {CALL_TO_ACTION}.\nDeliverables: slide headlines, captions, alt text.\nConstraints: <= 20 words per caption, concrete numbers.\n---\nSlides:\n1) Cover: big promise for {AUDIENCE}\n2) Problem: 2–3 bullets, stakes\n3) False starts: what didn't work\n4) Turning point: why {PRODUCT}\n5–7) Steps taken: 3–5 steps with brief captions\n8) Results: before → after with numbers ({METRIC})\n9) Takeaways: 3 lessons for {AUDIENCE}\n10) CTA: {CALL_TO_ACTION}\nOutput:\n- Slide headlines\n- Slide captions (<= 20 words each)\n- Alt text suggestions",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Carousel", "CaseStudy", "B2B"],
+    "createdAt": "2025-08-02",
+    "examples": {
+      "CUSTOMER": "Northbeam",
+      "PRODUCT": "InsightFlow",
+      "AUDIENCE": "RevOps leaders in mid-market SaaS",
+      "RESULT": "faster pipeline visibility and forecast cadence",
+      "METRIC": "forecast accuracy +12 pts, cycle time −18%",
+      "CALL_TO_ACTION": "Book a demo"
+    }
+  },
+  {
+    "id": "L003",
+    "title": "Hook Generator: 20 Scroll-Stoppers",
+    "description": "Generates 20 hook options tailored to your ICP. Mixes question, stat shock, contrarian, and mini-story formats.",
+    "content": "Act as a conversion copywriter.\nFor: {AUDIENCE}/{ICP} on LinkedIn.\nObjective: generate 20 clean, specific hooks for {TOPIC}.\nInputs: {TOPIC}, {AUDIENCE}, {ICP}.\nDeliverables: 20 hooks labeled by style.\nConstraints: <= 14 words, no clickbait, high clarity.\n---\nHook styles to include: question, bold claim, pain-first, number/stat, myth-busting, mini-story, how-to, checklist.\nDeliver:\n- 20 hook lines max 14 words each\n- Label each with style\n- Prioritize clarity over cleverness\n- Avoid clickbait\n- Ensure relevance to {ICP}",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Hooks", "Copywriting"],
+    "createdAt": "2025-08-03",
+    "examples": {
+      "AUDIENCE": "product marketers",
+      "ICP": "mid-market SaaS PMMs",
+      "TOPIC": "positioning a new feature launch"
+    }
+  },
+  {
+    "id": "L004",
+    "title": "Comment Ladder: Strategic Comment Plan",
+    "description": "Produces 10 high-value comments to place under target accounts to build visibility and authority before outreach.",
+    "content": "Act as a social selling strategist.\nFor: {TARGET_ACCOUNTS} creators/brands.\nObjective: craft comments that add insight and invite replies around {TOPIC}.\nInputs: {TARGET_ACCOUNTS}, {TOPIC}.\nDeliverables: 10 comments, each with rationale and timing.\nConstraints: 40–80 words, no pitching, quote the creator.\n---\nGuidelines:\n- 10 comments, 40–80 words each\n- Add 1 insight, 1 question, 1 example per comment\n- Never pitch\n- Reference creator's point by quoting a phrase\nDeliver:\n- Comment text\n- Rationale for each\n- Suggested timing (days of week)",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Engagement", "Outbound"],
+    "createdAt": "2025-08-04",
+    "examples": {
+      "TARGET_ACCOUNTS": "top 20 PLG SaaS brands",
+      "TOPIC": "activation bottlenecks in onboarding"
+    }
+  },
+  {
+    "id": "L005",
+    "title": "Warm DM: Value-First Outreach",
+    "description": "Polite, relevant DM sequence that references a recent post and offers a tiny, specific win. No hard pitch.",
+    "content": "Act as an SDR writing warm DMs.\nFor: {RECIPIENT_ROLE} at {COMPANY}.\nObjective: open a conversation by offering {MICRO_OFFER} tied to {POST_LINK_OR_TOPIC}.\nInputs: {RECIPIENT_ROLE}, {COMPANY}, {POST_LINK_OR_TOPIC}, {MICRO_OFFER}.\nDeliverables: 4-message sequence with personalization tokens and reasoning.\nConstraints: respectful, no pressure, concrete value.\n---\nSequence:\n1) Connection note (<= 220 chars)\n2) Day 1 follow-up with personalized value\n3) Day 5 nudge with 1 concrete idea\n4) Day 12 soft close\nDeliver each message with:\n- Copy\n- Personalization token(s)\n- Reason it works",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "DM", "Outbound", "Sales"],
+    "createdAt": "2025-08-05",
+    "examples": {
+      "RECIPIENT_ROLE": "Head of Marketing",
+      "COMPANY": "AcmeCo",
+      "POST_LINK_OR_TOPIC": "your post on demand capture vs demand gen",
+      "MICRO_OFFER": "a 3-slide audit of your LinkedIn funnel"
+    }
+  },
+  {
+    "id": "L006",
+    "title": "Lead Magnet Teaser Post",
+    "description": "High-conversion post that teases a gated asset. Emphasizes outcomes, includes skimmable bullets, and a low-friction CTA.",
+    "content": "Act as a demand gen copywriter.\nFor: {AUDIENCE} considering {ASSET_NAME}.\nObjective: maximize comments/clicks with value-forward copy.\nInputs: {ASSET_NAME}, {OUTCOME}, {AUDIENCE}, {PAIN_POINT}, optional {METRIC}, {URL}.\nDeliverables: teaser post + 2 variants (no-link, link-in-comments).\nConstraints: specific bullets, clear CTA.\n---\nStructure:\n- Hook tied to {PAIN_POINT}\n- 3–5 bullets of what's inside (specific)\n- 1 micro-proof (e.g., {METRIC} from pilot)\n- CTA: comment keyword or link {URL}\nAlso deliver 2 variations: no-link version and link-in-comments version.",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "LeadGen", "Copywriting"],
+    "createdAt": "2025-08-06",
+    "examples": {
+      "ASSET_NAME": "2025 B2B Landing Page Playbook",
+      "OUTCOME": "lift demo conversions",
+      "AUDIENCE": "B2B SaaS marketers",
+      "PAIN_POINT": "high traffic, low demo conversion",
+      "METRIC": "demo conversion +28% in beta",
+      "URL": "https://example.com/playbook"
+    }
+  },
+  {
+    "id": "L007",
+    "title": "Event Promo + Reminder Sequence",
+    "description": "Three posts and two reminders that move people from awareness to registration to attendance for a LinkedIn Live or webinar.",
+    "content": "Act as an events marketer.\nFor: {AUDIENCE} likely to attend {EVENT_NAME}.\nObjective: drive registrations and show-up.\nInputs: {EVENT_NAME}, {EVENT_DATE}, {SPEAKERS}, {VALUE_PROP}.\nDeliverables: 3 promo posts, reminder comments, and replay post.\nConstraints: concise, outcome-led, include CTA.\n---\nDeliver:\n- Teaser post (T-10 days)\n- Deep dive post (T-5)\n- Last-call post (T-1)\n- Reminder comment templates\n- Post-event replay post with key timestamps\nInclude hashtags for {INDUSTRY}.",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Events", "Webinar", "Live"],
+    "createdAt": "2025-08-07",
+    "examples": {
+      "EVENT_NAME": "Revenue Architecture Live",
+      "EVENT_DATE": "Oct 12, 2025",
+      "SPEAKERS": "Jane Doe, VP Growth; Ravi Kumar, CMO",
+      "VALUE_PROP": "turn website traffic into pipeline",
+      "AUDIENCE": "B2B GTM teams",
+      "INDUSTRY": "B2B SaaS"
+    }
+  },
+  {
+    "id": "L008",
+    "title": "Newsletter Launch Announcement",
+    "description": "Crisp announcement that frames why the newsletter exists, who it serves, what’s inside, and how often.",
+    "content": "Act as a brand comms lead.\nFor: {AUDIENCE}.\nObjective: announce {NEWSLETTER_NAME} and earn signups.\nInputs: {NEWSLETTER_NAME}, {CADENCE}, {AUDIENCE}, {SOCIAL_PROOF}, {URL}, {VOICE_A}, {VOICE_B}.\nDeliverables: 2 tone variants, clear value bullets, CTA.\nConstraints: skimmable, no jargon.\n---\nInside you'll get: 3–5 bullets\nProof: {SOCIAL_PROOF}\nCTA: subscribe link {URL} or comment keyword\nDeliver 2 tone variants: {VOICE_A}, {VOICE_B}",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Newsletter", "Launch"],
+    "createdAt": "2025-08-08",
+    "examples": {
+      "NEWSLETTER_NAME": "Demand Weekly",
+      "CADENCE": "every Tuesday",
+      "AUDIENCE": "B2B growth leaders",
+      "SOCIAL_PROOF": "12,400 subscribers and a 47% open rate",
+      "URL": "https://example.com/newsletter",
+      "VOICE_A": "practical and data-driven",
+      "VOICE_B": "conversational and story-led"
+    }
+  },
+  {
+    "id": "L009",
+    "title": "Poll With Insightful Framing",
+    "description": "A poll that drives discussion, not just votes. Includes framing copy and a follow-up comment to seed insights.",
+    "content": "Act as a community builder.\nFor: {AUDIENCE} debating {TOPIC}.\nObjective: collect signal and start a discussion.\nInputs: {TOPIC}, {QUESTION}, {OPTION_A}, {OPTION_B}, {OPTION_C}, {OPTION_D}, {METRIC_SOURCE}.\nDeliverables: pre-poll copy, poll options, follow-up comment, 5 reply prompts.\nConstraints: neutral framing, no leading language.\n---\nPre-poll copy: context + why it matters\nFollow-up comment: share your stance + 1 stat ({METRIC_SOURCE})\nAdd 5 prompts to encourage replies.",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Polls", "Engagement"],
+    "createdAt": "2025-08-09",
+    "examples": {
+      "AUDIENCE": "growth leaders",
+      "TOPIC": "lead qualification on LinkedIn",
+      "QUESTION": "What’s the best first signal of ICP intent?",
+      "OPTION_A": "Job title match",
+      "OPTION_B": "Engagement with problem posts",
+      "OPTION_C": "Requested demo",
+      "OPTION_D": "Commented with pain",
+      "METRIC_SOURCE": "2024 Gong study on intent signals"
+    }
+  },
+  {
+    "id": "L010",
+    "title": "Profile About Section Rewrite",
+    "description": "Rewrites your About section to sell outcomes. Uses credibility, ICP clarity, proof, and a simple CTA.",
+    "content": "Act as a positioning consultant.\nFor: {ICP} who must quickly grasp your value.\nObjective: rewrite About to outcomes and proof.\nInputs: {ROLE}, {ICP}, {OUTCOMES}, {PROOF_POINTS}, {CTA}.\nDeliverables: 150-word and 300-word versions.\nConstraints: skimmable, concrete, no buzzwords.\n---\nOutput:\n- 2 versions (150 words, 300 words)\n- Skimmable lines, no jargon\n- Replace duties with outcomes for {ICP}",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Profile", "PersonalBrand"],
+    "createdAt": "2025-08-10",
+    "examples": {
+      "ICP": "Series A SaaS CEOs",
+      "ROLE": "Fractional Head of Growth",
+      "OUTCOMES": "shorten time-to-pipeline, raise activation, improve CAC payback",
+      "PROOF_POINTS": "ex-Shopify growth, +38% activation at Acme, 3 exits",
+      "CTA": "DM \"growth\" for the 90-day plan"
+    }
+  },
+  {
+    "id": "L011",
+    "title": "Headline Optimizer (10 Variants)",
+    "description": "Creates 10 profile headlines that clarify role, ICP, and result. Balanced between clarity and intrigue.",
+    "content": "Act as a personal brand copywriter.\nFor: {ICP} quickly scanning profiles.\nObjective: craft 10 clear, credible headlines.\nInputs: {ROLE}, {ICP}, {PRIMARY_RESULT}, {DIFFERENTIATOR}.\nDeliverables: 10 headline options + rationale.\nConstraints: <= 220 chars, minimal separators.\n---\nDeliver 10 options, each with a rationale.",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Profile", "Headline"],
+    "createdAt": "2025-08-11",
+    "examples": {
+      "ROLE": "RevOps consultant",
+      "ICP": "B2B SaaS founders",
+      "PRIMARY_RESULT": "predictable pipeline with clean data",
+      "DIFFERENTIATOR": "ICPs aligned scoring and GTM motion"
+    }
+  },
+  {
+    "id": "L012",
+    "title": "Experience Bullets: Outcome-Focused (STAR)",
+    "description": "Converts role duties into outcome bullets using STAR. Prioritizes metrics and transferable skills.",
+    "content": "Act as a resume strategist.\nFor: recruiters and hiring managers.\nObjective: convert duties to outcome bullets.\nInputs: {ROLE}, {COMPANY}, {ACHIEVEMENTS}, {METRIC}.\nDeliverables: 6–10 STAR bullets.\nConstraints: 1 line each, start with verb, include numbers.\n---\nDeliver 6–10 bullets:\n- Start with action verb\n- Include numbers ({METRIC})\n- STAR framing in one line\n- Align to {ICP} relevance",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Profile", "Resume"],
+    "createdAt": "2025-08-12",
+    "examples": {
+      "ROLE": "Product Manager",
+      "COMPANY": "Acme Analytics",
+      "ACHIEVEMENTS": "shipped onboarding checklist, launched A/B engine",
+      "METRIC": "activation +16%, retention +9%",
+      "ICP": "B2B analytics buyers"
+    }
+  },
+  {
+    "id": "L013",
+    "title": "Recommendation Request (Polite Template)",
+    "description": "A short, respectful request that makes it easy for someone to recommend you with specific talking points.",
+    "content": "Act as a polite professional requesting a recommendation.\nFor: {NAME} who worked with you during {PROJECT_OR_PERIOD}.\nObjective: make it easy to write a relevant rec.\nInputs: {NAME}, {PROJECT_OR_PERIOD}, {POINTS}.\nDeliverables: DM version and email version + thank-you follow-up.\nConstraints: respectful, specific prompts, no pressure.\n---\nDeliver 2 versions:\n- DM (<= 500 chars)\n- Email (<= 120 words)\nInclude thank-you follow-up.",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Recommendations", "Networking"],
+    "createdAt": "2025-08-13",
+    "examples": {
+      "NAME": "Priya Singh",
+      "PROJECT_OR_PERIOD": "Q2 2024 data platform migration",
+      "POINTS": "communication, stakeholder alignment, risk management"
+    }
+  },
+  {
+    "id": "L014",
+    "title": "Hiring Post: Role Magnet",
+    "description": "A candidate-first role post. Leads with mission, impact, growth, and clear application step.",
+    "content": "Act as a talent brand marketer.\nFor: candidates considering {ROLE} on {TEAM}.\nObjective: attract qualified applicants.\nInputs: {ROLE}, {TEAM}, {MISSION}, {COMP_INFO}, {URL}.\nDeliverables: role post with hooks, hashtags.\nConstraints: mission/impact first, clear apply CTA.\n---\nImpact areas: 3 bullets\nMust-haves: 4 bullets\nNice-to-haves: 3 bullets\nApply CTA: {URL}\nProvide 2 hooks and 5 hashtags.",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Hiring", "Talent"],
+    "createdAt": "2025-08-14",
+    "examples": {
+      "ROLE": "Senior Backend Engineer",
+      "TEAM": "Core Platform",
+      "MISSION": "make data pipelines 10x faster for customers",
+      "COMP_INFO": "remote-first, Series B, backed by Sequoia",
+      "URL": "https://example.com/careers/backend"
+    }
+  },
+  {
+    "id": "L015",
+    "title": "Job Description → LinkedIn Post",
+    "description": "Turns a dry JD into a compelling LinkedIn post that speaks to outcomes and growth.",
+    "content": "Act as a recruiting copywriter.\nFor: {AUDIENCE} who might fit the JD.\nObjective: convert {JD_SNIPPET} into an outcome-led post.\nInputs: {JD_SNIPPET}, {AUDIENCE}, application link.\nDeliverables: 160–200 word post + 3 pull quotes.\nConstraints: clear outcomes, growth path, single CTA.\n---\nDeliver:\n- 160–200 word post\n- 3 pull quotes from JD rewritten for impact\n- 1 short CTA with application link",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Hiring", "Copywriting"],
+    "createdAt": "2025-08-15",
+    "examples": {
+      "AUDIENCE": "ML engineers",
+      "JD_SNIPPET": "own the end-to-end model lifecycle from experimentation to deployment"
+    }
+  },
+  {
+    "id": "L016",
+    "title": "Founder Origin Story Post",
+    "description": "Personal narrative that ties a founder’s backstory to the product mission without fluff.",
+    "content": "Act as a brand storyteller.\nFor: potential customers and partners.\nObjective: connect {FOUNDER}'s story to {MISSION} credibly.\nInputs: {FOUNDER}, {MOMENT}, {PAIN_POINT}, {MISSION}, {METRIC}, {CALL_TO_ACTION}.\nDeliverables: narrative post with CTA.\nConstraints: vivid scene, real stakes, one clear lesson.\n---\nStructure:\n- Cold open scene (1–2 lines)\n- The problem and stakes\n- The first build and lesson\n- Today’s impact with {METRIC}\n- CTA: {CALL_TO_ACTION}",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Founder", "Story"],
+    "createdAt": "2025-08-16",
+    "examples": {
+      "FOUNDER": "Arjun",
+      "MOMENT": "a failed pilot that took down staging",
+      "PAIN_POINT": "hours to trace data lineage",
+      "MISSION": "make lineage queryable in seconds",
+      "METRIC": "mean time to resolution down 63%",
+      "CALL_TO_ACTION": "Join the beta"
+    }
+  },
+  {
+    "id": "L017",
+    "title": "Co-Marketing Announcement",
+    "description": "Joint post announcing a partnership. Clarifies value for users, joint activities, and next steps.",
+    "content": "Act as a partner marketing manager.\nFor: users of {PARTNER_A} and {PARTNER_B}.\nObjective: announce partnership and value clearly.\nInputs: {PARTNER_A}, {PARTNER_B}, {VALUE_PROP}, {ACTIVITIES}, {TIMELINE}, {CALL_TO_ACTION}.\nDeliverables: announcement post in 2 tones.\nConstraints: user benefits first, minimal jargon.\n---\nDeliver two tones: formal and friendly.",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Partnerships", "B2B"],
+    "createdAt": "2025-08-17",
+    "examples": {
+      "PARTNER_A": "Segment",
+      "PARTNER_B": "Dbt",
+      "VALUE_PROP": "clean event data into modeled metrics in days",
+      "ACTIVITIES": "joint webinar, shared playbook, co-sell path",
+      "TIMELINE": "Q4 2025",
+      "CALL_TO_ACTION": "Grab the playbook"
+    }
+  },
+  {
+    "id": "L018",
+    "title": "Social Proof Thread",
+    "description": "Short post plus a comment thread that compiles 5 proof points with links or visuals.",
+    "content": "Act as a credibility strategist.\nFor: prospects on the fence.\nObjective: compile proofs that reduce risk.\nInputs: {PROOFS} list with quotes/screens/metrics and {URL_X}.\nDeliverables: main post + 5 proof comments with takeaways.\nConstraints: keep claims specific and sourced.\n---\nDeliver:\n- Post that frames the proof theme\n- 5 comments, each highlighting one proof with takeaway and link {URL_X}\n- 5 hashtags",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "SocialProof", "Trust"],
+    "createdAt": "2025-08-18",
+    "examples": {
+      "PROOFS": "G2 awards, customer quotes, public dashboards, case studies, analyst notes",
+      "URL_X": "https://example.com/proof"
+    }
+  },
+  {
+    "id": "L019",
+    "title": "Launch Day Pack: Teaser, Launch, Demo",
+    "description": "Three coordinated posts that build to launch day and drive demo requests.",
+    "content": "Act as a product marketer.\nFor: {ICP} considering {PRODUCT}.\nObjective: sequence posts to maximize launch ROI.\nInputs: {PRODUCT}, {ICP}, {DEMO_LINK}, {DOCS_LINK}, beta {METRIC}.\nDeliverables: teaser, launch, and demo posts with CTAs.\nConstraints: concrete outcomes, one idea per post.\n---\nDeliver:\n- Teaser (T-3): problem-first with curiosity\n- Launch (T0): what’s new, who for, {METRIC} from beta\n- Demo (T+2): invite with agenda bullets\nAll include CTA and hashtags.",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Launch", "ProductMarketing"],
+    "createdAt": "2025-08-19",
+    "examples": {
+      "PRODUCT": "LaunchPad",
+      "ICP": "developer tools PMs",
+      "DEMO_LINK": "https://example.com/demo",
+      "DOCS_LINK": "https://docs.example.com",
+      "METRIC": "beta NPS 62, setup time −70%"
+    }
+  },
+  {
+    "id": "L020",
+    "title": "Customer Win: Narrative Post",
+    "description": "Human story of a customer win. Focuses on stakes, decision, small moments, and results.",
+    "content": "Act as a case study storyteller.\nFor: {AUDIENCE} who share the same {PAIN_POINT}.\nObjective: show decision and result credibly.\nInputs: {CUSTOMER}, {ROLE}, {STAKES}, {MOMENT}, {RESULT}, {METRIC}, {CALL_TO_ACTION}.\nDeliverables: 1 narrative post with CTA.\nConstraints: specific details, measurable result.\n---\nCustomer: {CUSTOMER}\nRole: {ROLE}\nStakes: {STAKES}\nDecision moment: {MOMENT}\nResult: {RESULT} ({METRIC})\nCTA: {CALL_TO_ACTION}",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "CaseStudy", "Story"],
+    "createdAt": "2025-08-20",
+    "examples": {
+      "AUDIENCE": "growth leaders",
+      "PAIN_POINT": "lead quality from content",
+      "CUSTOMER": "Helio AI",
+      "ROLE": "Growth Lead",
+      "STAKES": "pipeline stalled for two quarters",
+      "MOMENT": "switch from ebook to product mini-demo",
+      "RESULT": "pipeline up 42%",
+      "METRIC": "MQL→SQL rate +19 pts",
+      "CALL_TO_ACTION": "Comment \"case\" for the deck"
+    }
+  },
+  {
+    "id": "L021",
+    "title": "Myth vs Fact Carousel",
+    "description": "Educational carousel that corrects 6 common myths for your industry with short, evidence-backed facts.",
+    "content": "Act as an industry educator.\nFor: {AUDIENCE} confused about {TOPIC}.\nObjective: correct 6 myths with concise facts and sources.\nInputs: {TOPIC}, {AUDIENCE}, sources {SOURCE}.\nDeliverables: slide headlines and captions.\nConstraints: <= 20 words per fact, cite source.\n---\nSlides 1–7:\n- 6 myths → concise fact + why it matters\n- 1 resource or stat each ({SOURCE})\n- Final slide CTA for {CALL_TO_ACTION}",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Carousel", "Education"],
+    "createdAt": "2025-08-21",
+    "examples": {
+      "AUDIENCE": "B2B marketers",
+      "TOPIC": "posting external links on LinkedIn",
+      "SOURCE": "LinkedIn engineering blog 2024",
+      "CALL_TO_ACTION": "Save for your next team training"
+    }
+  },
+  {
+    "id": "L022",
+    "title": "Contrarian Take With Evidence",
+    "description": "Well-reasoned contrarian post. Avoids hot takes, uses data and example, ends with an open question.",
+    "content": "Act as a thoughtful industry analyst.\nFor: {AUDIENCE} saturated with the {NORM} opinion.\nObjective: present {CLAIM} with evidence and invite debate.\nInputs: {CLAIM}, {NORM}, {EVIDENCE}, {METRIC}, {EXAMPLE}, {QUESTION}, {VOICE}.\nDeliverables: 1 contrarian post with open question.\nConstraints: respectful tone, cite sources, actionable takeaway.\n---\nQuestion to audience: {QUESTION}",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "ThoughtLeadership", "Debate"],
+    "createdAt": "2025-08-22",
+    "examples": {
+      "AUDIENCE": "growth marketers",
+      "NORM": "optimize only for form fills",
+      "CLAIM": "optimize for sales-assisted activation instead",
+      "EVIDENCE": "multi-touch revenue attribution study",
+      "METRIC": "payback improved from 14 to 9 months",
+      "EXAMPLE": "product-led sales motion in mid-market SaaS",
+      "QUESTION": "Where does this break in enterprise?",
+      "VOICE": "data-driven and respectful"
+    }
+  },
+  {
+    "id": "L023",
+    "title": "LinkedIn Live Promo Script",
+    "description": "Short script plus post copy for a 45–60s video promoting your upcoming LinkedIn Live.",
+    "content": "Act as a video scriptwriter.\nFor: {AUDIENCE} deciding to attend {EVENT_NAME}.\nObjective: record a 45–60s promo and supporting post.\nInputs: {EVENT_NAME}, {AUDIENCE}, {URL}.\nDeliverables: 5 hooks, script beats, and post caption.\nConstraints: punchy, camera-ready lines, clear CTA.\n---\nScript beats:\n1) Problem hook\n2) What you’ll learn (3 bullets)\n3) Guest intro\n4) When and where\n5) CTA: set reminder {URL}\nAlso provide post caption and 5 hooks.",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Video", "Events"],
+    "createdAt": "2025-08-23",
+    "examples": {
+      "EVENT_NAME": "PLG to PLS Live",
+      "AUDIENCE": "B2B founders",
+      "URL": "https://example.com/live"
+    }
+  },
+  {
+    "id": "L024",
+    "title": "Hashtag Bank Builder",
+    "description": "Generates a rotating bank of 30–45 hashtags grouped by intent and size for your niche.",
+    "content": "Act as a social SEO specialist.\nFor: creators in {INDUSTRY} reaching {AUDIENCE}.\nObjective: build a rotating hashtag bank.\nInputs: {INDUSTRY}, {AUDIENCE}, {TOPIC}.\nDeliverables: 3 groups (niche/mid/broad) and 5 bundles.\nConstraints: relevant, non-spammy, mixed sizes.\n---\nDeliver:\n- 3 groups: niche, mid, broad\n- 10–15 hashtags per group\n- Usage guidance and rotation plan\n- 5 example bundles (mix of 3–5 each)",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Hashtags", "SEO"],
+    "createdAt": "2025-08-24",
+    "examples": {
+      "INDUSTRY": "AI tooling",
+      "AUDIENCE": "MLEs and data teams",
+      "TOPIC": "evaluating LLM apps in production"
+    }
+  },
+  {
+    "id": "L025",
+    "title": "Weekly LinkedIn Content Calendar",
+    "description": "One-week calendar for LinkedIn only. Balances value posts, proof, engagement, and soft pitch.",
+    "content": "Act as a content operations planner.\nFor: {ICP} promoting {OFFER} across {THEMES}.\nObjective: produce a 7-day LinkedIn plan with balance and backups.\nInputs: {ICP}, {THEMES}, {OFFER}.\nDeliverables: 7-day schedule with hooks, outline, CTA, hashtags, plus 3 backups.\nConstraints: one idea per post, specific outcomes.\n---\nDeliver a 7-day plan:\n- Day name\n- Post type (teach, story, proof, poll, carousel, live)\n- Hook line\n- 3 bullets outline\n- CTA\n- Hashtag bundle\nAlso include 3 backup ideas.",
+    "category": "LinkedIn",
+    "tags": ["LinkedIn", "Calendar", "Strategy"],
+    "createdAt": "2025-08-25",
+    "examples": {
+      "ICP": "SaaS founders",
+      "THEMES": "proof, lessons, behind-the-scenes, frameworks",
+      "OFFER": "free onboarding audit"
+    }
+  },
+  {
+    "id": "S001",
+    "title": "SEO Content Brief Generator",
+    "description": "Creates a complete content brief for a target keyword: search intent, angle, outline, entities, questions, and on-page requirements.",
+    "content": "Act as a senior SEO strategist.\nGoal: create a content brief that can rank for {PRIMARY_KEYWORD} in {COUNTRY} for {AUDIENCE}.\nInputs: {PRIMARY_KEYWORD}, {COUNTRY}, {AUDIENCE}, {BUYING_STAGE}, competitors {COMPETITORS}.\nDeliverables:\n- Search intent and reader goal\n- Primary angle and promise\n- SERP synopsis (top 5) with gaps\n- H2/H3 outline with talking points\n- Required entities (NLP) and synonyms\n- Questions to answer (PAAs)\n- On-page specs: title, meta, URL, word-count range\n- Internal link targets and anchor ideas\nConstraints: clarity over jargon, bullets preferred.",
+    "category": "SEO",
+    "tags": ["SEO", "Content", "Brief"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PRIMARY_KEYWORD": "best CRM for small business",
+      "COUNTRY": "United States",
+      "AUDIENCE": "non-technical small business owners",
+      "BUYING_STAGE": "consideration",
+      "COMPETITORS": "HubSpot, Zoho, Pipedrive"
+    }
+  },
+  {
+    "id": "S002",
+    "title": "Keyword Cluster Builder",
+    "description": "Groups a seed keyword into tightly themed clusters with page-type recommendations and priority scoring.",
+    "content": "Act as an SEO keyword analyst.\nTask: cluster keywords around {SEED_KEYWORD} for {INDUSTRY}.\nInputs: {SEED_KEYWORD}, {INDUSTRY}, geo {COUNTRY}, business goal {GOAL}.\nDeliver:\n- 6–12 clusters with representative head term\n- Each cluster: 8–20 supporting keywords\n- Intent tag (info/comp/trans/local)\n- Suggested page type (guide, list, comparison, category, PDP, tool)\n- Priority score using {CRITERIA} (volume, difficulty, business fit)\n- Sample title for each cluster page\nConstraints: no overlapping clusters; keep semantic tightness high.",
+    "category": "SEO",
+    "tags": ["SEO", "Keywords", "Clustering"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "SEED_KEYWORD": "email marketing",
+      "INDUSTRY": "SaaS",
+      "COUNTRY": "United States",
+      "GOAL": "free-trial signups",
+      "CRITERIA": "volume*0.5 + business_fit*0.3 − difficulty*0.2"
+    }
+  },
+  {
+    "id": "S003",
+    "title": "SERP Teardown and Gap Analysis",
+    "description": "Audits the current SERP for the target query. Extracts patterns, entity coverage, angles, and content gaps to exploit.",
+    "content": "Act as a SERP analyst.\nObjective: analyze the top results for {PRIMARY_KEYWORD} in {COUNTRY}.\nInputs: {PRIMARY_KEYWORD}, {COUNTRY}, {DEVICE}.\nOutput:\n- Intent type and SERP features present\n- Top 10 result angles, content formats, and E-E-A-T signals\n- Entities frequently mentioned vs missing\n- Gap opportunities we can own\n- Recommended angle and outline delta vs incumbents\n- CTR plays for title/meta\nConstraints: concise bullets, actionable next steps.",
+    "category": "SEO",
+    "tags": ["SEO", "SERP", "Competitive"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PRIMARY_KEYWORD": "headless CMS",
+      "COUNTRY": "United Kingdom",
+      "DEVICE": "desktop"
+    }
+  },
+  {
+    "id": "S004",
+    "title": "Title & Meta Description Optimizer",
+    "description": "Generates 5 tested variants of SEO title tags and meta descriptions tuned for intent, pixel width, and CTR.",
+    "content": "Act as a CTR-focused SEO copywriter.\nInputs: {PRIMARY_KEYWORD}, {SEARCH_INTENT}, {BRAND}, {MAX_TITLE_PIXELS}, {MAX_META_CHARS}.\nDeliver:\n- 5 title options within {MAX_TITLE_PIXELS} px\n- 5 meta descriptions within {MAX_META_CHARS} chars\n- Note the angle used (benefit, numbers, novelty, authority, objection)\n- Include the keyword naturally and front-load value\nConstraints: no clickbait; readable on mobile.",
+    "category": "SEO",
+    "tags": ["SEO", "OnPage", "Copy"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PRIMARY_KEYWORD": "project management software",
+      "SEARCH_INTENT": "commercial investigation",
+      "BRAND": "WorkFlowly",
+      "MAX_TITLE_PIXELS": "580",
+      "MAX_META_CHARS": "155"
+    }
+  },
+  {
+    "id": "S005",
+    "title": "Featured Snippet Playbook",
+    "description": "Designs a snippet-ready answer block with format guidance to win paragraph, list, or table snippets.",
+    "content": "Act as an SEO snippet tactician.\nGoal: earn the featured snippet for {PRIMARY_KEYWORD}.\nInputs: {PRIMARY_KEYWORD}, {SNIPPET_TYPE}, {TARGET_ANGLE}.\nDeliver:\n- Snippet-ready answer (40–55 words for paragraph OR 6–8 items for list/table)\n- Supporting context block\n- Markup and placement guidance (H2/H3, list/table usage)\n- Internal link to supporting page\n- Title/meta tuned for snippet ownership\nConstraints: concise, authoritative tone; include defining sentence if term-based.",
+    "category": "SEO",
+    "tags": ["SEO", "FeaturedSnippet", "OnPage"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PRIMARY_KEYWORD": "what is canonical URL",
+      "SNIPPET_TYPE": "paragraph",
+      "TARGET_ANGLE": "definition + when to use"
+    }
+  },
+  {
+    "id": "S006",
+    "title": "People Also Ask Mining",
+    "description": "Expands a page with PAA questions and concise answers to deepen topical coverage and win long-tail.",
+    "content": "Act as a topical depth strategist.\nTask: mine PAA questions for {PRIMARY_KEYWORD} and produce concise answers.\nInputs: {PRIMARY_KEYWORD}, {COUNTRY}, {COUNT}.\nDeliver:\n- {COUNT} PAA questions grouped by subtopic\n- 40–60 word answer for each\n- Where to place in article (section mapping)\n- Markup recommendation (H3 + short paragraph or list)\n- Internal links candidates\nConstraints: avoid redundancy; ensure semantic progression.",
+    "category": "SEO",
+    "tags": ["SEO", "PAA", "Content"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PRIMARY_KEYWORD": "technical SEO audit",
+      "COUNTRY": "Australia",
+      "COUNT": "20"
+    }
+  },
+  {
+    "id": "S007",
+    "title": "Internal Linking Blueprint",
+    "description": "Builds a hub-and-spoke internal linking plan with anchors and insertion points to boost topical authority.",
+    "content": "Act as an internal linking architect.\nInputs: {HUB_TOPIC}, {SPOKES} list, site section {SECTION}.\nDeliver:\n- Hub page purpose and target keyword\n- Spokes list with primary and secondary anchors\n- Insertion points: source URL and paragraph cue\n- Link ratios and rel guidance\n- Measurement plan: {KPIS}\nConstraints: avoid over-optimization; maintain UX.",
+    "category": "SEO",
+    "tags": ["SEO", "InternalLinks", "Architecture"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "HUB_TOPIC": "content marketing strategy",
+      "SPOKES": "editorial calendar, content audit, buyer personas, content brief, distribution",
+      "SECTION": "blog",
+      "KPIS": "rankings, clicks, assisted conversions"
+    }
+  },
+  {
+    "id": "S008",
+    "title": "Topical Map & Information Architecture",
+    "description": "Designs a scalable topical map with categories, pillar pages, supporting articles, and URL patterns.",
+    "content": "Act as an SEO information architect.\nGoal: propose a topical map for {THEME} that supports {BUSINESS_GOAL}.\nInputs: {THEME}, {BUSINESS_GOAL}, {COUNTRY}, {URL_PATTERN}.\nDeliver:\n- 5–8 pillars with rationale\n- 6–12 supports per pillar\n- URL scheme using {URL_PATTERN}\n- Breadcrumbs and nav recommendations\n- Content sequencing over {QUARTERS} quarters\nConstraints: avoid cannibalization; each page has unique intent.",
+    "category": "SEO",
+    "tags": ["SEO", "IA", "Strategy"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "THEME": "small business accounting",
+      "BUSINESS_GOAL": "trial signups for accounting app",
+      "COUNTRY": "Canada",
+      "URL_PATTERN": "/{pillar}/{slug}",
+      "QUARTERS": "2"
+    }
+  },
+  {
+    "id": "S009",
+    "title": "Content Refresh Brief",
+    "description": "Audits an existing URL and provides a surgical refresh plan to regain rankings and CTR.",
+    "content": "Act as a content refresh specialist.\nInputs: {URL}, target {PRIMARY_KEYWORD}, competitor set {COMPETITORS}.\nDeliver:\n- Current gaps vs top 5\n- Sections to add, merge, remove\n- Entity and question coverage to include\n- Title/meta rewrite variants\n- Internal link updates\n- Success criteria and timeline\nConstraints: minimal structural changes; aim for +{CTR_TARGET} CTR and +{RANK_TARGET} rank positions.",
+    "category": "SEO",
+    "tags": ["SEO", "ContentRefresh", "OnPage"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "URL": "https://example.com/blog/saas-pricing-models",
+      "PRIMARY_KEYWORD": "SaaS pricing models",
+      "COMPETITORS": "ProfitWell, Paddle, Chargebee",
+      "CTR_TARGET": "2.0pp",
+      "RANK_TARGET": "3"
+    }
+  },
+  {
+    "id": "S010",
+    "title": "Technical SEO Audit Checklist (Actionable)",
+    "description": "Creates an actionable crawl-based checklist with prioritized fixes and expected impact.",
+    "content": "Act as a technical SEO lead.\nInputs: crawl summary {CRAWL_SUMMARY}, CMS {CMS}, site size {URL_COUNT}.\nDeliver:\n- Issues by category: crawlability, indexation, canonicalization, rendering, speed, structured data, hreflang\n- Steps to reproduce and fix for {CMS}\n- Priority (P0–P2) and expected impact\n- Owner and effort estimate\n- Validation method\nConstraints: pragmatic; focus on what moves {BUSINESS_GOAL}.",
+    "category": "SEO",
+    "tags": ["SEO", "Technical", "Audit"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "CRAWL_SUMMARY": "12k URLs, 1.3k 404s, thin content on 400 URLs, duplicate titles on 320 URLs",
+      "CMS": "WordPress",
+      "URL_COUNT": "12000",
+      "BUSINESS_GOAL": "organic demo requests"
+    }
+  },
+  {
+    "id": "S011",
+    "title": "Server Log Insights Summary",
+    "description": "Translates raw server log insights into SEO actions: crawl budget waste, priority paths, and bot anomalies.",
+    "content": "Act as a log file analyst.\nInputs: {DATE_RANGE}, {TOP_FOLDERS}, anomalies {NOTES}.\nDeliver:\n- Crawl frequency by folder\n- Waste hotspots and fixes\n- Priority pages under-crawled\n- Bot anomalies and blocks\n- Next steps to rebalance crawl budget\nConstraints: 1-page summary; charts optional; focus on decisions.",
+    "category": "SEO",
+    "tags": ["SEO", "Logs", "Technical"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "DATE_RANGE": "2025-07-01 to 2025-07-31",
+      "TOP_FOLDERS": "/blog, /docs, /pricing, /customers",
+      "NOTES": "spike in 404s on /blog/page/*"
+    }
+  },
+  {
+    "id": "S012",
+    "title": "Page Speed Remediation Plan",
+    "description": "Provides a prioritized plan to hit Core Web Vitals across templates with dev-ready tasks.",
+    "content": "Act as a performance SEO.\nInputs: {TEMPLATES} list, current vitals {VITALS}, tech {STACK}.\nDeliver:\n- Template-level issues and fixes (LCP, CLS, INP)\n- Asset budget targets\n- Lazy-load and preconnect plan\n- Test/rollout sequence\n- Monitoring setup\nConstraints: measurable goals: LCP <= {LCP_TARGET}s, CLS <= {CLS_TARGET}, INP <= {INP_TARGET}ms.",
+    "category": "SEO",
+    "tags": ["SEO", "Speed", "CWV"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "TEMPLATES": "blog post, category, PDP, homepage",
+      "VITALS": "LCP 3.6s, CLS 0.18, INP 320ms",
+      "STACK": "Next.js + Cloudflare",
+      "LCP_TARGET": "2.4",
+      "CLS_TARGET": "0.1",
+      "INP_TARGET": "200"
+    }
+  },
+  {
+    "id": "S013",
+    "title": "Schema Markup Plan",
+    "description": "Recommends schema types per template with JSON-LD examples and validation notes.",
+    "content": "Act as a structured data specialist.\nInputs: {TEMPLATES}, business type {BUSINESS_TYPE}.\nDeliver:\n- Schema types per template\n- Required and recommended properties\n- JSON-LD examples to adapt\n- Validation and monitoring checklist\nConstraints: follow Google guidelines; avoid spammy markup.",
+    "category": "SEO",
+    "tags": ["SEO", "Schema", "StructuredData"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "TEMPLATES": "homepage, article, product, FAQ, how-to",
+      "BUSINESS_TYPE": "SaaS"
+    }
+  },
+  {
+    "id": "S014",
+    "title": "E-E-A-T Author & Page Signals",
+    "description": "Creates author box copy, page trust elements, and sourcing plan to strengthen E-E-A-T.",
+    "content": "Act as an E-E-A-T consultant.\nInputs: {AUTHOR_NAME}, {AUTHOR_CREDENTIALS}, {TOPIC}, site {BRAND}.\nDeliver:\n- Author bio (short/long) with credentials\n- Page-level trust elements checklist\n- Source list and citation model\n- Organization and review schema notes\nConstraints: verifiable claims only; add links to profiles and citations.",
+    "category": "SEO",
+    "tags": ["SEO", "EEAT", "ContentQuality"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "AUTHOR_NAME": "Dr. Maya Kapoor",
+      "AUTHOR_CREDENTIALS": "PhD in Information Retrieval, ex-Google Search",
+      "TOPIC": "semantic search in ecommerce",
+      "BRAND": "Findly"
+    }
+  },
+  {
+    "id": "S015",
+    "title": "Local SEO Profile Optimizer",
+    "description": "Optimizes Google Business Profile and key citations with service-area and photo strategy.",
+    "content": "Act as a local SEO specialist.\nInputs: {BUSINESS_NAME}, {CITY}, {SERVICES}, {PHONE}, {URL}.\nDeliver:\n- GBP categories and attributes\n- Service area config\n- Products/services list with copy\n- Photo and post plan (4 weeks)\n- Citation list and NAP format\nConstraints: accurate NAP; avoid category stuffing.",
+    "category": "SEO",
+    "tags": ["SEO", "Local", "GBP"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "BUSINESS_NAME": "BrightSmile Dental",
+      "CITY": "Austin, TX",
+      "SERVICES": "teeth whitening, Invisalign, emergency dental",
+      "PHONE": "(512) 555-0184",
+      "URL": "https://brightsmile.example"
+    }
+  },
+  {
+    "id": "S016",
+    "title": "GBP Posts & Q/A Calendar",
+    "description": "Builds a 4-week Google Business Profile content plan with Q&A and offer posts.",
+    "content": "Act as a local content planner.\nInputs: {BUSINESS_NAME}, {CITY}, {SERVICES}, {PROMOS}.\nDeliver:\n- 4-week post calendar (events, offers, updates)\n- Q&A pairs to seed\n- UTM-tagged URLs\n- Photo suggestions per post\nConstraints: each post <= 1,500 chars; clear CTA.",
+    "category": "SEO",
+    "tags": ["SEO", "Local", "Content"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "BUSINESS_NAME": "BrightSmile Dental",
+      "CITY": "Austin",
+      "SERVICES": "Invisalign, cleanings, whitening",
+      "PROMOS": "Back-to-school cleaning discount"
+    }
+  },
+  {
+    "id": "S017",
+    "title": "Linkable Asset Ideation",
+    "description": "Generates 10 data-backed asset ideas designed to attract natural links in your niche.",
+    "content": "Act as a digital PR strategist.\nInputs: {INDUSTRY}, {AUDIENCE}, {UNIQUE_DATA_SOURCES}.\nDeliver:\n- 10 linkable asset concepts (reports, indices, tools, maps)\n- Data sources and methodology notes\n- Hook angles and outreach targets\n- Lightweight production plan\nConstraints: novelty and credibility over volume.",
+    "category": "SEO",
+    "tags": ["SEO", "LinkBuilding", "DigitalPR"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "INDUSTRY": "HR tech",
+      "AUDIENCE": "talent acquisition leaders",
+      "UNIQUE_DATA_SOURCES": "anonymized interview scheduling data"
+    }
+  },
+  {
+    "id": "S018",
+    "title": "Digital PR Pitch Pack",
+    "description": "Crafts 3 email pitches and 2 follow-ups per idea with angle personalization and subject lines.",
+    "content": "Act as a PR copywriter.\nInputs: {ASSET_TITLE}, {TARGET_PUBLICATIONS}, {SPOKESPERSON}, {KEY_STAT}.\nDeliver:\n- 3 pitch angles with subject lines\n- 2 follow-ups per angle\n- Quote snippets from {SPOKESPERSON}\n- Personalization tokens by publication\nConstraints: concise; value-first; no attachments on first touch.",
+    "category": "SEO",
+    "tags": ["SEO", "Outreach", "PR"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "ASSET_TITLE": "The 2025 Hiring Pipeline Report",
+      "TARGET_PUBLICATIONS": "TechCrunch, SHRM, HBR",
+      "SPOKESPERSON": "Lina Chen, VP Data",
+      "KEY_STAT": "time-to-hire down 22% with async interviews"
+    }
+  },
+  {
+    "id": "S019",
+    "title": "Anchor Text & Destination Map",
+    "description": "Defines safe anchor buckets and maps them to target URLs to avoid over-optimization.",
+    "content": "Act as a link strategy lead.\nInputs: {TARGET_URLS}, {PRIMARY_KEYWORDS}, {BRAND}.\nDeliver:\n- Anchor buckets: exact, partial, branded, generic, URL\n- Recommended distribution per URL\n- Anchor examples for each bucket\n- Internal vs external usage notes\nConstraints: stay natural; avoid repetitive anchors across domains.",
+    "category": "SEO",
+    "tags": ["SEO", "Links", "Strategy"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "TARGET_URLS": "homepage, /pricing, /blog/keyword-research",
+      "PRIMARY_KEYWORDS": "SEO platform, keyword research tool",
+      "BRAND": "RankPilot"
+    }
+  },
+  {
+    "id": "S020",
+    "title": "FAQ Discovery & Schema Builder",
+    "description": "Discovers real user questions and outputs ready-to-embed FAQ copy plus JSON-LD.",
+    "content": "Act as an FAQ optimizer.\nInputs: {TOPIC}, {COUNTRY}, {COUNT}.\nDeliver:\n- {COUNT} FAQs with crisp answers (<= 60 words)\n- Placement guidance in page\n- JSON-LD FAQ schema block\nConstraints: avoid duplicate coverage; align to primary intent.",
+    "category": "SEO",
+    "tags": ["SEO", "FAQ", "Schema"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "TOPIC": "canonical tags",
+      "COUNTRY": "United States",
+      "COUNT": "12"
+    }
+  },
+  {
+    "id": "S021",
+    "title": "Programmatic SEO Template Spec",
+    "description": "Defines a pSEO template with slotting rules, uniqueness safeguards, and internal link logic.",
+    "content": "Act as a programmatic SEO architect.\nInputs: {TEMPLATE_TYPE}, {DATA_COLUMNS}, {UNIQUENESS_RULES}, {URL_PATTERN}.\nDeliver:\n- Template wireframe with content slots\n- Generation rules and dedupe logic\n- Internal link and pagination logic\n- QA checklist and rollout plan\nConstraints: human-quality threshold; no doorway pages.",
+    "category": "SEO",
+    "tags": ["SEO", "Programmatic", "Templates"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "TEMPLATE_TYPE": "tools directory page",
+      "DATA_COLUMNS": "name, category, pricing, rating, primary use case",
+      "UNIQUENESS_RULES": "min 120 words unique per page + unique pros/cons",
+      "URL_PATTERN": "/tools/{category}/{slug}"
+    }
+  },
+  {
+    "id": "S022",
+    "title": "Ecommerce PDP SEO Optimizer",
+    "description": "Improves a product detail page for organic: copy blocks, attributes, schema, questions, and internal links.",
+    "content": "Act as an ecommerce SEO.\nInputs: {PRODUCT_NAME}, {CATEGORY}, {ATTRIBUTES}, {REVIEWS_COUNT}, {PRICE}.\nDeliver:\n- Above-the-fold SEO copy (benefit-led)\n- Attribute table improvements\n- FAQ section (5–7 Qs)\n- Schema and image alt guidance\n- Cross-linking to related SKUs\nConstraints: avoid fluff; keep buyer language natural.",
+    "category": "SEO",
+    "tags": ["SEO", "Ecommerce", "PDP"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PRODUCT_NAME": "ErgoLift Office Chair",
+      "CATEGORY": "office chairs",
+      "ATTRIBUTES": "lumbar support, adjustable height, mesh back",
+      "REVIEWS_COUNT": "326",
+      "PRICE": "$249"
+    }
+  },
+  {
+    "id": "S023",
+    "title": "Category Page Copy + Facet Strategy",
+    "description": "Adds smart copy blocks and facet rules to scale category SEO without cannibalization.",
+    "content": "Act as a category SEO specialist.\nInputs: {CATEGORY}, {FACETS}, {URL_RULES}.\nDeliver:\n- Intro and bottom copy blocks\n- Facet index/noindex rules\n- Canonical handling\n- Internal links to top subcategories\n- Title/meta patterns\nConstraints: keep UX clean; no thin pages.",
+    "category": "SEO",
+    "tags": ["SEO", "Ecommerce", "Category"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "CATEGORY": "running shoes",
+      "FACETS": "brand, size, terrain, pronation",
+      "URL_RULES": "one selectable facet indexed; 2+ facets noindex,follow"
+    }
+  },
+  {
+    "id": "S024",
+    "title": "International SEO & Hreflang Plan",
+    "description": "Outputs locale mapping, URL design, and hreflang implementation with edge cases.",
+    "content": "Act as an international SEO consultant.\nInputs: {LOCALES}, {URL_STRATEGY}, {CANONICAL_POLICY}.\nDeliver:\n- Locale → URL mapping\n- Hreflang examples (HTML and sitemap)\n- Canonical and language fallback policy\n- Content localization priorities\n- Measurement plan\nConstraints: avoid mixed signals; one canonical per cluster.",
+    "category": "SEO",
+    "tags": ["SEO", "International", "Hreflang"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "LOCALES": "en-us, en-gb, fr-fr, de-de",
+      "URL_STRATEGY": "subfolders",
+      "CANONICAL_POLICY": "self-canonical per locale"
+    }
+  },
+  {
+    "id": "S025",
+    "title": "Site Migration SEO Checklist",
+    "description": "Creates a pre/post migration plan covering mapping, redirects, parity checks, and monitoring.",
+    "content": "Act as a migration lead for SEO.\nInputs: {FROM_STACK} → {TO_STACK}, {URLS_MOVED}, {CHANGE_TYPE} (domain, paths, CMS), freeze window {WINDOW}.\nDeliver:\n- URL mapping rules and test samples\n- Redirect matrix with edge cases\n- Content parity and rendering checks\n- Analytics/GBRA/robots updates\n- Rollback plan and monitoring dashboard\nConstraints: prioritize risk; sign-off gates at each phase.",
+    "category": "SEO",
+    "tags": ["SEO", "Migration", "Technical"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "FROM_STACK": "WordPress",
+      "TO_STACK": "Next.js",
+      "URLS_MOVED": "8,200",
+      "CHANGE_TYPE": "paths + CMS",
+      "WINDOW": "Saturday 02:00–06:00 UTC"
+    }
+  },
+  {
+    "id": "M001",
+    "title": "ICP and Persona Builder",
+    "description": "Define your ideal customer profile and 2 buyer personas with pains, jobs-to-be-done, triggers, objections, channels, and success criteria.",
+    "content": "Act as a B2B marketing strategist.\nObjective: define ICP and 2 personas for {PRODUCT} in {INDUSTRY}.\nInputs: {PRODUCT}, {INDUSTRY}, {ACV}, {SALES_MODEL}, {REGION}.\nDeliver:\n- ICP firmographics and technographics\n- 2 personas: goals, pains, JTBD, success metrics\n- Triggers, objections, decision criteria\n- Preferred channels and content types\n- Key messages per persona\nConstraints: concise bullets; avoid jargon.",
+    "category": "Marketing",
+    "tags": ["Marketing", "ICP", "Persona"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PRODUCT": "workflow automation platform",
+      "INDUSTRY": "manufacturing",
+      "ACV": "$24k",
+      "SALES_MODEL": "sales-assisted",
+      "REGION": "North America"
+    }
+  },
+  {
+    "id": "M002",
+    "title": "Positioning & Messaging Framework",
+    "description": "Crafts a crisp positioning statement and layered messaging (core, proof, RTBs) mapped to personas and buying stages.",
+    "content": "Act as a positioning consultant.\nGoal: build messaging for {PRODUCT}.\nInputs: {PRODUCT}, {CATEGORY}, {WHO}, {ALTERNATIVES}, {VALUE}, {PROOF}.\nDeliver:\n- Positioning statement (Who, What, Why now)\n- Core message, 3 pillars, and RTBs\n- Persona-mapped messages by {STAGES}\n- Killer one-liner and elevator pitch\nConstraints: plain language; outcome-first.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Positioning", "Messaging"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PRODUCT": "Acme Analytics",
+      "CATEGORY": "product analytics",
+      "WHO": "PLG SaaS teams",
+      "ALTERNATIVES": "Mixpanel, Amplitude",
+      "VALUE": "ship features that move retention",
+      "PROOF": "case studies with +18% 90-day retention",
+      "STAGES": "awareness, consideration, decision"
+    }
+  },
+  {
+    "id": "M003",
+    "title": "Launch GTM Plan (T-30 to T+14)",
+    "description": "Timeline, assets, owners, and KPIs for a product launch across earned, owned, and paid.",
+    "content": "Act as a GTM lead.\nInputs: {PRODUCT}, {LAUNCH_DATE}, {TIER}, {ICP}, {CHANNELS}.\nDeliver:\n- T-30→T+14 plan with milestones\n- Asset list by channel and owner\n- Narrative, hero use case, and demo flow\n- Deal enablement: battlecard, talk track\n- KPIs and dashboard spec\nConstraints: keep to 1 page per section.",
+    "category": "Marketing",
+    "tags": ["Marketing", "GTM", "Launch"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PRODUCT": "Realtime Alerts",
+      "LAUNCH_DATE": "2025-10-15",
+      "TIER": "Tier 1",
+      "ICP": "growth leads at SaaS",
+      "CHANNELS": "email, LinkedIn, X, PR, paid social"
+    }
+  },
+  {
+    "id": "M004",
+    "title": "Campaign Brief Generator",
+    "description": "Turns a business goal into a cross-channel campaign brief with audience, insight, promise, and creative territories.",
+    "content": "Act as a creative strategist.\nInputs: {GOAL}, {AUDIENCE}, {INSIGHT}, {OFFER}, {BUDGET}, {DATES}.\nDeliver:\n- Single-minded proposition and proof\n- Creative territories (3)\n- Channel plan and asset list\n- Measurement plan and benchmarks\nConstraints: SMP <= 14 words.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Campaign", "Brief"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "GOAL": "increase demo requests by 30%",
+      "AUDIENCE": "mid-market RevOps",
+      "INSIGHT": "manual pipeline hygiene blocks revenue",
+      "OFFER": "free pipeline audit",
+      "BUDGET": "$45,000",
+      "DATES": "Nov–Dec 2025"
+    }
+  },
+  {
+    "id": "M005",
+    "title": "Creative Concept Starter (3 Routes)",
+    "description": "Provides three concept routes with headlines, visual cues, and copy tone for a campaign.",
+    "content": "Act as a creative director.\nInputs: {PROMISE}, {EVIDENCE}, {TONE}, {MANDATORIES}.\nDeliver 3 routes:\n- Name, headline, visual idea\n- 30-sec script beat outline\n- Social and display copy starters\n- Why it works and risks\nConstraints: distinct, testable angles.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Creative", "Concept"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PROMISE": "cut lead response time by 60%",
+      "EVIDENCE": "case study with timestamps",
+      "TONE": "confident and practical",
+      "MANDATORIES": "brand colors, CTA URL"
+    }
+  },
+  {
+    "id": "M006",
+    "title": "Landing Page Outline + Wire Copy",
+    "description": "Above-the-fold structure, proof blocks, objection handling, and CTA strategy with wire copy.",
+    "content": "Act as a conversion copywriter.\nInputs: {OFFER}, {AUDIENCE}, {PRIMARY_OBJECTION}, {PROOFS}, {CTA_LABEL}.\nDeliver:\n- Section order and rationale\n- Wire copy for hero, features, proof, FAQ\n- CTA placement and microcopy\n- SEO metadata draft\nConstraints: one idea per section; scannable.",
+    "category": "Marketing",
+    "tags": ["Marketing", "CRO", "LandingPage"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "OFFER": "interactive product tour",
+      "AUDIENCE": "product managers",
+      "PRIMARY_OBJECTION": "time to implement",
+      "PROOFS": "G2 badges, 3 quotes, ROI stat",
+      "CTA_LABEL": "Start the tour"
+    }
+  },
+  {
+    "id": "M007",
+    "title": "Email Nurture Sequence (5 Steps)",
+    "description": "A 5-email sequence from trigger to value proof to soft CTA, with subject lines and variants.",
+    "content": "Act as a lifecycle marketer.\nInputs: {TRIGGER}, {ICP}, {OFFER}, {PRIMARY_PAIN}, {METRIC}.\nDeliver:\n- 5 emails: goal, subject, preview, body\n- CTA and timing (days)\n- Alt subject tests\nConstraints: plain style; one CTA per email.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Email", "Lifecycle"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "TRIGGER": "downloaded benchmarking report",
+      "ICP": "heads of CX",
+      "OFFER": "diagnostic call",
+      "PRIMARY_PAIN": "long first response time",
+      "METRIC": "FRT down 43% in 30 days"
+    }
+  },
+  {
+    "id": "M008",
+    "title": "Competitive Battlecard",
+    "description": "Side-by-side differentiators, traps to avoid, discovery questions, and talk tracks.",
+    "content": "Act as a product marketing manager.\nInputs: {COMPETITOR}, {STRENGTHS}, {WEAKNESSES}, {KILLER_FEATURE}.\nDeliver:\n- Quick pitch vs {COMPETITOR}\n- Landmines and counters\n- Discovery questions\n- Proof points and case references\nConstraints: truthful; no FUD.",
+    "category": "Marketing",
+    "tags": ["Marketing", "PMM", "SalesEnablement"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "COMPETITOR": "Pipedrive",
+      "STRENGTHS": "simplicity, price",
+      "WEAKNESSES": "advanced automation",
+      "KILLER_FEATURE": "multi-step playbooks"
+    }
+  },
+  {
+    "id": "M009",
+    "title": "Offer Matrix & Hooks",
+    "description": "Maps ICP pains to offers and proposes 12 hook angles with proof.",
+    "content": "Act as a demand gen strategist.\nInputs: {ICP}, {PAINS}, {OFFERS}, {PROOFS}.\nDeliver:\n- Pain→Offer matrix\n- 12 hooks with angle labels\n- CTA language per hook\nConstraints: avoid generic phrasing; measure-ready.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Offers", "Hooks"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "ICP": "RevOps leaders",
+      "PAINS": "dirty data, manual handoffs",
+      "OFFERS": "audit, template pack, live tear-down",
+      "PROOFS": "before/after screenshots"
+    }
+  },
+  {
+    "id": "M010",
+    "title": "Paid Search Ad Set Builder",
+    "description": "Generates SKAG/MKAG structure, ad variants, extensions, and negatives.",
+    "content": "Act as a PPC manager.\nInputs: {THEME}, {COUNTRY}, {BUDGET}, {GOAL}.\nDeliver:\n- Campaign structure (SKAG/MKAG) for {THEME}\n- 3 RSA variants per ad group\n- Sitelinks, callouts, snippets\n- Negative keyword starter list\n- Landing page mapping\nConstraints: match intent; respect policies.",
+    "category": "Marketing",
+    "tags": ["Marketing", "PPC", "SearchAds"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "THEME": "project management software",
+      "COUNTRY": "US",
+      "BUDGET": "$12,000/month",
+      "GOAL": "free trials"
+    }
+  },
+  {
+    "id": "M011",
+    "title": "Paid Social Creative Kit",
+    "description": "Angles, primary text, headlines, and thumb cues for 6 ad concepts tailored to platform.",
+    "content": "Act as a paid social strategist.\nInputs: {PLATFORM}, {ICP}, {OFFER}, {PROOF}, {HOOKS}.\nDeliver:\n- 6 concepts with primary text and headline\n- Thumb/visual cue and format\n- First comment idea\n- Metric to watch\nConstraints: 1 claim per asset; mobile-first.",
+    "category": "Marketing",
+    "tags": ["Marketing", "PaidSocial", "Creative"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PLATFORM": "Meta",
+      "ICP": "small agencies",
+      "OFFER": "14-day trial",
+      "PROOF": "G2 momentum leader",
+      "HOOKS": "time saved, client ROI, simplicity"
+    }
+  },
+  {
+    "id": "M012",
+    "title": "Creative Testing Roadmap",
+    "description": "Structured backlog of hypotheses, variants, and readouts for iterative ad testing.",
+    "content": "Act as a growth PMM.\nInputs: {CHANNEL}, {BUDGET}, {NORTH_STAR}, {CADENCE}.\nDeliver:\n- Hypothesis backlog (copy, visual, offer)\n- Test design per sprint\n- Success criteria and guardrails\n- Readout template\nConstraints: one variable per test.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Experimentation", "Testing"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "CHANNEL": "LinkedIn Ads",
+      "BUDGET": "$20k/month",
+      "NORTH_STAR": "qualified demo rate",
+      "CADENCE": "biweekly"
+    }
+  },
+  {
+    "id": "M013",
+    "title": "Channel Mix & Budget Plan",
+    "description": "Allocates budget across channels with expected pipeline and leading indicators.",
+    "content": "Act as a marketing ops lead.\nInputs: {ARR_TARGET}, {SALES_CYCLE}, {AVG_DEAL}, {FUNNEL_CONV}.\nDeliver:\n- Channel allocations with rationale\n- Volume, CPL, SQL, pipeline estimates\n- Risks and contingency plan\nConstraints: keep model assumptions explicit.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Budget", "Planning"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "ARR_TARGET": "$5M",
+      "SALES_CYCLE": "90 days",
+      "AVG_DEAL": "$28k",
+      "FUNNEL_CONV": "visit→MQL 2.2%, MQL→SQL 35%, SQL→Win 22%"
+    }
+  },
+  {
+    "id": "M014",
+    "title": "Event Strategy Pack",
+    "description": "Pre, during, post plan for trade shows or field events, including offers and staffing.",
+    "content": "Act as a field marketing manager.\nInputs: {EVENT_NAME}, {DATES}, {CITY}, {GOALS}, {OFFER}.\nDeliver:\n- Pre-event outreach and content\n- Booth/message plan and staffing grid\n- Scan qualification rubric\n- Post-event follow-ups (3 steps)\nConstraints: measurable goals; simple offers.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Events", "Field"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "EVENT_NAME": "SaaS Expo",
+      "DATES": "Nov 6–8, 2025",
+      "CITY": "Berlin",
+      "GOALS": "120 scans, 30 demos",
+      "OFFER": "VIP demo lounge"
+    }
+  },
+  {
+    "id": "M015",
+    "title": "Referral Program Design",
+    "description": "Creates a simple referral mechanism with incentive, messaging, and ops steps.",
+    "content": "Act as a growth marketer.\nInputs: {PRODUCT}, {INCENTIVE}, {LIMITS}, {LEGAL}.\nDeliver:\n- Program rules and tiers\n- Landing copy and email templates\n- Tracking and fraud prevention\n- KPI tree\nConstraints: easy to explain in 30 seconds.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Referral", "Growth"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PRODUCT": "team chat app",
+      "INCENTIVE": "$20 credit per referral",
+      "LIMITS": "max 10 credits/user",
+      "LEGAL": "no self-referrals"
+    }
+  },
+  {
+    "id": "M016",
+    "title": "Churn Survey + Save Plays",
+    "description": "Exit survey design with branching and save-offer playbook aligned to causes.",
+    "content": "Act as a retention strategist.\nInputs: {TOP_CHURN_REASONS}, {SAVE_OFFERS}, {CHANNELS}.\nDeliver:\n- Survey with routing\n- Save plays mapped to reason\n- Messaging snippets per play\n- Success metrics and cooldown rules\nConstraints: respectful tone; minimal friction.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Retention", "CX"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "TOP_CHURN_REASONS": "price, missing feature, low usage",
+      "SAVE_OFFERS": "extended trial, training, discount",
+      "CHANNELS": "in-app, email"
+    }
+  },
+  {
+    "id": "M017",
+    "title": "Pricing Page Upgrade",
+    "description": "Copy, layout, comparison table, and FAQs to clarify value and reduce friction.",
+    "content": "Act as a monetization PMM.\nInputs: {PLANS}, {KEY_DIFFERENCES}, {PRIMARY_PAIN}, {CTA_LABEL}.\nDeliver:\n- Value ladders and plan blurbs\n- Comparison rows to highlight {KEY_DIFFERENCES}\n- Risk-reducers and FAQs\n- CTA copy and placement\nConstraints: avoid choice overload.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Pricing", "CRO"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PLANS": "Starter, Growth, Scale",
+      "KEY_DIFFERENCES": "seats, integrations, SLAs",
+      "PRIMARY_PAIN": "complex rollouts",
+      "CTA_LABEL": "Start free"
+    }
+  },
+  {
+    "id": "M018",
+    "title": "Review Generation System",
+    "description": "Playbook to earn credible third-party reviews with timing, prompts, and compliance.",
+    "content": "Act as a customer marketing lead.\nInputs: {PLATFORMS}, {PROMPT_TEMPLATES}, {MILESTONES}.\nDeliver:\n- Trigger points and ask templates\n- Incentive and compliance notes\n- Routing for negative feedback\n- Goal cadence and dashboard\nConstraints: authentic reviews only.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Reviews", "CustomerMarketing"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PLATFORMS": "G2, Capterra",
+      "PROMPT_TEMPLATES": "results, ease of use, support",
+      "MILESTONES": "90 days live, renewal"
+    }
+  },
+  {
+    "id": "M019",
+    "title": "Partner Co-Marketing Plan",
+    "description": "Plan for a joint campaign with goals, assets, and shared metrics.",
+    "content": "Act as a partner marketer.\nInputs: {PARTNER}, {AUDIENCE_OVERLAP}, {ASSETS}, {GOAL}.\nDeliver:\n- Narrative and joint value\n- Asset split and timeline\n- Legal/brand guardrails\n- Shared KPIs and reporting cadence\nConstraints: keep approvals realistic.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Partnerships", "GTM"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PARTNER": "Stripe",
+      "AUDIENCE_OVERLAP": "SaaS finance teams",
+      "ASSETS": "webinar + ebook",
+      "GOAL": "200 registrants"
+    }
+  },
+  {
+    "id": "M020",
+    "title": "Webinar Funnel Kit",
+    "description": "Topic framing, landing copy, reminder cadence, and follow-ups for a high-show webinar.",
+    "content": "Act as a demand gen manager.\nInputs: {TOPIC}, {SPEAKERS}, {DATE_TIME}, {OFFER}, {URL}.\nDeliver:\n- Landing copy and agenda\n- Reminder emails and calendar text\n- Day-of run-of-show\n- Follow-ups: replay and CTA\nConstraints: keep emails under 120 words.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Webinar", "Funnel"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "TOPIC": "AI for onboarding",
+      "SPEAKERS": "PM + Head of CS",
+      "DATE_TIME": "2025-11-12 10:00 PT",
+      "OFFER": "implementation checklist",
+      "URL": "https://example.com/webinar"
+    }
+  },
+  {
+    "id": "M021",
+    "title": "UGC Brief for Creators",
+    "description": "Clear do/don’t, talking points, and deliverables for creator-made clips.",
+    "content": "Act as a creator program manager.\nInputs: {PRODUCT}, {ANGLE}, {DELIVERABLES}, {USAGE_RIGHTS}, {DEADLINE}.\nDeliver:\n- Brief with hooks and example lines\n- Footage checklist\n- FTC disclosure and brand rules\n- Delivery specs and payment terms\nConstraints: keep creative freedom high.",
+    "category": "Marketing",
+    "tags": ["Marketing", "UGC", "Creators"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PRODUCT": "note-taking app",
+      "ANGLE": "before/after focus",
+      "DELIVERABLES": "3x 20-30s clips",
+      "USAGE_RIGHTS": "paid + organic 6 months",
+      "DEADLINE": "2025-10-05"
+    }
+  },
+  {
+    "id": "M022",
+    "title": "Content Pillars & Calendar",
+    "description": "Three strategic pillars and a 4-week publishing plan mapped to funnel stages.",
+    "content": "Act as an editorial lead.\nInputs: {ICP}, {PILLARS}, {CADENCE}, {CHANNELS}.\nDeliver:\n- Pillar definitions and goals\n- 4-week calendar with formats\n- Repurposing plan per asset\n- KPI map\nConstraints: sustainable cadence; avoid overlap.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Content", "Calendar"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "ICP": "startup founders",
+      "PILLARS": "fundraising, hiring, growth",
+      "CADENCE": "3 posts/week",
+      "CHANNELS": "blog, newsletter, YouTube"
+    }
+  },
+  {
+    "id": "M023",
+    "title": "Sales Enablement Kit",
+    "description": "Creates one-pagers, objection handlers, and demo talk tracks aligned to the campaign.",
+    "content": "Act as a PMM.\nInputs: {CAMPAIGN}, {BUYER_ROLES}, {TOP_OBJECTIONS}.\nDeliver:\n- One-pager and slide outline\n- Objection counter snippets\n- Demo talk track and checklist\nConstraints: one page per artifact.",
+    "category": "Marketing",
+    "tags": ["Marketing", "SalesEnablement", "PMM"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "CAMPAIGN": "pipeline hygiene",
+      "BUYER_ROLES": "RevOps, Sales Manager",
+      "TOP_OBJECTIONS": "time, budget, change risk"
+    }
+  },
+  {
+    "id": "M024",
+    "title": "Quarterly OKRs & Scorecard",
+    "description": "Sets practical marketing OKRs and a simple scorecard with leading indicators.",
+    "content": "Act as a marketing leader.\nInputs: {COMPANY_STAGE}, {TOPLINE_GOAL}, {CONSTRAINTS}.\nDeliver:\n- 3–5 OKRs with KRs\n- Scorecard template\n- Risk and mitigation list\nConstraints: measurable and controllable.",
+    "category": "Marketing",
+    "tags": ["Marketing", "OKRs", "Planning"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "COMPANY_STAGE": "Series A",
+      "TOPLINE_GOAL": "pipeline $8M",
+      "CONSTRAINTS": "team of 6, capped spend"
+    }
+  },
+  {
+    "id": "M025",
+    "title": "Analytics & Attribution Plan",
+    "description": "Defines tracking, events, and a sensible attribution model with caveats.",
+    "content": "Act as a marketing analytics lead.\nInputs: {STACK}, {EVENTS}, {MODEL}, {REPORT_CADENCE}.\nDeliver:\n- Event taxonomy and naming\n- Dashboard specs\n- Attribution model with pros/cons\n- Data QA checklist\nConstraints: favor decisions over perfection.",
+    "category": "Marketing",
+    "tags": ["Marketing", "Analytics", "Attribution"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "STACK": "GA4 + Segment + HubSpot",
+      "EVENTS": "signup, activated, invited_user, upgrade",
+      "MODEL": "position-based 40/20/40",
+      "REPORT_CADENCE": "weekly"
+    }
+  },
+
+  {
+    "id": "SM001",
+    "title": "Instagram Reel Script Pack",
+    "description": "Five 20–30s Reel scripts with hook, beats, and CTA tailored to your niche.",
+    "content": "Act as a short-form scriptwriter.\nInputs: {NICHE}, {OFFER}, {PAIN}, {CTA}.\nDeliver:\n- 5 scripts: hook, 3 beats, CTA\n- On-screen text and b-roll notes\n- Caption and 8–12 hashtags\nConstraints: first 2 seconds matter; no fluff.",
+    "category": "Social Media",
+    "tags": ["Social", "Instagram", "Reels"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "NICHE": "fitness coaches",
+      "OFFER": "meal plan",
+      "PAIN": "busy weekdays",
+      "CTA": "comment MEAL"
+    }
+  },
+  {
+    "id": "SM002",
+    "title": "TikTok Hook + Script Generator",
+    "description": "Generates 10 hooks and 3 scripts aligned to current content styles.",
+    "content": "Act as a TikTok strategist.\nInputs: {TOPIC}, {ANGLE}, {CTA}, {STYLE}.\nDeliver:\n- 10 hook lines\n- 3 scripts (15–25s)\n- Caption and sound suggestions\nConstraints: native tone; jump-cut friendly.",
+    "category": "Social Media",
+    "tags": ["Social", "TikTok", "Shorts"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "TOPIC": "productivity",
+      "ANGLE": "counterintuitive",
+      "CTA": "save for later",
+      "STYLE": "listicle"
+    }
+  },
+  {
+    "id": "SM003",
+    "title": "X Thread Outline (7–10 Tweets)",
+    "description": "Builds a clean thread structure with hooks, subheads, and proof.",
+    "content": "Act as a Twitter copywriter.\nInputs: {TOPIC}, {AUDIENCE}, {PROOF}, {CTA}.\nDeliver:\n- Hook tweet variants (3)\n- 7–10 tweet outline with beats\n- Proof inserts and CTA\nConstraints: clear, skimmable, avoid screenshots of text.",
+    "category": "Social Media",
+    "tags": ["Social", "Twitter", "Threads"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "TOPIC": "bootstrapping",
+      "AUDIENCE": "indie hackers",
+      "PROOF": "$12k MRR in 10 months",
+      "CTA": "follow for part 2"
+    }
+  },
+  {
+    "id": "SM004",
+    "title": "Instagram Carousel Planner",
+    "description": "10-slide carousel blueprint with headline ladder, slides copy, and CTA.",
+    "content": "Act as a carousel copywriter.\nInputs: {TOPIC}, {AUDIENCE}, {CTA}.\nDeliver:\n- Cover headline options (3)\n- Slide 1–10 captions (<= 18 words)\n- Visual cue per slide\nConstraints: one idea per slide; thumb-stopping cover.",
+    "category": "Social Media",
+    "tags": ["Social", "Instagram", "Carousel"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "TOPIC": "email list growth",
+      "AUDIENCE": "creators",
+      "CTA": "download the checklist"
+    }
+  },
+  {
+    "id": "SM005",
+    "title": "YouTube Shorts Series Plan",
+    "description": "Designs a 10-episode Shorts series with repeatable format and hooks.",
+    "content": "Act as a YouTube strategist.\nInputs: {SERIES_THEME}, {AUDIENCE}, {CTA}.\nDeliver:\n- Series name and format rules\n- 10 episode ideas with hooks\n- End-screen prompts and playlist plan\nConstraints: consistent pattern; tight intros.",
+    "category": "Social Media",
+    "tags": ["Social", "YouTube", "Shorts"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "SERIES_THEME": "AI tips for students",
+      "AUDIENCE": "college students",
+      "CTA": "subscribe for daily tip"
+    }
+  },
+  {
+    "id": "SM006",
+    "title": "Content Pillars & Prompt Bank",
+    "description": "Defines 4 pillars and gives 40 prompts distributed evenly.",
+    "content": "Act as a social content planner.\nInputs: {ACCOUNT_NICHE}, {GOAL}, {PILLARS}.\nDeliver:\n- 4 pillars with purpose\n- 40 prompts (10 each)\n- Example captions and CTA patterns\nConstraints: avoid overlap; varied formats.",
+    "category": "Social Media",
+    "tags": ["Social", "Strategy", "Planning"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "ACCOUNT_NICHE": "personal finance",
+      "GOAL": "newsletter signups",
+      "PILLARS": "earn, save, invest, protect"
+    }
+  },
+  {
+    "id": "SM007",
+    "title": "Monthly Social Calendar",
+    "description": "Date-stamped 4-week plan with platforms, assets, and owner.",
+    "content": "Act as a content ops lead.\nInputs: {MONTH}, {PLATFORMS}, {CADENCE}, {THEMES}.\nDeliver:\n- 4-week grid with posts\n- Asset list and due dates\n- Backup ideas per week\nConstraints: sustainable pace; reuse smartly.",
+    "category": "Social Media",
+    "tags": ["Social", "Calendar", "Ops"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "MONTH": "October 2025",
+      "PLATFORMS": "IG, X, TikTok, YouTube",
+      "CADENCE": "5 posts/week",
+      "THEMES": "education, proof, behind-the-scenes, CTA"
+    }
+  },
+  {
+    "id": "SM008",
+    "title": "Community Engagement Playbook",
+    "description": "Comment styles, DM etiquette, and daily engagement blocks to grow reach.",
+    "content": "Act as a community manager.\nInputs: {AUDIENCE}, {TIME_BUDGET}, {TARGET_ACCOUNTS}.\nDeliver:\n- Comment styles and examples\n- Daily/weekly engagement schedule\n- DM frameworks and templates\nConstraints: value-first; no spam.",
+    "category": "Social Media",
+    "tags": ["Social", "Community", "Engagement"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "AUDIENCE": "B2B founders",
+      "TIME_BUDGET": "45 min/day",
+      "TARGET_ACCOUNTS": "top 20 creators list"
+    }
+  },
+  {
+    "id": "SM009",
+    "title": "Giveaway Campaign Blueprint",
+    "description": "Mechanics, rules, posts, and winner follow-up for a compliant giveaway.",
+    "content": "Act as a social promotions lead.\nInputs: {PRIZE}, {START_DATE}, {END_DATE}, {PLATFORMS}, {ELIGIBILITY}.\nDeliver:\n- Mechanics and rules\n- Announcement + reminder posts\n- Winner selection and follow-up\nConstraints: platform policies and legal disclaimers.",
+    "category": "Social Media",
+    "tags": ["Social", "Campaign", "Giveaway"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PRIZE": "annual license",
+      "START_DATE": "2025-11-01",
+      "END_DATE": "2025-11-08",
+      "PLATFORMS": "Instagram, X",
+      "ELIGIBILITY": "18+ worldwide"
+    }
+  },
+  {
+    "id": "SM010",
+    "title": "Influencer Brief & Outreach",
+    "description": "Brief, talking points, and 3 outreach emails for creators.",
+    "content": "Act as an influencer manager.\nInputs: {NICHE}, {DELIVERABLES}, {BUDGET_RANGE}, {USAGE_RIGHTS}.\nDeliver:\n- Brief doc\n- 3 outreach emails\n- Talking points and guardrails\nConstraints: transparent comp; creator-friendly.",
+    "category": "Social Media",
+    "tags": ["Social", "Influencer", "Outreach"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "NICHE": "productivity",
+      "DELIVERABLES": "2 Reels + 1 Story",
+      "BUDGET_RANGE": "$1k–$3k",
+      "USAGE_RIGHTS": "paid 90 days"
+    }
+  },
+  {
+    "id": "SM011",
+    "title": "Crisis Response Template Pack",
+    "description": "Escalation flow, holding statements, and platform-specific responses.",
+    "content": "Act as a brand comms lead.\nInputs: {SCENARIOS}, {SPOKESPERSONS}, {REVIEW_WINDOW}.\nDeliver:\n- Triage matrix and escalation path\n- Holding statements and FAQs\n- Response templates per platform\nConstraints: confirm facts; avoid blame.",
+    "category": "Social Media",
+    "tags": ["Social", "Crisis", "Comms"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "SCENARIOS": "service outage, data bug",
+      "SPOKESPERSONS": "CTO, Head of CS",
+      "REVIEW_WINDOW": "30 minutes"
+    }
+  },
+  {
+    "id": "SM012",
+    "title": "Meme Adaptation Guide",
+    "description": "List of safe meme formats with examples and copy angles for your niche.",
+    "content": "Act as a culture strategist.\nInputs: {NICHE}, {BRAND_TONE}, {RISK_TOLERANCE}.\nDeliver:\n- 10 meme formats with examples\n- Caption angles and do/don’t\n- Review checklist\nConstraints: brand-safe; credit sources.",
+    "category": "Social Media",
+    "tags": ["Social", "Meme", "Creative"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "NICHE": "developer tools",
+      "BRAND_TONE": "dry humor",
+      "RISK_TOLERANCE": "low"
+    }
+  },
+  {
+    "id": "SM013",
+    "title": "Social Bio Optimizer",
+    "description": "Optimizes profile name, handle, bio, link, and highlights to improve discovery.",
+    "content": "Act as a profile optimization expert.\nInputs: {PLATFORM}, {PRIMARY_KEYWORD}, {PROOF}, {CTA}.\nDeliver:\n- Name and handle suggestions\n- Bio variants (3)\n- Link strategy and highlights\nConstraints: searchability first.",
+    "category": "Social Media",
+    "tags": ["Social", "Profile", "SEO"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PLATFORM": "Instagram",
+      "PRIMARY_KEYWORD": "nutrition coach",
+      "PROOF": "1,200+ clients",
+      "CTA": "book a free consult"
+    }
+  },
+  {
+    "id": "SM014",
+    "title": "Hashtag Strategy by Platform",
+    "description": "Builds a rotating set with niche/mid/broad tags and usage cadence.",
+    "content": "Act as a social SEO specialist.\nInputs: {PLATFORM}, {TOPIC}, {AUDIENCE}.\nDeliver:\n- 30–45 hashtags grouped by size\n- Rotation plan and bundles\nConstraints: relevant and non-spammy.",
+    "category": "Social Media",
+    "tags": ["Social", "Hashtags", "SEO"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PLATFORM": "Instagram",
+      "TOPIC": "home workouts",
+      "AUDIENCE": "beginners"
+    }
+  },
+  {
+    "id": "SM015",
+    "title": "Stories Sequence Playbook",
+    "description": "Three story arcs with frames, stickers, and CTA swipe flows.",
+    "content": "Act as a Stories producer.\nInputs: {PLATFORM}, {GOAL}, {OFFER}.\nDeliver:\n- 3 arcs (5–7 frames each)\n- Sticker usage and polls\n- CTA swipe flow\nConstraints: fast pacing; legible text.",
+    "category": "Social Media",
+    "tags": ["Social", "Stories", "IG"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PLATFORM": "Instagram",
+      "GOAL": "DM replies",
+      "OFFER": "free mini-audit"
+    }
+  },
+  {
+    "id": "SM016",
+    "title": "Live Stream Run-of-Show",
+    "description": "Bulletproof 30–60 min live plan with beats, roles, and contingency.",
+    "content": "Act as a live producer.\nInputs: {PLATFORM}, {TOPIC}, {GUESTS}, {DATE_TIME}.\nDeliver:\n- Run-of-show with timestamps\n- Roles and tech checklist\n- Fallbacks for issues\nConstraints: interaction every 3–5 min.",
+    "category": "Social Media",
+    "tags": ["Social", "Live", "Production"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PLATFORM": "YouTube",
+      "TOPIC": "Q4 planning",
+      "GUESTS": "2",
+      "DATE_TIME": "2025-11-20 09:00 PT"
+    }
+  },
+  {
+    "id": "SM017",
+    "title": "Social Customer Support Macros",
+    "description": "Creates response macros with empathy, routing, and escalation notes.",
+    "content": "Act as a CX writer.\nInputs: {COMMON_ISSUES}, {BRAND_TONE}, {HOURS}.\nDeliver:\n- Macro library by issue\n- Private handoff templates\n- SLA and escalation guidance\nConstraints: human tone; data privacy safe.",
+    "category": "Social Media",
+    "tags": ["Social", "Support", "CX"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "COMMON_ISSUES": "billing, login, outage",
+      "BRAND_TONE": "warm and concise",
+      "HOURS": "8am–8pm ET"
+    }
+  },
+  {
+    "id": "SM018",
+    "title": "Cross-Posting Matrix",
+    "description": "Adapts a single asset to multiple platforms with copy length and format tweaks.",
+    "content": "Act as a repurposing strategist.\nInputs: {SOURCE_ASSET}, {PLATFORMS}.\nDeliver:\n- Platform-specific adaptations\n- Copy character limits and CTA\n- Thumbnail and aspect ratios\nConstraints: native feel per platform.",
+    "category": "Social Media",
+    "tags": ["Social", "Repurpose", "Workflow"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "SOURCE_ASSET": "5-min tutorial",
+      "PLATFORMS": "YouTube, IG, TikTok, X"
+    }
+  },
+  {
+    "id": "SM019",
+    "title": "Trend Hijack Safety Filter",
+    "description": "Decision tree to assess trends and adapt safely to brand.",
+    "content": "Act as a risk-aware strategist.\nInputs: {BRAND_TONE}, {INDUSTRY_RULES}, {EXAMPLES}.\nDeliver:\n- Trend evaluation checklist\n- Adaptation patterns\n- Red flags and veto list\nConstraints: brand and legal safe.",
+    "category": "Social Media",
+    "tags": ["Social", "Trends", "Governance"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "BRAND_TONE": "playful",
+      "INDUSTRY_RULES": "financial services",
+      "EXAMPLES": "do/don’t gallery"
+    }
+  },
+  {
+    "id": "SM020",
+    "title": "Accessibility Checklist for Social",
+    "description": "Ensures posts are readable and inclusive with alt text and captions.",
+    "content": "Act as an accessibility advocate.\nInputs: {PLATFORMS}, {BRAND_STYLE}.\nDeliver:\n- Alt-text patterns and examples\n- Captioning and color-contrast rules\n- Template checklist\nConstraints: WCAG-informed; practical tips.",
+    "category": "Social Media",
+    "tags": ["Social", "Accessibility", "BestPractices"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PLATFORMS": "IG, X, YouTube",
+      "BRAND_STYLE": "bold colors"
+    }
+  },
+  {
+    "id": "SM021",
+    "title": "Social Listening Insight Report",
+    "description": "Turns raw mentions into themes, quotes, and content ideas.",
+    "content": "Act as a social analyst.\nInputs: {KEYWORDS}, {ACCOUNTS}, {TIME_RANGE}.\nDeliver:\n- Themes with volume and sentiment\n- Representative quotes\n- Content ideas and replies\nConstraints: exclude low-signal noise.",
+    "category": "Social Media",
+    "tags": ["Social", "Listening", "Insights"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "KEYWORDS": "brand + competitors",
+      "ACCOUNTS": "@brand, @competitor",
+      "TIME_RANGE": "last 30 days"
+    }
+  },
+  {
+    "id": "SM022",
+    "title": "Pinterest Board & Pin Plan",
+    "description": "Board architecture, pin topics, and keywords for discovery.",
+    "content": "Act as a Pinterest strategist.\nInputs: {THEME}, {ICP}, {GOAL}.\nDeliver:\n- Boards and descriptions\n- 30 pin ideas with keywords\n- Creative specs and templates\nConstraints: evergreen first; seasonal add-ons.",
+    "category": "Social Media",
+    "tags": ["Social", "Pinterest", "SEO"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "THEME": "minimal home office",
+      "ICP": "remote workers",
+      "GOAL": "blog traffic"
+    }
+  },
+  {
+    "id": "SM023",
+    "title": "Facebook Group Engagement Kit",
+    "description": "Prompts, weekly rituals, and mod replies to grow an engaged group.",
+    "content": "Act as a community builder.\nInputs: {GROUP_TOPIC}, {NORMS}, {WEEKLY_RITUALS}.\nDeliver:\n- 30 engagement prompts\n- Weekly ritual calendar\n- Moderator reply templates\nConstraints: supportive, spam-free culture.",
+    "category": "Social Media",
+    "tags": ["Social", "Facebook", "Community"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "GROUP_TOPIC": "no-code apps",
+      "NORMS": "no self-promo, be kind",
+      "WEEKLY_RITUALS": "wins Wednesday, build Friday"
+    }
+  },
+  {
+    "id": "SM024",
+    "title": "Threads Conversation Starters",
+    "description": "Creates 25 lightweight prompts designed for replies and riffs.",
+    "content": "Act as a Threads copywriter.\nInputs: {NICHE}, {TONE}, {CTA_STYLE}.\nDeliver:\n- 25 prompts optimized for replies\n- Follow-up reply starters\nConstraints: casual, low effort to engage.",
+    "category": "Social Media",
+    "tags": ["Social", "Threads", "Engagement"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "NICHE": "design systems",
+      "TONE": "curious",
+      "CTA_STYLE": "ask for one example"
+    }
+  },
+  {
+    "id": "SM025",
+    "title": "Platform Analytics Scorecard",
+    "description": "KPI sheet and cadence for each platform with leading indicators.",
+    "content": "Act as a social analyst.\nInputs: {PLATFORMS}, {PRIMARY_GOAL}, {CADENCE}.\nDeliver:\n- KPI list and targets by platform\n- Report template\n- Insight→action loop\nConstraints: actionable, not exhaustive.",
+    "category": "Social Media",
+    "tags": ["Social", "Analytics", "KPI"],
+    "createdAt": "2025-08-26",
+    "examples": {
+      "PLATFORMS": "IG, X, TikTok, YouTube",
+      "PRIMARY_GOAL": "email signups",
+      "CADENCE": "weekly"
+    }
+  },
+  {
+    "id": "EM001",
+    "title": "Welcome Series (3 Emails)",
+    "description": "A tight 3-step welcome that sets expectations, gives a quick win, and drives first conversion.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Welcome series",
+      "AUDIENCE": "new newsletter subscribers",
+      "OFFER": "starter toolkit",
+      "GOAL": "convert 8% to first action in 7 days",
+      "BRAND_VOICE": "helpful and human",
+      "CADENCE": "day 0, day 2, day 5",
+      "METRIC": "click-to-open rate",
+      "URL": "https://example.com/start"
+    }
+  },
+  {
+    "id": "EM002",
+    "title": "Onboarding Drip (5 Emails)",
+    "description": "Guided onboarding for a SaaS trial, each email removes one barrier to first value.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Onboarding",
+      "AUDIENCE": "14‑day SaaS trial users",
+      "OFFER": "product walkthrough",
+      "GOAL": "reach activation milestone by day 5",
+      "BRAND_VOICE": "practical and concise",
+      "CADENCE": "daily for 5 days",
+      "METRIC": "activation rate",
+      "URL": "https://example.com/activate"
+    }
+  },
+  {
+    "id": "EM003",
+    "title": "Re‑engagement Nurture",
+    "description": "Win back cold subscribers with value, proof, and a low-friction next step.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Re‑engagement",
+      "AUDIENCE": "inactive subscribers 90+ days",
+      "OFFER": "exclusive case study",
+      "GOAL": "reactivate 12% of the segment",
+      "BRAND_VOICE": "empathetic and direct",
+      "CADENCE": "2 emails in 7 days",
+      "METRIC": "reactivation rate",
+      "URL": "https://example.com/case"
+    }
+  },
+  {
+    "id": "EM004",
+    "title": "Seasonal Promo Blast",
+    "description": "One-off promo with urgency, social proof, and clear CTA without sounding pushy.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Seasonal promotion",
+      "AUDIENCE": "existing customers",
+      "OFFER": "limited-time upgrade",
+      "GOAL": "boost upgrades during the holiday week",
+      "BRAND_VOICE": "upbeat and respectful",
+      "CADENCE": "one email + 1 reminder",
+      "METRIC": "upgrade rate",
+      "URL": "https://example.com/upgrade"
+    }
+  },
+  {
+    "id": "EM005",
+    "title": "Product Announcement",
+    "description": "Announce a new feature with a problem-first angle, benefit bullets, and demo invite.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Product announcement",
+      "AUDIENCE": "free and paid users",
+      "OFFER": "feature launch demo",
+      "GOAL": "drive demo registrations",
+      "BRAND_VOICE": "confident and clear",
+      "CADENCE": "announce + reminder",
+      "METRIC": "demo signup rate",
+      "URL": "https://example.com/demo"
+    }
+  },
+  {
+    "id": "EM006",
+    "title": "Content Newsletter Issue",
+    "description": "Curated issue that balances one deep piece with 2–3 quick hits and a soft CTA.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Newsletter",
+      "AUDIENCE": "weekly subscribers",
+      "OFFER": "flagship article",
+      "GOAL": "drive qualified traffic to pillar content",
+      "BRAND_VOICE": "editorial and friendly",
+      "CADENCE": "weekly",
+      "METRIC": "click-through rate",
+      "URL": "https://example.com/pillar"
+    }
+  },
+  {
+    "id": "EM007",
+    "title": "Win‑back Discount",
+    "description": "Ethical discount to win back churned users with usage-based personalization.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Win‑back",
+      "AUDIENCE": "recently churned users",
+      "OFFER": "30‑day return discount",
+      "GOAL": "recover 6% of churned base",
+      "BRAND_VOICE": "respectful and factual",
+      "CADENCE": "2 emails over 10 days",
+      "METRIC": "re‑subscribe rate",
+      "URL": "https://example.com/return"
+    }
+  },
+  {
+    "id": "EM008",
+    "title": "Upgrade Prompt",
+    "description": "Nudge free users to paid with feature gating, ROI bullets, and social proof.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Upgrade",
+      "AUDIENCE": "free plan users",
+      "OFFER": "pro plan trial",
+      "GOAL": "improve free→paid by 2pp",
+      "BRAND_VOICE": "value-forward",
+      "CADENCE": "triggered at limit reach",
+      "METRIC": "trial start rate",
+      "URL": "https://example.com/pro"
+    }
+  },
+  {
+    "id": "EM009",
+    "title": "Referral Ask",
+    "description": "Simple referral nudge tied to a usage milestone; easy to forward.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Referral",
+      "AUDIENCE": "power users",
+      "OFFER": "month free per referral",
+      "GOAL": "increase referrals by 25%",
+      "BRAND_VOICE": "appreciative",
+      "CADENCE": "triggered",
+      "METRIC": "referrals started",
+      "URL": "https://example.com/ref"
+    }
+  },
+  {
+    "id": "EM010",
+    "title": "Customer Story Spotlight",
+    "description": "Narrative mini-case with one lesson, one metric, one CTA to learn more.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Customer story",
+      "AUDIENCE": "consideration stage leads",
+      "OFFER": "case study PDF",
+      "GOAL": "progress stuck deals",
+      "BRAND_VOICE": "credible and specific",
+      "CADENCE": "one-off",
+      "METRIC": "asset downloads",
+      "URL": "https://example.com/casepdf"
+    }
+  },
+  {
+    "id": "EM011",
+    "title": "Feature Adoption Nudges",
+    "description": "Short tips that drive usage of one underused feature per email.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Adoption tips",
+      "AUDIENCE": "active users",
+      "OFFER": "how-to video",
+      "GOAL": "increase feature usage by 15%",
+      "BRAND_VOICE": "coach-like",
+      "CADENCE": "weekly x4",
+      "METRIC": "feature MAU",
+      "URL": "https://example.com/feature"
+    }
+  },
+  {
+    "id": "EM012",
+    "title": "Event Reminder Series",
+    "description": "Sequence that increases webinar show-up with calendar copy and last-call CTA.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Event reminders",
+      "AUDIENCE": "webinar registrants",
+      "OFFER": "live Q&A",
+      "GOAL": "hit 45% attendance rate",
+      "BRAND_VOICE": "friendly and timely",
+      "CADENCE": "T‑2 days, T‑2 hours",
+      "METRIC": "attendance rate",
+      "URL": "https://example.com/join"
+    }
+  },
+  {
+    "id": "EM013",
+    "title": "Post‑Event Follow-up",
+    "description": "Send replay, timestamps, and a soft CTA to next step.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Post‑event",
+      "AUDIENCE": "attendees and no‑shows",
+      "OFFER": "replay link",
+      "GOAL": "book follow-up demos",
+      "BRAND_VOICE": "service-oriented",
+      "CADENCE": "T+1 day",
+      "METRIC": "demo request rate",
+      "URL": "https://example.com/replay"
+    }
+  },
+  {
+    "id": "EM014",
+    "title": "Free Resource Drop",
+    "description": "Deliver a high-value checklist or template with minimal friction.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Resource drop",
+      "AUDIENCE": "newsletter readers",
+      "OFFER": "operating checklist",
+      "GOAL": "earn saves and shares",
+      "BRAND_VOICE": "straightforward",
+      "CADENCE": "monthly",
+      "METRIC": "forward rate",
+      "URL": "https://example.com/checklist"
+    }
+  },
+  {
+    "id": "EM015",
+    "title": "Survey + Gift",
+    "description": "Collect product feedback with a short survey and small thank-you.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Survey",
+      "AUDIENCE": "active users",
+      "OFFER": "gift card draw",
+      "GOAL": "gather input on roadmap",
+      "BRAND_VOICE": "curious and polite",
+      "CADENCE": "invite + reminder",
+      "METRIC": "completion rate",
+      "URL": "https://example.com/survey"
+    }
+  },
+  {
+    "id": "EM016",
+    "title": "Cross‑sell Spotlight",
+    "description": "Introduce a complementary add-on with clear value and 1‑click trial.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Cross‑sell",
+      "AUDIENCE": "current customers",
+      "OFFER": "add-on module",
+      "GOAL": "increase ARPU",
+      "BRAND_VOICE": "consultative",
+      "CADENCE": "one-off",
+      "METRIC": "add-on trial rate",
+      "URL": "https://example.com/addon"
+    }
+  },
+  {
+    "id": "EM017",
+    "title": "Renewal Reminder + ROI",
+    "description": "Value recap and next-year plan that de-emphasizes price and focuses on outcome.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Renewal",
+      "AUDIENCE": "annual contracts",
+      "OFFER": "renewal consult",
+      "GOAL": "reduce churn risk",
+      "BRAND_VOICE": "professional",
+      "CADENCE": "T‑30, T‑7",
+      "METRIC": "renewal rate",
+      "URL": "https://example.com/renew"
+    }
+  },
+  {
+    "id": "EM018",
+    "title": "Trial Expiry Countdown",
+    "description": "Create urgency ethically with reminders and a last-day bonus.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Trial expiry",
+      "AUDIENCE": "trial users day 10–14",
+      "OFFER": "bonus training",
+      "GOAL": "lift trial→paid conversions",
+      "BRAND_VOICE": "clear and calm",
+      "CADENCE": "T‑3, T‑1, T0",
+      "METRIC": "conversion rate",
+      "URL": "https://example.com/upgrade-trial"
+    }
+  },
+  {
+    "id": "EM019",
+    "title": "Newsletter Sponsor Insert",
+    "description": "Sponsor copy block that fits your editorial style and delivers value.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Sponsorship",
+      "AUDIENCE": "newsletter readers",
+      "OFFER": "sponsor product",
+      "GOAL": "meet CTR commitment",
+      "BRAND_VOICE": "editorial integrity",
+      "CADENCE": "inline block",
+      "METRIC": "sponsor CTR",
+      "URL": "https://sponsor.example.com"
+    }
+  },
+  {
+    "id": "EM020",
+    "title": "Milestone Celebration",
+    "description": "Celebrate a milestone with a gift and a light CTA to share or review.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Milestone",
+      "AUDIENCE": "longtime users",
+      "OFFER": "exclusive badge",
+      "GOAL": "increase advocacy",
+      "BRAND_VOICE": "grateful",
+      "CADENCE": "one-off",
+      "METRIC": "review volume",
+      "URL": "https://example.com/review"
+    }
+  },
+  {
+    "id": "EM021",
+    "title": "Security Update Notice",
+    "description": "Calm, clear comms for a security update with action steps and reassurance.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Security notice",
+      "AUDIENCE": "all users",
+      "OFFER": "patch notes",
+      "GOAL": "inform and guide",
+      "BRAND_VOICE": "reassuring and precise",
+      "CADENCE": "as needed",
+      "METRIC": "support tickets down",
+      "URL": "https://status.example.com"
+    }
+  },
+  {
+    "id": "EM022",
+    "title": "Release Notes Digest",
+    "description": "Monthly digest of improvements with GIFs and links to docs.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Release notes",
+      "AUDIENCE": "product users",
+      "OFFER": "what’s new",
+      "GOAL": "drive feature discovery",
+      "BRAND_VOICE": "transparent",
+      "CADENCE": "monthly",
+      "METRIC": "feature click-through",
+      "URL": "https://example.com/whats-new"
+    }
+  },
+  {
+    "id": "EM023",
+    "title": "Customer Education Series",
+    "description": "Mini-lesson series that teaches one advanced workflow at a time.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Education series",
+      "AUDIENCE": "power users",
+      "OFFER": "advanced tutorial",
+      "GOAL": "increase workspace depth",
+      "BRAND_VOICE": "teacherly",
+      "CADENCE": "weekly x3",
+      "METRIC": "feature adoption",
+      "URL": "https://example.com/advanced"
+    }
+  },
+  {
+    "id": "EM024",
+    "title": "Community Invite",
+    "description": "Invite active users to a private community and seed a first action.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Community invite",
+      "AUDIENCE": "engaged users",
+      "OFFER": "members-only forum",
+      "GOAL": "grow community",
+      "BRAND_VOICE": "welcoming",
+      "CADENCE": "one-off",
+      "METRIC": "join rate",
+      "URL": "https://community.example.com"
+    }
+  },
+  {
+    "id": "EM025",
+    "title": "Digest Personalization Prompt",
+    "description": "Ask readers to tune their preferences to improve future relevance.",
+    "content": "Act as a lifecycle email strategist.\nCampaign type: {CAMPAIGN_TYPE}\nFor: {AUDIENCE} interested in {OFFER}.\nObjective: {GOAL}.\nInputs: {OFFER}, brand voice {BRAND_VOICE}, cadence {CADENCE}, optional metric {METRIC}, URL {URL}.\nDeliverables:\n- Subject lines (5) and preview text (3)\n- Body copy with scannable sections and a single CTA\n- Segmentation and timing notes\n- A/B test ideas and success metric\nConstraints: concise, benefit-first, avoid spam triggers; render well on mobile.",
+    "category": "Email Marketing",
+    "tags": [
+      "Email",
+      "Lifecycle",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "CAMPAIGN_TYPE": "Preference center",
+      "AUDIENCE": "newsletter subscribers",
+      "OFFER": "topic controls",
+      "GOAL": "increase future CTR",
+      "BRAND_VOICE": "helpful",
+      "CADENCE": "one-off",
+      "METRIC": "pref updates",
+      "URL": "https://example.com/prefs"
+    }
+  },
+  {
+    "id": "SO001",
+    "title": "Warm DM from Comment",
+    "description": "Turn a thoughtful comment into a DM that adds one small, relevant win.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Warm DM",
+      "RECIPIENT_ROLE": "Head of Ops",
+      "COMPANY": "Northwind",
+      "TRIGGER": "their post on process debt",
+      "MICRO_OFFER": "10‑min loom teardown",
+      "PAIN_POINT": "handoff errors",
+      "PRODUCT": "workflow tool",
+      "CALL_TO_ACTION": "open to a 10‑min loom?"
+    }
+  },
+  {
+    "id": "SO002",
+    "title": "Event Follow‑up Sequence",
+    "description": "Short follow-up after a conference meeting request with 1 concrete idea.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Event follow-up",
+      "RECIPIENT_ROLE": "VP Sales",
+      "COMPANY": "AcmeCo",
+      "TRIGGER": "met at SaaS Expo",
+      "MICRO_OFFER": "pipeline hygiene checklist",
+      "PAIN_POINT": "stalled opps",
+      "PRODUCT": "RevOps service",
+      "CALL_TO_ACTION": "worth a quick comparison?"
+    }
+  },
+  {
+    "id": "SO003",
+    "title": "Case Study Nudge",
+    "description": "Lead with one quantified outcome, ask a question, offer a micro-audit.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Case-led",
+      "RECIPIENT_ROLE": "COO",
+      "COMPANY": "BlueSky",
+      "TRIGGER": "new funding round",
+      "MICRO_OFFER": "15‑min ops audit",
+      "PAIN_POINT": "onboarding delays",
+      "PRODUCT": "implementation service",
+      "CALL_TO_ACTION": "want the 3-point audit?"
+    }
+  },
+  {
+    "id": "SO004",
+    "title": "Mutual Connection Intro",
+    "description": "Reference a mutual connection and propose one precise next step.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Intro",
+      "RECIPIENT_ROLE": "CTO",
+      "COMPANY": "Rainforest",
+      "TRIGGER": "mutual intro from Maya",
+      "MICRO_OFFER": "schema review",
+      "PAIN_POINT": "data silos",
+      "PRODUCT": "data platform",
+      "CALL_TO_ACTION": "ok to share a 2-slide plan?"
+    }
+  },
+  {
+    "id": "SO005",
+    "title": "Product-Led Trials → Sales",
+    "description": "Convert successful trial users to paid with ROI recap and minimal friction.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "PLG conversion",
+      "RECIPIENT_ROLE": "Founder",
+      "COMPANY": "SoloDev",
+      "TRIGGER": "trial hit usage cap",
+      "MICRO_OFFER": "billing credit for annual",
+      "PAIN_POINT": "limits blocking work",
+      "PRODUCT": "monitoring SaaS",
+      "CALL_TO_ACTION": "shall I enable annual?"
+    }
+  },
+  {
+    "id": "SO006",
+    "title": "Champion Enablement",
+    "description": "Arm a champion with a crisp internal pitch and next-step ask.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Champion support",
+      "RECIPIENT_ROLE": "Team Lead",
+      "COMPANY": "Nimbus",
+      "TRIGGER": "requested pricing",
+      "MICRO_OFFER": "internal deck with ROI",
+      "PAIN_POINT": "exec buy-in",
+      "PRODUCT": "automation suite",
+      "CALL_TO_ACTION": "want a 5-slide deck?"
+    }
+  },
+  {
+    "id": "SO007",
+    "title": "Old Closed‑Lost Revisit",
+    "description": "Reopen an old opp with a new feature tied to the prior blocker.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Closed-lost",
+      "RECIPIENT_ROLE": "IT Director",
+      "COMPANY": "Contoso",
+      "TRIGGER": "new SSO feature live",
+      "MICRO_OFFER": "sandbox access",
+      "PAIN_POINT": "security requirement",
+      "PRODUCT": "access platform",
+      "CALL_TO_ACTION": "want a temp sandbox?"
+    }
+  },
+  {
+    "id": "SO008",
+    "title": "Competitor Displacement",
+    "description": "Respectful swap play focused on migration ease and one killer outcome.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Displacement",
+      "RECIPIENT_ROLE": "Marketing Ops",
+      "COMPANY": "Greenfield",
+      "TRIGGER": "vendor contract up soon",
+      "MICRO_OFFER": "migration map",
+      "PAIN_POINT": "integration breaks",
+      "PRODUCT": "CDP",
+      "CALL_TO_ACTION": "review the map together?"
+    }
+  },
+  {
+    "id": "SO009",
+    "title": "Content-Led Nurture",
+    "description": "Use a relevant asset to open a conversation and diagnose fit.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Content-first",
+      "RECIPIENT_ROLE": "CFO",
+      "COMPANY": "FarmHub",
+      "TRIGGER": "downloaded ROI guide",
+      "MICRO_OFFER": "custom ROI calc",
+      "PAIN_POINT": "unclear payback",
+      "PRODUCT": "analytics tool",
+      "CALL_TO_ACTION": "want the calc sheet?"
+    }
+  },
+  {
+    "id": "SO010",
+    "title": "New Role Trigger",
+    "description": "Congratulate a newly promoted leader and offer a day‑one win.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "New role",
+      "RECIPIENT_ROLE": "Head of CX",
+      "COMPANY": "Skyline",
+      "TRIGGER": "promotion announcement",
+      "MICRO_OFFER": "playbook for first 30 days",
+      "PAIN_POINT": "backlog triage",
+      "PRODUCT": "support platform",
+      "CALL_TO_ACTION": "send the 30‑day plan?"
+    }
+  },
+  {
+    "id": "SO011",
+    "title": "ABM Tier‑1 Custom",
+    "description": "Highly personalized sequence for a single account with tailored value prop.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "ABM custom",
+      "RECIPIENT_ROLE": "CIO",
+      "COMPANY": "Globex",
+      "TRIGGER": "board deck mentions cost cuts",
+      "MICRO_OFFER": "pilot proposal",
+      "PAIN_POINT": "cloud spend",
+      "PRODUCT": "cost optimizer",
+      "CALL_TO_ACTION": "greenlight a 2‑week pilot?"
+    }
+  },
+  {
+    "id": "SO012",
+    "title": "Partner Intro Motion",
+    "description": "Leverage a tech partner overlap and co‑sell angle.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Partner-led",
+      "RECIPIENT_ROLE": "RevOps",
+      "COMPANY": "Acorn",
+      "TRIGGER": "shared customer base",
+      "MICRO_OFFER": "joint workflow demo",
+      "PAIN_POINT": "tool sprawl",
+      "PRODUCT": "integration hub",
+      "CALL_TO_ACTION": "set a 15‑min 3‑way?"
+    }
+  },
+  {
+    "id": "SO013",
+    "title": "User Conference CTA",
+    "description": "Invite target accounts to a user summit with a tailored session agenda.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Event invite",
+      "RECIPIENT_ROLE": "Product Lead",
+      "COMPANY": "Vector",
+      "TRIGGER": "annual summit announced",
+      "MICRO_OFFER": "VIP session seat",
+      "PAIN_POINT": "roadmap alignment",
+      "PRODUCT": "feature feedback loop",
+      "CALL_TO_ACTION": "hold a seat?"
+    }
+  },
+  {
+    "id": "SO014",
+    "title": "Champion to Buyer Bridge",
+    "description": "Help your champion connect you to the budget owner with a lightweight ask.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Internal intro",
+      "RECIPIENT_ROLE": "Analyst",
+      "COMPANY": "Helios",
+      "TRIGGER": "pilot success",
+      "MICRO_OFFER": "ROI summary",
+      "PAIN_POINT": "budget sign-off",
+      "PRODUCT": "automation tool",
+      "CALL_TO_ACTION": "ok to loop in your VP?"
+    }
+  },
+  {
+    "id": "SO015",
+    "title": "Loss to No‑Decision",
+    "description": "Revisit a no‑decision with new urgency and a small proof step.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "No-decision",
+      "RECIPIENT_ROLE": "GM",
+      "COMPANY": "Cinder",
+      "TRIGGER": "market shift",
+      "MICRO_OFFER": "risk model",
+      "PAIN_POINT": "status quo bias",
+      "PRODUCT": "planning suite",
+      "CALL_TO_ACTION": "want the model?"
+    }
+  },
+  {
+    "id": "SO016",
+    "title": "Cold Email with Mutual Context",
+    "description": "Use a credible shared context to earn a short reply.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Cold email",
+      "RECIPIENT_ROLE": "Founder",
+      "COMPANY": "Solarbit",
+      "TRIGGER": "shared investor",
+      "MICRO_OFFER": "benchmark report",
+      "PAIN_POINT": "CAC creep",
+      "PRODUCT": "attribution analytics",
+      "CALL_TO_ACTION": "send the benchmark?"
+    }
+  },
+  {
+    "id": "SO017",
+    "title": "Pilot Expansion Ask",
+    "description": "Expand a pilot with one next metric and a scoped commitment.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Pilot expansion",
+      "RECIPIENT_ROLE": "Project Lead",
+      "COMPANY": "Atlas",
+      "TRIGGER": "pilot KPI hit",
+      "MICRO_OFFER": "phase‑2 plan",
+      "PAIN_POINT": "limited scope",
+      "PRODUCT": "workflow engine",
+      "CALL_TO_ACTION": "review phase‑2?"
+    }
+  },
+  {
+    "id": "SO018",
+    "title": "Renewal Risk Mitigation",
+    "description": "Address renewal risks early with proof and a plan.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Renewal save",
+      "RECIPIENT_ROLE": "Procurement",
+      "COMPANY": "Hestia",
+      "TRIGGER": "renewal 60 days out",
+      "MICRO_OFFER": "efficiency audit",
+      "PAIN_POINT": "budget scrutiny",
+      "PRODUCT": "automation platform",
+      "CALL_TO_ACTION": "run the audit?"
+    }
+  },
+  {
+    "id": "SO019",
+    "title": "User Group Invite",
+    "description": "Invite prospects to a customer roundtable to hear peers.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Community invite",
+      "RECIPIENT_ROLE": "Ops Manager",
+      "COMPANY": "Praxis",
+      "TRIGGER": "regional meetup",
+      "MICRO_OFFER": "seat at roundtable",
+      "PAIN_POINT": "process benchmarks",
+      "PRODUCT": "ops toolkit",
+      "CALL_TO_ACTION": "want an invite?"
+    }
+  },
+  {
+    "id": "SO020",
+    "title": "Contract Redline Assist",
+    "description": "Offer legal redline help to speed up review and reduce friction.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Deal acceleration",
+      "RECIPIENT_ROLE": "Legal",
+      "COMPANY": "Vector",
+      "TRIGGER": "contract in review",
+      "MICRO_OFFER": "mutual NDA template",
+      "PAIN_POINT": "slow review",
+      "PRODUCT": "contracting tool",
+      "CALL_TO_ACTION": "send the template?"
+    }
+  },
+  {
+    "id": "SO021",
+    "title": "Use Case Discovery",
+    "description": "Ask calibrated questions to unearth a second use case.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Expansion discovery",
+      "RECIPIENT_ROLE": "Ops Lead",
+      "COMPANY": "Aurora",
+      "TRIGGER": "first use case live",
+      "MICRO_OFFER": "roadmap workshop",
+      "PAIN_POINT": "underutilization",
+      "PRODUCT": "platform suite",
+      "CALL_TO_ACTION": "book the workshop?"
+    }
+  },
+  {
+    "id": "SO022",
+    "title": "Advocate Ask",
+    "description": "Turn a happy user into a public advocate with a low‑lift request.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Advocacy",
+      "RECIPIENT_ROLE": "Power user",
+      "COMPANY": "Polar",
+      "TRIGGER": "NPS 9–10",
+      "MICRO_OFFER": "case study draft",
+      "PAIN_POINT": "time constraints",
+      "PRODUCT": "analytics",
+      "CALL_TO_ACTION": "ok to quote you?"
+    }
+  },
+  {
+    "id": "SO023",
+    "title": "Competitor Outage Assist",
+    "description": "Help politely during a competitor outage with a high‑empathy note.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Timely assist",
+      "RECIPIENT_ROLE": "Ops",
+      "COMPANY": "Stone",
+      "TRIGGER": "competitor downtime",
+      "MICRO_OFFER": "free migration help",
+      "PAIN_POINT": "service reliability",
+      "PRODUCT": "infrastructure",
+      "CALL_TO_ACTION": "need a hand?"
+    }
+  },
+  {
+    "id": "SO024",
+    "title": "Executive Assistant Gatekeeper Path",
+    "description": "Polite path via EA with crisp purpose and options to proceed asynchronously.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "EA path",
+      "RECIPIENT_ROLE": "CEO",
+      "COMPANY": "NovaWorks",
+      "TRIGGER": "strategic initiative announcement",
+      "MICRO_OFFER": "2‑slide brief + loom",
+      "PAIN_POINT": "time scarcity",
+      "PRODUCT": "strategy platform",
+      "CALL_TO_ACTION": "ok to share a 2‑slide brief?"
+    }
+  },
+  {
+    "id": "SO025",
+    "title": "Free Tool Giveaway",
+    "description": "Lead with a genuinely useful free tool and low‑lift ask.",
+    "content": "Act as an SDR coach.\nSequence: {SEQUENCE_TYPE}\nTarget: {RECIPIENT_ROLE} at {COMPANY}.\nTrigger: {TRIGGER}.\nOffer: {MICRO_OFFER} for {PAIN_POINT} tied to {PRODUCT}.\nDeliverables: 4-step sequence (connection note, day 1, day 5, day 12), personalization tokens, alt lines, and objection replies.\nConstraints: respectful, specific, <= 120 words per step, one ask; include {CALL_TO_ACTION} variation.",
+    "category": "Sales Outreach",
+    "tags": [
+      "Sales",
+      "Outbound",
+      "Prospecting"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "SEQUENCE_TYPE": "Free tool",
+      "RECIPIENT_ROLE": "Growth Lead",
+      "COMPANY": "Beacon",
+      "TRIGGER": "their post on CAC",
+      "MICRO_OFFER": "free CAC calculator",
+      "PAIN_POINT": "rising acquisition costs",
+      "PRODUCT": "attribution suite",
+      "CALL_TO_ACTION": "want the calculator link?"
+    }
+  },
+  {
+    "id": "YT001",
+    "title": "Tutorial Deep Dive: Notion Automations",
+    "description": "Video plan with hooks, beats, and CTA for Notion automations using a step‑by‑step angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Tutorial Deep Dive",
+      "CHANNEL": "Acme Tutorials",
+      "TOPIC": "Notion automations",
+      "ANGLE": "step‑by‑step",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "8–12 min",
+      "TIMESTAMPS": "0:15, 3:00, 7:30"
+    }
+  },
+  {
+    "id": "YT002",
+    "title": "Case Study Breakdown: Newsletter Growth",
+    "description": "Video plan with hooks, beats, and CTA for Newsletter growth using a counter‑intuitive angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Case Study Breakdown",
+      "CHANNEL": "Growth Lab",
+      "TOPIC": "Newsletter growth",
+      "ANGLE": "counter‑intuitive",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "10–14 min",
+      "TIMESTAMPS": "0:20, 4:00, 9:00"
+    }
+  },
+  {
+    "id": "YT003",
+    "title": "Myth vs Fact: Cold Email Teardown",
+    "description": "Video plan with hooks, beats, and CTA for Cold email teardown using a before/after angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Myth vs Fact",
+      "CHANNEL": "Cold Email School",
+      "TOPIC": "Cold email teardown",
+      "ANGLE": "before/after",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "6–9 min",
+      "TIMESTAMPS": "0:12, 2:40, 5:30"
+    }
+  },
+  {
+    "id": "YT004",
+    "title": "Interview Highlights: Landing Page Critique",
+    "description": "Video plan with hooks, beats, and CTA for Landing page critique using a checklist angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Interview Highlights",
+      "CHANNEL": "Site Clinic",
+      "TOPIC": "Landing page critique",
+      "ANGLE": "checklist",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "12–18 min",
+      "TIMESTAMPS": "0:25, 5:00, 11:00"
+    }
+  },
+  {
+    "id": "YT005",
+    "title": "Live Coding: Prompt Engineering",
+    "description": "Video plan with hooks, beats, and CTA for Prompt engineering using a framework‑first angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Live Coding",
+      "CHANNEL": "AI Makers",
+      "TOPIC": "Prompt engineering",
+      "ANGLE": "framework‑first",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "15–25 min",
+      "TIMESTAMPS": "0:30, 7:00, 15:00"
+    }
+  },
+  {
+    "id": "YT006",
+    "title": "Tutorial Deep Dive: Notion Automations",
+    "description": "Video plan with hooks, beats, and CTA for Notion automations using a step‑by‑step angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Tutorial Deep Dive",
+      "CHANNEL": "Acme Tutorials",
+      "TOPIC": "Notion automations",
+      "ANGLE": "step‑by‑step",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "8–12 min",
+      "TIMESTAMPS": "0:15, 3:00, 7:30"
+    }
+  },
+  {
+    "id": "YT007",
+    "title": "Case Study Breakdown: Newsletter Growth",
+    "description": "Video plan with hooks, beats, and CTA for Newsletter growth using a counter‑intuitive angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Case Study Breakdown",
+      "CHANNEL": "Growth Lab",
+      "TOPIC": "Newsletter growth",
+      "ANGLE": "counter‑intuitive",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "10–14 min",
+      "TIMESTAMPS": "0:20, 4:00, 9:00"
+    }
+  },
+  {
+    "id": "YT008",
+    "title": "Myth vs Fact: Cold Email Teardown",
+    "description": "Video plan with hooks, beats, and CTA for Cold email teardown using a before/after angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Myth vs Fact",
+      "CHANNEL": "Cold Email School",
+      "TOPIC": "Cold email teardown",
+      "ANGLE": "before/after",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "6–9 min",
+      "TIMESTAMPS": "0:12, 2:40, 5:30"
+    }
+  },
+  {
+    "id": "YT009",
+    "title": "Interview Highlights: Landing Page Critique",
+    "description": "Video plan with hooks, beats, and CTA for Landing page critique using a checklist angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Interview Highlights",
+      "CHANNEL": "Site Clinic",
+      "TOPIC": "Landing page critique",
+      "ANGLE": "checklist",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "12–18 min",
+      "TIMESTAMPS": "0:25, 5:00, 11:00"
+    }
+  },
+  {
+    "id": "YT010",
+    "title": "Live Coding: Prompt Engineering",
+    "description": "Video plan with hooks, beats, and CTA for Prompt engineering using a framework‑first angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Live Coding",
+      "CHANNEL": "AI Makers",
+      "TOPIC": "Prompt engineering",
+      "ANGLE": "framework‑first",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "15–25 min",
+      "TIMESTAMPS": "0:30, 7:00, 15:00"
+    }
+  },
+  {
+    "id": "YT011",
+    "title": "Tutorial Deep Dive: Notion Automations",
+    "description": "Video plan with hooks, beats, and CTA for Notion automations using a step‑by‑step angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Tutorial Deep Dive",
+      "CHANNEL": "Acme Tutorials",
+      "TOPIC": "Notion automations",
+      "ANGLE": "step‑by‑step",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "8–12 min",
+      "TIMESTAMPS": "0:15, 3:00, 7:30"
+    }
+  },
+  {
+    "id": "YT012",
+    "title": "Case Study Breakdown: Newsletter Growth",
+    "description": "Video plan with hooks, beats, and CTA for Newsletter growth using a counter‑intuitive angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Case Study Breakdown",
+      "CHANNEL": "Growth Lab",
+      "TOPIC": "Newsletter growth",
+      "ANGLE": "counter‑intuitive",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "10–14 min",
+      "TIMESTAMPS": "0:20, 4:00, 9:00"
+    }
+  },
+  {
+    "id": "YT013",
+    "title": "Myth vs Fact: Cold Email Teardown",
+    "description": "Video plan with hooks, beats, and CTA for Cold email teardown using a before/after angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Myth vs Fact",
+      "CHANNEL": "Cold Email School",
+      "TOPIC": "Cold email teardown",
+      "ANGLE": "before/after",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "6–9 min",
+      "TIMESTAMPS": "0:12, 2:40, 5:30"
+    }
+  },
+  {
+    "id": "YT014",
+    "title": "Interview Highlights: Landing Page Critique",
+    "description": "Video plan with hooks, beats, and CTA for Landing page critique using a checklist angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Interview Highlights",
+      "CHANNEL": "Site Clinic",
+      "TOPIC": "Landing page critique",
+      "ANGLE": "checklist",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "12–18 min",
+      "TIMESTAMPS": "0:25, 5:00, 11:00"
+    }
+  },
+  {
+    "id": "YT015",
+    "title": "Live Coding: Prompt Engineering",
+    "description": "Video plan with hooks, beats, and CTA for Prompt engineering using a framework‑first angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Live Coding",
+      "CHANNEL": "AI Makers",
+      "TOPIC": "Prompt engineering",
+      "ANGLE": "framework‑first",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "15–25 min",
+      "TIMESTAMPS": "0:30, 7:00, 15:00"
+    }
+  },
+  {
+    "id": "YT016",
+    "title": "Tutorial Deep Dive: Notion Automations",
+    "description": "Video plan with hooks, beats, and CTA for Notion automations using a step‑by‑step angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Tutorial Deep Dive",
+      "CHANNEL": "Acme Tutorials",
+      "TOPIC": "Notion automations",
+      "ANGLE": "step‑by‑step",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "8–12 min",
+      "TIMESTAMPS": "0:15, 3:00, 7:30"
+    }
+  },
+  {
+    "id": "YT017",
+    "title": "Case Study Breakdown: Newsletter Growth",
+    "description": "Video plan with hooks, beats, and CTA for Newsletter growth using a counter‑intuitive angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Case Study Breakdown",
+      "CHANNEL": "Growth Lab",
+      "TOPIC": "Newsletter growth",
+      "ANGLE": "counter‑intuitive",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "10–14 min",
+      "TIMESTAMPS": "0:20, 4:00, 9:00"
+    }
+  },
+  {
+    "id": "YT018",
+    "title": "Myth vs Fact: Cold Email Teardown",
+    "description": "Video plan with hooks, beats, and CTA for Cold email teardown using a before/after angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Myth vs Fact",
+      "CHANNEL": "Cold Email School",
+      "TOPIC": "Cold email teardown",
+      "ANGLE": "before/after",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "6–9 min",
+      "TIMESTAMPS": "0:12, 2:40, 5:30"
+    }
+  },
+  {
+    "id": "YT019",
+    "title": "Interview Highlights: Landing Page Critique",
+    "description": "Video plan with hooks, beats, and CTA for Landing page critique using a checklist angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Interview Highlights",
+      "CHANNEL": "Site Clinic",
+      "TOPIC": "Landing page critique",
+      "ANGLE": "checklist",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "12–18 min",
+      "TIMESTAMPS": "0:25, 5:00, 11:00"
+    }
+  },
+  {
+    "id": "YT020",
+    "title": "Live Coding: Prompt Engineering",
+    "description": "Video plan with hooks, beats, and CTA for Prompt engineering using a framework‑first angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Live Coding",
+      "CHANNEL": "AI Makers",
+      "TOPIC": "Prompt engineering",
+      "ANGLE": "framework‑first",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "15–25 min",
+      "TIMESTAMPS": "0:30, 7:00, 15:00"
+    }
+  },
+  {
+    "id": "YT021",
+    "title": "Tutorial Deep Dive: Notion Automations",
+    "description": "Video plan with hooks, beats, and CTA for Notion automations using a step‑by‑step angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Tutorial Deep Dive",
+      "CHANNEL": "Acme Tutorials",
+      "TOPIC": "Notion automations",
+      "ANGLE": "step‑by‑step",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "8–12 min",
+      "TIMESTAMPS": "0:15, 3:00, 7:30"
+    }
+  },
+  {
+    "id": "YT022",
+    "title": "Case Study Breakdown: Newsletter Growth",
+    "description": "Video plan with hooks, beats, and CTA for Newsletter growth using a counter‑intuitive angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Case Study Breakdown",
+      "CHANNEL": "Growth Lab",
+      "TOPIC": "Newsletter growth",
+      "ANGLE": "counter‑intuitive",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "10–14 min",
+      "TIMESTAMPS": "0:20, 4:00, 9:00"
+    }
+  },
+  {
+    "id": "YT023",
+    "title": "Myth vs Fact: Cold Email Teardown",
+    "description": "Video plan with hooks, beats, and CTA for Cold email teardown using a before/after angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Myth vs Fact",
+      "CHANNEL": "Cold Email School",
+      "TOPIC": "Cold email teardown",
+      "ANGLE": "before/after",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "6–9 min",
+      "TIMESTAMPS": "0:12, 2:40, 5:30"
+    }
+  },
+  {
+    "id": "YT024",
+    "title": "Interview Highlights: Landing Page Critique",
+    "description": "Video plan with hooks, beats, and CTA for Landing page critique using a checklist angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Interview Highlights",
+      "CHANNEL": "Site Clinic",
+      "TOPIC": "Landing page critique",
+      "ANGLE": "checklist",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "12–18 min",
+      "TIMESTAMPS": "0:25, 5:00, 11:00"
+    }
+  },
+  {
+    "id": "YT025",
+    "title": "Live Coding: Prompt Engineering",
+    "description": "Video plan with hooks, beats, and CTA for Prompt engineering using a framework‑first angle.",
+    "content": "Act as a YouTube content strategist.\nFormat: {FORMAT}\nChannel: {CHANNEL}\nTopic: {TOPIC} with angle {ANGLE}.\nDeliverables: hook options (3), script beats, on‑screen text, b‑roll ideas, title and description, tags, and end‑screen CTA {CTA}.\nConstraints: hook ≤ 7s, total length {LENGTH}, retention beats at {TIMESTAMPS}, clear value; mobile‑first.",
+    "category": "YouTube & Video",
+    "tags": [
+      "YouTube",
+      "Video",
+      "Content"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FORMAT": "Live Coding",
+      "CHANNEL": "AI Makers",
+      "TOPIC": "Prompt engineering",
+      "ANGLE": "framework‑first",
+      "CTA": "subscribe + free resource",
+      "LENGTH": "15–25 min",
+      "TIMESTAMPS": "0:30, 7:00, 15:00"
+    }
+  },
+  {
+    "id": "EC001",
+    "title": "Cart Abandonment Flow",
+    "description": "3‑message sequence to recover carts with value and reassurance.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Cart abandonment",
+      "BRAND": "Orbit",
+      "PRODUCT": "eco water bottles",
+      "AUDIENCE": "health‑conscious shoppers",
+      "OFFER": "free shipping",
+      "URL": "https://shop.example.com/cart",
+      "METRIC": "recovery rate"
+    }
+  },
+  {
+    "id": "EC002",
+    "title": "Browse Abandonment",
+    "description": "Trigger messages based on product views with social proof.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Browse abandonment",
+      "BRAND": "Mesa",
+      "PRODUCT": "linen shirts",
+      "AUDIENCE": "summer shoppers",
+      "OFFER": "size guide",
+      "URL": "https://shop.example.com/browse",
+      "METRIC": "CTR"
+    }
+  },
+  {
+    "id": "EC003",
+    "title": "Welcome Offer Flow",
+    "description": "New subscriber welcome with brand story and first‑purchase nudge.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Welcome",
+      "BRAND": "Harbor",
+      "PRODUCT": "home candles",
+      "AUDIENCE": "new subscribers",
+      "OFFER": "10% code",
+      "URL": "https://shop.example.com/welcome",
+      "METRIC": "first‑purchase rate"
+    }
+  },
+  {
+    "id": "EC004",
+    "title": "Post‑Purchase Cross‑sell",
+    "description": "Suggest complementary items after purchase with timing by product type.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Post‑purchase cross‑sell",
+      "BRAND": "TrailFox",
+      "PRODUCT": "trail shoes",
+      "AUDIENCE": "recent buyers",
+      "OFFER": "bundle discount",
+      "URL": "https://shop.example.com/pp",
+      "METRIC": "attach rate"
+    }
+  },
+  {
+    "id": "EC005",
+    "title": "Win‑back Flow",
+    "description": "Bring back lapsed buyers with value, not just discounts.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Win‑back",
+      "BRAND": "Glow",
+      "PRODUCT": "skincare set",
+      "AUDIENCE": "lapsed 180‑day customers",
+      "OFFER": "refill reminder",
+      "URL": "https://shop.example.com/winback",
+      "METRIC": "re‑purchase rate"
+    }
+  },
+  {
+    "id": "EC006",
+    "title": "VIP Tier Launch",
+    "description": "Introduce VIP program with perks and qualification rules.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "VIP",
+      "BRAND": "Stride",
+      "PRODUCT": "running apparel",
+      "AUDIENCE": "top 10% spenders",
+      "OFFER": "early access",
+      "URL": "https://shop.example.com/vip",
+      "METRIC": "VIP enrollment"
+    }
+  },
+  {
+    "id": "EC007",
+    "title": "Back‑in‑Stock Alerts",
+    "description": "Notify subscribers with urgency and social proof.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Back in stock",
+      "BRAND": "Loft",
+      "PRODUCT": "best‑selling lamp",
+      "AUDIENCE": "waitlist",
+      "OFFER": "limited quantity note",
+      "URL": "https://shop.example.com/back",
+      "METRIC": "sell‑through"
+    }
+  },
+  {
+    "id": "EC008",
+    "title": "Price Drop Alerts",
+    "description": "Notify with honest framing and clear next step.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Price drop",
+      "BRAND": "Cove",
+      "PRODUCT": "headphones",
+      "AUDIENCE": "wishlisters",
+      "OFFER": "limited price",
+      "URL": "https://shop.example.com/deal",
+      "METRIC": "conversion rate"
+    }
+  },
+  {
+    "id": "EC009",
+    "title": "Seasonal Gift Guide",
+    "description": "Curated gift ideas by persona and price band.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Gift guide",
+      "BRAND": "Sprout",
+      "PRODUCT": "gardening kits",
+      "AUDIENCE": "holiday shoppers",
+      "OFFER": "bundles by price",
+      "URL": "https://shop.example.com/gifts",
+      "METRIC": "AOV"
+    }
+  },
+  {
+    "id": "EC010",
+    "title": "UGC Review Request",
+    "description": "Earn reviews with timing, prompts, and visual tips.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Review request",
+      "BRAND": "Peak",
+      "PRODUCT": "hiking backpack",
+      "AUDIENCE": "recent buyers",
+      "OFFER": "photo contest",
+      "URL": "https://shop.example.com/review",
+      "METRIC": "reviews per order"
+    }
+  },
+  {
+    "id": "EC011",
+    "title": "Subscription Onboarding",
+    "description": "Educate and reduce churn for subscription products.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Subscription onboarding",
+      "BRAND": "Pure",
+      "PRODUCT": "supplement boxes",
+      "AUDIENCE": "new subscribers",
+      "OFFER": "how to get results",
+      "URL": "https://shop.example.com/sub",
+      "METRIC": "churn at month 1"
+    }
+  },
+  {
+    "id": "EC012",
+    "title": "Replenishment Reminder",
+    "description": "Timing‑based reminders with predictive windows and 1‑click reorder.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Replenishment",
+      "BRAND": "Nook",
+      "PRODUCT": "coffee pods",
+      "AUDIENCE": "repeat buyers",
+      "OFFER": "1‑click reorder link",
+      "URL": "https://shop.example.com/reorder",
+      "METRIC": "repeat rate"
+    }
+  },
+  {
+    "id": "EC013",
+    "title": "Loyalty Program Kickoff",
+    "description": "Explain points, tiers, and first actions to earn.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Loyalty kickoff",
+      "BRAND": "Luma",
+      "PRODUCT": "beauty brand",
+      "AUDIENCE": "all customers",
+      "OFFER": "double points week",
+      "URL": "https://shop.example.com/loyalty",
+      "METRIC": "enrollment"
+    }
+  },
+  {
+    "id": "EC014",
+    "title": "Pre‑Order Flow",
+    "description": "Collect pre‑orders with clarity about timelines and updates.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Pre‑order",
+      "BRAND": "Quark",
+      "PRODUCT": "smart mug",
+      "AUDIENCE": "early adopters",
+      "OFFER": "founder price",
+      "URL": "https://shop.example.com/pre",
+      "METRIC": "pre‑order volume"
+    }
+  },
+  {
+    "id": "EC015",
+    "title": "Angel Offer for Lapsed VIPs",
+    "description": "Recover high‑value customers with bespoke perks.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "VIP win‑back",
+      "BRAND": "Ridge",
+      "PRODUCT": "leather goods",
+      "AUDIENCE": "lapsed VIPs",
+      "OFFER": "exclusive personalization",
+      "URL": "https://shop.example.com/vipreturn",
+      "METRIC": "VIP reactivation"
+    }
+  },
+  {
+    "id": "EC016",
+    "title": "New Collection Launch",
+    "description": "Launch plan with teasers, waitlist, and drop day sequence.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Collection launch",
+      "BRAND": "Crest",
+      "PRODUCT": "athleisure line",
+      "AUDIENCE": "engaged list",
+      "OFFER": "early access",
+      "URL": "https://shop.example.com/drop",
+      "METRIC": "launch day revenue"
+    }
+  },
+  {
+    "id": "EC017",
+    "title": "Backorder Transparency",
+    "description": "Honest updates for backordered items with options to swap or wait.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Backorder updates",
+      "BRAND": "Fjord",
+      "PRODUCT": "desk",
+      "AUDIENCE": "waiting customers",
+      "OFFER": "swap options",
+      "URL": "https://shop.example.com/order",
+      "METRIC": "cancellations avoided"
+    }
+  },
+  {
+    "id": "EC018",
+    "title": "Post‑Purchase Care Guide",
+    "description": "Reduce returns with care tips and video demos.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Care guide",
+      "BRAND": "Dawn",
+      "PRODUCT": "linen bedding",
+      "AUDIENCE": "new buyers",
+      "OFFER": "wash & care guide",
+      "URL": "https://shop.example.com/care",
+      "METRIC": "return rate"
+    }
+  },
+  {
+    "id": "EC019",
+    "title": "International Shipping Update",
+    "description": "Notify global customers of new lanes and duties calculator.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Policy update",
+      "BRAND": "Pioneer",
+      "PRODUCT": "tech accessories",
+      "AUDIENCE": "international list",
+      "OFFER": "duty calculator",
+      "URL": "https://shop.example.com/int",
+      "METRIC": "int'l conversion"
+    }
+  },
+  {
+    "id": "EC020",
+    "title": "Gift Card Push",
+    "description": "Last‑minute gift CTA with instant delivery promise.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Gift cards",
+      "BRAND": "Rose",
+      "PRODUCT": "digital gift cards",
+      "AUDIENCE": "holiday shoppers",
+      "OFFER": "instant email delivery",
+      "URL": "https://shop.example.com/gift",
+      "METRIC": "gift card sales"
+    }
+  },
+  {
+    "id": "EC021",
+    "title": "Upsell at Checkout",
+    "description": "1‑click add‑on with social proof and guarantee.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Checkout upsell",
+      "BRAND": "Lumen",
+      "PRODUCT": "LED strips",
+      "AUDIENCE": "cart stage",
+      "OFFER": "bundle pack",
+      "URL": "https://shop.example.com/checkout",
+      "METRIC": "AOV"
+    }
+  },
+  {
+    "id": "EC022",
+    "title": "CSR/Impact Report",
+    "description": "Share impact stories to build trust and repeat purchase.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Impact story",
+      "BRAND": "EarthCo",
+      "PRODUCT": "sustainable goods",
+      "AUDIENCE": "values‑driven shoppers",
+      "OFFER": "annual impact report",
+      "URL": "https://shop.example.com/impact",
+      "METRIC": "repeat rate"
+    }
+  },
+  {
+    "id": "EC023",
+    "title": "BFCM Master Plan",
+    "description": "Structured BFCM plan with early list warming and limited drops.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "BFCM sequence",
+      "BRAND": "PeakGear",
+      "PRODUCT": "outdoor apparel",
+      "AUDIENCE": "all segments",
+      "OFFER": "tiered discounts",
+      "URL": "https://shop.example.com/bfcm",
+      "METRIC": "campaign revenue"
+    }
+  },
+  {
+    "id": "EC024",
+    "title": "Returns Experience Upgrade",
+    "description": "Email/SMS to set expectations and make returns painless.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Returns experience",
+      "BRAND": "Fable",
+      "PRODUCT": "tableware",
+      "AUDIENCE": "recent buyers",
+      "OFFER": "instant credit",
+      "URL": "https://shop.example.com/returns",
+      "METRIC": "CSAT"
+    }
+  },
+  {
+    "id": "EC025",
+    "title": "Lapsed Subscriber Save",
+    "description": "Sequence to save skipping subscription orders with alternatives and pause options.",
+    "content": "Act as a DTC email/SMS marketer.\nFlow: {FLOW_TYPE}\nBrand: {BRAND} selling {PRODUCT} to {AUDIENCE}.\nOffer: {OFFER}.\nDeliverables: emails/SMS copy, subject lines, timing, segmentation, and test ideas.\nConstraints: mobile‑first, plain language, avoid spam triggers; include URL {URL}; primary KPI {METRIC}.",
+    "category": "E‑commerce",
+    "tags": [
+      "Ecommerce",
+      "DTC",
+      "CRM"
+    ],
+    "createdAt": "2025-09-27",
+    "examples": {
+      "FLOW_TYPE": "Subscription save",
+      "BRAND": "SprinT",
+      "PRODUCT": "protein powder",
+      "AUDIENCE": "paused subscribers",
+      "OFFER": "flavor swap or pause",
+      "URL": "https://shop.example.com/save",
+      "METRIC": "saves vs cancels"
+    }
+  }
+]
+
+

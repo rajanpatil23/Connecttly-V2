@@ -273,14 +273,14 @@ const whyItems: WhyChooseItem[] = [
   { 
     icon: DollarSign, 
     title: "ROI-Focused Campaigns", 
-    desc: "Every dollar is tracked and optimized for maximum return on ad spend.", 
+    desc: "Every dollar is tracked and optimized for maximum return on ad spend. We focus on the metrics that actually move your business forward — qualified leads, pipeline, and revenue — not vanity numbers like clicks or impressions. Budget is reallocated weekly based on what's converting.", 
     tint: "#E6F0FF", 
     stroke: "#1677ff" 
   },
   { 
     icon: LineChart, 
     title: "Performance Analytics", 
-    desc: "Real-time dashboards with detailed insights into campaign performance.", 
+    desc: "Real-time dashboards with detailed insights into campaign performance. You get full visibility into spend, CPL, ROAS, and channel-level attribution — all in one place. No more digging through Google Ads, GA4, and spreadsheets to figure out what's working.", 
     tint: "#E6F0FF", 
     stroke: "#1677ff" 
   },

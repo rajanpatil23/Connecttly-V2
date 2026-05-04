@@ -40,6 +40,10 @@ export interface ServiceTool {
   name: string;
   logo: string;
 }
+export interface ServiceImpactStat {
+  value: string;
+  label: string;
+}
 
 export interface ServiceDetailTemplateProps {
   heroTitle: ReactNode;
@@ -54,6 +58,9 @@ export interface ServiceDetailTemplateProps {
   painSectionTitle?: ReactNode;
   painPoints?: ServicePainPoint[];
   painCta?: string;
+
+  impactTitle?: ReactNode;
+  impactStats?: ServiceImpactStat[];
 
   whyUsTitle?: ReactNode;
   whyUs?: ServiceWhyUs[];
@@ -84,6 +91,8 @@ export default function ServiceDetailTemplate({
   painSectionTitle,
   painPoints,
   painCta,
+  impactTitle,
+  impactStats,
   whyUsTitle,
   whyUs,
   processSteps,
@@ -190,27 +199,72 @@ export default function ServiceDetailTemplate({
         </section>
       )}
 
+      {/* Measured Impact */}
+      {impactStats && impactStats.length > 0 && (
+        <section className="relative pt-20 md:pt-24 pb-8 md:pb-10 bg-ct-section">
+          <div
+            className="absolute inset-x-0 top-0 h-2/3"
+            style={{ backgroundColor: "#09233C" }}
+            aria-hidden="true"
+          />
+          <div className="container-main relative">
+            <h2 className="text-3xl md:text-5xl font-heading font-bold text-primary-foreground text-center">
+              {impactTitle ?? (
+                <>
+                  Measured Impact. <span className="gradient-text">Proven Outcomes.</span>
+                </>
+              )}
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 mt-14 md:mt-16 max-w-5xl mx-auto">
+              {impactStats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="bg-background rounded-2xl p-6 text-center shadow-xl flex flex-col items-center justify-center min-h-[150px]"
+                >
+                  <p className="text-4xl md:text-5xl font-heading font-bold text-primary">
+                    {stat.value}
+                  </p>
+                  <p className="text-xs md:text-sm text-muted-foreground mt-3 leading-snug">
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Why Us */}
       {whyUs && whyUs.length > 0 && (
-        <section className="section-padding bg-ct-section">
+        <section className={`${impactStats && impactStats.length > 0 ? "pt-4 pb-16 md:pb-20" : "section-padding"} bg-ct-section`}>
           <div className="container-main">
-            <SectionLabel label="Why Us" />
+            {!(impactStats && impactStats.length > 0) && <SectionLabel label="Why Us" />}
             {whyUsTitle && (
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mt-4">
                 {whyUsTitle}
               </h2>
             )}
-            <div className="grid md:grid-cols-2 gap-6 mt-12 max-w-4xl mx-auto">
-              {whyUs.map((w) => (
-                <div
-                  key={w.title}
-                  className="bg-background rounded-2xl p-7 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-                >
-                  {w.icon && <div className="mb-4">{w.icon}</div>}
-                  <h3 className="font-heading font-semibold text-xl mb-3">{w.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{w.desc}</p>
-                </div>
-              ))}
+            <div className="grid md:grid-cols-2 gap-6 mt-12 max-w-[1264px] mx-auto md:items-start">
+              {whyUs.map((w, i) => {
+                const dims =
+                  i === 0
+                    ? "md:max-w-[611px] md:h-[480px]"
+                    : i === 3
+                    ? "md:max-w-[629px] md:h-[480px]"
+                    : "md:max-w-[629px] md:h-[386px]";
+                const justify =
+                  i === 1 || i === 3 ? "md:justify-self-end" : "md:justify-self-start";
+                return (
+                  <div
+                    key={w.title}
+                    className={`${dims} ${justify} ${i === 3 ? "md:-mt-24" : ""} w-full bg-background rounded-2xl p-8 shadow-md min-h-[260px] flex flex-col justify-end transition-all duration-300 hover:-translate-y-2 hover:shadow-xl`}
+                  >
+                    {w.icon && <div className="mb-4">{w.icon}</div>}
+                    <h3 className="font-heading font-semibold text-xl mb-3">{w.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{w.desc}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

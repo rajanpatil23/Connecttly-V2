@@ -1,10 +1,13 @@
 import { ReactNode } from "react";
+import { MonitorSmartphone, FileType2, Target } from "lucide-react";
 import ServiceDetailTemplate, {
   ServicePricingPlan,
   ServiceFAQItem,
   ServiceTool,
   ServiceProcessStep,
   ServiceWhyUs,
+  ServicePainPoint,
+  ServiceImpactStat,
 } from "./ServiceDetailTemplate";
 
 // Existing shapes used across the 36 service pages
@@ -57,10 +60,14 @@ export interface ServiceDetailAdapterProps {
   tools?: ExistingTool[];
   processSteps?: ExistingProcessStep[];
   whyItems?: ExistingWhyItem[];
+  painPoints?: ServicePainPoint[];
+  impactStats?: ServiceImpactStat[];
 
   // Optional explicit overrides
   toolStackTitle?: string;
   toolStackDescription?: string;
+  painSectionTitle?: ReactNode;
+  painCta?: string;
 }
 
 const toCurrency = (n: number) => {
@@ -76,10 +83,14 @@ export default function ServiceDetailAdapter(props: ServiceDetailAdapterProps) {
     tools,
     processSteps,
     whyItems,
+    painPoints,
+    impactStats,
     toolStackTitle,
     toolStackDescription,
+    painSectionTitle,
+    painCta,
   } = props;
-  const { eyebrow, heading, description, imageSrc, imageAlt, ctaText, ctaLink } = heroProps;
+  const { eyebrow, heading, description, imageSrc, ctaText, ctaLink } = heroProps;
 
   const heroTitle: ReactNode = eyebrow ? (
     <>
@@ -89,6 +100,35 @@ export default function ServiceDetailAdapter(props: ServiceDetailAdapterProps) {
   ) : (
     heading
   );
+
+  // Default pain points so every page renders a consistent section
+  const defaultPainPoints: ServicePainPoint[] = [
+    {
+      title: "You're investing budget but can't tell what's actually working.",
+      desc: "Most spend goes to clicks and impressions that never convert. That's not marketing — that's guesswork.",
+      icon: <MonitorSmartphone className="w-7 h-7 text-primary" />,
+    },
+    {
+      title: "Your reports are full of numbers nobody on the leadership team understands.",
+      desc: "If you can't explain ROI in one sentence, your current setup has failed you.",
+      icon: <FileType2 className="w-7 h-7 text-primary" />,
+    },
+    {
+      title: "Leads come in, but your sales team says they're the wrong fit.",
+      desc: "Wrong targeting and lazy strategy = paying for leads that were never going to buy.",
+      icon: <Target className="w-7 h-7 text-primary" />,
+    },
+  ];
+
+  const defaultImpactStats: ServiceImpactStat[] = [
+    { value: "42%", label: "Avg. CPL Reduction" },
+    { value: "3.8x", label: "Return on Investment" },
+    { value: "90", label: "Days to Meaningful ROI" },
+    { value: "0", label: "Long-Term Lock-ins" },
+  ];
+
+  const finalPainPoints = painPoints && painPoints.length > 0 ? painPoints : defaultPainPoints;
+  const finalImpactStats = impactStats && impactStats.length > 0 ? impactStats : defaultImpactStats;
 
   const mappedPlans: ServicePricingPlan[] | undefined = plans?.map((p) => ({
     name: p.title,
@@ -134,6 +174,19 @@ export default function ServiceDetailAdapter(props: ServiceDetailAdapterProps) {
       heroImageAlt={heading}
       primaryCtaText={ctaText || "Book a Free Strategy Call"}
       primaryCtaHref={ctaLink || "/resources/support"}
+      painSectionTitle={
+        painSectionTitle ?? (
+          <>
+            Tired of wasting your <span className="gradient-text">{eyebrow || heading} budget?</span>
+          </>
+        )
+      }
+      painPoints={finalPainPoints}
+      painCta={
+        painCta ??
+        `You don't have a ${eyebrow || heading} problem. You have a strategy problem. We fix that.`
+      }
+      impactStats={finalImpactStats}
       pricingPlans={mappedPlans}
       faqs={mappedFaqs}
       toolStack={mappedTools}

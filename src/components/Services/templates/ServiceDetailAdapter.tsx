@@ -70,12 +70,7 @@ const toCurrency = (n: number) => {
 
 export default function ServiceDetailAdapter(props: ServiceDetailAdapterProps) {
   const {
-    eyebrow,
-    heading,
-    description,
-    imageSrc,
-    ctaText,
-    ctaLink,
+    heroProps,
     plans,
     faqs,
     tools,
@@ -84,6 +79,7 @@ export default function ServiceDetailAdapter(props: ServiceDetailAdapterProps) {
     toolStackTitle,
     toolStackDescription,
   } = props;
+  const { eyebrow, heading, description, imageSrc, imageAlt, ctaText, ctaLink } = heroProps;
 
   const heroTitle: ReactNode = eyebrow ? (
     <>

@@ -38,14 +38,18 @@ export interface ExistingWhyItem {
   stroke?: string;
 }
 
-export interface ServiceDetailAdapterProps {
-  // Hero
+export interface HeroProps {
   eyebrow?: string;
   heading: string;
   description: string;
   imageSrc: string;
+  imageAlt?: string;
   ctaText?: string;
   ctaLink?: string;
+}
+
+export interface ServiceDetailAdapterProps {
+  heroProps: HeroProps;
 
   // Data
   plans?: ExistingPlan[];

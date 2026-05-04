@@ -1,23 +1,15 @@
-// src/Features/free-tools/common/components/ToolCard.tsx
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { FileText } from "lucide-react";
+import { FileText, ArrowRight } from "lucide-react";
 
 export function ToolCard({
-  to,
-  title,
-  description,
-  image,
-  badge,
-  disabled = false,
-  className,
+  to, title, description, image, badge, disabled = false, className,
 }: {
   to?: string;
   title: string;
   description: string;
   image?: string;
-  /** e.g. "AI", "NEW", "BETA" */
   badge?: string;
   disabled?: boolean;
   className?: string;
@@ -26,83 +18,48 @@ export function ToolCard({
   const showPlaceholder = !image || imageError;
 
   const CardInner = (
-    <div
-      className={cn(
-        "group relative h-full rounded-2xl border border-slate-200 bg-white overflow-hidden",
-        "shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)]",
-        "transition-all duration-300",
-        !disabled && "hover:-translate-y-1",
-        disabled && "opacity-60 pointer-events-none",
-        className
-      )}
-    >
-      {/* Image Section */}
-      <div className="relative w-full aspect-[16/9] bg-gradient-to-br from-blue-50 to-purple-50 overflow-hidden">
+    <div className={cn(
+      "group relative h-full rounded-2xl border border-border bg-background overflow-hidden",
+      "shadow-[0_2px_10px_hsl(var(--foreground)/0.04)] hover:shadow-[0_8px_24px_hsl(var(--foreground)/0.08)]",
+      "transition-all duration-300",
+      !disabled && "hover:-translate-y-1 hover:border-primary/40",
+      disabled && "opacity-60 pointer-events-none",
+      className
+    )}>
+      <div className="relative w-full aspect-[16/9] bg-secondary overflow-hidden">
         {showPlaceholder ? (
           <div className="absolute inset-0 flex items-center justify-center">
-            <FileText className="h-16 w-16 text-blue-200" />
+            <FileText className="h-16 w-16 text-muted-foreground/40" />
           </div>
         ) : (
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-full object-cover"
-            onError={() => setImageError(true)}
-            loading="lazy"
-          />
+          <img src={image} alt={title} className="w-full h-full object-cover"
+            onError={() => setImageError(true)} loading="lazy" />
         )}
-        
-        {/* Badge */}
         {badge && (
           <div className="absolute top-3 right-3">
-            <span className="inline-block rounded-lg bg-gradient-to-r from-[#0074ED] to-[#5B9BF8] px-3 py-1 text-[11px] font-bold text-white shadow-lg">
+            <span className="inline-block rounded-lg bg-primary px-3 py-1 text-[11px] font-bold text-primary-foreground shadow-lg">
               {badge}
             </span>
           </div>
         )}
       </div>
-
-      {/* Content Section */}
-      <div className="p-6">
-        <h3 className="text-lg font-bold text-slate-900 mb-2 line-clamp-1">
-          {title}
-        </h3>
-        <p className="text-sm text-slate-600 leading-relaxed line-clamp-2 mb-4">
-          {description}
-        </p>
-
-        {/* Button */}
+      <div className="p-5">
+        <h3 className="font-heading text-lg font-semibold text-foreground mb-2 line-clamp-1">{title}</h3>
+        <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2 mb-4">{description}</p>
         {!disabled && to && (
-          <button className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900 hover:bg-[#0074ED] text-white px-4 py-2.5 text-sm font-semibold transition-all duration-300 group-hover:shadow-lg">
+          <button className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2.5 text-sm font-semibold transition-all">
             Open Tool
-            <svg
-              className="h-4 w-4 transition-transform group-hover:translate-x-1"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              aria-hidden="true"
-            >
-              <path d="M5 12h14m-7-7l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </button>
         )}
-
         {disabled && (
-          <div className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-slate-100 text-slate-500 px-4 py-2.5 text-sm font-semibold">
-            <span className="h-2 w-2 rounded-full bg-slate-400" />
-            Coming Soon
+          <div className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-secondary text-muted-foreground px-4 py-2.5 text-sm font-semibold">
+            <span className="h-2 w-2 rounded-full bg-muted-foreground/50" /> Coming Soon
           </div>
         )}
       </div>
     </div>
   );
 
-  return to && !disabled ? (
-    <Link to={to} className="block">
-      {CardInner}
-    </Link>
-  ) : (
-    CardInner
-  );
+  return to && !disabled ? <Link to={to} className="block h-full">{CardInner}</Link> : CardInner;
 }

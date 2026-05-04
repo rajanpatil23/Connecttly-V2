@@ -9,14 +9,12 @@ export default function ToolsIndexPage() {
       description="Fast, brand-aligned utilities for modern marketers and founders. No sign-in. Built to be practical, clean, and quick."
       breadcrumb={[]}
     >
-      {/* Grid of tools */}
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
         <ToolCard
           to="/resources/tools/social-image-generator"
           title="Social Image Generator"
           description="Design platform-perfect images with native previews and export instantly."
-          image="/images/Free Tools/SocialImage.svg"
+          image="/images/Free Tools/SocialImageGenerator.png"
           badge="NEW"
         />
 
@@ -24,7 +22,7 @@ export default function ToolsIndexPage() {
           to="/resources/tools/linkedin-post-generator"
           title="LinkedIn Post Generator"
           description="Generate on-brand LinkedIn posts with optional AI imagery and preview."
-          image="/images/Free Tools/LinkedinPost.svg"
+          image="/images/Free Tools/LinkedInPostGenerator.png"
           badge="AI"
         />
 
@@ -32,21 +30,21 @@ export default function ToolsIndexPage() {
           to="/resources/tools/utm"
           title="UTM Builder"
           description="Craft consistent, analytics-friendly tracking links with bulk build support."
-          image="/images/Free Tools/UTMBuilder.svg"
+          image="/images/Free Tools/UTMBuilder.png"
         />
 
         <ToolCard
           to="/resources/tools/hashtags"
           title="Hashtag Generator"
           description="Platform-aware suggestions for Instagram, LinkedIn, and TikTok."
-          image="/images/Free Tools/hashtag genrator.png"
+          image="/images/Free Tools/HashtagGenerator.png"
         />
 
         <ToolCard
           to="/resources/tools/image-generator"
           title="Image Generator"
           description="Generate on-brand images with AI in multiple aspect ratios."
-          image="/images/Free Tools/imagegenaration.png"
+          image="/images/Free Tools/ImageGenerator.png"
           badge="AI"
         />
 
@@ -54,21 +52,21 @@ export default function ToolsIndexPage() {
           to="/resources/tools/url-shortener"
           title="URL Shortener"
           description="Create branded short links with optional expiry and tracking."
-          image="/images/Free Tools/url shortner.png"
+          image="/images/Free Tools/URLShortener.png"
         />
 
         <ToolCard
           to="/resources/tools/text-formatter"
           title="Text Formatter"
           description="Bold, italic, fullwidth & more for social captions."
-          image="/images/Free Tools/text editor.png"
+          image="/images/Free Tools/TextFormatter.png"
         />
 
         <ToolCard
           to="/resources/tools/image-resizer"
           title="Image Resizer"
           description="Resize images to perfect dimensions for any platform instantly."
-          image="/images/Free Tools/image resize.png"
+          image="/images/Free Tools/ImageResizer.png"
           badge="NEW"
         />
 
@@ -76,14 +74,14 @@ export default function ToolsIndexPage() {
           to="/resources/tools/qr-code-generator"
           title="QR Code Generator"
           description="Generate QR codes for URLs, text, and contact information instantly."
-          image="/images/Free Tools/imagegenaration.png"
+          image="/images/Free Tools/QRCodeGenerator.png"
           badge="NEW"
         />
 
         <ToolCard
           title="Figurine Maker"
           description="Create figure/mascot-style illustrations from prompts with presets."
-          image="/images/Free Tools/imagegenaration.png"
+          image="/images/Free Tools/FigurineMaker.png"
           disabled
         />
       </div>

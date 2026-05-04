@@ -74,7 +74,13 @@ const lifestyleVibeFAQs: FAQItem[] = [
 const LifestyleVibe = () => (
   <ServiceDetailAdapter
     heroProps={{
-      // eyebrow="LIFESTYLE & VIBE" heading="Create a Lifestyle Brand That Resonates and Inspires" description="Authentic lifestyle content and brand aesthetic that connects emotionally with your audience and builds a community around your brand." ctaText="Get Started" ctaLink="/resources/support" imageSrc="/images/Services/Brand&Reputation/LifestyleandVibe.png" imageAlt="Lifestyle & Vibe"
+      eyebrow: "LIFESTYLE & VIBE",
+      heading: "Create a Lifestyle Brand That Resonates and Inspires",
+      description: "Authentic lifestyle content and brand aesthetic that connects emotionally with your audience and builds a community around your brand.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Brand&Reputation/LifestyleandVibe.png",
+      imageAlt: "Lifestyle & Vibe",
     }}
     plans={pricingPlans}
     faqs={lifestyleVibeFAQs}

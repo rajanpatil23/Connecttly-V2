@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import SectionLabel from "@/components/_zip/SectionLabel";
 import StatsBar from "@/components/_zip/StatsBar";
 import { sharedStats } from "@/components/_zip/stats-data";
-import WhereToStart from "@/components/Services/ServiceDetail/WhereToStart";
+
 import { Check } from "lucide-react";
 
 export interface ServicePainPoint {
@@ -402,8 +402,6 @@ export default function ServiceDetailTemplate({
         </section>
       )}
 
-      {/* Where to Start */}
-      <WhereToStart />
 
       {/* Tool Stack */}
       {toolStack && toolStack.length > 0 && (

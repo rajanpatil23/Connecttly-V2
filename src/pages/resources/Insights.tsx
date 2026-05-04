@@ -470,8 +470,8 @@ const MarketingMetrics: React.FC = () => {
             <YAxis tickLine={false} axisLine={false} />
             <Tooltip />
             <Legend />
-            <Line type="monotone" dataKey={buttons.find(b => b.key === metric)?.label || metric} stroke="#0074ED" strokeWidth={2} dot={false} />
-            <Line type="monotone" dataKey={buttons.find(b => b.key === metric)?.secondary || "Comparison"} stroke="#50D0FF" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey={buttons.find(b => b.key === metric)?.label || metric} stroke="hsl(var(--primary))" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey={buttons.find(b => b.key === metric)?.secondary || "Comparison"} stroke="hsl(var(--primary) / 0.45)" strokeWidth={2} dot={false} />
           </LineChart>
         </ResponsiveContainer>
       </div>
@@ -482,7 +482,7 @@ const MarketingMetrics: React.FC = () => {
             onClick={() => setMetric(b.key as any)}
             className={cn(
               "rounded-xl px-3 py-2 border transition-all cursor-pointer hover:shadow-md hover:scale-105 active:scale-95",
-              metric === b.key ? "bg-[#D4F0B3] border-[#A6FF5F]/40" : "bg-muted border-border"
+              metric === b.key ? "bg-primary/10 border-primary/30" : "bg-muted border-border"
             )}
           >
             <div className="text-xs text-muted-foreground">{b.label}</div>

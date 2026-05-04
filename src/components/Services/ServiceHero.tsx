@@ -32,7 +32,7 @@ export default function ServiceHero({
   primaryCtaHref = "/resources/support",
   secondaryCtaText = "See Pricing",
   secondaryCtaHref = "#pricing",
-  badgeTopRight,
+  badgeTopRight = { value: "100%", label: "Results-Driven" },
   badgeBottomLeft,
 }: ServiceHeroProps) {
   return (

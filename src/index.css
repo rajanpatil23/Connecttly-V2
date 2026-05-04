@@ -144,8 +144,27 @@
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary to-ct-blue-medium bg-clip-text text-transparent;
   }
+
+  .container-main {
+    @apply max-w-6xl mx-auto px-5 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  @keyframes float-y-zip {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  .animate-float-y { animation: float-y-zip 5s ease-in-out infinite; }
+  .font-heading { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+  .font-body { font-family: 'Inter', system-ui, sans-serif; }
+
+  @keyframes dash-flow-zip { to { stroke-dashoffset: -20; } }
+  .animated-dash { stroke-dasharray: 3 2; animation: dash-flow-zip 1.2s linear infinite; }
   
   .service-card {
     @apply glass-effect hover:bg-card/60 transition-all duration-300 hover:scale-105 hover:shadow-2xl;

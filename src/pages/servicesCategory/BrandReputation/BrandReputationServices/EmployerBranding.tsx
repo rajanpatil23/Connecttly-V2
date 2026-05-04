@@ -1,16 +1,16 @@
-import { motion } from "framer-motion";
-import { useScrollScale } from "@/hooks/useScrollScale";
-import { Target, TrendingUp, Users, BarChart3, Zap, Award, Briefcase, Heart, Star, UserPlus, MessageSquare, Trophy } from "lucide-react";
-import Hero from "@/components/Services/category/Hero";
-import WhyChoose, { WhyChooseItem } from "@/components/Services/category/WhyChoose";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
-import ServicesRibbon, { RibbonItem } from "@/components/Services/category/ServicesRibbon";
-import PricingTable, { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
-import ToolStackSection, { Tool } from "@/components/Services/ServiceDetail/toolstack";
-import ServiceFAQ, { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
-import { ProcessCards, ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
-import { ServiceFeatures, FeatureItem } from "@/components/Services/ServiceDetail/service-features";
+import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 
+
+import { Target, TrendingUp, Users, BarChart3, Zap, Award, Briefcase, Heart, Star, UserPlus, MessageSquare, Trophy } from "lucide-react";
+
+import type { WhyChooseItem } from "@/components/Services/category/WhyChoose";
+
+import type { RibbonItem } from "@/components/Services/category/ServicesRibbon";
+import type { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
+import type { Tool } from "@/components/Services/ServiceDetail/toolstack";
+import type { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
+import type { ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
+import type { FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 const ScrollAnimatedSection = ({ children, bgColor }: { children: React.ReactNode; bgColor?: string }) => {
   const { ref, scale } = useScrollScale();
   return (<motion.div ref={ref} style={{ scale }} transition={{ type: "spring", stiffness: 100, damping: 30, restDelta: 0.001 }} className="relative rounded-3xl">{bgColor && <div className={`absolute inset-0 rounded-3xl ${bgColor}`} />}<div className="relative rounded-3xl">{children}</div></motion.div>);
@@ -76,32 +76,24 @@ const employerBrandingFAQs: FAQItem[] = [
   { question: "How do you measure employer branding success?", answer: "We track comprehensive metrics: application volume and quality, time-to-hire, cost-per-hire, offer acceptance rate, employee retention, Glassdoor/Indeed ratings, career page traffic, and employee referrals. We also measure: brand awareness surveys, candidate experience scores, and employee engagement. Most clients see: 3x more applications, 50% lower hiring costs, 28% better retention, and 0.5-1.0 star rating improvement within 6-12 months." },
 ];
 
-const EmployerBranding = () => {
-  return (
-    <div className="min-h-screen">
-      <Hero 
-        eyebrow="EMPLOYER BRANDING" 
+const EmployerBranding = () => (
+  <ServiceDetailAdapter
+    heroProps={{
+eyebrow="EMPLOYER BRANDING" 
         heading="Attract Top Talent with a Powerful Employer Brand" 
         description="Strategic employer branding that positions you as an employer of choice, attracts quality candidates, and reduces hiring costs." 
         ctaText="Get Started" 
         ctaLink="/resources/support" 
         imageSrc="/images/Services/Brand&Reputation/EmployerBranding.png" 
         imageAlt="Employer Branding" 
-      />
-      <section className="py-8 sm:py-10">
-        <ServicesRibbon title="Trusted by Top Employers" items={ribbonItems} />
-      </section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ServiceFeatures eyebrow="What We Offer" heading="Complete Employer Branding Services" description="From EVP to recruitment marketing, we build employer brands that attract top talent." features={employerBrandingFeatures} accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor="bg-[#B8E8DD]"><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><WhyChoose items={whyItems} eyebrow="WHY CHOOSE CONNECTTLY" heading="Why Choose Our Employer Branding Services" eyebrowColor="#0A6B5E" noPadding noCard noContainer /></div></ScrollAnimatedSection></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor="bg-[#F1F1E9]"><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><ProcessCards eyebrow="Our Process" subheading="How We Build Employer Brands" description="A proven methodology for creating employer brands that attract talent" steps={employerBrandingProcessSteps} accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></ScrollAnimatedSection></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor=""><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><PricingTable plans={pricingPlans} heading="Choose Your Employer Branding Plan" description="Select the perfect plan for your employer branding needs. All plans include EVP development and employee research." accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></ScrollAnimatedSection></div></section>
-      <section className="py-8 sm:py-10"><ReviewCarousel noPadding /></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><ScrollAnimatedSection bgColor=""><ToolStackSection title="Powered by Leading Recruitment Tools" description="We use the best employer branding and recruitment marketing tools." tools={employerBrandingTools} ctaText="Get Started" ctaLink="/resources/support" bgColor="bg-[#B8E8DD]" /></ScrollAnimatedSection></section>
-      <section className="py-8 sm:py-10">
-        <ServiceFAQ title="Frequently Asked Questions" subtitle="Everything you need to know about employer branding services" faqs={employerBrandingFAQs} accentColor="from-[#0074ED] to-[#5B9BF8]" />
-      </section>
-    </div>
-  );
-};
+      
+    }}
+    plans={pricingPlans}
+    faqs={employerBrandingFAQs}
+    tools={employerBrandingTools}
+    processSteps={employerBrandingProcessSteps}
+    whyItems={whyItems}
+  />
+);
 
 export default EmployerBranding;

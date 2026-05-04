@@ -1,16 +1,16 @@
-import { motion } from "framer-motion";
-import { useScrollScale } from "@/hooks/useScrollScale";
-import { Target, TrendingUp, Users, BarChart3, Zap, Award, Package, Layers, Crown, CheckCircle, Sparkles, Rocket } from "lucide-react";
-import Hero from "@/components/Services/category/Hero";
-import WhyChoose, { WhyChooseItem } from "@/components/Services/category/WhyChoose";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
-import ServicesRibbon, { RibbonItem } from "@/components/Services/category/ServicesRibbon";
-import PricingTable, { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
-import ToolStackSection, { Tool } from "@/components/Services/ServiceDetail/toolstack";
-import ServiceFAQ, { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
-import { ProcessCards, ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
-import { ServiceFeatures, FeatureItem } from "@/components/Services/ServiceDetail/service-features";
+import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 
+
+import { Target, TrendingUp, Users, BarChart3, Zap, Award, Package, Layers, Crown, CheckCircle, Sparkles, Rocket } from "lucide-react";
+
+import type { WhyChooseItem } from "@/components/Services/category/WhyChoose";
+
+import type { RibbonItem } from "@/components/Services/category/ServicesRibbon";
+import type { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
+import type { Tool } from "@/components/Services/ServiceDetail/toolstack";
+import type { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
+import type { ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
+import type { FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 const ScrollAnimatedSection = ({ children, bgColor }: { children: React.ReactNode; bgColor?: string }) => {
   const { ref, scale } = useScrollScale();
   return (<motion.div ref={ref} style={{ scale }} transition={{ type: "spring", stiffness: 100, damping: 30, restDelta: 0.001 }} className="relative rounded-3xl">{bgColor && <div className={`absolute inset-0 rounded-3xl ${bgColor}`} />}<div className="relative rounded-3xl">{children}</div></motion.div>);
@@ -76,24 +76,17 @@ const brandMomentumFAQs: FAQItem[] = [
   { question: "What if we need to scale up or down?", answer: "The bundle is flexible: Scale up services as you grow, Adjust service mix based on priorities, Add new services as needed, and Reduce during slower periods. We work with you to optimize brand investment based on results and business needs. Most clients start with Growth Bundle and scale to Enterprise as they see results. We can also customize bundles for specific industries or situations. Goal is to maximize your brand ROI at every stage." },
 ];
 
-const BrandMomentumBundle = () => {
-  return (
-    <div className="min-h-screen">
-      <Hero eyebrow="BRAND MOMENTUM BUNDLE" heading="Complete Brand Solution - Transform Your Brand Completely" description="Comprehensive brand services that work together seamlessly: strategy, PR, website, employer branding, and lifestyle content - all integrated for maximum impact." ctaText="Get Started" ctaLink="/resources/support" imageSrc="/images/Services/Brand&Reputation/BrandMomentumBundle.png" imageAlt="Brand Momentum Bundle" />
-      <section className="py-8 sm:py-10">
-        <ServicesRibbon title="The Ultimate Brand Solution" items={ribbonItems} />
-      </section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ServiceFeatures eyebrow="What's Included" heading="Everything You Need for Brand Success" description="A comprehensive suite of brand services that work together for maximum impact." features={brandMomentumFeatures} accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor="bg-[#B8E8DD]"><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><WhyChoose items={whyItems} eyebrow="WHY CHOOSE THE BUNDLE" heading="Why Choose Brand Momentum Bundle" eyebrowColor="#0A6B5E" noPadding noCard noContainer /></div></ScrollAnimatedSection></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor="bg-[#F1F1E9]"><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><ProcessCards eyebrow="Our Process" subheading="How We Transform Your Brand" description="A proven methodology for complete brand transformation" steps={brandMomentumProcessSteps} accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></ScrollAnimatedSection></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor=""><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><PricingTable plans={pricingPlans} heading="Choose Your Brand Bundle" description="Select the perfect bundle for your brand needs. Save 40-50% vs. individual services." accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></ScrollAnimatedSection></div></section>
-      <section className="py-8 sm:py-10"><ReviewCarousel noPadding /></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><ScrollAnimatedSection bgColor=""><ToolStackSection title="Powered by Leading Brand Tools" description="We use the best strategy, design, PR, and analytics tools to transform brands." tools={brandMomentumTools} ctaText="Get Started" ctaLink="/resources/support" bgColor="bg-[#B8E8DD]" /></ScrollAnimatedSection></section>
-      <section className="py-8 sm:py-10">
-        <ServiceFAQ title="Frequently Asked Questions" subtitle="Everything you need to know about the Brand Momentum Bundle" faqs={brandMomentumFAQs} accentColor="from-[#0074ED] to-[#5B9BF8]" />
-      </section>
-    </div>
-  );
-};
+const BrandMomentumBundle = () => (
+  <ServiceDetailAdapter
+    heroProps={{
+eyebrow="BRAND MOMENTUM BUNDLE" heading="Complete Brand Solution - Transform Your Brand Completely" description="Comprehensive brand services that work together seamlessly: strategy, PR, website, employer branding, and lifestyle content - all integrated for maximum impact." ctaText="Get Started" ctaLink="/resources/support" imageSrc="/images/Services/Brand&Reputation/BrandMomentumBundle.png" imageAlt="Brand Momentum Bundle" 
+    }}
+    plans={pricingPlans}
+    faqs={brandMomentumFAQs}
+    tools={brandMomentumTools}
+    processSteps={brandMomentumProcessSteps}
+    whyItems={whyItems}
+  />
+);
 
 export default BrandMomentumBundle;

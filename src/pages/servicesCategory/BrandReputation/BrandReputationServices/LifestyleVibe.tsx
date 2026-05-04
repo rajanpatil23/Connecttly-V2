@@ -1,16 +1,16 @@
-import { motion } from "framer-motion";
-import { useScrollScale } from "@/hooks/useScrollScale";
-import { Target, TrendingUp, Users, BarChart3, Zap, Award, Camera, Heart, Sparkles, Image, Video, Share2 } from "lucide-react";
-import Hero from "@/components/Services/category/Hero";
-import WhyChoose, { WhyChooseItem } from "@/components/Services/category/WhyChoose";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
-import ServicesRibbon, { RibbonItem } from "@/components/Services/category/ServicesRibbon";
-import PricingTable, { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
-import ToolStackSection, { Tool } from "@/components/Services/ServiceDetail/toolstack";
-import ServiceFAQ, { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
-import { ProcessCards, ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
-import { ServiceFeatures, FeatureItem } from "@/components/Services/ServiceDetail/service-features";
+import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 
+
+import { Target, TrendingUp, Users, BarChart3, Zap, Award, Camera, Heart, Sparkles, Image, Video, Share2 } from "lucide-react";
+
+import type { WhyChooseItem } from "@/components/Services/category/WhyChoose";
+
+import type { RibbonItem } from "@/components/Services/category/ServicesRibbon";
+import type { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
+import type { Tool } from "@/components/Services/ServiceDetail/toolstack";
+import type { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
+import type { ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
+import type { FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 const ScrollAnimatedSection = ({ children, bgColor }: { children: React.ReactNode; bgColor?: string }) => {
   const { ref, scale } = useScrollScale();
   return (<motion.div ref={ref} style={{ scale }} transition={{ type: "spring", stiffness: 100, damping: 30, restDelta: 0.001 }} className="relative rounded-3xl">{bgColor && <div className={`absolute inset-0 rounded-3xl ${bgColor}`} />}<div className="relative rounded-3xl">{children}</div></motion.div>);
@@ -76,24 +76,17 @@ const lifestyleVibeFAQs: FAQItem[] = [
   { question: "How do you measure lifestyle content success?", answer: "We track comprehensive metrics: engagement rate (likes, comments, shares, saves), reach and impressions, follower growth, website traffic from social, conversions and sales, brand sentiment, and UGC volume. We also measure: content performance by type, best-performing themes, audience demographics, and competitive benchmarks. Most clients see: 10x engagement increase, 3-5x follower growth, and significant improvement in brand perception within 3-6 months of consistent lifestyle content." },
 ];
 
-const LifestyleVibe = () => {
-  return (
-    <div className="min-h-screen">
-      <Hero eyebrow="LIFESTYLE & VIBE" heading="Create a Lifestyle Brand That Resonates and Inspires" description="Authentic lifestyle content and brand aesthetic that connects emotionally with your audience and builds a community around your brand." ctaText="Get Started" ctaLink="/resources/support" imageSrc="/images/Services/Brand&Reputation/LifestyleandVibe.png" imageAlt="Lifestyle & Vibe" />
-      <section className="py-8 sm:py-10">
-        <ServicesRibbon title="Lifestyle Brands We've Built" items={ribbonItems} />
-      </section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ServiceFeatures eyebrow="What We Offer" heading="Complete Lifestyle Content Services" description="From photography to influencer collaborations, we create lifestyle content that resonates." features={lifestyleVibeFeatures} accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor="bg-[#B8E8DD]"><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><WhyChoose items={whyItems} eyebrow="WHY CHOOSE CONNECTTLY" heading="Why Choose Our Lifestyle Content Services" eyebrowColor="#0A6B5E" noPadding noCard noContainer /></div></ScrollAnimatedSection></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor="bg-[#F1F1E9]"><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><ProcessCards eyebrow="Our Process" subheading="How We Create Lifestyle Brands" description="A proven methodology for building lifestyle brands that inspire" steps={lifestyleVibeProcessSteps} accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></ScrollAnimatedSection></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor=""><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><PricingTable plans={pricingPlans} heading="Choose Your Lifestyle Content Plan" description="Select the perfect plan for your lifestyle content needs. All plans include professional photography and content strategy." accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></ScrollAnimatedSection></div></section>
-      <section className="py-8 sm:py-10"><ReviewCarousel noPadding /></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><ScrollAnimatedSection bgColor=""><ToolStackSection title="Powered by Leading Creative Tools" description="We use the best photography, video, and social media tools to create stunning lifestyle content." tools={lifestyleVibeTools} ctaText="Get Started" ctaLink="/resources/support" bgColor="bg-[#B8E8DD]" /></ScrollAnimatedSection></section>
-      <section className="py-8 sm:py-10">
-        <ServiceFAQ title="Frequently Asked Questions" subtitle="Everything you need to know about lifestyle content and brand vibe services" faqs={lifestyleVibeFAQs} accentColor="from-[#0074ED] to-[#5B9BF8]" />
-      </section>
-    </div>
-  );
-};
+const LifestyleVibe = () => (
+  <ServiceDetailAdapter
+    heroProps={{
+eyebrow="LIFESTYLE & VIBE" heading="Create a Lifestyle Brand That Resonates and Inspires" description="Authentic lifestyle content and brand aesthetic that connects emotionally with your audience and builds a community around your brand." ctaText="Get Started" ctaLink="/resources/support" imageSrc="/images/Services/Brand&Reputation/LifestyleandVibe.png" imageAlt="Lifestyle & Vibe" 
+    }}
+    plans={pricingPlans}
+    faqs={lifestyleVibeFAQs}
+    tools={lifestyleVibeTools}
+    processSteps={lifestyleVibeProcessSteps}
+    whyItems={whyItems}
+  />
+);
 
 export default LifestyleVibe;

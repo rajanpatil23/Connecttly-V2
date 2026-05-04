@@ -1,16 +1,16 @@
-import { motion } from "framer-motion";
-import { useScrollScale } from "@/hooks/useScrollScale";
-import { Target, TrendingUp, Users, BarChart3, Zap, Award, Layout, Smartphone, Gauge, MousePointer, Eye, CheckCircle } from "lucide-react";
-import Hero from "@/components/Services/category/Hero";
-import WhyChoose, { WhyChooseItem } from "@/components/Services/category/WhyChoose";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
-import ServicesRibbon, { RibbonItem } from "@/components/Services/category/ServicesRibbon";
-import PricingTable, { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
-import ToolStackSection, { Tool } from "@/components/Services/ServiceDetail/toolstack";
-import ServiceFAQ, { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
-import { ProcessCards, ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
-import { ServiceFeatures, FeatureItem } from "@/components/Services/ServiceDetail/service-features";
+import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 
+
+import { Target, TrendingUp, Users, BarChart3, Zap, Award, Layout, Smartphone, Gauge, MousePointer, Eye, CheckCircle } from "lucide-react";
+
+import type { WhyChooseItem } from "@/components/Services/category/WhyChoose";
+
+import type { RibbonItem } from "@/components/Services/category/ServicesRibbon";
+import type { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
+import type { Tool } from "@/components/Services/ServiceDetail/toolstack";
+import type { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
+import type { ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
+import type { FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 const ScrollAnimatedSection = ({ children, bgColor }: { children: React.ReactNode; bgColor?: string }) => {
   const { ref, scale } = useScrollScale();
   return (<motion.div ref={ref} style={{ scale }} transition={{ type: "spring", stiffness: 100, damping: 30, restDelta: 0.001 }} className="relative rounded-3xl">{bgColor && <div className={`absolute inset-0 rounded-3xl ${bgColor}`} />}<div className="relative rounded-3xl">{children}</div></motion.div>);
@@ -76,24 +76,17 @@ const websiteFAQs: FAQItem[] = [
   { question: "What's the difference between a website and landing page?", answer: "Websites are multi-page with navigation (home, about, services, etc.) for general audience. Landing pages are single-page, focused on one goal (lead capture, sale) for specific campaigns. Use websites for: brand presence, SEO, multiple offerings. Use landing pages for: PPC campaigns, specific offers, lead generation. We recommend both: website for organic traffic, landing pages for paid campaigns." },
 ];
 
-const WebsiteUXLandingPage = () => {
-  return (
-    <div className="min-h-screen">
-      <Hero eyebrow="WEBSITE, UX & LANDING PAGES" heading="Beautiful, High-Converting Websites That Drive Results" description="Custom website design and UX optimization that turns visitors into customers with stunning design and seamless user experience." ctaText="Get Started" ctaLink="/resources/support" imageSrc="/images/Services/Brand&Reputation/WebsiteUX&LandingPages.png" imageAlt="Website & UX Design" />
-      <section className="py-8 sm:py-10">
-        <ServicesRibbon title="Award-Winning Web Design" items={ribbonItems} />
-      </section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ServiceFeatures eyebrow="What We Offer" heading="Complete Website & UX Services" description="From design to development, we create websites that look great and convert." features={websiteFeatures} accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor="bg-[#B8E8DD]"><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><WhyChoose items={whyItems} eyebrow="WHY CHOOSE CONNECTTLY" heading="Why Choose Our Website Services" eyebrowColor="#0A6B5E" noPadding noCard noContainer /></div></ScrollAnimatedSection></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor="bg-[#F1F1E9]"><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><ProcessCards eyebrow="Our Process" subheading="How We Design Websites" description="A proven methodology for creating high-converting websites" steps={websiteProcessSteps} accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></ScrollAnimatedSection></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor=""><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><PricingTable plans={pricingPlans} heading="Choose Your Website Plan" description="Select the perfect plan for your website needs. All plans include responsive design and SEO." accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></ScrollAnimatedSection></div></section>
-      <section className="py-8 sm:py-10"><ReviewCarousel noPadding /></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><ScrollAnimatedSection bgColor=""><ToolStackSection title="Powered by Leading Web Tools" description="We use the best design and development tools to create exceptional websites." tools={websiteTools} ctaText="Get Started" ctaLink="/resources/support" bgColor="bg-[#B8E8DD]" /></ScrollAnimatedSection></section>
-      <section className="py-8 sm:py-10">
-        <ServiceFAQ title="Frequently Asked Questions" subtitle="Everything you need to know about website design and UX services" faqs={websiteFAQs} accentColor="from-[#0074ED] to-[#5B9BF8]" />
-      </section>
-    </div>
-  );
-};
+const WebsiteUXLandingPage = () => (
+  <ServiceDetailAdapter
+    heroProps={{
+eyebrow="WEBSITE, UX & LANDING PAGES" heading="Beautiful, High-Converting Websites That Drive Results" description="Custom website design and UX optimization that turns visitors into customers with stunning design and seamless user experience." ctaText="Get Started" ctaLink="/resources/support" imageSrc="/images/Services/Brand&Reputation/WebsiteUX&LandingPages.png" imageAlt="Website & UX Design" 
+    }}
+    plans={pricingPlans}
+    faqs={websiteFAQs}
+    tools={websiteTools}
+    processSteps={websiteProcessSteps}
+    whyItems={whyItems}
+  />
+);
 
 export default WebsiteUXLandingPage;

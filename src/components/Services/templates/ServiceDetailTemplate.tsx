@@ -5,6 +5,7 @@ import SectionLabel from "@/components/_zip/SectionLabel";
 import StatsBar from "@/components/_zip/StatsBar";
 import { sharedStats } from "@/components/_zip/stats-data";
 import ReviewCarousel from "@/components/_zip/Home/ReviewCarousel";
+import ServiceHero from "@/components/Services/ServiceHero";
 
 import { Check } from "lucide-react";
 
@@ -110,57 +111,23 @@ export default function ServiceDetailTemplate({
 
   return (
     <div>
-      {/* Hero */}
-      <section className="section-padding">
-        <div className="container-main">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-3xl md:text-5xl font-heading font-bold leading-tight">
-                {heroTitle}
-              </h1>
-              <p className="text-muted-foreground mt-4">{heroDescription}</p>
-              <div className="flex gap-3 mt-6 flex-wrap">
-                <Button asChild className="rounded-full px-6 font-semibold">
-                  <Link to={primaryCtaHref}>{primaryCtaText}</Link>
-                </Button>
-                {secondaryCtaText && (
-                  <Button asChild variant="outline" className="rounded-full px-6 font-semibold">
-                    <a href={secondaryCtaHref}>{secondaryCtaText}</a>
-                  </Button>
-                )}
-              </div>
-            </div>
-            <div className="relative flex justify-center">
-              <img
-                src={heroImage}
-                alt={heroImageAlt}
-                className="w-full max-w-md h-auto object-contain"
-                width={700}
-                height={560}
-              />
-              <div
-                className="absolute right-2 top-1/2 -translate-y-2 bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-xl text-center animate-float-y"
-                style={{ animationDelay: "0s" }}
-              >
-                <p className="font-heading font-bold text-xl leading-none">100%</p>
-                <p className="text-[10px] font-medium mt-1 opacity-90">Results-Driven</p>
-              </div>
-              <div
-                className="absolute left-0 bottom-6 bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-xl text-center animate-float-y"
-                style={{ animationDelay: "1.5s" }}
-              >
-                <p className="font-heading font-bold text-xl leading-none">36</p>
-                <p className="text-[10px] font-medium mt-1 opacity-90 leading-tight">
-                  Specialized
-                  <br />
-                  Services
-                </p>
-              </div>
-            </div>
-          </div>
-          {showStatsBar && <StatsBar stats={sharedStats} />}
+      <ServiceHero
+        title={heroTitle}
+        description={heroDescription}
+        image={heroImage}
+        imageAlt={heroImageAlt}
+        primaryCtaText={primaryCtaText}
+        primaryCtaHref={primaryCtaHref}
+        secondaryCtaText={secondaryCtaText}
+        secondaryCtaHref={secondaryCtaHref}
+        badgeTopRight={{ value: "100%", label: "Results-Driven" }}
+        badgeBottomLeft={{ value: "36", label: <>Specialized<br />Services</> }}
+      />
+      {showStatsBar && (
+        <div className="container-main -mt-4 mb-8">
+          <StatsBar stats={sharedStats} />
         </div>
-      </section>
+      )}
 
       {/* Pain Points */}
       {painPoints && painPoints.length > 0 && (

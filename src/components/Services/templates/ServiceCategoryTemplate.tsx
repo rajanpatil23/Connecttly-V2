@@ -59,7 +59,7 @@ export default function ServiceCategoryTemplate({
         badgeBottomLeft={{ value: String(services.length), label: <>Specialized<br />Services</> }}
       />
       {showStatsBar && (
-        <div className="container-main -mt-4 mb-8">
+        <div className="container-main -mt-14 mb-8">
           <StatsBar stats={sharedStats} />
         </div>
       )}

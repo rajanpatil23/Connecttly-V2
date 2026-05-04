@@ -83,7 +83,7 @@ const Card: React.FC<React.PropsWithChildren<{ className?: string }>> = ({ class
 const StatsCard = UICard;
 
 const SectionTitle: React.FC<{ title: string }> = ({ title }) => (
-  <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-gray-900 mb-4">{title}</h2>
+  <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-foreground mb-4">{title}</h2>
 );
 
 const Segmented: React.FC<{
@@ -98,7 +98,7 @@ const Segmented: React.FC<{
         onClick={() => onChange(o.value)}
         className={cn(
           "px-3 py-1.5 text-sm rounded-full transition",
-          value === o.value ? "bg-white shadow text-gray-900" : "text-gray-600 hover:text-gray-900"
+          value === o.value ? "bg-white shadow text-foreground" : "text-muted-foreground hover:text-foreground"
         )}
       >
         {o.label}
@@ -129,8 +129,8 @@ const Kpi: React.FC<{
       clickable && "cursor-pointer hover:shadow-md hover:scale-105 active:scale-95"
     )}
   >
-    <div className="text-xs text-gray-600">{label}</div>
-    <div className="text-lg font-semibold text-gray-900">{value}</div>
+    <div className="text-xs text-muted-foreground">{label}</div>
+    <div className="text-lg font-semibold text-foreground">{value}</div>
   </div>
 );
 
@@ -251,7 +251,6 @@ const RevenueMetrics: React.FC = () => {
           </AreaChart>
         </ResponsiveContainer>
       </div>
-=======
 
       <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         <Kpi 
@@ -486,8 +485,8 @@ const MarketingMetrics: React.FC = () => {
               metric === b.key ? "bg-[#D4F0B3] border-[#A6FF5F]/40" : "bg-gray-50 border-gray-200"
             )}
           >
-            <div className="text-xs text-gray-600">{b.label}</div>
-            <div className="text-lg font-semibold text-gray-900">
+            <div className="text-xs text-muted-foreground">{b.label}</div>
+            <div className="text-lg font-semibold text-foreground">
               {base[b.key].at(-1)?.value.toLocaleString() || "0"}
             </div>
           </div>
@@ -532,7 +531,7 @@ export default function InsightsDashboard() {
           <AdvocacyMetrics />
           <MarketingMetrics />
           
-          <p className="text-xs text-gray-500 text-center">
+          <p className="text-xs text-muted-foreground text-center">
             Data shown from Jun 2025. Updates automatically every month.
           </p>
         </div>
@@ -545,10 +544,10 @@ export default function InsightsDashboard() {
             <div className="px-6 sm:px-10 lg:px-14 py-10 sm:py-12">
               {/* Header */}
               <header className="text-center mb-10 sm:mb-12">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-foreground">
                   What the Data Tells Us
                 </h2>
-                <p className="mt-4 text-sm sm:text-base lg:text-lg text-slate-600 max-w-3xl mx-auto">
+                <p className="mt-4 text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
                   Key insights and trends from our business metrics
                 </p>
               </header>
@@ -565,8 +564,8 @@ export default function InsightsDashboard() {
                     </div>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">Consistent Growth</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
+                  <h3 className="text-xl font-bold text-foreground mb-3">Consistent Growth</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                     Our revenue metrics show steady upward momentum with strategic investments paying off across all channels.
                   </p>
                 </div>
@@ -581,8 +580,8 @@ export default function InsightsDashboard() {
                     </div>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">Customer Success</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
+                  <h3 className="text-xl font-bold text-foreground mb-3">Customer Success</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                     High satisfaction rates and growing customer base demonstrate our commitment to delivering exceptional value.
                   </p>
                 </div>
@@ -597,8 +596,8 @@ export default function InsightsDashboard() {
                     </div>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">Market Expansion</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
+                  <h3 className="text-xl font-bold text-foreground mb-3">Market Expansion</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                     Increasing blog engagement and contact requests signal strong market interest and brand awareness growth.
                   </p>
                 </div>

@@ -93,17 +93,17 @@ const FAQItem = ({ question, answer, index }: FAQItemProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="border-b border-slate-200 last:border-b-0"
+      className="border-b border-border last:border-b-0"
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex items-center justify-between py-5 text-left group"
       >
-        <span className="text-lg font-semibold text-slate-900 group-hover:text-[#0074ED] transition-colors">
+        <span className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
           {question}
         </span>
         <ChevronDown
-          className={`h-5 w-5 text-slate-600 transition-transform duration-300 ${
+          className={`h-5 w-5 text-muted-foreground transition-transform duration-300 ${
             isOpen ? "rotate-180" : ""
           }`}
         />
@@ -113,7 +113,7 @@ const FAQItem = ({ question, answer, index }: FAQItemProps) => {
           isOpen ? "max-h-96 pb-5" : "max-h-0"
         }`}
       >
-        <p className="text-slate-600 leading-relaxed">{answer}</p>
+        <p className="text-muted-foreground leading-relaxed">{answer}</p>
       </div>
     </motion.div>
   );
@@ -199,7 +199,7 @@ export default function ReferAndEarn() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-foreground"
             >
               What's in It for You?
             </motion.h2>
@@ -208,7 +208,7 @@ export default function ReferAndEarn() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-4 text-sm sm:text-base lg:text-lg text-slate-600 max-w-3xl mx-auto"
+              className="mt-4 text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto"
             >
               Join hundreds of partners earning recurring income by referring customers to Connecttly
             </motion.p>
@@ -257,8 +257,8 @@ export default function ReferAndEarn() {
                     </div>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">{benefit.title}</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">{benefit.description}</p>
+                  <h3 className="text-xl font-bold text-foreground mb-3">{benefit.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{benefit.description}</p>
                 </div>
               );
             })}
@@ -303,7 +303,7 @@ export default function ReferAndEarn() {
       {/* =================== HOW TO GET STARTED =================== */}
       <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
         <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#F1F1E9]">
+          <ScrollAnimatedSection bgColor="bg-muted">
             <div className="px-6 sm:px-10 lg:px-14 py-12 sm:py-16">
               {/* Header */}
               <motion.div
@@ -313,10 +313,10 @@ export default function ReferAndEarn() {
                 transition={{ duration: 0.6 }}
                 className="text-center mb-16"
               >
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
                   How to Join & Start Earning
                 </h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   Our simple 4-step process gets you up and running in minutes
                 </p>
               </motion.div>
@@ -341,10 +341,10 @@ export default function ReferAndEarn() {
                             STEP {step.step}
                           </div>
                         </div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4 text-left">
+                        <h3 className="text-2xl font-bold text-foreground mb-4 text-left">
                           {step.title}
                         </h3>
-                        <p className="text-gray-700 leading-relaxed flex-grow text-left">
+                        <p className="text-foreground/80 leading-relaxed flex-grow text-left">
                           {step.description}
                         </p>
                         <div className={`mt-6 h-1 w-16 ${color.badge} rounded-full`}></div>
@@ -359,13 +359,13 @@ export default function ReferAndEarn() {
       </section>
 
       {/* =================== WHO'S A GOOD FIT =================== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10 bg-[#F6F8FB]">
+      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10 bg-muted/40">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold leading-tight md:text-4xl text-slate-900">
+            <h2 className="text-3xl font-bold leading-tight md:text-4xl text-foreground">
               Who's a Good Fit?
             </h2>
-            <p className="mt-4 text-slate-600 text-lg leading-relaxed">
+            <p className="mt-4 text-muted-foreground text-lg leading-relaxed">
               Ideal partners who can benefit from our affiliate program
             </p>
           </div>
@@ -388,7 +388,7 @@ export default function ReferAndEarn() {
                   key={index}
                   className={`flex flex-col lg:border-r py-10 relative group/feature ${
                     (index === 0 || index === 4) ? "lg:border-l" : ""
-                  } ${index < 4 ? "lg:border-b" : ""} border-slate-200`}
+                  } ${index < 4 ? "lg:border-b" : ""} border-border`}
                 >
                   {index < 4 && (
                     <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-[#0074ED]/10 to-transparent pointer-events-none" />
@@ -405,12 +405,12 @@ export default function ReferAndEarn() {
                     </div>
                   </div>
                   <div className="text-lg font-bold mb-2 relative z-10 px-10">
-                    <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-slate-200 group-hover/feature:bg-[#0074ED] transition-all duration-200 origin-center" />
-                    <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-slate-900">
+                    <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-slate-200 group-hover/feature:bg-primary transition-all duration-200 origin-center" />
+                    <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-foreground">
                       {type.title}
                     </span>
                   </div>
-                  <p className="text-sm text-slate-600 max-w-xs relative z-10 px-10">
+                  <p className="text-sm text-muted-foreground max-w-xs relative z-10 px-10">
                     {type.desc}
                   </p>
                 </div>
@@ -426,8 +426,8 @@ export default function ReferAndEarn() {
             transition={{ duration: 0.6, delay: 0.7 }}
             className="bg-white rounded-2xl p-8 md:p-10 shadow-lg"
           >
-            <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2 text-center">Let's paint a payout picture</h3>
-            <p className="text-sm text-slate-600 text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2 text-center">Let's paint a payout picture</h3>
+            <p className="text-sm text-muted-foreground text-center mb-8">
               Let's daydream a little, shall we? Check out these commission estimates based on the # of paid referrals signing up for our most popular plan (Professional, annual).
             </p>
             
@@ -453,7 +453,7 @@ export default function ReferAndEarn() {
                       >
                         {/* Value label on top of bar */}
                         <div className="absolute -top-8 left-0 right-0 text-center">
-                          <div className="text-lg md:text-xl font-bold text-slate-900">
+                          <div className="text-lg md:text-xl font-bold text-foreground">
                             ${tier.yearly.toLocaleString()}/yr
                           </div>
                         </div>
@@ -461,9 +461,9 @@ export default function ReferAndEarn() {
                     </div>
                     
                     {/* X-axis label */}
-                    <div className="text-center pt-2 border-t-2 border-slate-200 w-full">
-                      <div className="text-base md:text-lg font-semibold text-slate-900">{tier.referrals}</div>
-                      <div className="text-xs text-slate-600 mt-1">referrals</div>
+                    <div className="text-center pt-2 border-t-2 border-border w-full">
+                      <div className="text-base md:text-lg font-semibold text-foreground">{tier.referrals}</div>
+                      <div className="text-xs text-muted-foreground mt-1">referrals</div>
                     </div>
                   </div>
                 ))}
@@ -471,13 +471,13 @@ export default function ReferAndEarn() {
               
               {/* X-axis label */}
               <div className="text-center mt-4">
-                <p className="text-sm font-medium text-slate-700">Number of referrals</p>
+                <p className="text-sm font-medium text-foreground/80">Number of referrals</p>
               </div>
             </div>
 
             {/* Disclaimer */}
-            <div className="mt-8 p-4 bg-slate-50 rounded-lg border border-slate-200">
-              <p className="text-xs text-slate-600 leading-relaxed">
+            <div className="mt-8 p-4 bg-muted rounded-lg border border-border">
+              <p className="text-xs text-muted-foreground leading-relaxed">
                 <strong>Note:</strong> These are illustrative examples based on our Professional plan (annual billing) with 20% commission rate. 
                 Actual earnings depend on the plan your referrals choose, their billing cycle, retention, and our current commission structure. 
                 Commission rates and terms are subject to change. See full terms in your partner agreement.
@@ -502,10 +502,10 @@ export default function ReferAndEarn() {
             transition={{ duration: 0.6 }}
             className="text-center mb-10"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-foreground">
               Frequently Asked Questions
             </h2>
-            <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
+            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
               Everything you need to know about our affiliate program
             </p>
           </motion.header>
@@ -527,7 +527,7 @@ export default function ReferAndEarn() {
       {/* =================== FINAL CTA SECTION =================== */}
       <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
         <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#F1F1E9]">
+          <ScrollAnimatedSection bgColor="bg-muted">
             <div className="px-6 sm:px-10 lg:px-14 py-10 sm:py-12">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -536,15 +536,15 @@ export default function ReferAndEarn() {
                 transition={{ duration: 0.6 }}
                 className="text-center"
               >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
                   Ready to Partner Up?
                 </h2>
-                <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
+                <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
                   Join our affiliate program today and start earning recurring commission on every referral.
                 </p>
                 <button
                   onClick={() => setIsModalOpen(true)}
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-800 hover:bg-slate-900 text-white px-8 py-4 font-semibold shadow-lg transition-all hover:shadow-xl hover:scale-105"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 font-semibold shadow-lg transition-all hover:shadow-xl hover:scale-105"
                 >
                   Apply Now <ArrowRight className="h-5 w-5" />
                 </button>

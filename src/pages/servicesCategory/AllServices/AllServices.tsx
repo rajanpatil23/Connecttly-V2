@@ -8,6 +8,11 @@ import { sharedStats } from "@/components/_zip/stats-data";
 import WhereToStart from "@/components/Services/ServiceDetail/WhereToStart";
 import { CategoryServiceCard } from "@/components/Services/templates/ServiceCategoryTemplate";
 import heroImg from "@/assets/_zip/services-hero-person.png";
+import illuGoogleAds from "@/assets/_zip/services/illu-google-ads.png";
+import illuMetaAds from "@/assets/_zip/services/illu-meta-ads.png";
+import illuYoutubeAds from "@/assets/_zip/services/illu-youtube-ads.png";
+import illuCro from "@/assets/_zip/services/illu-cro.png";
+import illuLinkedinAds from "@/assets/_zip/services/illu-linkedin-ads.png";
 
 type ServiceItem = CategoryServiceCard & { category: string };
 

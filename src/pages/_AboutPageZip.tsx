@@ -11,6 +11,10 @@ import iconGrowth from "@/assets/principles/growth.png";
 import iconTarget from "@/assets/principles/target.png";
 import iconLightning from "@/assets/principles/lightning.png";
 import iconHandshake from "@/assets/principles/handshake.png";
+import iconBriefcase from "@/assets/audience/briefcase.png";
+import iconB2B from "@/assets/audience/b2b.png";
+import iconEnterprise from "@/assets/audience/enterprise.png";
+import iconGraduation from "@/assets/audience/graduation.png";
 import teamImg from "@/assets/_zip/team-collab.jpg";
 import testimonialImg from "@/assets/_zip/testimonial-person.jpg";
 import connecttlyMark from "@/assets/_zip/connecttly-mark.svg";
@@ -49,10 +53,10 @@ const teamMembers = [
 ];
 
 const clientTypes = [
-  { title: "Startups & Early-Stage Companies", desc: "You've found product-market fit and need to build a scalable, predictable lead-generation engine.", icon: <Briefcase className="w-5 h-5 text-primary" /> },
-  { title: "Scaling B2B Businesses", desc: "You're growing, but your marketing hasn't kept up. You need systems, strategy, and execution to match your ambition.", icon: <RefreshCw className="w-5 h-5 text-primary" /> },
-  { title: "Enterprise Teams", desc: "You need a specialized partner to handle LinkedIn growth, performance marketing, or content at scale alongside your internal team.", icon: <Building2 className="w-5 h-5 text-primary" /> },
-  { title: "EdTech & Training Companies", desc: "You're building an audience and need a content strategy, paid acquisition, and brand positioning that drives enrollments.", icon: <GraduationCap className="w-5 h-5 text-primary" /> },
+  { title: "Startups & Early-Stage Companies", desc: "You've found product-market fit and need to build a scalable, predictable lead-generation engine.", icon: <img src={iconBriefcase} alt="" className="w-5 h-5" /> },
+  { title: "Scaling B2B Businesses", desc: "You're growing, but your marketing hasn't kept up. You need systems, strategy, and execution to match your ambition.", icon: <img src={iconB2B} alt="" className="w-5 h-5" /> },
+  { title: "Enterprise Teams", desc: "You need a specialized partner to handle LinkedIn growth, performance marketing, or content at scale alongside your internal team.", icon: <img src={iconEnterprise} alt="" className="w-5 h-5" /> },
+  { title: "EdTech & Training Companies", desc: "You're building an audience and need a content strategy, paid acquisition, and brand positioning that drives enrollments.", icon: <img src={iconGraduation} alt="" className="w-5 h-5" /> },
 ];
 
 const industriesLeft = [

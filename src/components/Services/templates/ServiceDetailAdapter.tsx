@@ -67,7 +67,7 @@ export interface ServiceDetailAdapterProps {
   toolStackTitle?: string;
   toolStackDescription?: string;
   painSectionTitle?: ReactNode;
-  painCta?: string;
+  painCta?: ReactNode;
 }
 
 const toCurrency = (n: number) => {
@@ -183,8 +183,12 @@ export default function ServiceDetailAdapter(props: ServiceDetailAdapterProps) {
       }
       painPoints={finalPainPoints}
       painCta={
-        painCta ??
-        `You don't have a ${eyebrow || heading} problem. You have a strategy problem. We fix that.`
+        painCta ?? (
+          <>
+            You don't have a {eyebrow || heading} problem. You have a strategy problem.{" "}
+            <span className="gradient-text">We fix that.</span>
+          </>
+        )
       }
       impactStats={finalImpactStats}
       pricingPlans={mappedPlans}

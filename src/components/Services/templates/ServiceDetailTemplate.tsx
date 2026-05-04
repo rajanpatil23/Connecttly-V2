@@ -59,7 +59,7 @@ export interface ServiceDetailTemplateProps {
 
   painSectionTitle?: ReactNode;
   painPoints?: ServicePainPoint[];
-  painCta?: string;
+  painCta?: ReactNode;
 
   impactTitle?: ReactNode;
   impactStats?: ServiceImpactStat[];

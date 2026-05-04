@@ -24,7 +24,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { ProcessCards, ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
+import ReviewCarousel from "@/components/_zip/Home/ReviewCarousel";
 import ServiceFAQ, { FAQItem as ServiceFAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
 import { FeatureSteps } from "@/components/partnerperks";
 import { useState } from "react";
@@ -248,7 +248,7 @@ export default function ReferAndEarn() {
               return (
                 <div
                   key={i}
-                  className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center"
+                  className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_hsl(var(--foreground)/0.08)] hover:shadow-[0_8px_30px_hsl(var(--foreground)/0.12)] transition-all duration-300 text-center"
                 >
                   {/* Icon with gradient background */}
                   <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 group-hover:scale-110 transition-transform duration-300">

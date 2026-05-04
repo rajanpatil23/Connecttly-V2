@@ -212,27 +212,51 @@ export default function ServiceDetailTemplate({
                 {whyUsTitle}
               </h2>
             )}
-            <div className="grid md:grid-cols-2 gap-6 mt-12 max-w-[1264px] mx-auto md:items-start">
-              {whyUs.map((w, i) => {
-                const dims =
-                  i === 0
-                    ? "md:max-w-[611px] md:h-[480px]"
-                    : i === 3
-                    ? "md:max-w-[629px] md:h-[480px]"
-                    : "md:max-w-[629px] md:h-[386px]";
-                const justify =
-                  i === 1 || i === 3 ? "md:justify-self-end" : "md:justify-self-start";
+            {/* Desktop: 2-column staggered grid (matches About page) */}
+            <div className="hidden md:grid grid-cols-2 gap-6 mt-12" style={{ minHeight: 520 }}>
+              {[0, 1].map((col) => {
+                const top = whyUs[col];
+                const bottom = whyUs[col + 2];
+                const topTall = col === 1;
                 return (
-                  <div
-                    key={w.title}
-                    className={`${dims} ${justify} ${i === 3 ? "md:-mt-24" : ""} w-full bg-background rounded-2xl p-8 shadow-md min-h-[260px] flex flex-col justify-end transition-all duration-300 hover:-translate-y-2 hover:shadow-xl`}
-                  >
-                    {w.icon && <div className="mb-4">{w.icon}</div>}
-                    <h3 className="font-heading font-semibold text-xl mb-3">{w.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{w.desc}</p>
+                  <div key={col} className="flex flex-col gap-6 h-full">
+                    {[
+                      { item: top, tall: topTall },
+                      { item: bottom, tall: !topTall },
+                    ].filter(({ item }) => !!item).map(({ item: w, tall }) => (
+                      <div
+                        key={w.title}
+                        className="bg-background rounded-2xl border border-border hover:border-primary p-6 shadow-[14px_18px_36px_-8px_hsl(var(--foreground)/0.20)] hover:shadow-none transition-all flex flex-col justify-between"
+                        style={{ flex: tall ? "8 2 0" : "5 1 0" }}
+                      >
+                        {w.icon && (
+                          <div className="p-2.5 rounded-lg bg-ct-blue-light inline-flex w-fit">{w.icon}</div>
+                        )}
+                        <div>
+                          <h3 className="font-heading font-semibold text-xl mb-2">{w.title}</h3>
+                          <p className="text-sm text-muted-foreground leading-relaxed">{w.desc}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 );
               })}
+            </div>
+
+            {/* Mobile: simple stack */}
+            <div className="grid md:hidden grid-cols-1 gap-6 mt-12">
+              {whyUs.map((w) => (
+                <div
+                  key={w.title}
+                  className="bg-background rounded-2xl border border-border hover:border-primary transition-colors p-6 shadow-[0_2px_10px_hsl(var(--foreground)/0.04)]"
+                >
+                  {w.icon && (
+                    <div className="p-2.5 rounded-lg bg-ct-blue-light inline-flex w-fit mb-4">{w.icon}</div>
+                  )}
+                  <h3 className="font-heading font-semibold text-xl mb-2">{w.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{w.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>

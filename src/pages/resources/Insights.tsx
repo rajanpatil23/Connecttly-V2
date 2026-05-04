@@ -392,15 +392,15 @@ const AdvocacyMetrics: React.FC = () => {
         <span className="text-sm px-3 py-1.5 rounded-full border bg-card">Last quarter</span>
       </div>
       <div className="grid md:grid-cols-3 gap-3">
-        <Chip color="bg-[#B8E8DD] text-[#0A1F3D]">
+        <Chip color="bg-primary/10 text-foreground">
           <div className="text-base font-semibold">{last.fr}</div>
           <div className="text-xs opacity-70 mt-1">First response within 2 hours</div>
         </Chip>
-        <Chip color="bg-[#D4F0B3] text-[#0A1F3D]">
+        <Chip color="bg-primary/10 text-foreground">
           <div className="text-base font-semibold">{last.cs}</div>
           <div className="text-xs opacity-70 mt-1">Customer satisfaction</div>
         </Chip>
-        <Chip color="bg-[#BBD1ED] text-[#0A1F3D]">
+        <Chip color="bg-primary/10 text-foreground">
           <div className="text-base font-semibold">{last.is}</div>
           <div className="text-xs opacity-70 mt-1">Customer requests resolved</div>
         </Chip>

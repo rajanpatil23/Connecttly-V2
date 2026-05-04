@@ -174,6 +174,19 @@ export default function ServiceDetailAdapter(props: ServiceDetailAdapterProps) {
       heroImageAlt={heading}
       primaryCtaText={ctaText || "Book a Free Strategy Call"}
       primaryCtaHref={ctaLink || "/resources/support"}
+      painSectionTitle={
+        painSectionTitle ?? (
+          <>
+            Tired of wasting your <span className="gradient-text">{eyebrow || heading} budget?</span>
+          </>
+        )
+      }
+      painPoints={finalPainPoints}
+      painCta={
+        painCta ??
+        `You don't have a ${eyebrow || heading} problem. You have a strategy problem. We fix that.`
+      }
+      impactStats={finalImpactStats}
       pricingPlans={mappedPlans}
       faqs={mappedFaqs}
       toolStack={mappedTools}

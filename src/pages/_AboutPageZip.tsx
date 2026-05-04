@@ -74,53 +74,48 @@ const AboutPage = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-background">
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-[0.35] pointer-events-none"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px), linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px)",
-            backgroundSize: "44px 44px",
-            maskImage: "radial-gradient(ellipse at center, black 40%, transparent 80%)",
-            WebkitMaskImage: "radial-gradient(ellipse at center, black 40%, transparent 80%)",
-          }}
-        />
-
-        <div className="relative container-main min-h-[520px] md:min-h-[min(calc(100svh-4rem),680px)] py-14 md:py-16 flex items-center justify-center">
-          <div className="absolute inset-0 z-10 hidden md:block pointer-events-none">
-            <div className="absolute top-[16%] left-[8%] bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-lg animate-float">
-              <p className="font-heading font-bold text-2xl leading-none">15,000+</p>
-              <p className="text-xs mt-1 opacity-90 leading-tight">Qualified Leads<br />Generated</p>
+      <section className="py-14 md:py-16">
+        <div className="container-main">
+          <SectionLabel label="About Us" />
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-6xl font-heading font-bold leading-tight">
+                We Build Growth Engines for <span className="gradient-text">Ambitious Brands.</span>
+              </h1>
+              <p className="text-muted-foreground mt-6 leading-relaxed max-w-md">
+                Connecttly is an AI-powered growth marketing agency that helps startups, scaling businesses, and enterprise teams generate demand, build authority, and turn marketing into a measurable revenue driver.
+              </p>
             </div>
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden">
+                <img src={teamImg} alt="Team collaborating" className="w-full h-[420px] object-cover" width={800} height={512} />
+              </div>
 
-            <div className="absolute top-[22%] right-[7%] bg-card/90 border border-border rounded-full pl-3 pr-4 py-2 shadow-lg flex items-center gap-2 animate-float-slow">
-              <span className="font-heading font-bold text-primary text-lg">6+</span>
-              <span className="text-xs font-medium">Industries Served</span>
-            </div>
+              {/* Top-left: Qualified Leads */}
+              <div className="absolute -top-4 left-6 md:left-12 bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-lg animate-float">
+                <p className="font-heading font-bold text-2xl leading-none">15,000+</p>
+                <p className="text-xs mt-1 opacity-90 leading-tight">Qualified Leads<br />Generated</p>
+              </div>
 
-            <div className="absolute bottom-[20%] left-[10%] bg-card/90 border border-border rounded-xl px-4 py-2.5 shadow-lg flex items-center gap-3 animate-float-slow2">
-              <span className="font-heading font-bold text-primary text-xl">20+</span>
-              <span className="text-xs leading-tight">Marketing Systems<br />Automated</span>
-            </div>
+              {/* Top-right: Industries */}
+              <div className="absolute top-10 -right-2 md:-right-6 bg-background rounded-full pl-3 pr-4 py-2 shadow-lg flex items-center gap-2 animate-float-slow">
+                <span className="font-heading font-bold text-primary text-lg">6+</span>
+                <span className="text-xs font-medium">Industries Served</span>
+              </div>
 
-            <div className="absolute bottom-[18%] right-[9%] bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-lg text-right animate-float-delay">
-              <p className="font-heading font-bold text-2xl leading-none">47%</p>
-              <p className="text-xs mt-1 opacity-90">Avg. CPL Reduction</p>
+              {/* Bottom-left: Marketing Systems */}
+              <div className="absolute bottom-24 -left-3 md:-left-6 bg-background rounded-xl px-4 py-2.5 shadow-lg flex items-center gap-3 animate-float-slow2">
+                <span className="font-heading font-bold text-primary text-xl">20+</span>
+                <span className="text-xs leading-tight">Marketing Systems<br />Automated</span>
+              </div>
+
+              {/* Bottom-right: CPL Reduction */}
+              <div className="absolute bottom-4 right-4 md:right-8 bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-lg text-right animate-float-delay">
+                <p className="font-heading font-bold text-2xl leading-none">47%</p>
+                <p className="text-xs mt-1 opacity-90">Avg. CPL Reduction</p>
+              </div>
             </div>
           </div>
-
-          <div className="relative z-20 max-w-3xl mx-auto text-center">
-            <SectionLabel label="About Us" />
-            <h1 className="text-[2rem] md:text-5xl lg:text-[3.25rem] font-heading font-bold leading-[1.12] tracking-tight text-foreground">
-              We Build Growth Engines for <span className="gradient-text">Ambitious Brands.</span>
-            </h1>
-            <p className="text-muted-foreground mt-5 md:mt-6 leading-relaxed max-w-2xl mx-auto">
-              Connecttly is an AI-powered growth marketing agency that helps startups, scaling businesses, and enterprise teams generate demand, build authority, and turn marketing into a measurable revenue driver.
-            </p>
-          </div>
-        </div>
-        <div className="relative z-20 container-main pb-10 md:pb-12">
           <StatsBar stats={sharedStats} />
         </div>
       </section>

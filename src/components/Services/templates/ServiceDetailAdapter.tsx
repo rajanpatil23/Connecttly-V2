@@ -67,7 +67,7 @@ export interface ServiceDetailAdapterProps {
   toolStackTitle?: string;
   toolStackDescription?: string;
   painSectionTitle?: ReactNode;
-  painCta?: React.ReactNode;
+  painCta?: ReactNode;
 }
 
 const toCurrency = (n: number) => {

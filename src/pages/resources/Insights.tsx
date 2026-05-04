@@ -554,7 +554,7 @@ export default function InsightsDashboard() {
 
               {/* Insight Cards Grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center">
+                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_hsl(var(--foreground)/0.08)] hover:shadow-[0_8px_30px_hsl(var(--foreground)/0.12)] transition-all duration-300 text-center">
                   {/* Icon with gradient background */}
                   <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 group-hover:scale-110 transition-transform duration-300">
                     <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center">
@@ -570,7 +570,7 @@ export default function InsightsDashboard() {
                   </p>
                 </div>
 
-                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center">
+                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_hsl(var(--foreground)/0.08)] hover:shadow-[0_8px_30px_hsl(var(--foreground)/0.12)] transition-all duration-300 text-center">
                   {/* Icon with gradient background */}
                   <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 group-hover:scale-110 transition-transform duration-300">
                     <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center">
@@ -586,7 +586,7 @@ export default function InsightsDashboard() {
                   </p>
                 </div>
 
-                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center">
+                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_hsl(var(--foreground)/0.08)] hover:shadow-[0_8px_30px_hsl(var(--foreground)/0.12)] transition-all duration-300 text-center">
                   {/* Icon with gradient background */}
                   <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 group-hover:scale-110 transition-transform duration-300">
                     <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center">

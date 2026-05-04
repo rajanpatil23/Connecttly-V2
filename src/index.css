@@ -55,6 +55,17 @@
     --diced-hero-section-button-fg: #ffffff;
     --diced-hero-section-button-hover-bg: #2ecc71;
     --diced-hero-section-button-hover-fg: #fff;
+
+    /* Connecttly design-showcase tokens */
+    --ct-blue: 224 76% 48%;
+    --ct-blue-light: 224 92% 95%;
+    --ct-blue-medium: 224 76% 60%;
+    --ct-dark: 220 20% 10%;
+    --ct-gray: 220 9% 46%;
+    --ct-gray-light: 220 14% 96%;
+    --ct-gray-border: 220 13% 91%;
+    --ct-section-bg: 224 60% 97%;
+    --ct-footer-bg: 215 75% 82%;
   }
 
   .dark {

@@ -80,6 +80,7 @@ export default function ServiceCategoryTemplate({
                 />
               </div>
 
+              {/* Top right: Service count for this category */}
               <div className="absolute top-40 right-4 md:right-8 bg-background rounded-full shadow-[0_8px_24px_hsl(var(--foreground)/0.12)] pl-2.5 pr-4 py-1.5 flex items-center gap-2 animate-float-y z-10">
                 <span className="text-primary font-bold text-sm">{services.length}</span>
                 <span className="text-xs font-semibold text-foreground whitespace-nowrap">
@@ -87,15 +88,21 @@ export default function ServiceCategoryTemplate({
                 </span>
               </div>
 
-              <div className="absolute top-[34%] -left-4 md:-left-8 bg-primary text-primary-foreground rounded-xl shadow-[0_8px_24px_hsl(var(--primary)/0.35)] px-4 py-2.5 animate-float-y z-10">
-                <p className="text-2xl font-bold leading-none">36</p>
-                <p className="text-[11px] font-medium opacity-90 mt-1 leading-tight">
-                  Specialized
-                  <br />
-                  Services
+              {/* Upper-left: Category eyebrow chip */}
+              <div className="absolute top-[34%] -left-4 md:-left-8 bg-primary text-primary-foreground rounded-xl shadow-[0_8px_24px_hsl(var(--primary)/0.35)] px-4 py-2.5 animate-float-y z-10 max-w-[170px]">
+                <p className="text-2xl font-bold leading-none">{services.length}</p>
+                <p className="text-[11px] font-medium opacity-90 mt-1 leading-tight uppercase tracking-wide">
+                  {eyebrow}
                 </p>
               </div>
 
+              {/* Lower-left: Bundle badge */}
+              <div className="absolute top-[62%] -left-6 md:-left-10 bg-background rounded-full shadow-[0_8px_24px_hsl(var(--foreground)/0.12)] pl-2.5 pr-4 py-1.5 flex items-center gap-2 animate-float-y z-10">
+                <span className="text-primary font-bold text-sm">1</span>
+                <span className="text-xs font-semibold text-foreground whitespace-nowrap">All-In-One Bundle</span>
+              </div>
+
+              {/* Bottom right: Results-Driven */}
               <div className="absolute bottom-16 right-4 md:right-6 bg-primary text-primary-foreground rounded-xl shadow-[0_8px_24px_hsl(var(--primary)/0.35)] px-4 py-2.5 animate-float-y z-10">
                 <p className="text-2xl font-bold leading-none">100%</p>
                 <p className="text-[11px] font-medium opacity-90 mt-1 leading-tight">

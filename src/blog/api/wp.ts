@@ -2,7 +2,7 @@
 import { getListFromCache, setListCache, getHeroFromCache, setHeroCache } from './cache';
 import { normalizePost, type UiPost } from './normalize';
 
-export const API_BASE = import.meta.env.VITE_BLOG_API_BASE as string;
+export const API_BASE = (import.meta.env.VITE_BLOG_API_BASE as string) || 'https://blogadmin.connecttly.com/wp-json';
 
 // Constants
 export const HERO_COUNT = 5;

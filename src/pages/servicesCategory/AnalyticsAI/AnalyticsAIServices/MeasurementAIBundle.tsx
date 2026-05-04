@@ -1,48 +1,23 @@
+import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useScrollScale } from "@/hooks/useScrollScale";
+
+
 import {
   Target, TrendingUp, Users, BarChart3, Zap, Award,
   Package, Layers, Brain, Sparkles, CheckCircle, Crown
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import Hero from "@/components/Services/category/Hero";
-import WhyChoose, { WhyChooseItem } from "@/components/Services/category/WhyChoose";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
-import ServicesRibbon, { RibbonItem } from "@/components/Services/category/ServicesRibbon";
-import PricingTable, { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
-import ToolStackSection, { Tool } from "@/components/Services/ServiceDetail/toolstack";
-import ServiceFAQ, { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
-import { ProcessCards, ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
-import { ServiceFeatures, FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 
+import type { WhyChooseItem } from "@/components/Services/category/WhyChoose";
+
+import type { RibbonItem } from "@/components/Services/category/ServicesRibbon";
+import type { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
+import type { Tool } from "@/components/Services/ServiceDetail/toolstack";
+import type { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
+import type { ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
+import type { FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 // Scroll-animated wrapper for sections
-const ScrollAnimatedSection = ({ children, bgColor }: { children: React.ReactNode; bgColor?: string }) => {
-  const { ref, scale } = useScrollScale();
-  
-  return (
-    <motion.div 
-      ref={ref}
-      style={{ scale }}
-      transition={{
-        type: "spring",
-        stiffness: 100,
-        damping: 30,
-        restDelta: 0.001
-      }}
-      className="relative rounded-3xl"
-    >
-      {bgColor && (
-        <div className={`absolute inset-0 rounded-3xl ${bgColor}`} />
-      )}
-      <div className="relative rounded-3xl">
-        {children}
-      </div>
-    </motion.div>
-  );
-};
-
 const ribbonItems: RibbonItem[] = [
   {
     icon: <Package className="h-5 w-5 text-white" />,
@@ -233,119 +208,23 @@ const measurementBundleFAQs: FAQItem[] = [
   },
 ];
 
-const MeasurementAIBundle = () => {
-  return (
-    <div className="min-h-screen">
-      {/* ===== HERO ===== */}
-      <Hero
-        eyebrow="MEASUREMENT & AI BUNDLE"
-        heading="Complete Analytics & AI Solution - All Services in One Package"
-        description="Transform your marketing with our comprehensive bundle: AI optimization, dashboards, attribution, automation, and tracking - all working together for maximum impact."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Analytics&AI/Measurement+AIBundle.png"
-        imageAlt="Measurement & AI Bundle"
-      />
-
-      {/* ===== STATS RIBBON ===== */}
-      <section className="py-8 sm:py-10">
-        <ServicesRibbon 
-        title="The Ultimate Analytics & AI Solution"
-        items={ribbonItems}
-      />
-      </section>
-
-      {/* ===== KEY FEATURES ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 pb-8 sm:pb-10">
-        <div className="mx-auto max-w-6xl">
-          <ServiceFeatures
-                eyebrow="What's Included"
-                heading="Everything You Need for Data-Driven Success"
-                description="A comprehensive suite of analytics and AI services that work together seamlessly."
-                features={measurementBundleFeatures}
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-            </div>
-      </section>
-
-      {/* ===== WHY CHOOSE US ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#B8E8DD]">
-            <div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12">
-              <WhyChoose 
-                items={whyItems} 
-                eyebrow="WHY CHOOSE THE BUNDLE" 
-                heading="Why Choose the Measurement & AI Bundle" 
-                eyebrowColor="#0A6B5E" 
-                noPadding 
-                noCard 
-                noContainer 
-              />
-            </div>
-          </ScrollAnimatedSection>
-        </div>
-      </section>
-
-      {/* ===== PROCESS ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#F1F1E9]">
-            <div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12">
-              <ProcessCards 
-                eyebrow="Our Process"
-                subheading="How We Deliver Complete Analytics & AI"
-                description="A proven methodology for transforming your marketing with data and AI"
-                steps={measurementBundleProcessSteps}
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-            </div>
-          </ScrollAnimatedSection>
-        </div>
-      </section>
-
-      {/* ===== PRICING SECTION ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <PricingTable 
-                plans={pricingPlans}
-                heading="Choose Your Analytics & AI Bundle"
-                description="Select the perfect bundle for your needs. Save 35-45% vs. individual services."
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-        </div>
-      </section>
-
-      {/* ===== REVIEWS ===== */}
-      <section className="py-8 sm:py-10">
-        <ReviewCarousel noPadding />
-      </section>
-
-      {/* ===== TOOL STACK ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <ScrollAnimatedSection bgColor="">
-          <ToolStackSection 
-            title="Powered by Leading Analytics & AI Tools"
-            description="We leverage the best analytics, AI, and automation platforms to deliver superior results."
-            tools={measurementBundleTools}
-            ctaText="Get Started"
-            ctaLink="/resources/support"
-            bgColor="bg-[#B8E8DD]"
-          />
-        </ScrollAnimatedSection>
-      </section>
-
-      {/* ===== FAQ ===== */}
-      <section className="py-8 sm:py-10">
-        <ServiceFAQ 
-        title="Frequently Asked Questions"
-        subtitle="Everything you need to know about the Measurement & AI Bundle"
-        faqs={measurementBundleFAQs}
-        accentColor="from-[#0074ED] to-[#5B9BF8]"
-      />
-      </section>
-    </div>
-  );
-};
+const MeasurementAIBundle = () => (
+  <ServiceDetailAdapter
+    heroProps={{
+      eyebrow: "MEASUREMENT & AI BUNDLE",
+      heading: "Complete Analytics & AI Solution - All Services in One Package",
+      description: "Transform your marketing with our comprehensive bundle: AI optimization, dashboards, attribution, automation, and tracking - all working together for maximum impact.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Analytics&AI/Measurement+AIBundle.png",
+      imageAlt: "Measurement & AI Bundle",
+    }}
+    plans={pricingPlans}
+    faqs={measurementBundleFAQs}
+    tools={measurementBundleTools}
+    processSteps={measurementBundleProcessSteps}
+    whyItems={whyItems}
+  />
+);
 
 export default MeasurementAIBundle;

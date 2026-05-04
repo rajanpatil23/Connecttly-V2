@@ -1,48 +1,23 @@
+import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useScrollScale } from "@/hooks/useScrollScale";
+
+
 import {
   Target, TrendingUp, Users, BarChart3, Zap, Award,
   MessageCircle, Briefcase, DollarSign, Shield, Globe, CheckCircle
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import Hero from "@/components/Services/category/Hero";
-import WhyChoose, { WhyChooseItem } from "@/components/Services/category/WhyChoose";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
-import ServicesRibbon, { RibbonItem } from "@/components/Services/category/ServicesRibbon";
-import PricingTable, { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
-import ToolStackSection, { Tool } from "@/components/Services/ServiceDetail/toolstack";
-import ServiceFAQ, { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
-import { ProcessCards, ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
-import { ServiceFeatures, FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 
+import type { WhyChooseItem } from "@/components/Services/category/WhyChoose";
+
+import type { RibbonItem } from "@/components/Services/category/ServicesRibbon";
+import type { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
+import type { Tool } from "@/components/Services/ServiceDetail/toolstack";
+import type { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
+import type { ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
+import type { FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 // Scroll-animated wrapper for sections
-const ScrollAnimatedSection = ({ children, bgColor }: { children: React.ReactNode; bgColor?: string }) => {
-  const { ref, scale } = useScrollScale();
-  
-  return (
-    <motion.div 
-      ref={ref}
-      style={{ scale }}
-      transition={{
-        type: "spring",
-        stiffness: 100,
-        damping: 30,
-        restDelta: 0.001
-      }}
-      className="relative rounded-3xl"
-    >
-      {bgColor && (
-        <div className={`absolute inset-0 rounded-3xl ${bgColor}`} />
-      )}
-      <div className="relative rounded-3xl">
-        {children}
-      </div>
-    </motion.div>
-  );
-};
-
 const ribbonItems: RibbonItem[] = [
   {
     icon: <Users className="h-5 w-5 text-white" />,
@@ -230,119 +205,23 @@ const linkedInAdsFAQs: FAQItem[] = [
   },
 ];
 
-const LinkedInAds = () => {
-  return (
-    <div className="min-h-screen">
-      {/* ===== HERO ===== */}
-      <Hero
-        eyebrow="LINKEDIN ADVERTISING"
-        heading="LinkedIn Ads That Generate High-Quality B2B Leads"
-        description="Reach decision-makers where they're most engaged. Our LinkedIn advertising experts create campaigns that drive qualified leads and measurable ROI."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Linkedin Growth/LinkedinAds.png"
-        imageAlt="LinkedIn Advertising Dashboard"
-      />
-
-      {/* ===== STATS RIBBON ===== */}
-      <section className="py-8 sm:py-10">
-        <ServicesRibbon 
-        title="Trusted by Leading B2B Brands"
-        items={ribbonItems}
-      />
-      </section>
-
-      {/* ===== KEY FEATURES ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 pb-8 sm:pb-10">
-        <div className="mx-auto max-w-6xl">
-          <ServiceFeatures
-                eyebrow="What We Offer"
-                heading="Complete LinkedIn Advertising Services"
-                description="From strategy to execution, we handle every aspect of your LinkedIn advertising campaigns."
-                features={linkedInAdsFeatures}
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-            </div>
-      </section>
-
-      {/* ===== WHY CHOOSE US ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#B8E8DD]">
-            <div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12">
-              <WhyChoose 
-                items={whyItems} 
-                eyebrow="WHY CHOOSE CONNECTTLY" 
-                heading="Why Choose Us for LinkedIn Ads" 
-                eyebrowColor="#0A6B5E" 
-                noPadding 
-                noCard 
-                noContainer 
-              />
-            </div>
-          </ScrollAnimatedSection>
-        </div>
-      </section>
-
-      {/* ===== PROCESS ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#F1F1E9]">
-            <div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12">
-              <ProcessCards 
-                eyebrow="Our Process"
-                subheading="How We Run LinkedIn Ad Campaigns"
-                description="A proven methodology for generating high-quality B2B leads on LinkedIn"
-                steps={linkedInAdsProcessSteps}
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-            </div>
-          </ScrollAnimatedSection>
-        </div>
-      </section>
-
-      {/* ===== PRICING SECTION ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <PricingTable 
-                plans={pricingPlans}
-                heading="Choose Your LinkedIn Ads Plan"
-                description="Select the perfect plan for your LinkedIn advertising needs. All plans include strategy and optimization."
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-        </div>
-      </section>
-
-      {/* ===== REVIEWS ===== */}
-      <section className="py-8 sm:py-10">
-        <ReviewCarousel noPadding />
-      </section>
-
-      {/* ===== TOOL STACK ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <ScrollAnimatedSection bgColor="bg-[#F1F1E9]">
-          <ToolStackSection 
-            title="Powered by LinkedIn & Leading Tools"
-            description="We leverage LinkedIn's advertising platform and integrate with your existing marketing stack for seamless lead management."
-            tools={linkedInAdsTools}
-            ctaText="Get Started"
-            ctaLink="/resources/support"
-            bgColor="bg-[#B8E8DD]"
-          />
-        </ScrollAnimatedSection>
-      </section>
-
-      {/* ===== FAQ ===== */}
-      <section className="py-8 sm:py-10">
-        <ServiceFAQ 
-        title="Frequently Asked Questions"
-        subtitle="Everything you need to know about our LinkedIn advertising services"
-        faqs={linkedInAdsFAQs}
-        accentColor="from-[#0074ED] to-[#5B9BF8]"
-      />
-      </section>
-    </div>
-  );
-};
+const LinkedInAds = () => (
+  <ServiceDetailAdapter
+    heroProps={{
+      eyebrow: "LINKEDIN ADVERTISING",
+      heading: "LinkedIn Ads That Generate High-Quality B2B Leads",
+      description: "Reach decision-makers where they're most engaged. Our LinkedIn advertising experts create campaigns that drive qualified leads and measurable ROI.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Linkedin Growth/LinkedinAds.png",
+      imageAlt: "LinkedIn Advertising Dashboard",
+    }}
+    plans={pricingPlans}
+    faqs={linkedInAdsFAQs}
+    tools={linkedInAdsTools}
+    processSteps={linkedInAdsProcessSteps}
+    whyItems={whyItems}
+  />
+);
 
 export default LinkedInAds;

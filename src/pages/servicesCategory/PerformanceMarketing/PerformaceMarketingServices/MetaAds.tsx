@@ -1,6 +1,7 @@
+import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useScrollScale } from "@/hooks/useScrollScale";
+
+
 import {
   Target, TrendingUp, Zap, DollarSign, LineChart, Gauge, 
   TestTube, Crosshair, Users, BarChart3, ArrowRight, CheckCircle2, 
@@ -10,42 +11,16 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import Hero from "@/components/Services/category/Hero";
-import WhyChoose, { WhyChooseItem } from "@/components/Services/category/WhyChoose";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
-import ServicesRibbon, { RibbonItem } from "@/components/Services/category/ServicesRibbon";
-import PricingTable, { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
-import ToolStackSection, { Tool } from "@/components/Services/ServiceDetail/toolstack";
-import ServiceFAQ, { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
-import { ProcessCards, ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
-import { ServiceFeatures, FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 
+import type { WhyChooseItem } from "@/components/Services/category/WhyChoose";
+
+import type { RibbonItem } from "@/components/Services/category/ServicesRibbon";
+import type { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
+import type { Tool } from "@/components/Services/ServiceDetail/toolstack";
+import type { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
+import type { ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
+import type { FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 // Scroll-animated wrapper for sections - scroll-based scale animation
-const ScrollAnimatedSection = ({ children, bgColor }: { children: React.ReactNode; bgColor?: string }) => {
-  const { ref, scale } = useScrollScale();
-  
-  return (
-    <motion.div 
-      ref={ref}
-      style={{ scale }}
-      transition={{
-        type: "spring",
-        stiffness: 100,
-        damping: 30,
-        restDelta: 0.001
-      }}
-      className="relative rounded-3xl"
-    >
-      {bgColor && (
-        <div className={`absolute inset-0 rounded-3xl ${bgColor}`} />
-      )}
-      <div className="relative rounded-3xl">
-        {children}
-      </div>
-    </motion.div>
-  );
-};
-
 const ribbonItems: RibbonItem[] = [
   {
     color: "bg-[#0074ED]",
@@ -325,119 +300,23 @@ const whyItems: WhyChooseItem[] = [
   },
 ];
 
-const MetaAds = () => {
-  return (
-    <div className="min-h-screen">
-      {/* ===== HERO ===== */}
-      <Hero
-        eyebrow="META ADS (FACEBOOK & INSTAGRAM)"
-        heading="Dominate Social Media with Meta Ads"
-        description="Reach billions of users on Facebook and Instagram with data-driven Meta advertising campaigns. Our expert team creates scroll-stopping ads that drive engagement, leads, and sales."
-        ctaText="Get a Free Strategy Session"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Performance Marketing/MetaAds.png"
-        imageAlt="Meta Ads Dashboard"
-      />
-
-      {/* ===== STATS RIBBON ===== */}
-      <section className="py-8 sm:py-10">
-        <ServicesRibbon 
-        title="Trusted by Leading Brands"
-        items={ribbonItems}
-      />
-      </section>
-
-      {/* ===== KEY FEATURES ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 pb-8 sm:pb-10">
-        <div className="mx-auto max-w-6xl">
-          <ServiceFeatures
-                eyebrow="What We Offer"
-                heading="Comprehensive Meta Ads Management"
-                description="From Facebook to Instagram, we handle every aspect of your Meta advertising strategy to maximize reach and ROI."
-                features={metaAdsFeatures}
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-            </div>
-      </section>
-
-      {/* ===== WHY CHOOSE US ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#B8E8DD]">
-            <div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12">
-              <WhyChoose 
-                items={whyItems} 
-                eyebrow="WHY CHOOSE CONNECTLTY" 
-                heading="Why Choose Us for Meta Ads" 
-                eyebrowColor="#0A6B5E" 
-                noPadding 
-                noCard 
-                noContainer 
-              />
-            </div>
-          </ScrollAnimatedSection>
-        </div>
-      </section>
-
-      {/* ===== PROCESS CARDS ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#F1F1E9]">
-            <div className="px-6 sm:px-10 lg:px-14 py-4">
-              <ProcessCards 
-                eyebrow="Our Process"
-                subheading="How We Drive Meta Ads Success"
-                description="Our proven 4-step process ensures maximum engagement and ROI on Meta platforms"
-                steps={metaAdsProcessSteps}
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-            </div>
-          </ScrollAnimatedSection>
-        </div>
-      </section>
-
-      {/* ===== PRICING SECTION ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <PricingTable 
-              plans={pricingPlans}
-              heading="Choose Your Plan"
-              description="Select the perfect plan for your Meta advertising needs. All plans include expert management and creative services."
-              accentColor="from-[#0074ED] to-[#5B9BF8]"
-            />
-        </div>
-      </section>
-
-      {/* ===== REVIEWS ===== */}
-      <section className="py-8 sm:py-10">
-        <ReviewCarousel noPadding />
-      </section>
-
-      {/* ===== TOOL STACK ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <ScrollAnimatedSection bgColor="">
-          <ToolStackSection 
-            title="Powered by Industry-Leading Tools"
-            description="We leverage the best tools and platforms to deliver exceptional results for your Meta advertising campaigns. From creative design to analytics, we use cutting-edge technology."
-            tools={metaAdsTools}
-            ctaText="Get Started"
-            ctaLink="/resources/support"
-            bgColor="bg-[#B8E8DD]"
-          />
-        </ScrollAnimatedSection>
-      </section>
-
-      {/* ===== FAQ ===== */}
-      <section className="py-8 sm:py-10">
-        <ServiceFAQ 
-        title="Frequently Asked Questions"
-        subtitle="Everything you need to know about our Meta Ads management services."
-        faqs={metaAdsFAQs}
-        accentColor="from-[#0074ED] to-[#5B9BF8]"
-      />
-      </section>
-    </div>
-  );
-};
+const MetaAds = () => (
+  <ServiceDetailAdapter
+    heroProps={{
+      eyebrow: "META ADS (FACEBOOK & INSTAGRAM)",
+      heading: "Dominate Social Media with Meta Ads",
+      description: "Reach billions of users on Facebook and Instagram with data-driven Meta advertising campaigns. Our expert team creates scroll-stopping ads that drive engagement, leads, and sales.",
+      ctaText: "Get a Free Strategy Session",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Performance Marketing/MetaAds.png",
+      imageAlt: "Meta Ads Dashboard",
+    }}
+    plans={pricingPlans}
+    faqs={metaAdsFAQs}
+    tools={metaAdsTools}
+    processSteps={metaAdsProcessSteps}
+    whyItems={whyItems}
+  />
+);
 
 export default MetaAds;

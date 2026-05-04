@@ -61,7 +61,24 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'ct-blue': {
+					DEFAULT: 'hsl(var(--ct-blue))',
+					light: 'hsl(var(--ct-blue-light))',
+					medium: 'hsl(var(--ct-blue-medium))',
+				},
+				'ct-dark': 'hsl(var(--ct-dark))',
+				'ct-gray': {
+					DEFAULT: 'hsl(var(--ct-gray))',
+					light: 'hsl(var(--ct-gray-light))',
+					border: 'hsl(var(--ct-gray-border))',
+				},
+				'ct-section': 'hsl(var(--ct-section-bg))',
+				'ct-footer': 'hsl(var(--ct-footer-bg))',
+			},
+			fontFamily: {
+				heading: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+				body: ['"Inter"', 'system-ui', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

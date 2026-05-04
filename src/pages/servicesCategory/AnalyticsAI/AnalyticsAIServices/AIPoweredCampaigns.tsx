@@ -1,48 +1,23 @@
+import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useScrollScale } from "@/hooks/useScrollScale";
+
+
 import {
   Target, TrendingUp, Users, BarChart3, Zap, Award,
   Brain, Sparkles, LineChart, Cpu, TrendingDown, Lightbulb
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import Hero from "@/components/Services/category/Hero";
-import WhyChoose, { WhyChooseItem } from "@/components/Services/category/WhyChoose";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
-import ServicesRibbon, { RibbonItem } from "@/components/Services/category/ServicesRibbon";
-import PricingTable, { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
-import ToolStackSection, { Tool } from "@/components/Services/ServiceDetail/toolstack";
-import ServiceFAQ, { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
-import { ProcessCards, ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
-import { ServiceFeatures, FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 
+import type { WhyChooseItem } from "@/components/Services/category/WhyChoose";
+
+import type { RibbonItem } from "@/components/Services/category/ServicesRibbon";
+import type { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
+import type { Tool } from "@/components/Services/ServiceDetail/toolstack";
+import type { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
+import type { ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
+import type { FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 // Scroll-animated wrapper for sections
-const ScrollAnimatedSection = ({ children, bgColor }: { children: React.ReactNode; bgColor?: string }) => {
-  const { ref, scale } = useScrollScale();
-  
-  return (
-    <motion.div 
-      ref={ref}
-      style={{ scale }}
-      transition={{
-        type: "spring",
-        stiffness: 100,
-        damping: 30,
-        restDelta: 0.001
-      }}
-      className="relative rounded-3xl"
-    >
-      {bgColor && (
-        <div className={`absolute inset-0 rounded-3xl ${bgColor}`} />
-      )}
-      <div className="relative rounded-3xl">
-        {children}
-      </div>
-    </motion.div>
-  );
-};
-
 const ribbonItems: RibbonItem[] = [
   {
     icon: <Brain className="h-5 w-5 text-white" />,
@@ -230,119 +205,23 @@ const aiCampaignFAQs: FAQItem[] = [
   },
 ];
 
-const AIPoweredCampaigns = () => {
-  return (
-    <div className="min-h-screen">
-      {/* ===== HERO ===== */}
-      <Hero
-        eyebrow="AI-POWERED CAMPAIGNS"
-        heading="Supercharge Your Marketing with Artificial Intelligence"
-        description="Leverage advanced AI and machine learning to optimize campaigns, predict performance, and drive better results automatically."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Analytics&AI/AIPoweredCampaigns.png"
-        imageAlt="AI-Powered Campaigns"
-      />
-
-      {/* ===== STATS RIBBON ===== */}
-      <section className="py-8 sm:py-10">
-        <ServicesRibbon 
-        title="Powered by Advanced AI"
-        items={ribbonItems}
-      />
-      </section>
-
-      {/* ===== KEY FEATURES ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 pb-8 sm:pb-10">
-        <div className="mx-auto max-w-6xl">
-          <ServiceFeatures
-                eyebrow="What We Offer"
-                heading="AI-Powered Campaign Optimization"
-                description="Harness the power of artificial intelligence to transform your marketing performance."
-                features={aiCampaignFeatures}
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-            </div>
-      </section>
-
-      {/* ===== WHY CHOOSE US ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#B8E8DD]">
-            <div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12">
-              <WhyChoose 
-                items={whyItems} 
-                eyebrow="WHY CHOOSE CONNECTTLY" 
-                heading="Why Choose Our AI Solutions" 
-                eyebrowColor="#0A6B5E" 
-                noPadding 
-                noCard 
-                noContainer 
-              />
-            </div>
-          </ScrollAnimatedSection>
-        </div>
-      </section>
-
-      {/* ===== PROCESS ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#F1F1E9]">
-            <div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12">
-              <ProcessCards 
-                eyebrow="Our Process"
-                subheading="How We Implement AI"
-                description="A proven methodology for deploying AI-powered campaign optimization"
-                steps={aiCampaignProcessSteps}
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-            </div>
-          </ScrollAnimatedSection>
-        </div>
-      </section>
-
-      {/* ===== PRICING SECTION ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <PricingTable 
-                plans={pricingPlans}
-                heading="Choose Your AI Plan"
-                description="Select the perfect plan for your AI-powered marketing needs. All plans include AI optimization and expert oversight."
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-        </div>
-      </section>
-
-      {/* ===== REVIEWS ===== */}
-      <section className="py-8 sm:py-10">
-        <ReviewCarousel noPadding />
-      </section>
-
-      {/* ===== TOOL STACK ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <ScrollAnimatedSection bgColor="">
-          <ToolStackSection 
-            title="Powered by Leading AI Technologies"
-            description="We use cutting-edge AI and machine learning tools to deliver superior campaign performance."
-            tools={aiCampaignTools}
-            ctaText="Get Started"
-            ctaLink="/resources/support"
-            bgColor="bg-[#B8E8DD]"
-          />
-        </ScrollAnimatedSection>
-      </section>
-
-      {/* ===== FAQ ===== */}
-      <section className="py-8 sm:py-10">
-        <ServiceFAQ 
-        title="Frequently Asked Questions"
-        subtitle="Everything you need to know about AI-powered campaigns"
-        faqs={aiCampaignFAQs}
-        accentColor="from-[#0074ED] to-[#5B9BF8]"
-      />
-      </section>
-    </div>
-  );
-};
+const AIPoweredCampaigns = () => (
+  <ServiceDetailAdapter
+    heroProps={{
+      eyebrow: "AI-POWERED CAMPAIGNS",
+      heading: "Supercharge Your Marketing with Artificial Intelligence",
+      description: "Leverage advanced AI and machine learning to optimize campaigns, predict performance, and drive better results automatically.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Analytics&AI/AIPoweredCampaigns.png",
+      imageAlt: "AI-Powered Campaigns",
+    }}
+    plans={pricingPlans}
+    faqs={aiCampaignFAQs}
+    tools={aiCampaignTools}
+    processSteps={aiCampaignProcessSteps}
+    whyItems={whyItems}
+  />
+);
 
 export default AIPoweredCampaigns;

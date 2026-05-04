@@ -1,48 +1,23 @@
+import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useScrollScale } from "@/hooks/useScrollScale";
+
+
 import {
   Target, TrendingUp, Users, BarChart3, Zap, Award,
   MessageCircle, Mail, Phone, Calendar, CheckCircle, Search
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import Hero from "@/components/Services/category/Hero";
-import WhyChoose, { WhyChooseItem } from "@/components/Services/category/WhyChoose";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
-import ServicesRibbon, { RibbonItem } from "@/components/Services/category/ServicesRibbon";
-import PricingTable, { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
-import ToolStackSection, { Tool } from "@/components/Services/ServiceDetail/toolstack";
-import ServiceFAQ, { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
-import { ProcessCards, ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
-import { ServiceFeatures, FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 
+import type { WhyChooseItem } from "@/components/Services/category/WhyChoose";
+
+import type { RibbonItem } from "@/components/Services/category/ServicesRibbon";
+import type { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
+import type { Tool } from "@/components/Services/ServiceDetail/toolstack";
+import type { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
+import type { ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
+import type { FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 // Scroll-animated wrapper for sections
-const ScrollAnimatedSection = ({ children, bgColor }: { children: React.ReactNode; bgColor?: string }) => {
-  const { ref, scale } = useScrollScale();
-  
-  return (
-    <motion.div 
-      ref={ref}
-      style={{ scale }}
-      transition={{
-        type: "spring",
-        stiffness: 100,
-        damping: 30,
-        restDelta: 0.001
-      }}
-      className="relative rounded-3xl"
-    >
-      {bgColor && (
-        <div className={`absolute inset-0 rounded-3xl ${bgColor}`} />
-      )}
-      <div className="relative rounded-3xl">
-        {children}
-      </div>
-    </motion.div>
-  );
-};
-
 const ribbonItems: RibbonItem[] = [
   {
     icon: <Users className="h-5 w-5 text-white" />,
@@ -230,119 +205,23 @@ const leadGenFAQs: FAQItem[] = [
   },
 ];
 
-const LeadGenration = () => {
-  return (
-    <div className="min-h-screen">
-      {/* ===== HERO ===== */}
-      <Hero
-        eyebrow="LINKEDIN LEAD GENERATION"
-        heading="Fill Your Pipeline with Qualified LinkedIn Leads"
-        description="Done-for-you LinkedIn outreach that books meetings with your ideal customers. Personalized, scalable, and proven to work."
-        ctaText="Get Started"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Linkedin Growth/LeadGenration.png"
-        imageAlt="LinkedIn Lead Generation"
-      />
-
-      {/* ===== STATS RIBBON ===== */}
-      <section className="py-8 sm:py-10">
-        <ServicesRibbon 
-        title="Trusted by Leading B2B Brands"
-        items={ribbonItems}
-      />
-      </section>
-
-      {/* ===== KEY FEATURES ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 pb-8 sm:pb-10">
-        <div className="mx-auto max-w-6xl">
-          <ServiceFeatures
-                eyebrow="What We Offer"
-                heading="Complete LinkedIn Lead Generation"
-                description="From prospect research to meeting booking, we handle every aspect of your LinkedIn outreach."
-                features={leadGenFeatures}
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-            </div>
-      </section>
-
-      {/* ===== WHY CHOOSE US ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#B8E8DD]">
-            <div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12">
-              <WhyChoose 
-                items={whyItems} 
-                eyebrow="WHY CHOOSE CONNECTTLY" 
-                heading="Why Choose Us for Lead Generation" 
-                eyebrowColor="#0A6B5E" 
-                noPadding 
-                noCard 
-                noContainer 
-              />
-            </div>
-          </ScrollAnimatedSection>
-        </div>
-      </section>
-
-      {/* ===== PROCESS ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#F1F1E9]">
-            <div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12">
-              <ProcessCards 
-                eyebrow="Our Process"
-                subheading="How We Generate LinkedIn Leads"
-                description="A proven methodology for filling your pipeline with qualified prospects"
-                steps={leadGenProcessSteps}
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-            </div>
-          </ScrollAnimatedSection>
-        </div>
-      </section>
-
-      {/* ===== PRICING SECTION ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <PricingTable 
-                plans={pricingPlans}
-                heading="Choose Your Lead Gen Plan"
-                description="Select the perfect plan for your LinkedIn lead generation needs. All plans include personalized outreach and reporting."
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-        </div>
-      </section>
-
-      {/* ===== REVIEWS ===== */}
-      <section className="py-8 sm:py-10">
-        <ReviewCarousel noPadding />
-      </section>
-
-      {/* ===== TOOL STACK ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <ScrollAnimatedSection bgColor="">
-          <ToolStackSection 
-            title="Powered by Leading Tools"
-            description="We leverage the best LinkedIn automation and CRM tools to generate and manage leads efficiently."
-            tools={leadGenTools}
-            ctaText="Get Started"
-            ctaLink="/resources/support"
-            bgColor="bg-[#B8E8DD]"
-          />
-        </ScrollAnimatedSection>
-      </section>
-
-      {/* ===== FAQ ===== */}
-      <section className="py-8 sm:py-10">
-        <ServiceFAQ 
-        title="Frequently Asked Questions"
-        subtitle="Everything you need to know about our LinkedIn lead generation services"
-        faqs={leadGenFAQs}
-        accentColor="from-[#0074ED] to-[#5B9BF8]"
-      />
-      </section>
-    </div>
-  );
-};
+const LeadGenration = () => (
+  <ServiceDetailAdapter
+    heroProps={{
+      eyebrow: "LINKEDIN LEAD GENERATION",
+      heading: "Fill Your Pipeline with Qualified LinkedIn Leads",
+      description: "Done-for-you LinkedIn outreach that books meetings with your ideal customers. Personalized, scalable, and proven to work.",
+      ctaText: "Get Started",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Linkedin Growth/LeadGenration.png",
+      imageAlt: "LinkedIn Lead Generation",
+    }}
+    plans={pricingPlans}
+    faqs={leadGenFAQs}
+    tools={leadGenTools}
+    processSteps={leadGenProcessSteps}
+    whyItems={whyItems}
+  />
+);
 
 export default LeadGenration;

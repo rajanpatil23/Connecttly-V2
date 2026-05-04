@@ -1,6 +1,7 @@
+import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useScrollScale } from "@/hooks/useScrollScale";
+
+
 import {
   Target, TrendingUp, Zap, DollarSign, LineChart, Gauge, 
   TestTube, Crosshair, Users, BarChart3, ArrowRight, CheckCircle2, 
@@ -10,42 +11,16 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import Hero from "@/components/Services/category/Hero";
-import WhyChoose, { WhyChooseItem } from "@/components/Services/category/WhyChoose";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
-import ServicesRibbon, { RibbonItem } from "@/components/Services/category/ServicesRibbon";
-import PricingTable, { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
-import ToolStackSection, { Tool } from "@/components/Services/ServiceDetail/toolstack";
-import ServiceFAQ, { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
-import { ProcessCards, ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
-import { ServiceFeatures, FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 
+import type { WhyChooseItem } from "@/components/Services/category/WhyChoose";
+
+import type { RibbonItem } from "@/components/Services/category/ServicesRibbon";
+import type { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
+import type { Tool } from "@/components/Services/ServiceDetail/toolstack";
+import type { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
+import type { ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
+import type { FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 // Scroll-animated wrapper for sections - scroll-based scale animation
-const ScrollAnimatedSection = ({ children, bgColor }: { children: React.ReactNode; bgColor?: string }) => {
-  const { ref, scale } = useScrollScale();
-  
-  return (
-    <motion.div 
-      ref={ref}
-      style={{ scale }}
-      transition={{
-        type: "spring",
-        stiffness: 100,
-        damping: 30,
-        restDelta: 0.001
-      }}
-      className="relative rounded-3xl"
-    >
-      {bgColor && (
-        <div className={`absolute inset-0 rounded-3xl ${bgColor}`} />
-      )}
-      <div className="relative rounded-3xl">
-        {children}
-      </div>
-    </motion.div>
-  );
-};
-
 const ribbonItems: RibbonItem[] = [
   {
     color: "bg-[#0074ED]",
@@ -326,119 +301,23 @@ const whyItems: WhyChooseItem[] = [
   },
 ];
 
-const CROFunnel = () => {
-  return (
-    <div className="min-h-screen">
-      {/* ===== HERO ===== */}
-      <Hero
-        eyebrow="CRO & FUNNEL OPTIMIZATION"
-        heading="Maximize Conversions with CRO & Funnel Optimization"
-        description="Turn more visitors into customers with data-driven conversion rate optimization. Our expert team identifies friction points, runs strategic A/B tests, and implements proven optimizations that increase your conversion rates and revenue."
-        ctaText="Get a Free Funnel Audit"
-        ctaLink="/resources/support"
-        imageSrc="/images/Services/Performance Marketing/CROandFunnel.png"
-        imageAlt="CRO Analytics Dashboard"
-      />
-
-      {/* ===== STATS RIBBON ===== */}
-      <section className="py-8 sm:py-10">
-        <ServicesRibbon 
-        title="Trusted by Leading Brands"
-        items={ribbonItems}
-      />
-      </section>
-
-      {/* ===== KEY FEATURES ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 pb-8 sm:pb-10">
-        <div className="mx-auto max-w-6xl">
-          <ServiceFeatures
-                eyebrow="What We Offer"
-                heading="Comprehensive CRO & Funnel Services"
-                description="From A/B testing to complete funnel redesigns, we optimize every step of your customer journey to maximize conversions."
-                features={croFunnelFeatures}
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-            </div>
-      </section>
-
-      {/* ===== WHY CHOOSE US ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#B8E8DD]">
-            <div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12">
-              <WhyChoose 
-                items={whyItems} 
-                eyebrow="WHY CHOOSE CONNECTLTY" 
-                heading="Why Choose Us for CRO & Funnel Optimization" 
-                eyebrowColor="#0A6B5E" 
-                noPadding 
-                noCard 
-                noContainer 
-              />
-            </div>
-          </ScrollAnimatedSection>
-        </div>
-      </section>
-
-      {/* ===== PROCESS CARDS ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#F1F1E9]">
-            <div className="px-6 sm:px-10 lg:px-14 py-4">
-              <ProcessCards 
-                eyebrow="Our Process"
-                subheading="How We Optimize Your Funnel"
-                description="Our proven 4-step CRO process ensures sustainable conversion improvements and maximum ROI"
-                steps={croFunnelProcessSteps}
-                accentColor="from-[#0074ED] to-[#5B9BF8]"
-              />
-            </div>
-          </ScrollAnimatedSection>
-        </div>
-      </section>
-
-      {/* ===== PRICING SECTION ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <div className="mx-auto max-w-6xl">
-          <PricingTable 
-              plans={pricingPlans}
-              heading="Choose Your Plan"
-              description="Select the perfect plan for your conversion optimization needs. All plans include expert CRO services and ongoing testing."
-              accentColor="from-[#0074ED] to-[#5B9BF8]"
-            />
-        </div>
-      </section>
-
-      {/* ===== REVIEWS ===== */}
-      <section className="py-8 sm:py-10">
-        <ReviewCarousel noPadding />
-      </section>
-
-      {/* ===== TOOL STACK ===== */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <ScrollAnimatedSection bgColor="">
-          <ToolStackSection 
-            title="Powered by Industry-Leading Tools"
-            description="We leverage the best CRO and analytics tools to deliver data-driven optimizations. From heatmaps to A/B testing, we use cutting-edge technology to maximize your conversions."
-            tools={croFunnelTools}
-            ctaText="Get Started"
-            ctaLink="/resources/support"
-            bgColor="bg-[#B8E8DD]"
-          />
-        </ScrollAnimatedSection>
-      </section>
-
-      {/* ===== FAQ ===== */}
-      <section className="py-8 sm:py-10">
-        <ServiceFAQ 
-        title="Frequently Asked Questions"
-        subtitle="Everything you need to know about our CRO and funnel optimization services."
-        faqs={croFunnelFAQs}
-        accentColor="from-[#0074ED] to-[#5B9BF8]"
-      />
-      </section>
-    </div>
-  );
-};
+const CROFunnel = () => (
+  <ServiceDetailAdapter
+    heroProps={{
+      eyebrow: "CRO & FUNNEL OPTIMIZATION",
+      heading: "Maximize Conversions with CRO & Funnel Optimization",
+      description: "Turn more visitors into customers with data-driven conversion rate optimization. Our expert team identifies friction points, runs strategic A/B tests, and implements proven optimizations that increase your conversion rates and revenue.",
+      ctaText: "Get a Free Funnel Audit",
+      ctaLink: "/resources/support",
+      imageSrc: "/images/Services/Performance Marketing/CROandFunnel.png",
+      imageAlt: "CRO Analytics Dashboard",
+    }}
+    plans={pricingPlans}
+    faqs={croFunnelFAQs}
+    tools={croFunnelTools}
+    processSteps={croFunnelProcessSteps}
+    whyItems={whyItems}
+  />
+);
 
 export default CROFunnel;

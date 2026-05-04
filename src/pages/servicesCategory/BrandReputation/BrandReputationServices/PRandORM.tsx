@@ -1,33 +1,22 @@
+import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useScrollScale } from "@/hooks/useScrollScale";
+
+
 import {
   Target, TrendingUp, Users, BarChart3, Zap, Award,
   Shield, AlertCircle, MessageCircle, Newspaper, Star, TrendingDown
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import Hero from "@/components/Services/category/Hero";
-import WhyChoose, { WhyChooseItem } from "@/components/Services/category/WhyChoose";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
-import ServicesRibbon, { RibbonItem } from "@/components/Services/category/ServicesRibbon";
-import PricingTable, { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
-import ToolStackSection, { Tool } from "@/components/Services/ServiceDetail/toolstack";
-import ServiceFAQ, { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
-import { ProcessCards, ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
-import { ServiceFeatures, FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 
-const ScrollAnimatedSection = ({ children, bgColor }: { children: React.ReactNode; bgColor?: string }) => {
-  const { ref, scale } = useScrollScale();
-  
-  return (
-    <motion.div ref={ref} style={{ scale }} transition={{ type: "spring", stiffness: 100, damping: 30, restDelta: 0.001 }} className="relative rounded-3xl">
-      {bgColor && <div className={`absolute inset-0 rounded-3xl ${bgColor}`} />}
-      <div className="relative rounded-3xl">{children}</div>
-    </motion.div>
-  );
-};
+import type { WhyChooseItem } from "@/components/Services/category/WhyChoose";
 
+import type { RibbonItem } from "@/components/Services/category/ServicesRibbon";
+import type { Plan } from "@/components/Services/ServiceDetail/modern-pricing-table";
+import type { Tool } from "@/components/Services/ServiceDetail/toolstack";
+import type { FAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
+import type { ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
+import type { FeatureItem } from "@/components/Services/ServiceDetail/service-features";
 const ribbonItems: RibbonItem[] = [
   { icon: <Shield className="h-5 w-5 text-white" />, title: "500+", subtitle: "Crises managed" },
   { icon: <Star className="h-5 w-5 text-white" />, title: "95%", subtitle: "Positive sentiment" },
@@ -134,24 +123,17 @@ const prOrmFAQs: FAQItem[] = [
   },
 ];
 
-const PRandORM = () => {
-  return (
-    <div className="min-h-screen">
-        <Hero eyebrow="PR & ONLINE REPUTATION MANAGEMENT" heading="Protect and Enhance Your Brand Reputation" description="Strategic PR and reputation management that builds positive perception, secures media coverage, and protects your brand from threats." ctaText="Get Started" ctaLink="/resources/support" imageSrc="/images/Services/Brand&Reputation/PRandORM.png" imageAlt="PR & ORM" />
-      <section className="py-8 sm:py-10">
-        <ServicesRibbon title="Trusted Reputation Management" items={ribbonItems} />
-      </section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ServiceFeatures eyebrow="What We Offer" heading="Complete PR & Reputation Management" description="From media relations to crisis management, we protect and enhance your brand reputation." features={prOrmFeatures} accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor="bg-[#B8E8DD]"><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><WhyChoose items={whyItems} eyebrow="WHY CHOOSE CONNECTTLY" heading="Why Choose Our PR & ORM Services" eyebrowColor="#0A6B5E" noPadding noCard noContainer /></div></ScrollAnimatedSection></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor="bg-[#F1F1E9]"><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><ProcessCards eyebrow="Our Process" subheading="How We Manage Your Reputation" description="A proven methodology for protecting and enhancing brand reputation" steps={prOrmProcessSteps} accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></ScrollAnimatedSection></div></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><div className="mx-auto max-w-6xl"><ScrollAnimatedSection bgColor=""><div className="px-6 sm:px-10 lg:px-14 pt-16 sm:pt-12 pb-10 sm:pb-12"><PricingTable plans={pricingPlans} heading="Choose Your PR & ORM Plan" description="Select the perfect plan for your reputation management needs. All plans include monitoring and crisis response." accentColor="from-[#0074ED] to-[#5B9BF8]" /></div></ScrollAnimatedSection></div></section>
-      <section className="py-8 sm:py-10"><ReviewCarousel noPadding /></section>
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10"><ScrollAnimatedSection bgColor=""><ToolStackSection title="Powered by Leading PR & Monitoring Tools" description="We use the best reputation monitoring and PR tools to protect your brand." tools={prOrmTools} ctaText="Get Started" ctaLink="/resources/support" bgColor="bg-[#B8E8DD]" /></ScrollAnimatedSection></section>
-      <section className="py-8 sm:py-10">
-        <ServiceFAQ title="Frequently Asked Questions" subtitle="Everything you need to know about PR and online reputation management" faqs={prOrmFAQs} accentColor="from-[#0074ED] to-[#5B9BF8]" />
-      </section>
-    </div>
-  );
-};
+const PRandORM = () => (
+  <ServiceDetailAdapter
+    heroProps={{
+      // eyebrow="PR & ONLINE REPUTATION MANAGEMENT" heading="Protect and Enhance Your Brand Reputation" description="Strategic PR and reputation management that builds positive perception, secures media coverage, and protects your brand from threats." ctaText="Get Started" ctaLink="/resources/support" imageSrc="/images/Services/Brand&Reputation/PRandORM.png" imageAlt="PR & ORM"
+    }}
+    plans={pricingPlans}
+    faqs={prOrmFAQs}
+    tools={prOrmTools}
+    processSteps={prOrmProcessSteps}
+    whyItems={whyItems}
+  />
+);
 
 export default PRandORM;

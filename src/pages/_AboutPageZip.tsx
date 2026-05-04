@@ -197,7 +197,7 @@ const AboutPage = () => {
                       className="bg-background rounded-xl border border-border hover:border-primary p-6 shadow-[14px_18px_36px_-8px_hsl(var(--foreground)/0.20)] hover:shadow-none transition-all flex flex-col justify-between"
                       style={{ flex: tall ? "8 2 0" : "5 1 0" }}
                     >
-                      <div className="p-3 rounded-lg bg-ct-blue-light inline-block self-start">{p.icon}</div>
+                      <div className="p-3 mb-4 rounded-lg bg-ct-blue-light inline-block self-start">{p.icon}</div>
                       <div>
                         <h3 className="font-heading font-semibold text-lg mb-2">{p.title}</h3>
                         <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>

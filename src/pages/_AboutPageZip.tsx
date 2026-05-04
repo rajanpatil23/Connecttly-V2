@@ -74,7 +74,7 @@ const AboutPage = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="py-14 md:py-16">
+      <section className="pt-4 md:pt-6 pb-12 md:pb-14">
         <div className="container-main">
           <SectionLabel label="About Us" />
           <div className="grid md:grid-cols-2 gap-12 items-center">

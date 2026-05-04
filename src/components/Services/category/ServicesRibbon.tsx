@@ -12,6 +12,7 @@ export interface RibbonItem {
   title: string;
   subtitle: string;
   color?: string;
+  [key: string]: any;
 }
 
 interface ServicesRibbonProps {

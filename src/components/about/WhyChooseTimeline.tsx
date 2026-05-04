@@ -79,8 +79,8 @@ export default function ScrollTimeline() {
 
     // Kill any prior triggers local to this section only
     ScrollTrigger.getAll().forEach((st) => {
-      // @ts-expect-error private prop
-      if (st.vars?.trigger === section) st.kill();
+      // @ts-ignore private prop
+      if ((st as any).vars?.trigger === section) st.kill();
     });
 
     // Early exit when reduced motion

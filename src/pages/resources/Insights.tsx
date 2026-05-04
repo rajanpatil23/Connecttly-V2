@@ -108,7 +108,7 @@ const Segmented: React.FC<{
 );
 
 const Chip: React.FC<React.PropsWithChildren<{ color?: string }>> = ({ children, color }) => (
-  <div className={cn("rounded-xl px-4 py-3 text-sm font-medium", color || "bg-gray-100 text-gray-800")}>{children}</div>
+  <div className={cn("rounded-xl px-4 py-3 text-sm font-medium", color || "bg-primary/10 text-foreground")}>{children}</div>
 );
 
 const Kpi: React.FC<{ 
@@ -124,8 +124,8 @@ const Kpi: React.FC<{
     onClick={onClick}
     className={cn(
       "flex-1 min-w-[140px] rounded-xl px-3 py-2 border transition-all",
-      highlight ? (bgColor || "bg-[#B8D4F7]") : "bg-muted",
-      highlight ? (borderColor || "border-[#0074ED]/30") : "border-border",
+      highlight ? (bgColor || "bg-primary/10") : "bg-muted",
+      highlight ? (borderColor || "border-primary/30") : "border-border",
       clickable && "cursor-pointer hover:shadow-md hover:scale-105 active:scale-95"
     )}
   >

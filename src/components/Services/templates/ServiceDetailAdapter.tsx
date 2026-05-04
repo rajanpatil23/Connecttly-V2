@@ -83,10 +83,14 @@ export default function ServiceDetailAdapter(props: ServiceDetailAdapterProps) {
     tools,
     processSteps,
     whyItems,
+    painPoints,
+    impactStats,
     toolStackTitle,
     toolStackDescription,
+    painSectionTitle,
+    painCta,
   } = props;
-  const { eyebrow, heading, description, imageSrc, imageAlt, ctaText, ctaLink } = heroProps;
+  const { eyebrow, heading, description, imageSrc, ctaText, ctaLink } = heroProps;
 
   const heroTitle: ReactNode = eyebrow ? (
     <>
@@ -96,6 +100,35 @@ export default function ServiceDetailAdapter(props: ServiceDetailAdapterProps) {
   ) : (
     heading
   );
+
+  // Default pain points so every page renders a consistent section
+  const defaultPainPoints: ServicePainPoint[] = [
+    {
+      title: "You're investing budget but can't tell what's actually working.",
+      desc: "Most spend goes to clicks and impressions that never convert. That's not marketing — that's guesswork.",
+      icon: <MonitorSmartphone className="w-7 h-7 text-primary" />,
+    },
+    {
+      title: "Your reports are full of numbers nobody on the leadership team understands.",
+      desc: "If you can't explain ROI in one sentence, your current setup has failed you.",
+      icon: <FileType2 className="w-7 h-7 text-primary" />,
+    },
+    {
+      title: "Leads come in, but your sales team says they're the wrong fit.",
+      desc: "Wrong targeting and lazy strategy = paying for leads that were never going to buy.",
+      icon: <Target className="w-7 h-7 text-primary" />,
+    },
+  ];
+
+  const defaultImpactStats: ServiceImpactStat[] = [
+    { value: "42%", label: "Avg. CPL Reduction" },
+    { value: "3.8x", label: "Return on Investment" },
+    { value: "90", label: "Days to Meaningful ROI" },
+    { value: "0", label: "Long-Term Lock-ins" },
+  ];
+
+  const finalPainPoints = painPoints && painPoints.length > 0 ? painPoints : defaultPainPoints;
+  const finalImpactStats = impactStats && impactStats.length > 0 ? impactStats : defaultImpactStats;
 
   const mappedPlans: ServicePricingPlan[] | undefined = plans?.map((p) => ({
     name: p.title,

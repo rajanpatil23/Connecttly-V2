@@ -60,10 +60,14 @@ export interface ServiceDetailAdapterProps {
   tools?: ExistingTool[];
   processSteps?: ExistingProcessStep[];
   whyItems?: ExistingWhyItem[];
+  painPoints?: ServicePainPoint[];
+  impactStats?: ServiceImpactStat[];
 
   // Optional explicit overrides
   toolStackTitle?: string;
   toolStackDescription?: string;
+  painSectionTitle?: ReactNode;
+  painCta?: string;
 }
 
 const toCurrency = (n: number) => {

@@ -248,12 +248,12 @@ export default function ReferAndEarn() {
               return (
                 <div
                   key={i}
-                  className="group relative bg-white rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center"
+                  className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center"
                 >
                   {/* Icon with gradient background */}
-                  <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 group-hover:scale-110 transition-transform duration-300">
-                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#0074ED] to-[#5B9BF8] flex items-center justify-center">
-                      <IconComponent className="h-7 w-7 text-white" />
+                  <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center">
+                      <IconComponent className="h-7 w-7 text-primary-foreground" />
                     </div>
                   </div>
                   
@@ -324,7 +324,7 @@ export default function ReferAndEarn() {
               {/* Process Cards */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 lg:grid-cols-4">
                 {processSteps.map((step, index) => {
-                  const color = { border: "border-white", bg: "bg-white", badge: "bg-[#3369fd]" };
+                  const color = { border: "border-white", bg: "bg-card", badge: "bg-[#3369fd]" };
                   
                   return (
                     <motion.div
@@ -337,7 +337,7 @@ export default function ReferAndEarn() {
                     >
                       <div className={`${color.bg} rounded-3xl p-8 h-full flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300`}>
                         <div className="flex justify-start mb-4">
-                          <div className={`${color.badge} text-white px-4 py-2 rounded-full text-sm font-bold tracking-wider`}>
+                          <div className={`${color.badge} text-primary-foreground px-4 py-2 rounded-full text-sm font-bold tracking-wider`}>
                             STEP {step.step}
                           </div>
                         </div>
@@ -398,8 +398,8 @@ export default function ReferAndEarn() {
                   )}
                   {/* Icon with gradient background */}
                   <div className="mb-4 relative z-10 px-10">
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 group-hover/feature:scale-110 transition-transform duration-300">
-                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#0074ED] to-[#5B9BF8] flex items-center justify-center text-white">
+                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 group-hover/feature:scale-110 transition-transform duration-300">
+                      <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-primary-foreground">
                         <IconComponent className="h-7 w-7" />
                       </div>
                     </div>
@@ -424,7 +424,7 @@ export default function ReferAndEarn() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="bg-white rounded-2xl p-8 md:p-10 shadow-lg"
+            className="bg-card rounded-2xl p-8 md:p-10 shadow-lg"
           >
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2 text-center">Let's paint a payout picture</h3>
             <p className="text-sm text-muted-foreground text-center mb-8">
@@ -449,7 +449,7 @@ export default function ReferAndEarn() {
                         whileInView={{ height: `${tier.height}%` }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 + i * 0.1, ease: "easeOut" }}
-                        className="w-full bg-gradient-to-t from-[#0074ED] to-[#5B9BF8] rounded-t-lg relative group hover:from-[#0074ED] hover:to-[#0074ED] hover:brightness-125 transition-all duration-300 cursor-pointer"
+                        className="w-full bg-primary rounded-t-lg relative group hover:from-[#0074ED] hover:to-[#0074ED] hover:brightness-125 transition-all duration-300 cursor-pointer"
                       >
                         {/* Value label on top of bar */}
                         <div className="absolute -top-8 left-0 right-0 text-center">
@@ -515,7 +515,7 @@ export default function ReferAndEarn() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-white rounded-2xl p-6 md:p-8 shadow-lg"
+            className="bg-card rounded-2xl p-6 md:p-8 shadow-lg"
           >
             {faqData.map((faq, index) => (
               <FAQItem key={index} question={faq.question} answer={faq.answer} index={index} />

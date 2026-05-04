@@ -229,8 +229,8 @@ const RevenueMetrics: React.FC = () => {
           <AreaChart data={series} margin={{ left: 4, right: 40, top: 12, bottom: 48 }}>
             <defs>
               <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#0074ED" stopOpacity={0.35} />
-                <stop offset="100%" stopColor="#0074ED" stopOpacity={0.05} />
+                <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity={0.35} />
+                <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity={0.05} />
               </linearGradient>
             </defs>
             <CartesianGrid stroke="hsl(var(--border))" vertical={false} />
@@ -246,8 +246,8 @@ const RevenueMetrics: React.FC = () => {
               tick={{ fontSize: 11 }}
             />
             <YAxis tickLine={false} axisLine={false} />
-            <Tooltip cursor={{ stroke: "#B8D4F7" }} />
-            <Area type="monotone" dataKey="value" stroke="#0074ED" fill="url(#g1)" strokeWidth={2} />
+            <Tooltip cursor={{ stroke: "hsl(var(--primary) / 0.25)" }} />
+            <Area type="monotone" dataKey="value" stroke="hsl(var(--primary))" fill="url(#g1)" strokeWidth={2} />
           </AreaChart>
         </ResponsiveContainer>
       </div>
@@ -259,8 +259,8 @@ const RevenueMetrics: React.FC = () => {
           highlight={metric === "arr"}
           onClick={() => setMetric("arr")}
           clickable
-          bgColor="bg-[#B8D4F7]"
-          borderColor="border-[#0074ED]/30"
+          bgColor="bg-primary/10"
+          borderColor="border-primary/30"
         />
         <Kpi 
           label="MRR" 
@@ -268,8 +268,8 @@ const RevenueMetrics: React.FC = () => {
           highlight={metric === "mrr"}
           onClick={() => setMetric("mrr")}
           clickable
-          bgColor="bg-[#B8D4F7]"
-          borderColor="border-[#0074ED]/30"
+          bgColor="bg-primary/10"
+          borderColor="border-primary/30"
         />
         <Kpi 
           label="Pipeline" 
@@ -277,8 +277,8 @@ const RevenueMetrics: React.FC = () => {
           highlight={metric === "pipeline"}
           onClick={() => setMetric("pipeline")}
           clickable
-          bgColor="bg-[#B8D4F7]"
-          borderColor="border-[#0074ED]/30"
+          bgColor="bg-primary/10"
+          borderColor="border-primary/30"
         />
       </div>
     </Card>

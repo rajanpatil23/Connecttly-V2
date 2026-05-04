@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import SectionLabel from "@/components/_zip/SectionLabel";
 import StatsBar from "@/components/_zip/StatsBar";
 import { sharedStats } from "@/components/_zip/stats-data";
-import WhereToStart from "@/components/Services/ServiceDetail/WhereToStart";
+import ReviewCarousel from "@/components/_zip/Home/ReviewCarousel";
 
 export interface CategoryServiceCard {
   title: string;
@@ -174,8 +174,16 @@ export default function ServiceCategoryTemplate({
         </div>
       </section>
 
-      {/* Where to Start */}
-      <WhereToStart />
+      {/* Testimonials */}
+      <section className="py-16 md:py-20 bg-ct-section">
+        <div className="container-main">
+          <SectionLabel label="Testimonials" />
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mt-4 mb-10">
+            What Our <span className="gradient-text">Clients Say</span>
+          </h2>
+        </div>
+        <ReviewCarousel noPadding />
+      </section>
     </div>
   );
 }

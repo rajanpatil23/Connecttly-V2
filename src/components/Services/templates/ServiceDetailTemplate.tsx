@@ -402,8 +402,6 @@ export default function ServiceDetailTemplate({
         </section>
       )}
 
-      {/* Where to Start */}
-      <WhereToStart />
 
       {/* Tool Stack */}
       {toolStack && toolStack.length > 0 && (

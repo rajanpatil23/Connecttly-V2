@@ -97,13 +97,13 @@ const services: ServiceItem[] = [
   { category: "Brand & Reputation", title: "Brand Momentum Bundle", desc: "Strategy + PR + web + content in one program.", link: "/services/brand-reputation/brand-momentum-bundle", image: illuBrandMomentum, cta: "Explore Bundle", recommended: true },
 ];
 
-const CATEGORIES = [
-  "Performance Marketing",
-  "LinkedIn Growth",
-  "Content & Creative",
-  "Growth & Demand",
-  "Analytics & AI",
-  "Brand & Reputation",
+const CATEGORIES: { value: string; label: string }[] = [
+  { value: "Performance Marketing", label: "Performance" },
+  { value: "LinkedIn Growth", label: "LinkedIn" },
+  { value: "Content & Creative", label: "Content" },
+  { value: "Growth & Demand", label: "Growth" },
+  { value: "Analytics & AI", label: "Analytics & AI" },
+  { value: "Brand & Reputation", label: "Brand" },
 ];
 
 const PAGE_SIZE = 6;

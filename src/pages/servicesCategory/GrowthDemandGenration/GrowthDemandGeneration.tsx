@@ -1,4 +1,5 @@
 import ServiceCategoryTemplate from "@/components/Services/templates/ServiceCategoryTemplate";
+import heroImg from "@/assets/_zip/services/social-media-management.svg";
 
 const services = [
     { title: "ABM Campaigns", desc: "Account-based campaigns that win named accounts.", link: "/services/growth-demand-generation/abm-campaigns", image: "/images/Services/DemandGrowthGeneration/ABMCampaigns.png", cta: "Learn more" },
@@ -15,7 +16,7 @@ export default function CategoryPage() {
       eyebrow="GROWTH & DEMAND GEN"
       heading={<>Growth & Demand Generation</>}
       description="Build sustainable demand engines across communities, ABM, partners and culture."
-      heroImage="/images/home/services/GrowthDemandGeneration.svg"
+      heroImage={heroImg}
       services={services}
     />
   );

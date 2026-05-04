@@ -1,4 +1,5 @@
 import ServiceCategoryTemplate from "@/components/Services/templates/ServiceCategoryTemplate";
+import heroImg from "@/assets/_zip/services/content-creative.svg";
 
 const services = [
     { title: "Content Strategy", desc: "Editorial planning rooted in audience and intent.", link: "/services/content-creative/content-strategy", image: "/images/Services/Content Creative/ContentStratergy.png", cta: "Learn more" },
@@ -15,7 +16,7 @@ export default function CategoryPage() {
       eyebrow="CONTENT & CREATIVE"
       heading={<>Content That Converts</>}
       description="From strategy to production, we craft content built for every stage of your funnel."
-      heroImage="/images/home/services/ContentCreative.svg"
+      heroImage={heroImg}
       services={services}
     />
   );

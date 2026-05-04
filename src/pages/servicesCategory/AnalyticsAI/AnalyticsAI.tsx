@@ -1,4 +1,5 @@
 import ServiceCategoryTemplate from "@/components/Services/templates/ServiceCategoryTemplate";
+import heroImg from "@/assets/_zip/services/web-ai-automation.svg";
 
 const services = [
     { title: "Tagging & GA4 Audit", desc: "Pixel-perfect tracking across web and app.", link: "/services/analytics-ai/tagging-ga4-audit", image: "/images/Services/Analytics&AI/Tagging&GA4Audit.png", cta: "Learn more" },
@@ -15,7 +16,7 @@ export default function CategoryPage() {
       eyebrow="ANALYTICS & AI"
       heading={<>Measurement Meets AI</>}
       description="Tracking, attribution, AI campaigns and CRM automation that compound revenue."
-      heroImage="/images/home/services/AnalyticsAI.svg"
+      heroImage={heroImg}
       services={services}
     />
   );

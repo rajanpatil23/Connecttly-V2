@@ -1,14 +1,13 @@
 import { useEffect, useMemo } from "react";
 import { Link, useSearchParams } from "react-router-dom";
+import PageHero from "@/components/_zip/PageHero";
+import { ArrowRight } from "lucide-react";
 
-// Minimal index to demonstrate. Replace/extend with your real data source.
 const ROUTES_INDEX = [
   { title: "Home", path: "/" },
   { title: "Services", path: "/services" },
   { title: "About", path: "/about" },
   { title: "Insights", path: "/resources/blog" },
-
-  // Example service endpoints — add your real ones:
   { title: "Performance Marketing", path: "/services/performance-marketing" },
   { title: "LinkedIn Growth", path: "/services/linkedin-growth" },
   { title: "Content & Creative", path: "/services/content-creative" },
@@ -24,74 +23,49 @@ export default function Search() {
   const results = useMemo(() => {
     if (!q) return [];
     const needle = q.toLowerCase();
-    return ROUTES_INDEX.filter(
-      (r) => r.title.toLowerCase().includes(needle) || r.path.toLowerCase().includes(needle)
-    );
+    return ROUTES_INDEX.filter(r => r.title.toLowerCase().includes(needle) || r.path.toLowerCase().includes(needle));
   }, [q]);
 
   useEffect(() => {
-    // Move focus to heading for a11y
-    const h = document.getElementById("search-results-heading");
-    h?.focus();
+    document.getElementById("search-results-heading")?.focus();
   }, [q]);
 
   return (
-    <section className="min-h-screen bg-background">
-      <div className="container mx-auto max-w-3xl px-6 py-12">
-        <h1
-          id="search-results-heading"
-          tabIndex={-1}
-          className="text-2xl md:text-3xl font-bold tracking-tight outline-none"
-        >
-          Search results for “{q || "…"}”
-        </h1>
-
-        {!q && (
-          <p className="mt-3 text-muted-foreground">
-            Try searching for a service (e.g. “LinkedIn Ads”, “Analytics”).
-          </p>
-        )}
-
-        {q && (
-          <>
-            {results.length > 0 ? (
-              <ul className="mt-6 space-y-3" aria-live="polite">
-                {results.map((r) => (
-                  <li key={r.path}>
-                    <Link
-                      to={r.path}
-                      className="group flex items-center justify-between rounded-xl border bg-card/50 px-4 py-3 backdrop-blur hover:bg-card transition"
-                    >
-                      <span className="font-medium">{r.title}</span>
-                      <span className="text-xs text-muted-foreground group-hover:underline">
-                        {r.path}
-                      </span>
-                    </Link>
-                  </li>
+    <div className="overflow-x-hidden bg-background min-h-screen">
+      <PageHero
+        eyebrow="Search"
+        title={<>Search results for <span className="gradient-text">"{q || "…"}"</span></>}
+        description={!q ? "Try searching for a service (e.g. \"LinkedIn Ads\", \"Analytics\")." : undefined}
+      />
+      <section className="pb-20">
+        <div className="container-main max-w-3xl">
+          <h1 id="search-results-heading" tabIndex={-1} className="sr-only">Search results for {q}</h1>
+          {q && (results.length > 0 ? (
+            <ul className="space-y-3" aria-live="polite">
+              {results.map((r) => (
+                <li key={r.path}>
+                  <Link to={r.path} className="group flex items-center justify-between rounded-xl border border-border bg-background px-4 py-3 hover:border-primary/40 transition shadow-[0_2px_10px_hsl(var(--foreground)/0.04)]">
+                    <span className="font-medium text-foreground">{r.title}</span>
+                    <span className="flex items-center gap-2 text-xs text-muted-foreground">
+                      {r.path} <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <div className="rounded-xl border border-border bg-background p-6">
+              <p className="font-medium text-foreground">No results for "{q}".</p>
+              <p className="mt-2 text-muted-foreground">Try different keywords or explore these popular areas:</p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {["/services", "/about", "/resources/blog", "/"].map((p) => (
+                  <Link key={p} to={p} className="rounded-full border border-border px-3 py-1 text-sm text-foreground hover:bg-secondary">{p}</Link>
                 ))}
-              </ul>
-            ) : (
-              <div className="mt-6 rounded-xl border bg-card/50 p-6 backdrop-blur">
-                <p className="font-medium">No results for “{q}”.</p>
-                <p className="mt-2 text-muted-foreground">
-                  Try different keywords or explore these popular areas:
-                </p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {["/services", "/about", "/resources/blog", "/"].map((p) => (
-                    <Link
-                      key={p}
-                      to={p}
-                      className="rounded-full border px-3 py-1 text-sm hover:bg-accent"
-                    >
-                      {p}
-                    </Link>
-                  ))}
-                </div>
               </div>
-            )}
-          </>
-        )}
-      </div>
-    </section>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }

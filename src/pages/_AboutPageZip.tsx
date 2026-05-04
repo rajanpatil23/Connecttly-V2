@@ -53,10 +53,10 @@ const teamMembers = [
 ];
 
 const clientTypes = [
-  { title: "Startups & Early-Stage Companies", desc: "You've found product-market fit and need to build a scalable, predictable lead-generation engine.", icon: <img src={iconBriefcase} alt="" className="w-5 h-5" /> },
-  { title: "Scaling B2B Businesses", desc: "You're growing, but your marketing hasn't kept up. You need systems, strategy, and execution to match your ambition.", icon: <img src={iconB2B} alt="" className="w-5 h-5" /> },
-  { title: "Enterprise Teams", desc: "You need a specialized partner to handle LinkedIn growth, performance marketing, or content at scale alongside your internal team.", icon: <img src={iconEnterprise} alt="" className="w-5 h-5" /> },
-  { title: "EdTech & Training Companies", desc: "You're building an audience and need a content strategy, paid acquisition, and brand positioning that drives enrollments.", icon: <img src={iconGraduation} alt="" className="w-5 h-5" /> },
+  { title: "Startups & Early-Stage Companies", desc: "You've found product-market fit and need to build a scalable, predictable lead-generation engine.", icon: <img src={iconBriefcase} alt="" className="w-6 h-6" /> },
+  { title: "Scaling B2B Businesses", desc: "You're growing, but your marketing hasn't kept up. You need systems, strategy, and execution to match your ambition.", icon: <img src={iconB2B} alt="" className="w-6 h-6" /> },
+  { title: "Enterprise Teams", desc: "You need a specialized partner to handle LinkedIn growth, performance marketing, or content at scale alongside your internal team.", icon: <img src={iconEnterprise} alt="" className="w-6 h-6" /> },
+  { title: "EdTech & Training Companies", desc: "You're building an audience and need a content strategy, paid acquisition, and brand positioning that drives enrollments.", icon: <img src={iconGraduation} alt="" className="w-6 h-6" /> },
 ];
 
 const industriesLeft = [

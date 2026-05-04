@@ -97,13 +97,13 @@ const services: ServiceItem[] = [
   { category: "Brand & Reputation", title: "Brand Momentum Bundle", desc: "Strategy + PR + web + content in one program.", link: "/services/brand-reputation/brand-momentum-bundle", image: illuBrandMomentum, cta: "Explore Bundle", recommended: true },
 ];
 
-const CATEGORIES = [
-  "Performance Marketing",
-  "LinkedIn Growth",
-  "Content & Creative",
-  "Growth & Demand",
-  "Analytics & AI",
-  "Brand & Reputation",
+const CATEGORIES: { value: string; label: string }[] = [
+  { value: "Performance Marketing", label: "Performance" },
+  { value: "LinkedIn Growth", label: "LinkedIn" },
+  { value: "Content & Creative", label: "Content" },
+  { value: "Growth & Demand", label: "Growth" },
+  { value: "Analytics & AI", label: "Analytics & AI" },
+  { value: "Brand & Reputation", label: "Brand" },
 ];
 
 const PAGE_SIZE = 6;
@@ -186,7 +186,7 @@ function AllServicesGrid() {
 export default function AllServices() {
   const byCategory = useMemo(() => {
     const map: Record<string, ServiceItem[]> = {};
-    for (const c of CATEGORIES) map[c] = [];
+    for (const c of CATEGORIES) map[c.value] = [];
     for (const s of services) map[s.category]?.push(s);
     return map;
   }, []);
@@ -248,17 +248,20 @@ export default function AllServices() {
           </h2>
 
           <Tabs defaultValue="all" className="w-full">
-            <TabsList className="flex flex-wrap h-auto justify-center gap-2 bg-transparent mb-10">
-              <TabsTrigger value="all" className="rounded-full px-5 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
-                All Services
+            <TabsList className="flex flex-wrap h-auto justify-center gap-3 bg-transparent mb-10 p-0">
+              <TabsTrigger
+                value="all"
+                className="rounded-full px-6 py-2.5 text-sm font-semibold bg-transparent text-foreground hover:bg-muted data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-[0_8px_24px_hsl(var(--primary)/0.35)] transition-all"
+              >
+                All
               </TabsTrigger>
               {CATEGORIES.map((c) => (
                 <TabsTrigger
-                  key={c}
-                  value={c}
-                  className="rounded-full px-5 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+                  key={c.value}
+                  value={c.value}
+                  className="rounded-full px-6 py-2.5 text-sm font-semibold bg-transparent text-foreground hover:bg-muted data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-[0_8px_24px_hsl(var(--primary)/0.35)] transition-all"
                 >
-                  {c}
+                  {c.label}
                 </TabsTrigger>
               ))}
             </TabsList>
@@ -268,9 +271,9 @@ export default function AllServices() {
             </TabsContent>
 
             {CATEGORIES.map((c) => (
-              <TabsContent key={c} value={c}>
+              <TabsContent key={c.value} value={c.value}>
                 <div className="grid md:grid-cols-3 gap-6">
-                  {byCategory[c].map((s) => (
+                  {byCategory[c.value].map((s) => (
                     <ServiceCard key={s.title} s={s} />
                   ))}
                 </div>

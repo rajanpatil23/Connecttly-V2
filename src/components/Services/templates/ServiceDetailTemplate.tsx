@@ -91,6 +91,8 @@ export default function ServiceDetailTemplate({
   painSectionTitle,
   painPoints,
   painCta,
+  impactTitle,
+  impactStats,
   whyUsTitle,
   whyUs,
   processSteps,

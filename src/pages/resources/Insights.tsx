@@ -1,3 +1,4 @@
+import PageHero from "@/components/_zip/PageHero";
 import React, { useEffect, useMemo, useState } from "react";
 import {
   AreaChart,

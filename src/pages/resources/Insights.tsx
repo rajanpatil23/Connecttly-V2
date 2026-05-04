@@ -108,7 +108,7 @@ const Segmented: React.FC<{
 );
 
 const Chip: React.FC<React.PropsWithChildren<{ color?: string }>> = ({ children, color }) => (
-  <div className={cn("rounded-xl px-4 py-3 text-sm font-medium", color || "bg-gray-100 text-gray-800")}>{children}</div>
+  <div className={cn("rounded-xl px-4 py-3 text-sm font-medium", color || "bg-primary/10 text-foreground")}>{children}</div>
 );
 
 const Kpi: React.FC<{ 
@@ -124,8 +124,8 @@ const Kpi: React.FC<{
     onClick={onClick}
     className={cn(
       "flex-1 min-w-[140px] rounded-xl px-3 py-2 border transition-all",
-      highlight ? (bgColor || "bg-[#B8D4F7]") : "bg-muted",
-      highlight ? (borderColor || "border-[#0074ED]/30") : "border-border",
+      highlight ? (bgColor || "bg-primary/10") : "bg-muted",
+      highlight ? (borderColor || "border-primary/30") : "border-border",
       clickable && "cursor-pointer hover:shadow-md hover:scale-105 active:scale-95"
     )}
   >
@@ -229,8 +229,8 @@ const RevenueMetrics: React.FC = () => {
           <AreaChart data={series} margin={{ left: 4, right: 40, top: 12, bottom: 48 }}>
             <defs>
               <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#0074ED" stopOpacity={0.35} />
-                <stop offset="100%" stopColor="#0074ED" stopOpacity={0.05} />
+                <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity={0.35} />
+                <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity={0.05} />
               </linearGradient>
             </defs>
             <CartesianGrid stroke="hsl(var(--border))" vertical={false} />
@@ -246,8 +246,8 @@ const RevenueMetrics: React.FC = () => {
               tick={{ fontSize: 11 }}
             />
             <YAxis tickLine={false} axisLine={false} />
-            <Tooltip cursor={{ stroke: "#B8D4F7" }} />
-            <Area type="monotone" dataKey="value" stroke="#0074ED" fill="url(#g1)" strokeWidth={2} />
+            <Tooltip cursor={{ stroke: "hsl(var(--primary) / 0.25)" }} />
+            <Area type="monotone" dataKey="value" stroke="hsl(var(--primary))" fill="url(#g1)" strokeWidth={2} />
           </AreaChart>
         </ResponsiveContainer>
       </div>
@@ -259,8 +259,8 @@ const RevenueMetrics: React.FC = () => {
           highlight={metric === "arr"}
           onClick={() => setMetric("arr")}
           clickable
-          bgColor="bg-[#B8D4F7]"
-          borderColor="border-[#0074ED]/30"
+          bgColor="bg-primary/10"
+          borderColor="border-primary/30"
         />
         <Kpi 
           label="MRR" 
@@ -268,8 +268,8 @@ const RevenueMetrics: React.FC = () => {
           highlight={metric === "mrr"}
           onClick={() => setMetric("mrr")}
           clickable
-          bgColor="bg-[#B8D4F7]"
-          borderColor="border-[#0074ED]/30"
+          bgColor="bg-primary/10"
+          borderColor="border-primary/30"
         />
         <Kpi 
           label="Pipeline" 
@@ -277,8 +277,8 @@ const RevenueMetrics: React.FC = () => {
           highlight={metric === "pipeline"}
           onClick={() => setMetric("pipeline")}
           clickable
-          bgColor="bg-[#B8D4F7]"
-          borderColor="border-[#0074ED]/30"
+          bgColor="bg-primary/10"
+          borderColor="border-primary/30"
         />
       </div>
     </Card>
@@ -316,8 +316,8 @@ const CustomerMetrics: React.FC = () => {
           <AreaChart data={series} margin={{ left: 4, right: 40, top: 12, bottom: 48 }}>
             <defs>
               <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#24C5B9" stopOpacity={0.35} />
-                <stop offset="100%" stopColor="#24C5B9" stopOpacity={0.05} />
+                <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity={0.35} />
+                <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity={0.05} />
               </linearGradient>
             </defs>
             <CartesianGrid stroke="hsl(var(--border))" vertical={false} />
@@ -333,8 +333,8 @@ const CustomerMetrics: React.FC = () => {
               tick={{ fontSize: 11 }}
             />
             <YAxis tickLine={false} axisLine={false} />
-            <Tooltip cursor={{ stroke: "#B8E8DD" }} />
-            <Area type="monotone" dataKey="value" stroke="#24C5B9" fill="url(#g2)" strokeWidth={2} />
+            <Tooltip cursor={{ stroke: "hsl(var(--primary) / 0.25)" }} />
+            <Area type="monotone" dataKey="value" stroke="hsl(var(--primary))" fill="url(#g2)" strokeWidth={2} />
           </AreaChart>
         </ResponsiveContainer>
       </div>
@@ -345,8 +345,8 @@ const CustomerMetrics: React.FC = () => {
           highlight={metric === "customers"}
           onClick={() => setMetric("customers")}
           clickable
-          bgColor="bg-[#B8E8DD]"
-          borderColor="border-[#24C5B9]/30"
+          bgColor="bg-primary/10"
+          borderColor="border-primary/30"
         />
         <Kpi 
           label="ARPU" 
@@ -354,8 +354,8 @@ const CustomerMetrics: React.FC = () => {
           highlight={metric === "arpu"}
           onClick={() => setMetric("arpu")}
           clickable
-          bgColor="bg-[#B8E8DD]"
-          borderColor="border-[#24C5B9]/30"
+          bgColor="bg-primary/10"
+          borderColor="border-primary/30"
         />
         <Kpi 
           label="LTV" 
@@ -363,8 +363,8 @@ const CustomerMetrics: React.FC = () => {
           highlight={metric === "ltv"}
           onClick={() => setMetric("ltv")}
           clickable
-          bgColor="bg-[#B8E8DD]"
-          borderColor="border-[#24C5B9]/30"
+          bgColor="bg-primary/10"
+          borderColor="border-primary/30"
         />
       </div>
     </Card>
@@ -392,15 +392,15 @@ const AdvocacyMetrics: React.FC = () => {
         <span className="text-sm px-3 py-1.5 rounded-full border bg-card">Last quarter</span>
       </div>
       <div className="grid md:grid-cols-3 gap-3">
-        <Chip color="bg-[#B8E8DD] text-[#0A1F3D]">
+        <Chip color="bg-primary/10 text-foreground">
           <div className="text-base font-semibold">{last.fr}</div>
           <div className="text-xs opacity-70 mt-1">First response within 2 hours</div>
         </Chip>
-        <Chip color="bg-[#D4F0B3] text-[#0A1F3D]">
+        <Chip color="bg-primary/10 text-foreground">
           <div className="text-base font-semibold">{last.cs}</div>
           <div className="text-xs opacity-70 mt-1">Customer satisfaction</div>
         </Chip>
-        <Chip color="bg-[#BBD1ED] text-[#0A1F3D]">
+        <Chip color="bg-primary/10 text-foreground">
           <div className="text-base font-semibold">{last.is}</div>
           <div className="text-xs opacity-70 mt-1">Customer requests resolved</div>
         </Chip>
@@ -470,8 +470,8 @@ const MarketingMetrics: React.FC = () => {
             <YAxis tickLine={false} axisLine={false} />
             <Tooltip />
             <Legend />
-            <Line type="monotone" dataKey={buttons.find(b => b.key === metric)?.label || metric} stroke="#0074ED" strokeWidth={2} dot={false} />
-            <Line type="monotone" dataKey={buttons.find(b => b.key === metric)?.secondary || "Comparison"} stroke="#50D0FF" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey={buttons.find(b => b.key === metric)?.label || metric} stroke="hsl(var(--primary))" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey={buttons.find(b => b.key === metric)?.secondary || "Comparison"} stroke="hsl(var(--primary) / 0.45)" strokeWidth={2} dot={false} />
           </LineChart>
         </ResponsiveContainer>
       </div>
@@ -482,7 +482,7 @@ const MarketingMetrics: React.FC = () => {
             onClick={() => setMetric(b.key as any)}
             className={cn(
               "rounded-xl px-3 py-2 border transition-all cursor-pointer hover:shadow-md hover:scale-105 active:scale-95",
-              metric === b.key ? "bg-[#D4F0B3] border-[#A6FF5F]/40" : "bg-muted border-border"
+              metric === b.key ? "bg-primary/10 border-primary/30" : "bg-muted border-border"
             )}
           >
             <div className="text-xs text-muted-foreground">{b.label}</div>
@@ -554,7 +554,7 @@ export default function InsightsDashboard() {
 
               {/* Insight Cards Grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center">
+                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_hsl(var(--foreground)/0.08)] hover:shadow-[0_8px_30px_hsl(var(--foreground)/0.12)] transition-all duration-300 text-center">
                   {/* Icon with gradient background */}
                   <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 group-hover:scale-110 transition-transform duration-300">
                     <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center">
@@ -570,7 +570,7 @@ export default function InsightsDashboard() {
                   </p>
                 </div>
 
-                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center">
+                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_hsl(var(--foreground)/0.08)] hover:shadow-[0_8px_30px_hsl(var(--foreground)/0.12)] transition-all duration-300 text-center">
                   {/* Icon with gradient background */}
                   <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 group-hover:scale-110 transition-transform duration-300">
                     <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center">
@@ -586,7 +586,7 @@ export default function InsightsDashboard() {
                   </p>
                 </div>
 
-                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center">
+                <div className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_hsl(var(--foreground)/0.08)] hover:shadow-[0_8px_30px_hsl(var(--foreground)/0.12)] transition-all duration-300 text-center">
                   {/* Icon with gradient background */}
                   <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 group-hover:scale-110 transition-transform duration-300">
                     <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center">

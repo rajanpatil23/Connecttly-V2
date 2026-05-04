@@ -24,7 +24,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { ProcessCards, ProcessStep } from "@/components/Services/ServiceDetail/process-cards";
-import ReviewCarousel from "@/components/Home/ReviewCarousel";
+import ReviewCarousel from "@/components/_zip/Home/ReviewCarousel";
 import ServiceFAQ, { FAQItem as ServiceFAQItem } from "@/components/Services/ServiceDetail/ServiceFAQ";
 import { FeatureSteps } from "@/components/partnerperks";
 import { useState } from "react";
@@ -248,7 +248,7 @@ export default function ReferAndEarn() {
               return (
                 <div
                   key={i}
-                  className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 text-center"
+                  className="group relative bg-card rounded-2xl p-8 shadow-[0_4px_20px_hsl(var(--foreground)/0.08)] hover:shadow-[0_8px_30px_hsl(var(--foreground)/0.12)] transition-all duration-300 text-center"
                 >
                   {/* Icon with gradient background */}
                   <div className="mb-6 mx-auto inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 group-hover:scale-110 transition-transform duration-300">
@@ -269,7 +269,7 @@ export default function ReferAndEarn() {
       {/* =================== PARTNER PERKS SECTION =================== */}
       <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
         <div className="mx-auto max-w-6xl">
-          <ScrollAnimatedSection bgColor="bg-[#B8E8DD]">
+          <ScrollAnimatedSection bgColor="bg-muted">
             <FeatureSteps
               title="Everything You Need to Succeed"
               features={[
@@ -324,7 +324,7 @@ export default function ReferAndEarn() {
               {/* Process Cards */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 lg:grid-cols-4">
                 {processSteps.map((step, index) => {
-                  const color = { border: "border-white", bg: "bg-card", badge: "bg-[#3369fd]" };
+                  const color = { bg: "bg-card", badge: "bg-primary" };
                   
                   return (
                     <motion.div
@@ -391,10 +391,10 @@ export default function ReferAndEarn() {
                   } ${index < 4 ? "lg:border-b" : ""} border-border`}
                 >
                   {index < 4 && (
-                    <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-[#0074ED]/10 to-transparent pointer-events-none" />
+                    <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-primary/10 to-transparent pointer-events-none" />
                   )}
                   {index >= 4 && (
-                    <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-[#0074ED]/10 to-transparent pointer-events-none" />
+                    <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-primary/10 to-transparent pointer-events-none" />
                   )}
                   {/* Icon with gradient background */}
                   <div className="mb-4 relative z-10 px-10">
@@ -405,7 +405,7 @@ export default function ReferAndEarn() {
                     </div>
                   </div>
                   <div className="text-lg font-bold mb-2 relative z-10 px-10">
-                    <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-slate-200 group-hover/feature:bg-primary transition-all duration-200 origin-center" />
+                    <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-border group-hover/feature:bg-primary transition-all duration-200 origin-center" />
                     <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-foreground">
                       {type.title}
                     </span>
@@ -449,7 +449,7 @@ export default function ReferAndEarn() {
                         whileInView={{ height: `${tier.height}%` }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 + i * 0.1, ease: "easeOut" }}
-                        className="w-full bg-primary rounded-t-lg relative group hover:from-[#0074ED] hover:to-[#0074ED] hover:brightness-125 transition-all duration-300 cursor-pointer"
+                        className="w-full bg-primary rounded-t-lg relative group hover:bg-primary/90 transition-all duration-300 cursor-pointer"
                       >
                         {/* Value label on top of bar */}
                         <div className="absolute -top-8 left-0 right-0 text-center">

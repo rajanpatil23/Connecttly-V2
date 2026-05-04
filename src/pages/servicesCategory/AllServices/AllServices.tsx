@@ -12,7 +12,38 @@ import illuGoogleAds from "@/assets/_zip/services/illu-google-ads.png";
 import illuMetaAds from "@/assets/_zip/services/illu-meta-ads.png";
 import illuYoutubeAds from "@/assets/_zip/services/illu-youtube-ads.png";
 import illuCro from "@/assets/_zip/services/illu-cro.png";
-import illuLinkedinAds from "@/assets/_zip/services/illu-linkedin-ads.png";
+import illuShortVideo from "@/assets/_zip/services/illu-linkedin-ads.png";
+import illuPerformanceBundle from "@/assets/_zip/services/illu-performance-bundle.png";
+import illuLinkedinAds from "@/assets/_zip/services/illu-linkedin-ads-2.png";
+import illuLeadGen from "@/assets/_zip/services/illu-lead-generation.png";
+import illuPageMgmt from "@/assets/_zip/services/illu-page-management.png";
+import illuExecutive from "@/assets/_zip/services/illu-executive-leadership.png";
+import illuSalesNav from "@/assets/_zip/services/illu-sales-navigator.png";
+import illuLinkedinBundle from "@/assets/_zip/services/illu-linkedin-bundle.png";
+import illuContentStrategy from "@/assets/_zip/services/illu-content-strategy.png";
+import illuSeoContent from "@/assets/_zip/services/illu-seo-content.png";
+import illuCarousels from "@/assets/_zip/services/illu-carousels-visuals.png";
+import illuVideo from "@/assets/_zip/services/illu-video-production.png";
+import illuSalesCollateral from "@/assets/_zip/services/illu-sales-collateral.png";
+import illuFullFunnel from "@/assets/_zip/services/illu-full-funnel.png";
+import illuAbm from "@/assets/_zip/services/illu-abm.png";
+import illuCommunity from "@/assets/_zip/services/illu-community.png";
+import illuInfluencer from "@/assets/_zip/services/illu-influencer-ugc.png";
+import illuPartner from "@/assets/_zip/services/illu-partner-affiliate.png";
+import illuViral from "@/assets/_zip/services/illu-viral-culture.png";
+import illuDemandBundle from "@/assets/_zip/services/illu-demand-gen-bundle.png";
+import illuTaggingGa4 from "@/assets/_zip/services/illu-tagging-ga4.png";
+import illuAnalytics from "@/assets/_zip/services/illu-analytics-dashboards.png";
+import illuAttribution from "@/assets/_zip/services/illu-attribution.png";
+import illuCrmAutomation from "@/assets/_zip/services/illu-crm-automation.png";
+import illuAiCampaigns from "@/assets/_zip/services/illu-ai-campaigns.png";
+import illuMeasurementBundle from "@/assets/_zip/services/illu-measurement-bundle.png";
+import illuBrandStrategy from "@/assets/_zip/services/illu-brand-strategy.png";
+import illuPrOrm from "@/assets/_zip/services/illu-pr-orm.png";
+import illuWebsiteUx from "@/assets/_zip/services/illu-website-ux.png";
+import illuEmployer from "@/assets/_zip/services/illu-employer-branding.png";
+import illuLifestyle from "@/assets/_zip/services/illu-lifestyle-vibe.png";
+import illuBrandMomentum from "@/assets/_zip/services/illu-brand-momentum-bundle.png";
 
 type ServiceItem = CategoryServiceCard & { category: string };
 
@@ -22,48 +53,48 @@ const services: ServiceItem[] = [
   { category: "Performance Marketing", title: "Meta Ads", desc: "Reach your audience on Facebook and Instagram.", link: "/services/performance-marketing/meta-ads", image: illuMetaAds, cta: "Learn more" },
   { category: "Performance Marketing", title: "YouTube Ads", desc: "Engage viewers with compelling video advertisements.", link: "/services/performance-marketing/youtube-ads", image: illuYoutubeAds, cta: "Learn more" },
   { category: "Performance Marketing", title: "CRO and Funnel", desc: "Optimize conversion rates with data-driven insights.", link: "/services/performance-marketing/cro-funnel", image: illuCro, cta: "Learn more" },
-  { category: "Performance Marketing", title: "Short Video Ads", desc: "Capture attention with short-form video advertising.", link: "/services/performance-marketing/short-video-ads", image: illuLinkedinAds, cta: "Learn more" },
-  { category: "Performance Marketing", title: "Performance Accelerator Bundle", desc: "Complete performance marketing solution for rapid growth.", link: "/services/performance-marketing/performance-accelerator-bundle", image: "/images/Services/Performance Marketing/PerformanceAcceleratorBundle.png", cta: "Explore Bundle", recommended: true },
+  { category: "Performance Marketing", title: "Short Video Ads", desc: "Capture attention with short-form video advertising.", link: "/services/performance-marketing/short-video-ads", image: illuShortVideo, cta: "Learn more" },
+  { category: "Performance Marketing", title: "Performance Accelerator Bundle", desc: "Complete performance marketing solution for rapid growth.", link: "/services/performance-marketing/performance-accelerator-bundle", image: illuPerformanceBundle, cta: "Explore Bundle", recommended: true },
 
   // LinkedIn Growth
-  { category: "LinkedIn Growth", title: "LinkedIn Ads", desc: "High-intent B2B campaigns engineered for pipeline.", link: "/services/linkedin-growth/linkedin-ads", image: "/images/Services/Linkedin Growth/LinkedinAds.png", cta: "Learn more" },
-  { category: "LinkedIn Growth", title: "Lead Generation", desc: "Predictable inbound and outbound on LinkedIn.", link: "/services/linkedin-growth/lead-genration", image: "/images/Services/Linkedin Growth/LeadGenration.png", cta: "Learn more" },
-  { category: "LinkedIn Growth", title: "Page Management", desc: "Grow your company page into a content engine.", link: "/services/linkedin-growth/page-management", image: "/images/Services/Linkedin Growth/PageManagement.png", cta: "Learn more" },
-  { category: "LinkedIn Growth", title: "Executive Leadership", desc: "Position your founders as industry voices.", link: "/services/linkedin-growth/executive-leadership", image: "/images/Services/Linkedin Growth/ExecutiveLeadership.png", cta: "Learn more" },
-  { category: "LinkedIn Growth", title: "Sales Navigator", desc: "Turn Sales Navigator into a closing machine.", link: "/services/linkedin-growth/sales-navigator", image: "/images/Services/Linkedin Growth/SalesNavigatorEnablement.png", cta: "Learn more" },
-  { category: "LinkedIn Growth", title: "LinkedIn Growth Bundle", desc: "End-to-end LinkedIn engine across ads, content & social selling.", link: "/services/linkedin-growth/linkedin-growth-bundle", image: "/images/Services/Linkedin Growth/LinkedInGrowthBundle.png", cta: "Explore Bundle", recommended: true },
+  { category: "LinkedIn Growth", title: "LinkedIn Ads", desc: "High-intent B2B campaigns engineered for pipeline.", link: "/services/linkedin-growth/linkedin-ads", image: illuLinkedinAds, cta: "Learn more" },
+  { category: "LinkedIn Growth", title: "Lead Generation", desc: "Predictable inbound and outbound on LinkedIn.", link: "/services/linkedin-growth/lead-genration", image: illuLeadGen, cta: "Learn more" },
+  { category: "LinkedIn Growth", title: "Page Management", desc: "Grow your company page into a content engine.", link: "/services/linkedin-growth/page-management", image: illuPageMgmt, cta: "Learn more" },
+  { category: "LinkedIn Growth", title: "Executive Leadership", desc: "Position your founders as industry voices.", link: "/services/linkedin-growth/executive-leadership", image: illuExecutive, cta: "Learn more" },
+  { category: "LinkedIn Growth", title: "Sales Navigator", desc: "Turn Sales Navigator into a closing machine.", link: "/services/linkedin-growth/sales-navigator", image: illuSalesNav, cta: "Learn more" },
+  { category: "LinkedIn Growth", title: "LinkedIn Growth Bundle", desc: "End-to-end LinkedIn engine across ads, content & social selling.", link: "/services/linkedin-growth/linkedin-growth-bundle", image: illuLinkedinBundle, cta: "Explore Bundle", recommended: true },
 
   // Content & Creative
-  { category: "Content & Creative", title: "Content Strategy", desc: "Editorial planning rooted in audience and intent.", link: "/services/content-creative/content-strategy", image: "/images/Services/Content Creative/ContentStratergy.png", cta: "Learn more" },
-  { category: "Content & Creative", title: "SEO Content Production", desc: "Search-led content that ranks and converts.", link: "/services/content-creative/seo-content-production", image: "/images/Services/Content Creative/SEOContentProduction.png", cta: "Learn more" },
-  { category: "Content & Creative", title: "Carousels & Visuals", desc: "Scroll-stopping visuals for social and ads.", link: "/services/content-creative/carousels-visuals", image: "/images/Services/Content Creative/CarouselsandVisuals.png", cta: "Learn more" },
-  { category: "Content & Creative", title: "Video Production", desc: "Short-form and long-form video that performs.", link: "/services/content-creative/video-production", image: "/images/Services/Content Creative/VideoProduction.png", cta: "Learn more" },
-  { category: "Content & Creative", title: "Sales Collateral", desc: "Decks, one-pagers, and case studies that close.", link: "/services/content-creative/sales-collateral", image: "/images/Services/Content Creative/SalesCollateral.png", cta: "Learn more" },
-  { category: "Content & Creative", title: "Full Funnel Content Bundle", desc: "Top, middle, and bottom of funnel content in one program.", link: "/services/content-creative/full-funnel-content-bundle", image: "/images/Services/Content Creative/FullFunnelContentBundle.png", cta: "Explore Bundle", recommended: true },
+  { category: "Content & Creative", title: "Content Strategy", desc: "Editorial planning rooted in audience and intent.", link: "/services/content-creative/content-strategy", image: illuContentStrategy, cta: "Learn more" },
+  { category: "Content & Creative", title: "SEO Content Production", desc: "Search-led content that ranks and converts.", link: "/services/content-creative/seo-content-production", image: illuSeoContent, cta: "Learn more" },
+  { category: "Content & Creative", title: "Carousels & Visuals", desc: "Scroll-stopping visuals for social and ads.", link: "/services/content-creative/carousels-visuals", image: illuCarousels, cta: "Learn more" },
+  { category: "Content & Creative", title: "Video Production", desc: "Short-form and long-form video that performs.", link: "/services/content-creative/video-production", image: illuVideo, cta: "Learn more" },
+  { category: "Content & Creative", title: "Sales Collateral", desc: "Decks, one-pagers, and case studies that close.", link: "/services/content-creative/sales-collateral", image: illuSalesCollateral, cta: "Learn more" },
+  { category: "Content & Creative", title: "Full Funnel Content Bundle", desc: "Top, middle, and bottom of funnel content in one program.", link: "/services/content-creative/full-funnel-content-bundle", image: illuFullFunnel, cta: "Explore Bundle", recommended: true },
 
   // Growth & Demand Generation
-  { category: "Growth & Demand", title: "ABM Campaigns", desc: "Account-based campaigns that win named accounts.", link: "/services/growth-demand-generation/abm-campaigns", image: "/images/Services/DemandGrowthGeneration/ABMCampaigns.png", cta: "Learn more" },
-  { category: "Growth & Demand", title: "Community", desc: "Build owned communities that compound over time.", link: "/services/growth-demand-generation/community", image: "/images/Services/DemandGrowthGeneration/Community.png", cta: "Learn more" },
-  { category: "Growth & Demand", title: "Influencer & UGC", desc: "Authentic creator partnerships and UGC at scale.", link: "/services/growth-demand-generation/influencer-ugc", image: "/images/Services/DemandGrowthGeneration/InfluencerandUGC.png", cta: "Learn more" },
-  { category: "Growth & Demand", title: "Partner & Affiliate", desc: "Launch and scale partner-led growth programs.", link: "/services/growth-demand-generation/partner-affiliate", image: "/images/Services/DemandGrowthGeneration/PartnersAffiliate.png", cta: "Learn more" },
-  { category: "Growth & Demand", title: "Viral Culture", desc: "Cultural campaigns that travel beyond your channels.", link: "/services/growth-demand-generation/viral-culture", image: "/images/Services/DemandGrowthGeneration/ViralCulture.png", cta: "Learn more" },
-  { category: "Growth & Demand", title: "Demand Gen Bundle", desc: "Full demand engine across owned, earned and paid.", link: "/services/growth-demand-generation/demand-gen-bundle", image: "/images/Services/DemandGrowthGeneration/DemandGenBundle.png", cta: "Explore Bundle", recommended: true },
+  { category: "Growth & Demand", title: "ABM Campaigns", desc: "Account-based campaigns that win named accounts.", link: "/services/growth-demand-generation/abm-campaigns", image: illuAbm, cta: "Learn more" },
+  { category: "Growth & Demand", title: "Community", desc: "Build owned communities that compound over time.", link: "/services/growth-demand-generation/community", image: illuCommunity, cta: "Learn more" },
+  { category: "Growth & Demand", title: "Influencer & UGC", desc: "Authentic creator partnerships and UGC at scale.", link: "/services/growth-demand-generation/influencer-ugc", image: illuInfluencer, cta: "Learn more" },
+  { category: "Growth & Demand", title: "Partner & Affiliate", desc: "Launch and scale partner-led growth programs.", link: "/services/growth-demand-generation/partner-affiliate", image: illuPartner, cta: "Learn more" },
+  { category: "Growth & Demand", title: "Viral Culture", desc: "Cultural campaigns that travel beyond your channels.", link: "/services/growth-demand-generation/viral-culture", image: illuViral, cta: "Learn more" },
+  { category: "Growth & Demand", title: "Demand Gen Bundle", desc: "Full demand engine across owned, earned and paid.", link: "/services/growth-demand-generation/demand-gen-bundle", image: illuDemandBundle, cta: "Explore Bundle", recommended: true },
 
   // Analytics & AI
-  { category: "Analytics & AI", title: "Tagging & GA4 Audit", desc: "Pixel-perfect tracking across web and app.", link: "/services/analytics-ai/tagging-ga4-audit", image: "/images/Services/Analytics&AI/Tagging&GA4Audit.png", cta: "Learn more" },
-  { category: "Analytics & AI", title: "Analytics & Dashboards", desc: "Looker dashboards your CFO actually understands.", link: "/services/analytics-ai/analytics-dashboards", image: "/images/Services/Analytics&AI/AnalyticsandDashboards.png", cta: "Learn more" },
-  { category: "Analytics & AI", title: "Attribution & Funnel", desc: "Multi-touch attribution and funnel intelligence.", link: "/services/analytics-ai/attribution-funnel", image: "/images/Services/Analytics&AI/AttributionandFunnel.png", cta: "Learn more" },
-  { category: "Analytics & AI", title: "CRM & Automation", desc: "HubSpot/Salesforce ops and lifecycle automation.", link: "/services/analytics-ai/crm-automation", image: "/images/Services/Analytics&AI/CRMandAutomation.png", cta: "Learn more" },
-  { category: "Analytics & AI", title: "AI-Powered Campaigns", desc: "AI-augmented creative, bidding and personalisation.", link: "/services/analytics-ai/AI-Powered-Campaigns", image: "/images/Services/Analytics&AI/AIPoweredCampaigns.png", cta: "Learn more" },
-  { category: "Analytics & AI", title: "Measurement + AI Bundle", desc: "Complete measurement and AI stack in one program.", link: "/services/analytics-ai/mesurement-AI-Bundle", image: "/images/Services/Analytics&AI/Measurement+AIBundle.png", cta: "Explore Bundle", recommended: true },
+  { category: "Analytics & AI", title: "Tagging & GA4 Audit", desc: "Pixel-perfect tracking across web and app.", link: "/services/analytics-ai/tagging-ga4-audit", image: illuTaggingGa4, cta: "Learn more" },
+  { category: "Analytics & AI", title: "Analytics & Dashboards", desc: "Looker dashboards your CFO actually understands.", link: "/services/analytics-ai/analytics-dashboards", image: illuAnalytics, cta: "Learn more" },
+  { category: "Analytics & AI", title: "Attribution & Funnel", desc: "Multi-touch attribution and funnel intelligence.", link: "/services/analytics-ai/attribution-funnel", image: illuAttribution, cta: "Learn more" },
+  { category: "Analytics & AI", title: "CRM & Automation", desc: "HubSpot/Salesforce ops and lifecycle automation.", link: "/services/analytics-ai/crm-automation", image: illuCrmAutomation, cta: "Learn more" },
+  { category: "Analytics & AI", title: "AI-Powered Campaigns", desc: "AI-augmented creative, bidding and personalisation.", link: "/services/analytics-ai/AI-Powered-Campaigns", image: illuAiCampaigns, cta: "Learn more" },
+  { category: "Analytics & AI", title: "Measurement + AI Bundle", desc: "Complete measurement and AI stack in one program.", link: "/services/analytics-ai/mesurement-AI-Bundle", image: illuMeasurementBundle, cta: "Explore Bundle", recommended: true },
 
   // Brand & Reputation
-  { category: "Brand & Reputation", title: "Brand Strategy", desc: "Positioning, narrative and identity systems.", link: "/services/brand-reputation/brand-strategy", image: "/images/Services/Brand&Reputation/BrandStrategy.png", cta: "Learn more" },
-  { category: "Brand & Reputation", title: "PR & ORM", desc: "Earned media, reputation and crisis response.", link: "/services/brand-reputation/pr-orm", image: "/images/Services/Brand&Reputation/PRandORM.png", cta: "Learn more" },
-  { category: "Brand & Reputation", title: "Website UX & Landing Pages", desc: "High-converting websites and landing pages.", link: "/services/brand-reputation/website-ux-landing-page", image: "/images/Services/Brand&Reputation/WebsiteUX&LandingPages.png", cta: "Learn more" },
-  { category: "Brand & Reputation", title: "Employer Branding", desc: "EVP and recruitment marketing that attracts talent.", link: "/services/brand-reputation/employer-branding", image: "/images/Services/Brand&Reputation/EmployerBranding.png", cta: "Learn more" },
-  { category: "Brand & Reputation", title: "Lifestyle & Vibe", desc: "Photo, video and culture content that humanises brand.", link: "/services/brand-reputation/lifestyle-vibe", image: "/images/Services/Brand&Reputation/LifestyleandVibe.png", cta: "Learn more" },
-  { category: "Brand & Reputation", title: "Brand Momentum Bundle", desc: "Strategy + PR + web + content in one program.", link: "/services/brand-reputation/brand-momentum-bundle", image: "/images/Services/Brand&Reputation/BrandMomentumBundle.png", cta: "Explore Bundle", recommended: true },
+  { category: "Brand & Reputation", title: "Brand Strategy", desc: "Positioning, narrative and identity systems.", link: "/services/brand-reputation/brand-strategy", image: illuBrandStrategy, cta: "Learn more" },
+  { category: "Brand & Reputation", title: "PR & ORM", desc: "Earned media, reputation and crisis response.", link: "/services/brand-reputation/pr-orm", image: illuPrOrm, cta: "Learn more" },
+  { category: "Brand & Reputation", title: "Website UX & Landing Pages", desc: "High-converting websites and landing pages.", link: "/services/brand-reputation/website-ux-landing-page", image: illuWebsiteUx, cta: "Learn more" },
+  { category: "Brand & Reputation", title: "Employer Branding", desc: "EVP and recruitment marketing that attracts talent.", link: "/services/brand-reputation/employer-branding", image: illuEmployer, cta: "Learn more" },
+  { category: "Brand & Reputation", title: "Lifestyle & Vibe", desc: "Photo, video and culture content that humanises brand.", link: "/services/brand-reputation/lifestyle-vibe", image: illuLifestyle, cta: "Learn more" },
+  { category: "Brand & Reputation", title: "Brand Momentum Bundle", desc: "Strategy + PR + web + content in one program.", link: "/services/brand-reputation/brand-momentum-bundle", image: illuBrandMomentum, cta: "Explore Bundle", recommended: true },
 ];
 
 const CATEGORIES = [

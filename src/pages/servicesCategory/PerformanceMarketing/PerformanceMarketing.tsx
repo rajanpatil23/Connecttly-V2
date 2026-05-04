@@ -5,6 +5,7 @@ import illuMetaAds from "@/assets/_zip/services/illu-meta-ads.png";
 import illuYoutubeAds from "@/assets/_zip/services/illu-youtube-ads.png";
 import illuCro from "@/assets/_zip/services/illu-cro.png";
 import illuLinkedinAds from "@/assets/_zip/services/illu-linkedin-ads.png";
+import illuPerformanceBundle from "@/assets/_zip/services/illu-performance-bundle.png";
 
 const services = [
     { title: "Google Ads", desc: "Drive targeted traffic with powerful Google Ads campaigns", link: "/services/performance-marketing/google-ads", image: illuGoogleAds, cta: "Learn more" },

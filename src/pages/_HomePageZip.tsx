@@ -152,6 +152,30 @@ const HomePage = () => {
 
       {/* Resource Hub */}
       <ResourcesShowcase />
+
+      {/* Bottom action row */}
+      <section className="pb-16 md:pb-20">
+        <div className="container-main">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-5">
+            {[
+              { icon: <MessageSquare className="w-5 h-5 text-primary" />, title: "Contact Us", desc: "Reach out to our support team for assistance anytime", href: "/resources/support" },
+              { icon: <HelpCircle className="w-5 h-5 text-primary" />, title: "FAQ", desc: "Get quick answers to your questions about our products and services", href: "/resources/faq" },
+              { icon: <Users className="w-5 h-5 text-primary" />, title: "Become an Affiliate", desc: "Join our affiliate program and earn recurring commission on referrals", href: "/resources/refer-and-earn" },
+            ].map((item) => (
+              <Link key={item.title} to={item.href} className="group bg-background rounded-xl border border-border/60 shadow-[0_2px_10px_hsl(var(--foreground)/0.04)] p-6 flex flex-col gap-4 hover:border-primary/40 transition-colors">
+                <div className="flex items-start justify-between">
+                  <div className="w-11 h-11 rounded-full bg-ct-blue-light flex items-center justify-center">{item.icon}</div>
+                  <ArrowRight className="w-4 h-4 text-primary opacity-80 group-hover:translate-x-0.5 transition-transform" />
+                </div>
+                <div>
+                  <p className="font-heading font-semibold mb-1.5">{item.title}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

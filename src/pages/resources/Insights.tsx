@@ -316,8 +316,8 @@ const CustomerMetrics: React.FC = () => {
           <AreaChart data={series} margin={{ left: 4, right: 40, top: 12, bottom: 48 }}>
             <defs>
               <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#24C5B9" stopOpacity={0.35} />
-                <stop offset="100%" stopColor="#24C5B9" stopOpacity={0.05} />
+                <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity={0.35} />
+                <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity={0.05} />
               </linearGradient>
             </defs>
             <CartesianGrid stroke="hsl(var(--border))" vertical={false} />
@@ -333,8 +333,8 @@ const CustomerMetrics: React.FC = () => {
               tick={{ fontSize: 11 }}
             />
             <YAxis tickLine={false} axisLine={false} />
-            <Tooltip cursor={{ stroke: "#B8E8DD" }} />
-            <Area type="monotone" dataKey="value" stroke="#24C5B9" fill="url(#g2)" strokeWidth={2} />
+            <Tooltip cursor={{ stroke: "hsl(var(--primary) / 0.25)" }} />
+            <Area type="monotone" dataKey="value" stroke="hsl(var(--primary))" fill="url(#g2)" strokeWidth={2} />
           </AreaChart>
         </ResponsiveContainer>
       </div>
@@ -345,8 +345,8 @@ const CustomerMetrics: React.FC = () => {
           highlight={metric === "customers"}
           onClick={() => setMetric("customers")}
           clickable
-          bgColor="bg-[#B8E8DD]"
-          borderColor="border-[#24C5B9]/30"
+          bgColor="bg-primary/10"
+          borderColor="border-primary/30"
         />
         <Kpi 
           label="ARPU" 
@@ -354,8 +354,8 @@ const CustomerMetrics: React.FC = () => {
           highlight={metric === "arpu"}
           onClick={() => setMetric("arpu")}
           clickable
-          bgColor="bg-[#B8E8DD]"
-          borderColor="border-[#24C5B9]/30"
+          bgColor="bg-primary/10"
+          borderColor="border-primary/30"
         />
         <Kpi 
           label="LTV" 
@@ -363,8 +363,8 @@ const CustomerMetrics: React.FC = () => {
           highlight={metric === "ltv"}
           onClick={() => setMetric("ltv")}
           clickable
-          bgColor="bg-[#B8E8DD]"
-          borderColor="border-[#24C5B9]/30"
+          bgColor="bg-primary/10"
+          borderColor="border-primary/30"
         />
       </div>
     </Card>

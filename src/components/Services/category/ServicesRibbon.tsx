@@ -11,6 +11,7 @@ export interface RibbonItem {
   icon: React.ReactNode;
   title: string;
   subtitle: string;
+  color?: string;
 }
 
 interface ServicesRibbonProps {

@@ -8,6 +8,7 @@ export type WhyChooseItem = {
   icon: IconType;          // lucide-react or any React icon
   title: string;
   desc: string;
+  tint?: string;           // optional accent color
 };
 
 type Props = {

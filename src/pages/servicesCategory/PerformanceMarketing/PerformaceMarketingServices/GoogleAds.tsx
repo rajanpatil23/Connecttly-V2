@@ -1,3 +1,4 @@
+import heroIllustration from "@/assets/_zip/services/illu-google-ads.png";
 import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
 
@@ -315,7 +316,7 @@ const GoogleAds = () => (
       description: "Reach customers at the exact moment they're searching for your products or services. Our data-driven Google Ads campaigns deliver measurable results and maximize your ROI.",
       ctaText: "Get a Free Audit",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/performance-marketing/GoogleAds.png",
+      imageSrc: heroIllustration,
       imageAlt: "Google Ads Dashboard Analytics",
     }}
     plans={pricingPlans}

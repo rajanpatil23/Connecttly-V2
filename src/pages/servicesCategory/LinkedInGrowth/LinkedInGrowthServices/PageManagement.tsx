@@ -1,3 +1,4 @@
+import heroIllustration from "@/assets/_zip/services/illu-page-management.png";
 import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
 
@@ -213,7 +214,7 @@ const PageManagement = () => (
       description: "Build your brand, engage your audience, and generate leads with expert LinkedIn page management. We handle everything so you can focus on your business.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/linkedin-growth/PageManagement.png",
+      imageSrc: heroIllustration,
       imageAlt: "LinkedIn Page Management",
     }}
     plans={pricingPlans}

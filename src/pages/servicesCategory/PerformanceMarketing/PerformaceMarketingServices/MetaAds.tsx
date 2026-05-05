@@ -1,3 +1,4 @@
+import heroIllustration from "@/assets/_zip/services/illu-meta-ads.png";
 import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
 
@@ -308,7 +309,7 @@ const MetaAds = () => (
       description: "Reach billions of users on Facebook and Instagram with data-driven Meta advertising campaigns. Our expert team creates scroll-stopping ads that drive engagement, leads, and sales.",
       ctaText: "Get a Free Strategy Session",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/performance-marketing/MetaAds.png",
+      imageSrc: heroIllustration,
       imageAlt: "Meta Ads Dashboard",
     }}
     plans={pricingPlans}

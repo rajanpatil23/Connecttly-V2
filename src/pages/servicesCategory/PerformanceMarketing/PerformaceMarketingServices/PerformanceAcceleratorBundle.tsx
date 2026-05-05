@@ -1,3 +1,4 @@
+import heroIllustration from "@/assets/_zip/services/illu-performance-bundle.png";
 import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
 
@@ -312,7 +313,7 @@ const PerformanceAcceleratorBundle = () => (
       description: "Dominate every channel with our all-in-one Performance Accelerator Bundle. Get Google Ads, Meta Ads, YouTube, TikTok, CRO, video production, and more - all managed by one expert team for maximum ROI and efficiency.",
       ctaText: "Get a Free Strategy Session",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/performance-marketing/PerformanceAcceleratorBundle.png",
+      imageSrc: heroIllustration,
       imageAlt: "Performance Marketing Dashboard",
     }}
     plans={pricingPlans}

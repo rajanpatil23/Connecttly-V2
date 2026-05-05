@@ -1,3 +1,4 @@
+import heroIllustration from "@/assets/_zip/services/illu-youtube-ads.png";
 import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
 
@@ -308,7 +309,7 @@ const YoutubeAds = () => (
       description: "Reach billions of viewers on the world's largest video platform. Our expert team creates engaging video ads that drive brand awareness, engagement, and conversions at scale.",
       ctaText: "Get a Free Video Strategy",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/performance-marketing/YouTubeAds.png",
+      imageSrc: heroIllustration,
       imageAlt: "YouTube Ads Dashboard",
     }}
     plans={pricingPlans}

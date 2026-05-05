@@ -1,3 +1,4 @@
+import heroIllustration from "@/assets/_zip/services/illu-lead-generation.png";
 import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
 
@@ -213,7 +214,7 @@ const LeadGenration = () => (
       description: "Done-for-you LinkedIn outreach that books meetings with your ideal customers. Personalized, scalable, and proven to work.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/linkedin-growth/LeadGenration.png",
+      imageSrc: heroIllustration,
       imageAlt: "LinkedIn Lead Generation",
     }}
     plans={pricingPlans}

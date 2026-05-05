@@ -1,3 +1,4 @@
+import heroIllustration from "@/assets/_zip/services/illu-sales-navigator.png";
 import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
 
@@ -213,7 +214,7 @@ const SalesNavigator = () => (
       description: "Master Sales Navigator to find, engage, and convert high-quality B2B leads. We handle the strategy and execution so your sales team can focus on closing deals.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/linkedin-growth/SalesNavigatorEnablement.png",
+      imageSrc: heroIllustration,
       imageAlt: "Sales Navigator",
     }}
     plans={pricingPlans}

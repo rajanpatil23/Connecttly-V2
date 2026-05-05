@@ -1,3 +1,4 @@
+import heroIllustration from "@/assets/_zip/services/illu-linkedin-ads-2.png";
 import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
 
@@ -213,7 +214,7 @@ const LinkedInAds = () => (
       description: "Reach decision-makers where they're most engaged. Our LinkedIn advertising experts create campaigns that drive qualified leads and measurable ROI.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/linkedin-growth/LinkedinAds.png",
+      imageSrc: heroIllustration,
       imageAlt: "LinkedIn Advertising Dashboard",
     }}
     plans={pricingPlans}

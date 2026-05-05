@@ -1,3 +1,4 @@
+import heroIllustration from "@/assets/_zip/services/illu-cro.png";
 import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
 
@@ -309,7 +310,7 @@ const CROFunnel = () => (
       description: "Turn more visitors into customers with data-driven conversion rate optimization. Our expert team identifies friction points, runs strategic A/B tests, and implements proven optimizations that increase your conversion rates and revenue.",
       ctaText: "Get a Free Funnel Audit",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/performance-marketing/CROandFunnel.png",
+      imageSrc: heroIllustration,
       imageAlt: "CRO Analytics Dashboard",
     }}
     plans={pricingPlans}

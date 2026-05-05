@@ -8,7 +8,8 @@ export type SocialImageOptions = {
   count?: number;             // 1..4
 };
 
-const EDIT_ENDPOINT = "/api/ai/image/edit";
+const EDIT_ENDPOINT =
+  import.meta.env.VITE_IMAGE_EDIT_API_URL || "/api/ai/image/edit";
 
 /** Helper to extract base64 and mime from data URL */
 function parseDataUrl(dataUrl: string): { b64: string; mime: string } | null {

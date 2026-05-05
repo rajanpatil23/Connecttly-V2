@@ -11,7 +11,7 @@ export type GenerateImagesOptions = GenerateImageOptions & {
 };
 
 const GENERATE_ENDPOINT =
-  import.meta.env.VITE_IMAGE_API_URL || "/image/generate";
+  import.meta.env.VITE_IMAGE_API_URL || "/api/ai/image/generate";
 
 /** Normalize various backend shapes into array of URLs/data-URLs */
 function normalizeToUrls(resp: any): string[] {

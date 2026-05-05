@@ -213,7 +213,7 @@ const SalesNavigator = () => (
       description: "Master Sales Navigator to find, engage, and convert high-quality B2B leads. We handle the strategy and execution so your sales team can focus on closing deals.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Linkedin Growth/SalesNavigatorEnablement.png",
+      imageSrc: "/images/Services/linkedin-growth/SalesNavigatorEnablement.png",
       imageAlt: "Sales Navigator",
     }}
     plans={pricingPlans}

@@ -214,7 +214,7 @@ const CarouselsVisuals = () => (
       description: "Professional carousels, infographics, and social graphics that capture attention, communicate value, and amplify your brand.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Content Creative/CarouselsandVisuals.png",
+      imageSrc: "/images/Services/content-creative/CarouselsandVisuals.png",
       imageAlt: "Carousels & Visuals",
     }}
     plans={pricingPlans}

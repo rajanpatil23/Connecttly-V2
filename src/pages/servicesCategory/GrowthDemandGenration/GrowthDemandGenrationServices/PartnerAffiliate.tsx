@@ -213,7 +213,7 @@ const PartnerAffiliate = () => (
       description: "Launch and scale affiliate and partner programs that turn advocates into a powerful revenue channel for sustainable growth.",
       ctaText: "Launch Program",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/DemandGrowthGeneration/PartnersAffiliate.png",
+      imageSrc: "/images/Services/demand-growth-generation/PartnersAffiliate.png",
       imageAlt: "Partnership Collaboration",
     }}
     plans={pricingPlans}

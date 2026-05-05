@@ -214,7 +214,7 @@ const ContentStrategy = () => (
       description: "Comprehensive content strategies that align with your business goals, resonate with your audience, and deliver measurable ROI.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Content Creative/ContentStratergy.png",
+      imageSrc: "/images/Services/content-creative/ContentStratergy.png",
       imageAlt: "Content Strategy",
     }}
     plans={pricingPlans}

@@ -214,7 +214,7 @@ const SEOContentProduction = () => (
       description: "High-quality, search-optimized content that drives organic traffic, establishes authority, and generates leads.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Content Creative/SEOContentProduction.png",
+      imageSrc: "/images/Services/content-creative/SEOContentProduction.png",
       imageAlt: "SEO Content Production",
     }}
     plans={pricingPlans}

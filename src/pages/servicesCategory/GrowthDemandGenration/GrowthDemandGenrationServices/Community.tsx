@@ -213,7 +213,7 @@ const Community = () => (
       description: "Create thriving communities where customers become advocates, support each other, and fuel your business growth through authentic connections.",
       ctaText: "Start Building",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/DemandGrowthGeneration/Community.png",
+      imageSrc: "/images/Services/demand-growth-generation/Community.png",
       imageAlt: "Community Engagement",
     }}
     plans={pricingPlans}

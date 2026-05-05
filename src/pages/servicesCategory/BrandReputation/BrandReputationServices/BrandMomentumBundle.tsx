@@ -79,7 +79,7 @@ const BrandMomentumBundle = () => (
       description: "Comprehensive brand services that work together seamlessly: strategy, PR, website, employer branding, and lifestyle content - all integrated for maximum impact.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Brand&Reputation/BrandMomentumBundle.png",
+      imageSrc: "/images/Services/brand-reputation/BrandMomentumBundle.png",
       imageAlt: "Brand Momentum Bundle",
     }}
     plans={pricingPlans}

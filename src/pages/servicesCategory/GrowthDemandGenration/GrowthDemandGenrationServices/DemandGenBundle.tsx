@@ -201,7 +201,7 @@ const DemandGenBundle = () => (
       description: "Combine ABM, influencer marketing, community building, viral campaigns, and partner programs into one integrated growth machine that delivers predictable, scalable results.",
       ctaText: "Accelerate Growth",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/DemandGrowthGeneration/DemandGenBundle.png",
+      imageSrc: "/images/Services/demand-growth-generation/DemandGenBundle.png",
       imageAlt: "Growth Strategy Dashboard",
     }}
     plans={pricingPlans}

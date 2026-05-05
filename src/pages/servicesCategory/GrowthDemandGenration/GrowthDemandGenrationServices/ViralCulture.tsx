@@ -213,7 +213,7 @@ const ViralCulture = () => (
       description: "Harness the power of viral marketing and cultural trends to achieve explosive organic reach and turn your brand into a cultural phenomenon.",
       ctaText: "Go Viral",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/DemandGrowthGeneration/ViralCulture.png",
+      imageSrc: "/images/Services/demand-growth-generation/ViralCulture.png",
       imageAlt: "Viral Content Creation",
     }}
     plans={pricingPlans}

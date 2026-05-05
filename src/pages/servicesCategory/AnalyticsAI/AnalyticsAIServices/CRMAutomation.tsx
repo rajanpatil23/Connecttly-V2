@@ -213,7 +213,7 @@ const CRMAutomation = () => (
       description: "Eliminate manual work with intelligent CRM automation. Let your sales team focus on selling while automation handles the rest.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Analytics&AI/CRMandAutomation.png",
+      imageSrc: "/images/Services/analytics-ai/CRMandAutomation.png",
       imageAlt: "CRM Automation",
     }}
     plans={pricingPlans}

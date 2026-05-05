@@ -213,7 +213,7 @@ const LeadGenration = () => (
       description: "Done-for-you LinkedIn outreach that books meetings with your ideal customers. Personalized, scalable, and proven to work.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Linkedin Growth/LeadGenration.png",
+      imageSrc: "/images/Services/linkedin-growth/LeadGenration.png",
       imageAlt: "LinkedIn Lead Generation",
     }}
     plans={pricingPlans}

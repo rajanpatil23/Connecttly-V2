@@ -213,7 +213,7 @@ const AIPoweredCampaigns = () => (
       description: "Leverage advanced AI and machine learning to optimize campaigns, predict performance, and drive better results automatically.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Analytics&AI/AIPoweredCampaigns.png",
+      imageSrc: "/images/Services/analytics-ai/AIPoweredCampaigns.png",
       imageAlt: "AI-Powered Campaigns",
     }}
     plans={pricingPlans}

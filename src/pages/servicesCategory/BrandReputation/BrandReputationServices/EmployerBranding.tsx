@@ -79,7 +79,7 @@ const EmployerBranding = () => (
       description: "Strategic employer branding that positions you as an employer of choice, attracts quality candidates, and reduces hiring costs.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Brand&Reputation/EmployerBranding.png",
+      imageSrc: "/images/Services/brand-reputation/EmployerBranding.png",
       imageAlt: "Employer Branding",
     }}
     plans={pricingPlans}

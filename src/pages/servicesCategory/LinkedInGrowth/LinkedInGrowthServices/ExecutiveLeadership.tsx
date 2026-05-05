@@ -1,3 +1,4 @@
+import heroIllustration from "@/assets/_zip/services/illu-executive-leadership.png";
 import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
 
@@ -213,7 +214,7 @@ const ExecutiveLeadership = () => (
       description: "Position yourself as a thought leader on LinkedIn. We handle the content creation and strategy so you can focus on running your business.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/linkedin-growth/ExecutiveLeadership.png",
+      imageSrc: heroIllustration,
       imageAlt: "Executive Leadership",
     }}
     plans={pricingPlans}

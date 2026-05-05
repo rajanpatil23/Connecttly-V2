@@ -1,3 +1,4 @@
+import heroIllustration from "@/assets/_zip/services/illu-linkedin-bundle.png";
 import ServiceDetailAdapter from "@/components/Services/templates/ServiceDetailAdapter";
 import { Link } from "react-router-dom";
 
@@ -214,7 +215,7 @@ const LinkedInGrowthbundle = () => (
       description: "Dominate LinkedIn with our comprehensive bundle: Ads, Lead Generation, Page Management, Executive Branding, and Sales Navigator - all working together for maximum impact.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/linkedin-growth/LinkedInGrowthBundle.png",
+      imageSrc: heroIllustration,
       imageAlt: "LinkedIn Growth Bundle",
     }}
     plans={pricingPlans}

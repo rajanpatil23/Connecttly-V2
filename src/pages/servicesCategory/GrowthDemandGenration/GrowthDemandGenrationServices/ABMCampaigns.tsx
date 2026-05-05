@@ -213,7 +213,7 @@ const ABMCampaigns = () => (
       description: "Target and engage high-value accounts with personalized, multi-channel campaigns that accelerate deal cycles and increase win rates.",
       ctaText: "Book a Strategy Call",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/DemandGrowthGeneration/ABMCampaigns.png",
+      imageSrc: "/images/Services/demand-growth-generation/ABMCampaigns.png",
       imageAlt: "ABM Strategy Meeting",
     }}
     plans={pricingPlans}

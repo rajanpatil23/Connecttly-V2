@@ -213,7 +213,7 @@ const InfluencerUGC = () => (
       description: "Partner with influencers and leverage user-generated content to build trust, increase engagement, and drive conversions at scale.",
       ctaText: "Launch Campaign",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/DemandGrowthGeneration/InfluencerandUGC.png",
+      imageSrc: "/images/Services/demand-growth-generation/InfluencerandUGC.png",
       imageAlt: "Influencer Content Creation",
     }}
     plans={pricingPlans}

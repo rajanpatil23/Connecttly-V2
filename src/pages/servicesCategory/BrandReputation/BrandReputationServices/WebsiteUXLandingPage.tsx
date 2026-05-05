@@ -79,7 +79,7 @@ const WebsiteUXLandingPage = () => (
       description: "Custom website design and UX optimization that turns visitors into customers with stunning design and seamless user experience.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Brand&Reputation/WebsiteUX&LandingPages.png",
+      imageSrc: "/images/Services/brand-reputation/WebsiteUXLandingPages.png",
       imageAlt: "Website & UX Design",
     }}
     plans={pricingPlans}

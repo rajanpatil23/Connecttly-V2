@@ -216,7 +216,7 @@ const MeasurementAIBundle = () => (
       description: "Transform your marketing with our comprehensive bundle: AI optimization, dashboards, attribution, automation, and tracking - all working together for maximum impact.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Analytics&AI/Measurement+AIBundle.png",
+      imageSrc: "/images/Services/analytics-ai/MeasurementAIBundle.png",
       imageAlt: "Measurement & AI Bundle",
     }}
     plans={pricingPlans}

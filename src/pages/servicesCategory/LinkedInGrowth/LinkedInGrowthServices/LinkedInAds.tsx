@@ -213,7 +213,7 @@ const LinkedInAds = () => (
       description: "Reach decision-makers where they're most engaged. Our LinkedIn advertising experts create campaigns that drive qualified leads and measurable ROI.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Linkedin Growth/LinkedinAds.png",
+      imageSrc: "/images/Services/linkedin-growth/LinkedinAds.png",
       imageAlt: "LinkedIn Advertising Dashboard",
     }}
     plans={pricingPlans}

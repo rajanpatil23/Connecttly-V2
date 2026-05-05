@@ -213,7 +213,7 @@ const AttributionFunnel = () => (
       description: "Track every touchpoint in the customer journey and attribute revenue to the right channels with advanced multi-touch attribution.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Analytics&AI/AttributionandFunnel.png",
+      imageSrc: "/images/Services/analytics-ai/AttributionandFunnel.png",
       imageAlt: "Attribution & Funnel Analysis",
     }}
     plans={pricingPlans}

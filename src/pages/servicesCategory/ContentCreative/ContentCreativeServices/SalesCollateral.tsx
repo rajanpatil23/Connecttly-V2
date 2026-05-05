@@ -214,7 +214,7 @@ const SalesCollateral = () => (
       description: "Professional sales materials that empower your team, impress prospects, and accelerate your sales cycle.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Content Creative/SalesCollateral.png",
+      imageSrc: "/images/Services/content-creative/SalesCollateral.png",
       imageAlt: "Sales Collateral",
     }}
     plans={pricingPlans}

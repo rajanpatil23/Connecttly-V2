@@ -213,7 +213,7 @@ const AnalyticsDashboards = () => (
       description: "Beautiful, intuitive dashboards that give you real-time visibility into your marketing performance and drive better decisions.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Analytics&AI/AnalyticsandDashboards.png",
+      imageSrc: "/images/Services/analytics-ai/AnalyticsandDashboards.png",
       imageAlt: "Analytics Dashboards",
     }}
     plans={pricingPlans}

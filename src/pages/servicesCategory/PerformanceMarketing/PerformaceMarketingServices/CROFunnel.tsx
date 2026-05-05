@@ -309,7 +309,7 @@ const CROFunnel = () => (
       description: "Turn more visitors into customers with data-driven conversion rate optimization. Our expert team identifies friction points, runs strategic A/B tests, and implements proven optimizations that increase your conversion rates and revenue.",
       ctaText: "Get a Free Funnel Audit",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Performance Marketing/CROandFunnel.png",
+      imageSrc: "/images/Services/performance-marketing/CROandFunnel.png",
       imageAlt: "CRO Analytics Dashboard",
     }}
     plans={pricingPlans}

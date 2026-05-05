@@ -219,7 +219,7 @@ const FullFunnelContent = () => (
       description: "Comprehensive content marketing that attracts, nurtures, and converts - all integrated and optimized for maximum impact.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Content Creative/FullFunnelContentBundle.png",
+      imageSrc: "/images/Services/content-creative/FullFunnelContentBundle.png",
       imageAlt: "Full-Funnel Content",
     }}
     plans={pricingPlans}

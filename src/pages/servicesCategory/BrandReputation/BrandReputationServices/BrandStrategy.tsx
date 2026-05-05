@@ -214,7 +214,7 @@ const BrandStrategy = () => (
       description: "Strategic brand development that differentiates you in the market, resonates with your audience, and drives measurable business results.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Brand&Reputation/BrandStrategy.png",
+      imageSrc: "/images/Services/brand-reputation/BrandStrategy.png",
       imageAlt: "Brand Strategy",
     }}
     plans={pricingPlans}

@@ -315,7 +315,7 @@ const GoogleAds = () => (
       description: "Reach customers at the exact moment they're searching for your products or services. Our data-driven Google Ads campaigns deliver measurable results and maximize your ROI.",
       ctaText: "Get a Free Audit",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Performance Marketing/GoogleAds.png",
+      imageSrc: "/images/Services/performance-marketing/GoogleAds.png",
       imageAlt: "Google Ads Dashboard Analytics",
     }}
     plans={pricingPlans}

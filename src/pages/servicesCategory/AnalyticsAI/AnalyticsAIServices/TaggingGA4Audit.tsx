@@ -213,7 +213,7 @@ const TaggingGA4Audit = () => (
       description: "Comprehensive tracking audits and Google Analytics 4 implementation to ensure accurate, reliable data for better decisions.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Analytics&AI/Tagging&GA4Audit.png",
+      imageSrc: "/images/Services/analytics-ai/TaggingGA4Audit.png",
       imageAlt: "Tracking Audit & GA4",
     }}
     plans={pricingPlans}

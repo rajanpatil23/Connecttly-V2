@@ -131,7 +131,7 @@ const PRandORM = () => (
       description: "Strategic PR and reputation management that builds positive perception, secures media coverage, and protects your brand from threats.",
       ctaText: "Get Started",
       ctaLink: "/resources/support",
-      imageSrc: "/images/Services/Brand&Reputation/PRandORM.png",
+      imageSrc: "/images/Services/brand-reputation/PRandORM.png",
       imageAlt: "PR & ORM",
     }}
     plans={pricingPlans}

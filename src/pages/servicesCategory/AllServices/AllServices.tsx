@@ -216,9 +216,9 @@ export default function AllServices() {
               </div>
             </div>
 
-            <div className="relative w-full max-w-[434px] mx-auto md:ml-auto md:mr-0 py-10 md:py-14">
-              <div className="relative rounded-md overflow-hidden w-full bg-[hsl(48_100%_55%)]" style={{ aspectRatio: "434 / 659" }}>
-                <img src={heroImg} alt="All services" className="absolute inset-0 w-full h-full object-cover" width={434} height={659} />
+            <div className="relative w-full max-w-[360px] mx-auto md:ml-auto md:mr-0 py-8 md:py-10">
+              <div className="relative rounded-md overflow-hidden w-full bg-[hsl(48_100%_55%)]" style={{ aspectRatio: "434 / 520" }}>
+                <img src={heroImg} alt="All services" className="absolute inset-0 w-full h-full object-cover" width={434} height={520} />
               </div>
               {/* Top right: Growth Categories */}
               <div className="absolute top-40 right-4 md:right-8 bg-background rounded-full shadow-[0_8px_24px_hsl(var(--foreground)/0.12)] pl-2.5 pr-4 py-1.5 flex items-center gap-2 animate-float-y z-10">
